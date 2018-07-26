@@ -1,4 +1,8 @@
 rendering
 renderContentOn: html
 
-	html html: 'Hello'
+	self renderNavigationbarOn: html.
+	self isDisplayingIntro 
+			ifTrue: [ self renderIntroOn: html ]
+			ifFalse: [ browser renderOn: html ]
+	 
