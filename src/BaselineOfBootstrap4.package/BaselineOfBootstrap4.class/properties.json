@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "TorstenBergmann 7/26/2018 15:59",
+	"super" : "BaselineOf",
+	"category" : "BaselineOfBootstrap4",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BaselineOfBootstrap4",
+	"type" : "normal"
+}
