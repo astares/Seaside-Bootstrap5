@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "TorstenBergmann 7/26/2018 17:31",
+	"super" : "WATagBrush",
+	"category" : "Bootstrap4-Core-Canvas",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SBSGenericTag",
+	"type" : "normal"
+}

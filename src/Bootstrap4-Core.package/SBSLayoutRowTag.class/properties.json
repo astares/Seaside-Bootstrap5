@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "TorstenBergmann 7/26/2018 17:33",
+	"super" : "SBSLayoutTag",
+	"category" : "Bootstrap4-Core-Canvas",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SBSLayoutRowTag",
+	"type" : "normal"
+}

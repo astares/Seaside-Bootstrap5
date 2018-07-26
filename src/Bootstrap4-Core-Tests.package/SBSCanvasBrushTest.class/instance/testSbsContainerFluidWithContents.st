@@ -1,4 +1,4 @@
-tests-container
+tests - container
 testSbsContainerFluidWithContents
 
 	self
