@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SBSLayoutTag",
+	"category" : "Bootstrap4-Core-Canvas",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SBSEqualWidthColumnsOnMultipleRows",
+	"type" : "normal"
+}
