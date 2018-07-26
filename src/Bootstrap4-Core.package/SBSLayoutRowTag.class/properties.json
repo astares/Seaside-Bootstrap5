@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "TorstenBergmann 7/26/2018 17:33",
-	"super" : "SBSLayoutTag",
-	"category" : "Bootstrap4-Core-Canvas",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "SBSTHorizontalAlignable classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "SBSLayoutRowTag",
-	"type" : "normal"
+	"commentStamp" : "TorstenBergmann 7/26/2018 17:33",
+	"super" : "SBSLayoutTag",
+	"traitcomposition" : "SBSTHorizontalAlignable",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Bootstrap4-Core-Canvas"
 }
