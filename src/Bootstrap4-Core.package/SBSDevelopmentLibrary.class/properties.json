@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "TorstenBergmann 7/26/2018 15:05",
+	"super" : "SBSFileLibrary",
+	"category" : "Bootstrap4-Core-Libraries",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SBSDevelopmentLibrary",
+	"type" : "normal"
+}
