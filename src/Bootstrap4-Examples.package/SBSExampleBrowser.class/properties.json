@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "TorstenBergmann 7/26/2018 17:03",
+	"super" : "WAComponent",
+	"category" : "Bootstrap4-Examples-Browser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"currentExample"
+	],
+	"name" : "SBSExampleBrowser",
+	"type" : "normal"
+}

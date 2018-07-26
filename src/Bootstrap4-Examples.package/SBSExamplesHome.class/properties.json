@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"browser"
+		"browser",
+		"displayIntro"
 	],
 	"name" : "SBSExamplesHome",
 	"type" : "normal"
