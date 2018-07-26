@@ -1,11 +1,11 @@
 {
-	"classtraitcomposition" : "SBSTHorizontalAlignable classTrait",
+	"classtraitcomposition" : "SBSTContentJustification classTrait + SBSTRowItemAlignment classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "SBSLayoutRowTag",
 	"commentStamp" : "TorstenBergmann 7/26/2018 17:33",
 	"super" : "SBSLayoutTag",
-	"traitcomposition" : "SBSTHorizontalAlignable",
+	"traitcomposition" : "SBSTContentJustification + SBSTRowItemAlignment",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],

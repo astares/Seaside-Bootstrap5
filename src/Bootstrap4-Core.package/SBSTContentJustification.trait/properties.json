@@ -3,5 +3,5 @@
 	"classinstvars" : [ ],
 	"category" : "Bootstrap4-Core-Traits",
 	"instvars" : [ ],
-	"name" : "SBSTHorizontalAlignable"
+	"name" : "SBSTContentJustification"
 }

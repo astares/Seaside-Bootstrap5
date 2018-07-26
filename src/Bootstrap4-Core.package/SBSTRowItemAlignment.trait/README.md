@@ -1,0 +1,1 @@
+Vertical alignment of items in a row

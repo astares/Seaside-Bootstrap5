@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "TorstenBergmann 7/26/2018 22:30",
+	"commentStamp" : "TorstenBergmann 7/26/2018 23:18",
 	"super" : "WAAbstractCanvasBrushTest",
-	"category" : "Bootstrap4-Core-Tests-Canvas",
+	"category" : "Bootstrap4-Core-Tests-Traits",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SBSTHorizontalAlignableTest",
+	"name" : "SBSTColumnSelfAlignmentTest",
 	"type" : "normal"
 }

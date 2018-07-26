@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "TorstenBergmann 7/26/2018 23:02",
 	"super" : "WAAbstractCanvasBrushTest",
-	"category" : "Bootstrap4-Core-Tests-Canvas",
+	"category" : "Bootstrap4-Core-Tests-Traits",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

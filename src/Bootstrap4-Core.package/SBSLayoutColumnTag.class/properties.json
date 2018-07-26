@@ -1,11 +1,11 @@
 {
-	"classtraitcomposition" : "SBSTVisualOrder classTrait + SBSTOffsetting classTrait",
+	"classtraitcomposition" : "SBSTVisualOrder classTrait + SBSTOffsetting classTrait + SBSTColumnSelfAlignment classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "SBSLayoutColumnTag",
 	"commentStamp" : "TorstenBergmann 7/26/2018 17:33",
 	"super" : "SBSLayoutTag",
-	"traitcomposition" : "SBSTVisualOrder + SBSTOffsetting",
+	"traitcomposition" : "SBSTVisualOrder + SBSTOffsetting + SBSTColumnSelfAlignment",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
