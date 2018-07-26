@@ -5,4 +5,4 @@ sbsColumn: aBlock
 	 #mediumSize, #smallSize:, ... according to Bootstrap layouts."
 	
 	 ^ self sbsColumn
-		with: aBlock
+			with: aBlock
