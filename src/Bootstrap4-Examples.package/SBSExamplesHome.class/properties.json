@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SBSRootComponent",
+	"category" : "Bootstrap4-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SBSExamplesHome",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "TorstenBergmann 7/26/2018 15:39",
+	"super" : "WAComponent",
+	"category" : "Bootstrap4-Core-Component",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SBSComponent",
+	"type" : "normal"
+}
