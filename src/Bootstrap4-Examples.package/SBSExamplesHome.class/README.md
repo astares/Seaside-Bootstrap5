@@ -1,0 +1,1 @@
+Main entry component for the examples

@@ -1,7 +1,7 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "TorstenBergmann 7/26/2018 16:06",
 	"super" : "SBSRootComponent",
-	"category" : "Bootstrap4-Examples",
+	"category" : "Bootstrap4-Examples-Home",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
