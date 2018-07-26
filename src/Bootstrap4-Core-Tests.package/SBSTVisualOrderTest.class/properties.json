@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "TorstenBergmann 7/26/2018 22:45",
+	"super" : "WAAbstractCanvasBrushTest",
+	"category" : "Bootstrap4-Core-Tests-Canvas",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SBSTVisualOrderTest",
+	"type" : "normal"
+}

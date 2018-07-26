@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "TorstenBergmann 7/26/2018 17:33",
-	"super" : "SBSLayoutTag",
-	"category" : "Bootstrap4-Core-Canvas",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "SBSTVisualOrder classTrait + SBSTOffsetting classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "SBSLayoutColumnTag",
-	"type" : "normal"
+	"commentStamp" : "TorstenBergmann 7/26/2018 17:33",
+	"super" : "SBSLayoutTag",
+	"traitcomposition" : "SBSTVisualOrder + SBSTOffsetting",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Bootstrap4-Core-Canvas"
 }
