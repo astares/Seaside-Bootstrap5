@@ -1,4 +1,4 @@
 *Bootstrap4-Core
 navigationList
-	self unorderedList 
+	^self unorderedList 
 		class: 'nav'

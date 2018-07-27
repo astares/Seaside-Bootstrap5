@@ -1,5 +1,5 @@
 tests - container
-testContainerFluidWithContents
+testContainerFluidWithContent
 
 	self
 		assert: [ :html | html containerFluid: 'Bootstrap' ]

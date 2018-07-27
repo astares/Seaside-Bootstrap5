@@ -1,4 +1,4 @@
 *Bootstrap4-Core
 navigationItem
-	self listItem 
+	^self listItem 
 		class: 'nav-item'

@@ -1,5 +1,5 @@
 tests - container
-testContainerWithContents
+testContainerWithContent
 
 	self
 		assert: [ :html | html container: 'Bootstrap' ]

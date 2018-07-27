@@ -1,5 +1,5 @@
 tests - jumbotron
-testJumbotronWithContents
+testJumbotronWithContent
 
 	self
 		assert: [ :html | html jumbotron: 'Bootstrap' ]

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "TorstenBergmann 7/27/2018 09:06",
+	"super" : "WAButtonTag",
+	"category" : "Bootstrap4-Core-Canvas",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SBSButtonTag",
+	"type" : "normal"
+}
