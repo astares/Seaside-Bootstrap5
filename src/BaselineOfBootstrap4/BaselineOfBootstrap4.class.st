@@ -14,10 +14,12 @@ BaselineOfBootstrap4 >> baseline: spec [
 	<baseline>
 	
 	spec for: #'common' do: [ 
+		self seaside: spec.
+		
 		spec 
-			package: 'Bootstrap4-Core';
-		 	package: 'Bootstrap4-Core-Tests' with: [ spec requires: #('Bootstrap4-Core' ) ];	
-			package: 'Bootstrap4-Examples' with: [ spec requires: #('Bootstrap4-Core' ) ].
+			package: 'Bootstrap4-Core' with: [ spec requires: #('Seaside') ];
+		 	package: 'Bootstrap4-Core-Tests' with: [ spec requires: #('Bootstrap4-Core') ];	
+			package: 'Bootstrap4-Examples' with: [ spec requires: #('Bootstrap4-Core') ].
 
 		spec 
 			group: 'Core' with: #('Bootstrap4-Core');
@@ -27,4 +29,15 @@ BaselineOfBootstrap4 >> baseline: spec [
 			group: 'default' with: #('all').
 	]
 
+]
+
+{ #category : #baseline }
+BaselineOfBootstrap4 >> seaside: spec [
+
+	spec
+			baseline: 'Seaside'
+        	with: [ 
+				spec
+					loads: #('default');
+					repository: 'github://SeasideSt/Seaside:pharo7/repository' ]
 ]
