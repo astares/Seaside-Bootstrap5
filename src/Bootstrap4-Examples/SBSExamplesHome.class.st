@@ -70,6 +70,7 @@ SBSExamplesHome >> renderContentOn: html [
 { #category : #'rendering components' }
 SBSExamplesHome >> renderIntroOn: html [
 	html container: [ 	
+		html break.
 		html jumbotron: [ 
 		html heading: 'Bootstrap4 for Seaside'.
 		html image url: SBSExamplesLibrary / #logoPng.
@@ -89,11 +90,10 @@ SBSExamplesHome >> renderIntroOn: html [
 			html form: [  
 			html formButton 
 				bePrimary;
-				"beLarge;"
+				beLarge;
 				callback: [ self browseExamples ];
-				with: 'Browse Examples' ]].	
-			
-		 ]]
+				with: 'Browse Examples' ]]
+	]]
 ]
 
 { #category : #'rendering components' }

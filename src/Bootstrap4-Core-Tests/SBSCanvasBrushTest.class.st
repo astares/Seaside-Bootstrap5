@@ -17,6 +17,16 @@ SBSCanvasBrushTest >> testButton [
 	
 ]
 
+{ #category : #'tests - buttons - sizes' }
+SBSCanvasBrushTest >> testButtonBlock [
+
+	self
+		assert: [ :html | html formButton beBlock ]
+		gives: '<button class="btn btn-block"></button>'
+
+	
+]
+
 { #category : #'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonDanger [
 
@@ -43,6 +53,16 @@ SBSCanvasBrushTest >> testButtonInfo [
 	self
 		assert: [ :html | html formButton beInfo ]
 		gives: '<button class="btn btn-info"></button>'
+
+	
+]
+
+{ #category : #'tests - buttons - sizes' }
+SBSCanvasBrushTest >> testButtonLarge [
+
+	self
+		assert: [ :html | html formButton beLarge ]
+		gives: '<button class="btn btn-lg"></button>'
 
 	
 ]
@@ -83,6 +103,16 @@ SBSCanvasBrushTest >> testButtonSecondary [
 	self
 		assert: [ :html | html formButton beSecondary ]
 		gives: '<button class="btn btn-secondary"></button>'
+
+	
+]
+
+{ #category : #'tests - buttons - sizes' }
+SBSCanvasBrushTest >> testButtonSmall [
+
+	self
+		assert: [ :html | html formButton beSmall ]
+		gives: '<button class="btn btn-sm"></button>'
 
 	
 ]
@@ -437,6 +467,16 @@ SBSCanvasBrushTest >> testOutlineButton [
 	
 ]
 
+{ #category : #'tests - buttons - sizes' }
+SBSCanvasBrushTest >> testOutlineButtonBlock [
+
+	self
+		assert: [ :html | html outlineButton beBlock ]
+		gives: '<button class="btn btn-block"></button>'
+
+	
+]
+
 { #category : #'tests - buttons - options' }
 SBSCanvasBrushTest >> testOutlineButtonDanger [
 
@@ -467,6 +507,16 @@ SBSCanvasBrushTest >> testOutlineButtonInfo [
 	
 ]
 
+{ #category : #'tests - buttons - sizes' }
+SBSCanvasBrushTest >> testOutlineButtonLarge [
+
+	self
+		assert: [ :html | html outlineButton beLarge ]
+		gives: '<button class="btn btn-lg"></button>'
+
+	
+]
+
 { #category : #'tests - buttons - options' }
 SBSCanvasBrushTest >> testOutlineButtonLight [
 
@@ -493,6 +543,16 @@ SBSCanvasBrushTest >> testOutlineButtonSecondary [
 	self
 		assert: [ :html | html outlineButton beSecondary ]
 		gives: '<button class="btn btn-outline-secondary"></button>'
+
+	
+]
+
+{ #category : #'tests - buttons - sizes' }
+SBSCanvasBrushTest >> testOutlineButtonSmall [
+
+	self
+		assert: [ :html | html outlineButton beSmall ]
+		gives: '<button class="btn btn-sm"></button>'
 
 	
 ]

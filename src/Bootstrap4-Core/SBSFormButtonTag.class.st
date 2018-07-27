@@ -7,14 +7,14 @@ Class {
 	#category : #'Bootstrap4-Core-Canvas'
 }
 
-{ #category : #options }
+{ #category : #'options - styles' }
 SBSFormButtonTag >> beLink [
 	"Creates a link type button."
 	
 	self beLinkIf: true
 ]
 
-{ #category : #options }
+{ #category : #'options - styles' }
 SBSFormButtonTag >> beLinkIf: aBlock [
 	"Creates a link type button if aBlock is true."
 	

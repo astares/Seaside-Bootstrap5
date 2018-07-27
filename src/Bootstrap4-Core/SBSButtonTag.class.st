@@ -16,6 +16,20 @@ SBSButtonTag class >> isAbstract [
 	^self name = #SBSButtonTag
 ]
 
+{ #category : #sizes }
+SBSButtonTag >> beBlock [
+	"Creates an extra small sized button."
+	
+	self beBlockIf: true
+]
+
+{ #category : #sizes }
+SBSButtonTag >> beBlockIf: aBlock [
+	"Creates an block sized button if aBlock is true."
+	
+	self class: 'btn-block' if: aBlock
+]
+
 { #category : #options }
 SBSButtonTag >> beDanger [
 	"Creates a danger type button."
@@ -56,6 +70,20 @@ SBSButtonTag >> beInfoIf: aBlock [
 	"Creates an info type button if aBlock is true."
 	
 	self class: 'btn-',modifier,'info' if: aBlock value
+]
+
+{ #category : #sizes }
+SBSButtonTag >> beLarge [
+	"Creates an large sized button."
+	
+	self beLargeIf: true
+]
+
+{ #category : #sizes }
+SBSButtonTag >> beLargeIf: aBlock [
+	"Creates an large sized button if aBlock is true."
+	
+	self class: 'btn-lg' if: aBlock
 ]
 
 { #category : #options }
@@ -100,6 +128,20 @@ SBSButtonTag >> beSecondaryIf: aBlock [
 	self class: 'btn-',modifier,'secondary' if: aBlock value
 ]
 
+{ #category : #sizes }
+SBSButtonTag >> beSmall [
+	"Creates an small sized button."
+	
+	self beSmallIf: true
+]
+
+{ #category : #sizes }
+SBSButtonTag >> beSmallIf: aBlock [
+	"Creates a small sized button if aBlock is true."
+	
+	self class: 'btn-sm' if: aBlock
+]
+
 { #category : #options }
 SBSButtonTag >> beSuccess [
 	"Creates a success type button."
@@ -126,6 +168,12 @@ SBSButtonTag >> beWarningIf: aBlock [
 	"Creates a warning type button if aBlock is true."
 	
 	self class: 'btn-',modifier,'warning' if: aBlock value
+]
+
+{ #category : #callbacks }
+SBSButtonTag >> cancelCallback: aBlock [
+
+	self name: (self storeCallback: (WACancelActionCallback on: aBlock))
 ]
 
 { #category : #defaults }
