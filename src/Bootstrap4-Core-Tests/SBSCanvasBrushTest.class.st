@@ -27,6 +27,76 @@ SBSCanvasBrushTest >> testActionBadgeDanger [
 	
 ]
 
+{ #category : #'tests - badges - options' }
+SBSCanvasBrushTest >> testActionBadgeDark [
+
+	self
+		assert: [ :html | html actionBadge beDark ]
+		gives: '<a class="badge badge-dark"></a>'
+
+	
+]
+
+{ #category : #'tests - badges - options' }
+SBSCanvasBrushTest >> testActionBadgeInfo [
+
+	self
+		assert: [ :html | html actionBadge beInfo ]
+		gives: '<a class="badge badge-info"></a>'
+
+	
+]
+
+{ #category : #'tests - badges - options' }
+SBSCanvasBrushTest >> testActionBadgeLight [
+
+	self
+		assert: [ :html | html actionBadge beLight ]
+		gives: '<a class="badge badge-light"></a>'
+
+	
+]
+
+{ #category : #'tests - badges - options' }
+SBSCanvasBrushTest >> testActionBadgePrimary [
+
+	self
+		assert: [ :html | html actionBadge bePrimary ]
+		gives: '<a class="badge badge-primary"></a>'
+
+	
+]
+
+{ #category : #'tests - badges - options' }
+SBSCanvasBrushTest >> testActionBadgeSecondary [
+
+	self
+		assert: [ :html | html actionBadge beSecondary ]
+		gives: '<a class="badge badge-secondary"></a>'
+
+	
+]
+
+{ #category : #'tests - badges - options' }
+SBSCanvasBrushTest >> testActionBadgeSuccess [
+
+	self
+		assert: [ :html | html actionBadge beSuccess ]
+		gives: '<a class="badge badge-success"></a>'
+
+	
+]
+
+{ #category : #'tests - badges - options' }
+SBSCanvasBrushTest >> testActionBadgeWarning [
+
+	self
+		assert: [ :html | html actionBadge beWarning ]
+		gives: '<a class="badge badge-warning"></a>'
+
+	
+]
+
 { #category : #'tests - badges' }
 SBSCanvasBrushTest >> testActionBadgeWithContent [
 
