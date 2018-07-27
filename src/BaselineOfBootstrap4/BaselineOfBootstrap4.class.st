@@ -17,7 +17,7 @@ BaselineOfBootstrap4 >> baseline: spec [
 		self seaside: spec.
 		
 		spec 
-			package: 'Bootstrap4-Core' with: [ spec requires: #('Seaside') ];
+			package: 'Bootstrap4-Core' with: [ spec requires: #('Seaside3') ];
 		 	package: 'Bootstrap4-Core-Tests' with: [ spec requires: #('Bootstrap4-Core') ];	
 			package: 'Bootstrap4-Examples' with: [ spec requires: #('Bootstrap4-Core') ].
 
