@@ -35,7 +35,7 @@ BaselineOfBootstrap4 >> baseline: spec [
 BaselineOfBootstrap4 >> seaside: spec [
 
 	spec
-			baseline: 'Seaside'
+			baseline: 'Seaside3'
         	with: [ 
 				spec
 					loads: #('default');
