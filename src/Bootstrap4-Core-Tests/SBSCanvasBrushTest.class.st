@@ -7,6 +7,36 @@ Class {
 	#category : #'Bootstrap4-Core-Tests-Canvas'
 }
 
+{ #category : #'tests - badges' }
+SBSCanvasBrushTest >> testActionBadge [
+
+	self
+		assert: [ :html | html actionBadge ]
+		gives: '<a class="badge"></a>'
+
+	
+]
+
+{ #category : #'tests - badges - options' }
+SBSCanvasBrushTest >> testActionBadgeDanger [
+
+	self
+		assert: [ :html | html actionBadge beDanger ]
+		gives: '<a class="badge badge-danger"></a>'
+
+	
+]
+
+{ #category : #'tests - badges' }
+SBSCanvasBrushTest >> testActionBadgeWithContent [
+
+	self
+		assert: [ :html | html actionBadge: 'Bootstrap' ]
+		gives: '<a class="badge">Bootstrap</a>'
+
+	
+]
+
 { #category : #'tests - alerts' }
 SBSCanvasBrushTest >> testAlert [
 
@@ -17,7 +47,7 @@ SBSCanvasBrushTest >> testAlert [
 	
 ]
 
-{ #category : #'tests - alters - options' }
+{ #category : #'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertDanger [
 
 	self
@@ -27,7 +57,7 @@ SBSCanvasBrushTest >> testAlertDanger [
 	
 ]
 
-{ #category : #'tests - alters - options' }
+{ #category : #'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertDark [
 
 	self
@@ -37,7 +67,7 @@ SBSCanvasBrushTest >> testAlertDark [
 	
 ]
 
-{ #category : #'tests - alters - options' }
+{ #category : #'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertDismissible [
 
 	self
@@ -47,7 +77,7 @@ SBSCanvasBrushTest >> testAlertDismissible [
 	
 ]
 
-{ #category : #'tests - alters - options' }
+{ #category : #'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertInfo [
 
 	self
@@ -57,7 +87,7 @@ SBSCanvasBrushTest >> testAlertInfo [
 	
 ]
 
-{ #category : #'tests - alters - options' }
+{ #category : #'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertLight [
 
 	self
@@ -87,7 +117,7 @@ SBSCanvasBrushTest >> testAlertLinkWithContent [
 	
 ]
 
-{ #category : #'tests - alters - options' }
+{ #category : #'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertPrimary [
 
 	self
@@ -97,7 +127,7 @@ SBSCanvasBrushTest >> testAlertPrimary [
 	
 ]
 
-{ #category : #'tests - alters - options' }
+{ #category : #'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertSecondary [
 
 	self
@@ -107,7 +137,7 @@ SBSCanvasBrushTest >> testAlertSecondary [
 	
 ]
 
-{ #category : #'tests - alters - options' }
+{ #category : #'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertSuccess [
 
 	self
@@ -117,7 +147,7 @@ SBSCanvasBrushTest >> testAlertSuccess [
 	
 ]
 
-{ #category : #'tests - alters - options' }
+{ #category : #'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertWarning [
 
 	self
@@ -133,6 +163,106 @@ SBSCanvasBrushTest >> testAlertWithContent [
 	self
 		assert: [ :html | html alert: 'Bootstrap' ]
 		gives: '<div class="alert">Bootstrap</div>'
+
+	
+]
+
+{ #category : #'tests - badges' }
+SBSCanvasBrushTest >> testBadge [
+
+	self
+		assert: [ :html | html badge ]
+		gives: '<span class="badge"></span>'
+
+	
+]
+
+{ #category : #'tests - badges - options' }
+SBSCanvasBrushTest >> testBadgeDanger [
+
+	self
+		assert: [ :html | html badge beDanger ]
+		gives: '<span class="badge badge-danger"></span>'
+
+	
+]
+
+{ #category : #'tests - badges - options' }
+SBSCanvasBrushTest >> testBadgeDark [
+
+	self
+		assert: [ :html | html badge beDark ]
+		gives: '<span class="badge badge-dark"></span>'
+
+	
+]
+
+{ #category : #'tests - badges - options' }
+SBSCanvasBrushTest >> testBadgeInfo [
+
+	self
+		assert: [ :html | html badge beInfo ]
+		gives: '<span class="badge badge-info"></span>'
+
+	
+]
+
+{ #category : #'tests - badges - options' }
+SBSCanvasBrushTest >> testBadgeLight [
+
+	self
+		assert: [ :html | html badge beLight ]
+		gives: '<span class="badge badge-light"></span>'
+
+	
+]
+
+{ #category : #'tests - badges - options' }
+SBSCanvasBrushTest >> testBadgePrimary [
+
+	self
+		assert: [ :html | html badge bePrimary ]
+		gives: '<span class="badge badge-primary"></span>'
+
+	
+]
+
+{ #category : #'tests - badges - options' }
+SBSCanvasBrushTest >> testBadgeSecondary [
+
+	self
+		assert: [ :html | html badge beSecondary ]
+		gives: '<span class="badge badge-secondary"></span>'
+
+	
+]
+
+{ #category : #'tests - badges - options' }
+SBSCanvasBrushTest >> testBadgeSuccess [
+
+	self
+		assert: [ :html | html badge beSuccess ]
+		gives: '<span class="badge badge-success"></span>'
+
+	
+]
+
+{ #category : #'tests - badges - options' }
+SBSCanvasBrushTest >> testBadgeWarning [
+
+	self
+		assert: [ :html | html badge beWarning ]
+		gives: '<span class="badge badge-warning"></span>'
+
+	
+]
+
+{ #category : #'tests - badges' }
+SBSCanvasBrushTest >> testBadgeWithContent [
+
+	self
+		assert: [ :html | html badge: 'Bootstrap' ]
+		gives: '<span class="badge">Bootstrap</span>'
 
 	
 ]

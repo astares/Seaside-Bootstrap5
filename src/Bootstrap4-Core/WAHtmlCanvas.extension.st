@@ -1,6 +1,23 @@
 Extension { #name : #WAHtmlCanvas }
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> actionBadge [
+	"Defines an actionable Bootstrap badge."
+	
+	^self brush: SBSActionableBadgeTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> actionBadge: aBlock [
+	"Provides an actionable Bootstrap badge."
+	
+	 ^ self actionBadge
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> alert [
 	"Defines a Bootstrap alert."
 	
@@ -30,6 +47,23 @@ WAHtmlCanvas >> alertLink: aBlock [
 	"Provides a Bootstrap alert link."
 	
 	 ^ self alertLink
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> badge [
+	"Defines a Bootstrap badge."
+	
+	^self brush: SBSBadgeTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> badge: aBlock [
+	"Provides a Bootstrap badge."
+	
+	 ^ self badge
 		with: aBlock
 
 ]
