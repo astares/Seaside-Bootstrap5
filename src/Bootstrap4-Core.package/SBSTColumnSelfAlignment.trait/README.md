@@ -1,1 +1,0 @@
-Vertical alignment classes for columns

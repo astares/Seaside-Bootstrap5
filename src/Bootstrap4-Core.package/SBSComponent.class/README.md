@@ -1,1 +1,0 @@
-Common superclass for Bootstrap 4 components

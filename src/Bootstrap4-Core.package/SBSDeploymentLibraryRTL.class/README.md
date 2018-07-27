@@ -1,1 +1,0 @@
-Deployment library with right-to-left (RTL) support 

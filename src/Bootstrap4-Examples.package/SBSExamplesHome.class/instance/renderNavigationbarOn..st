@@ -1,4 +1,0 @@
-rendering components
-renderNavigationbarOn: html
-	
-	 
