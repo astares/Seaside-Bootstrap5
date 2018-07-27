@@ -7,6 +7,136 @@ Class {
 	#category : #'Bootstrap4-Core-Tests-Canvas'
 }
 
+{ #category : #'tests - alerts' }
+SBSCanvasBrushTest >> testAlert [
+
+	self
+		assert: [ :html | html alert ]
+		gives: '<div class="alert"></div>'
+
+	
+]
+
+{ #category : #'tests - alters - options' }
+SBSCanvasBrushTest >> testAlertDanger [
+
+	self
+		assert: [ :html | html alert beDanger ]
+		gives: '<div class="alert alert-danger"></div>'
+
+	
+]
+
+{ #category : #'tests - alters - options' }
+SBSCanvasBrushTest >> testAlertDark [
+
+	self
+		assert: [ :html | html alert beDark ]
+		gives: '<div class="alert alert-dark"></div>'
+
+	
+]
+
+{ #category : #'tests - alters - options' }
+SBSCanvasBrushTest >> testAlertDismissible [
+
+	self
+		assert: [ :html | html alert beDismissible ]
+		gives: '<div class="alert alert-dismissible"></div>'
+
+	
+]
+
+{ #category : #'tests - alters - options' }
+SBSCanvasBrushTest >> testAlertInfo [
+
+	self
+		assert: [ :html | html alert beInfo ]
+		gives: '<div class="alert alert-info"></div>'
+
+	
+]
+
+{ #category : #'tests - alters - options' }
+SBSCanvasBrushTest >> testAlertLight [
+
+	self
+		assert: [ :html | html alert beLight ]
+		gives: '<div class="alert alert-light"></div>'
+
+	
+]
+
+{ #category : #'tests - alerts' }
+SBSCanvasBrushTest >> testAlertLink [
+
+	self
+		assert: [ :html | html alertLink ]
+		gives: '<a class="alert-link"></a>'
+
+	
+]
+
+{ #category : #'tests - alerts' }
+SBSCanvasBrushTest >> testAlertLinkWithContent [
+
+	self
+		assert: [ :html | html alertLink: 'Bootstrap' ]
+		gives: '<a class="alert-link">Bootstrap</a>'
+
+	
+]
+
+{ #category : #'tests - alters - options' }
+SBSCanvasBrushTest >> testAlertPrimary [
+
+	self
+		assert: [ :html | html alert bePrimary ]
+		gives: '<div class="alert alert-primary"></div>'
+
+	
+]
+
+{ #category : #'tests - alters - options' }
+SBSCanvasBrushTest >> testAlertSecondary [
+
+	self
+		assert: [ :html | html alert beSecondary ]
+		gives: '<div class="alert alert-secondary"></div>'
+
+	
+]
+
+{ #category : #'tests - alters - options' }
+SBSCanvasBrushTest >> testAlertSuccess [
+
+	self
+		assert: [ :html | html alert beSuccess ]
+		gives: '<div class="alert alert-success"></div>'
+
+	
+]
+
+{ #category : #'tests - alters - options' }
+SBSCanvasBrushTest >> testAlertWarning [
+
+	self
+		assert: [ :html | html alert beWarning ]
+		gives: '<div class="alert alert-warning"></div>'
+
+	
+]
+
+{ #category : #'tests - alerts' }
+SBSCanvasBrushTest >> testAlertWithContent [
+
+	self
+		assert: [ :html | html alert: 'Bootstrap' ]
+		gives: '<div class="alert">Bootstrap</div>'
+
+	
+]
+
 { #category : #'tests - buttons' }
 SBSCanvasBrushTest >> testButton [
 

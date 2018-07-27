@@ -1,6 +1,40 @@
 Extension { #name : #WAHtmlCanvas }
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> alert [
+	"Defines a Bootstrap alert."
+	
+	^self brush: SBSAlertTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> alert: aBlock [
+	"Provides a Bootstrap alert."
+	
+	 ^ self alert
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> alertLink [
+	"Defines a Bootstrap alert link."
+	
+	^self brush: SBSAlertLinkTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> alertLink: aBlock [
+	"Provides a Bootstrap alert link."
+	
+	 ^ self alertLink
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> column [
 	"Defines a Bootstrap layout column.
         Use size messages like #mediumSize, #smallSize:, ... according to Bootstrap layouts to be more specific after sending this message."
@@ -76,7 +110,7 @@ WAHtmlCanvas >> equalWidthColumn: aBlock [
 WAHtmlCanvas >> equalWidthColumnsOnMultipleRows [
 	"Provide a Bootstrap layout row"
 	
-	^ self brush: SBSEqualWidthColumnsOnMultipleRows new
+	^ self brush: SBSEqualWidthColumnsOnMultipleRowsTag new
 ]
 
 { #category : #'*Bootstrap4-Core' }
@@ -143,7 +177,7 @@ WAHtmlCanvas >> navigationItem: aBlock [
 
 { #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> navigationLink [
-	^self brush: SBSNavigationLink new
+	^self brush: SBSNavigationLinkTag new
 ]
 
 { #category : #'*Bootstrap4-Core' }

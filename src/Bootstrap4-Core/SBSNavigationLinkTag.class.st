@@ -2,25 +2,25 @@
 A navigation link
 "
 Class {
-	#name : #SBSNavigationLink,
+	#name : #SBSNavigationLinkTag,
 	#superclass : #WAAnchorTag,
-	#category : 'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Canvas'
 }
 
 { #category : #operations }
-SBSNavigationLink >> active [
+SBSNavigationLinkTag >> active [
 
 	self class: 'active'
 ]
 
 { #category : #operations }
-SBSNavigationLink >> disabled [
+SBSNavigationLinkTag >> disabled [
 
 	self class: 'disabled'
 ]
 
 { #category : #initialization }
-SBSNavigationLink >> initialize [
+SBSNavigationLinkTag >> initialize [
 	super initialize.
 	self class: 'nav-link'
 ]
