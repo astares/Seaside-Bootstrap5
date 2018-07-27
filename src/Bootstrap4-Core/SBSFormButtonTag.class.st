@@ -2,7 +2,7 @@
 Bootstrap button
 "
 Class {
-	#name : #SBSButtonTag,
+	#name : #SBSFormButtonTag,
 	#superclass : #WAButtonTag,
 	#instVars : [
 		'modifier'
@@ -11,133 +11,133 @@ Class {
 }
 
 { #category : #options }
-SBSButtonTag >> beDanger [
+SBSFormButtonTag >> beDanger [
 	"Creates a danger type button."
 	
 	self beDangerIf: true
 ]
 
 { #category : #options }
-SBSButtonTag >> beDangerIf: aBlock [
+SBSFormButtonTag >> beDangerIf: aBlock [
 	"Creates a danger type button if aBlock is true."
 	
 	self class: 'btn-',modifier,'danger' if: aBlock value
 ]
 
 { #category : #options }
-SBSButtonTag >> beDark [
+SBSFormButtonTag >> beDark [
 	"Creates a dark type button."
 	
 	self beDarkIf: true
 ]
 
 { #category : #options }
-SBSButtonTag >> beDarkIf: aBlock [
+SBSFormButtonTag >> beDarkIf: aBlock [
 	"Creates a dark type button if aBlock is true."
 	
 	self class: 'btn-',modifier,'dark' if: aBlock value
 ]
 
 { #category : #options }
-SBSButtonTag >> beInfo [
+SBSFormButtonTag >> beInfo [
 	"Creates an info type button."
 	
 	self beInfoIf: true
 ]
 
 { #category : #options }
-SBSButtonTag >> beInfoIf: aBlock [
+SBSFormButtonTag >> beInfoIf: aBlock [
 	"Creates an info type button if aBlock is true."
 	
 	self class: 'btn-',modifier,'info' if: aBlock value
 ]
 
 { #category : #options }
-SBSButtonTag >> beLight [
+SBSFormButtonTag >> beLight [
 	"Creates a light type button."
 	
 	self beLightIf: true
 ]
 
 { #category : #options }
-SBSButtonTag >> beLightIf: aBlock [
+SBSFormButtonTag >> beLightIf: aBlock [
 	"Creates a light type button if aBlock is true."
 	
 	self class: 'btn-',modifier,'light' if: aBlock value
 ]
 
 { #category : #options }
-SBSButtonTag >> beLink [
+SBSFormButtonTag >> beLink [
 	"Creates a link type button."
 	
 	self beLinkIf: true
 ]
 
 { #category : #options }
-SBSButtonTag >> beLinkIf: aBlock [
+SBSFormButtonTag >> beLinkIf: aBlock [
 	"Creates a link type button if aBlock is true."
 	
 	self class: 'btn-',modifier,'link' if: aBlock value
 ]
 
 { #category : #options }
-SBSButtonTag >> bePrimary [
+SBSFormButtonTag >> bePrimary [
 	"Creates a primary type button."
 	
 	self bePrimaryIf: true
 ]
 
 { #category : #options }
-SBSButtonTag >> bePrimaryIf: aBlock [
+SBSFormButtonTag >> bePrimaryIf: aBlock [
 	"Creates a primary type button if aBlock is true."
 	
 	self class: 'btn-',modifier,'primary' if: aBlock value
 ]
 
 { #category : #options }
-SBSButtonTag >> beSecondary [
+SBSFormButtonTag >> beSecondary [
 	"Creates a secondary type button."
 	
 	self beSecondaryIf: true
 ]
 
 { #category : #options }
-SBSButtonTag >> beSecondaryIf: aBlock [
+SBSFormButtonTag >> beSecondaryIf: aBlock [
 	"Creates a secondary type button if aBlock is true."
 	
 	self class: 'btn-',modifier,'secondary' if: aBlock value
 ]
 
 { #category : #options }
-SBSButtonTag >> beSuccess [
+SBSFormButtonTag >> beSuccess [
 	"Creates a success type button."
 	
 	self beSuccessIf: true
 ]
 
 { #category : #options }
-SBSButtonTag >> beSuccessIf: aBlock [
+SBSFormButtonTag >> beSuccessIf: aBlock [
 	"Creates a success type button if aBlock is true."
 	
 	self class: 'btn-',modifier,'success' if: aBlock value
 ]
 
 { #category : #options }
-SBSButtonTag >> beWarning [
+SBSFormButtonTag >> beWarning [
 	"Creates a warning type button."
 	
 	self beWarningIf: true
 ]
 
 { #category : #options }
-SBSButtonTag >> beWarningIf: aBlock [
+SBSFormButtonTag >> beWarningIf: aBlock [
 	"Creates a warning type button if aBlock is true."
 	
 	self class: 'btn-',modifier,'warning' if: aBlock value
 ]
 
 { #category : #initialization }
-SBSButtonTag >> initialize [ 
+SBSFormButtonTag >> initialize [ 
 	super initialize.
 	self resetType.
 	self class: 'btn'.
@@ -145,7 +145,7 @@ SBSButtonTag >> initialize [
 ]
 
 { #category : #private }
-SBSButtonTag >> resetType [
+SBSFormButtonTag >> resetType [
 	type := nil
 	
 ]

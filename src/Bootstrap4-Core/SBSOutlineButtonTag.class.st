@@ -1,7 +1,7 @@
 Class {
 	#name : #SBSOutlineButtonTag,
-	#superclass : #SBSButtonTag,
-	#category : 'Bootstrap4-Core-Canvas'
+	#superclass : #SBSFormButtonTag,
+	#category : #'Bootstrap4-Core-Canvas'
 }
 
 { #category : #initialization }

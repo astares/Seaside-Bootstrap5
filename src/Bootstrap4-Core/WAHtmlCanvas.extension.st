@@ -83,7 +83,7 @@ WAHtmlCanvas >> equalWidthColumnsOnMultipleRows [
 WAHtmlCanvas >> formButton [
 	"Defines a Bootstrap button."
 	
-	^self brush: SBSButtonTag new
+	^self brush: SBSFormButtonTag new
 
 ]
 
