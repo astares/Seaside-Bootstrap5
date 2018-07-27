@@ -69,6 +69,38 @@ WAHtmlCanvas >> badge: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> breadcrumb [
+	"Provide a bootstrap breadcrumb."
+	
+	^ self orderedList
+		class: 'breadcrumb'
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> breadcrumb: aBlock [
+	"Provides an Bootstrap breadcrumb."
+
+	^ self breadcrumb
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> breadcrumbSection [
+	"Provide a bootstrap breadcrumb section."
+	
+	^ self brush: SBSBreadcrumbSectionTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> breadcrumbSection: aBlock [
+	"Provides an Bootstrap breadcrumb section."
+
+	^ self breadcrumbSection
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> column [
 	"Defines a Bootstrap layout column.
         Use size messages like #mediumSize, #smallSize:, ... according to Bootstrap layouts to be more specific after sending this message."

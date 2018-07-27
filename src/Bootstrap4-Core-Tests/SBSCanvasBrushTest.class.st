@@ -337,6 +337,36 @@ SBSCanvasBrushTest >> testBadgeWithContent [
 	
 ]
 
+{ #category : #'tests - breadcrumb' }
+SBSCanvasBrushTest >> testBreadcrumb [
+
+	self
+		assert: [ :html | html breadcrumb ]
+		gives: '<ol class="breadcrumb"></ol>'
+
+	
+]
+
+{ #category : #'tests - breadcrumb' }
+SBSCanvasBrushTest >> testBreadcrumbSection [
+
+	self
+		assert: [ :html | html breadcrumbSection ]
+		gives: '<li class="breadcrumb-item"></li>'
+
+	
+]
+
+{ #category : #'tests - breadcrumb' }
+SBSCanvasBrushTest >> testBreadcrumbWithContent [
+
+	self
+		assert: [ :html | html breadcrumb: 'Bootstrap' ]
+		gives: '<ol class="breadcrumb">Bootstrap</ol>'
+
+	
+]
+
 { #category : #'tests - buttons' }
 SBSCanvasBrushTest >> testButton [
 
@@ -704,6 +734,16 @@ SBSCanvasBrushTest >> testNavigation [
 		assert: [ :html | html navigation  ]
 		gives: '<nav></nav>'
 
+]
+
+{ #category : #'tests - breadcrumb' }
+SBSCanvasBrushTest >> testNavigationBreadcrumb [
+
+	self
+		assert: [ :html | html navigation beBreadcrumb ]
+		gives: '<nav aria-label="breadcrumb"></nav>'
+
+	
 ]
 
 { #category : #'tests - navigation' }
