@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SBSButtonTag",
+	"category" : "Bootstrap4-Core-Canvas",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SBSOutlineButtonTag",
+	"type" : "normal"
+}

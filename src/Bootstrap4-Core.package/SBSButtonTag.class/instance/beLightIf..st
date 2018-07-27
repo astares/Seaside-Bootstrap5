@@ -2,4 +2,4 @@ options
 beLightIf: aBlock
 	"Creates a light type button if aBlock is true."
 	
-	self class: 'btn-light' if: aBlock value
+	self class: 'btn-',modifier,'light' if: aBlock value
