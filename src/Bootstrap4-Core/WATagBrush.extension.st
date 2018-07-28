@@ -1,6 +1,12 @@
 Extension { #name : #WATagBrush }
 
 { #category : #'*Bootstrap4-Core' }
+WATagBrush >> dangerBackground [
+
+	self class: 'bg-danger'
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WATagBrush >> dangerText [
 
 	self class: 'text-danger'
@@ -19,9 +25,21 @@ WATagBrush >> darkText [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WATagBrush >> infoBackground [
+
+	self class: 'bg-info'
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WATagBrush >> infoText [
 
 	self class: 'text-info'
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WATagBrush >> lightBackground [
+
+	self class: 'bg-light'
 ]
 
 { #category : #'*Bootstrap4-Core' }
@@ -45,9 +63,21 @@ WATagBrush >> mutedText [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WATagBrush >> primaryBackground [
+
+	self class: 'bg-primary'
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WATagBrush >> primaryText [
 
 	self class: 'text-primary'
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WATagBrush >> secondaryBackground [
+
+	self class: 'bg-secondary'
 ]
 
 { #category : #'*Bootstrap4-Core' }
@@ -57,15 +87,33 @@ WATagBrush >> secondaryText [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WATagBrush >> successBackground [
+
+	self class: 'bg-success'
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WATagBrush >> successText [
 
 	self class: 'text-success'
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WATagBrush >> warningBackground [
+
+	self class: 'bg-warning'
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WATagBrush >> warningText [
 
 	self class: 'text-warning'
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WATagBrush >> whiteBackground [
+
+	self class: 'bg-white'
 ]
 
 { #category : #'*Bootstrap4-Core' }
