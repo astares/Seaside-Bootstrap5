@@ -8,7 +8,7 @@ Trait {
 	#name : #SBSTContextualStyled,
 	#instVars : [
 		'modifier',
-		'tagModifier'
+		'contextStyle'
 	],
 	#category : #'Bootstrap4-Core-Traits'
 }
