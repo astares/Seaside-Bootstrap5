@@ -747,6 +747,66 @@ SBSCanvasBrushTest >> testCardWithContent [
 	
 ]
 
+{ #category : #'tests - carousel' }
+SBSCanvasBrushTest >> testCarousel [
+
+	self
+		assert: [ :html | html carousel ]
+		gives: '<div class="carousel"></div>'
+
+	
+]
+
+{ #category : #'tests - carousel' }
+SBSCanvasBrushTest >> testCarouselInner [
+
+	self
+		assert: [ :html | html carouselInner ]
+		gives: '<div class="carousel-inner"></div>'
+
+	
+]
+
+{ #category : #'tests - carousel' }
+SBSCanvasBrushTest >> testCarouselInnerWithContent [
+
+	self
+		assert: [ :html | html carouselInner: 'Bootstrap' ]
+		gives: '<div class="carousel-inner">Bootstrap</div>'
+
+	
+]
+
+{ #category : #'tests - carousel' }
+SBSCanvasBrushTest >> testCarouselItem [
+
+	self
+		assert: [ :html | html carouselItem ]
+		gives: '<div class="carousel-item"></div>'
+
+	
+]
+
+{ #category : #'tests - carousel' }
+SBSCanvasBrushTest >> testCarouselItemWithContent [
+
+	self
+		assert: [ :html | html carouselItem: 'Bootstrap' ]
+		gives: '<div class="carousel-item">Bootstrap</div>'
+
+	
+]
+
+{ #category : #'tests - carousel' }
+SBSCanvasBrushTest >> testCarouselWithContent [
+
+	self
+		assert: [ :html | html carousel: 'Bootstrap' ]
+		gives: '<div class="carousel">Bootstrap</div>'
+
+	
+]
+
 { #category : #'tests - layout' }
 SBSCanvasBrushTest >> testColumn [
 

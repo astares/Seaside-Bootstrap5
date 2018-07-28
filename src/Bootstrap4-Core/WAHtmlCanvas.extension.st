@@ -253,6 +253,55 @@ WAHtmlCanvas >> cardTitle: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> carousel [
+	"Provide a Bootstrap carousel."
+	
+	^ self brush: SBSCarouselTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> carousel: aBlock [
+ 	"Defines a Bootstrap carousel."
+	
+	^self carousel
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> carouselInner [
+	"Provide a Bootstrap carousel inner part."
+	
+	^ self div 
+		class: 'carousel-inner'
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> carouselInner: aBlock [
+ 	"Defines a Bootstrap carousel inner part."
+	
+	^self carouselInner
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> carouselItem [
+	"Provide a Bootstrap carousel item."
+	
+	^ self brush: SBSCarouselItemTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> carouselItem: aBlock [
+ 	"Defines a Bootstrap carousel item."
+	
+	^self carouselItem
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> column [
 	"Defines a Bootstrap layout column.
         Use size messages like #mediumSize, #smallSize:, ... according to Bootstrap layouts to be more specific after sending this message."
