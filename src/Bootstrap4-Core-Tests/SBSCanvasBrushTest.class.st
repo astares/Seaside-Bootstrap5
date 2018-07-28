@@ -407,6 +407,16 @@ SBSCanvasBrushTest >> testButtonDark [
 	
 ]
 
+{ #category : #'tests - buttons - options' }
+SBSCanvasBrushTest >> testButtonDataTarget [
+
+	self
+		assert: [ :html | html formButton dataTarget: '#bootstrap' ]
+		gives: '<button class="btn" data-target="#bootstrap"></button>'
+
+	
+]
+
 { #category : #'tests - buttongroups' }
 SBSCanvasBrushTest >> testButtonGroup [
 
@@ -648,6 +658,26 @@ SBSCanvasBrushTest >> testCardBodyWithContent [
 ]
 
 { #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardHeader [
+
+	self
+		assert: [ :html | html cardHeader ]
+		gives: '<div class="card-header"></div>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardHeaderWithContent [
+
+	self
+		assert: [ :html | html cardHeader: 'Bootstrap' ]
+		gives: '<div class="card-header">Bootstrap</div>'
+
+	
+]
+
+{ #category : #'tests - cards' }
 SBSCanvasBrushTest >> testCardImage [
 
 	self
@@ -803,6 +833,26 @@ SBSCanvasBrushTest >> testCarouselWithContent [
 	self
 		assert: [ :html | html carousel: 'Bootstrap' ]
 		gives: '<div class="carousel">Bootstrap</div>'
+
+	
+]
+
+{ #category : #'tests - collapse' }
+SBSCanvasBrushTest >> testCollapse [
+
+	self
+		assert: [ :html | html collapse ]
+		gives: '<div class="collapse"></div>'
+
+	
+]
+
+{ #category : #'tests - collapse' }
+SBSCanvasBrushTest >> testCollapseWithContent [
+
+	self
+		assert: [ :html | html collapse: 'Bootstrap' ]
+		gives: '<div class="collapse">Bootstrap</div>'
 
 	
 ]

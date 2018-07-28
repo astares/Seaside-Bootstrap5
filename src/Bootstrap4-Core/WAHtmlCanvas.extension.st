@@ -181,6 +181,22 @@ WAHtmlCanvas >> cardBody: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardHeader [
+	"Provide a bootstrap card header."
+	
+	^ self brush: SBSCardHeaderTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardHeader: aBlock [
+	"Provides a Bootstrap card header."
+
+	^ self cardHeader
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> cardImage [
 	"Provide a bootstrap card image."
 	
@@ -298,6 +314,22 @@ WAHtmlCanvas >> carouselItem: aBlock [
  	"Defines a Bootstrap carousel item."
 	
 	^self carouselItem
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> collapse [
+	"Provide a bootstrap collapse."
+	
+	^ self div
+		class: 'collapse'
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> collapse: aBlock [
+ 	"Defines a Bootstrap collapse."
+	
+	^self collapse
 		with: aBlock
 ]
 

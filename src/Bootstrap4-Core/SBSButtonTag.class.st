@@ -35,6 +35,12 @@ SBSButtonTag >> cancelCallback: aBlock [
 	self name: (self storeCallback: (WACancelActionCallback on: aBlock))
 ]
 
+{ #category : #options }
+SBSButtonTag >> dataTarget: aString [
+
+	self attributeAt: 'data-target' put: aString
+]
+
 { #category : #defaults }
 SBSButtonTag >> defaultModifier [
 	"Subclasses may override to use a different modifier uses with the class style definitions"
