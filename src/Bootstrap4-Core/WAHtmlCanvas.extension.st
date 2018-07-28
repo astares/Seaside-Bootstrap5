@@ -321,8 +321,7 @@ WAHtmlCanvas >> carouselItem: aBlock [
 WAHtmlCanvas >> collapse [
 	"Provide a bootstrap collapse."
 	
-	^ self div
-		class: 'collapse'
+	^ self brush: SBSCollapseTag new
 ]
 
 { #category : #'*Bootstrap4-Core' }

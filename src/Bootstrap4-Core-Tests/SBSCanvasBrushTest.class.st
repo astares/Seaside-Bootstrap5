@@ -847,6 +847,14 @@ SBSCanvasBrushTest >> testCollapse [
 	
 ]
 
+{ #category : #'tests - collapse - options' }
+SBSCanvasBrushTest >> testCollapseShow [
+
+	self
+		assert: [ :html | html collapse show ]
+		gives: '<div class="collapse show"></div>'
+]
+
 { #category : #'tests - collapse' }
 SBSCanvasBrushTest >> testCollapseWithContent [
 
