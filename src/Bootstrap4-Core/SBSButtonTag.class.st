@@ -4,8 +4,8 @@ Abstract superclass for Bootstrap button tags
 Class {
 	#name : #SBSButtonTag,
 	#superclass : #WAButtonTag,
-	#traits : 'SBSTContextualStyled',
-	#classTraits : 'SBSTContextualStyled classTrait',
+	#traits : 'SBSTContextualStyled + SBSTSizeStyled',
+	#classTraits : 'SBSTContextualStyled classTrait + SBSTSizeStyled classTrait',
 	#category : #'Bootstrap4-Core-Canvas'
 }
 
@@ -29,34 +29,6 @@ SBSButtonTag >> beBlockIf: aBlock [
 	self class: 'btn-block' if: aBlock
 ]
 
-{ #category : #sizes }
-SBSButtonTag >> beLarge [
-	"Creates an large sized button."
-	
-	self beLargeIf: true
-]
-
-{ #category : #sizes }
-SBSButtonTag >> beLargeIf: aBlock [
-	"Creates an large sized button if aBlock is true."
-	
-	self class: 'btn-lg' if: aBlock
-]
-
-{ #category : #sizes }
-SBSButtonTag >> beSmall [
-	"Creates an small sized button."
-	
-	self beSmallIf: true
-]
-
-{ #category : #sizes }
-SBSButtonTag >> beSmallIf: aBlock [
-	"Creates a small sized button if aBlock is true."
-	
-	self class: 'btn-sm' if: aBlock
-]
-
 { #category : #callbacks }
 SBSButtonTag >> cancelCallback: aBlock [
 
@@ -70,12 +42,13 @@ SBSButtonTag >> defaultModifier [
 	^''
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #initialization }
 SBSButtonTag >> initialize [ 
 	super initialize.
 	self resetType.
 	self class: 'btn'.
-	self tagModifier: 'btn-'.
+	self contextStyle: 'btn-'.
+	self sizeStyle: 'btn-'.
 	self modifier: self defaultModifier
 ]
 

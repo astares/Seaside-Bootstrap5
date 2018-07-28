@@ -117,6 +117,22 @@ WAHtmlCanvas >> buttonGroup: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> buttonGroupVertical [
+	"Provide a bootstrap vertical button group."
+	
+	^ self brush: SBSButtonGroupVerticalTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> buttonGroupVertical: aBlock [
+	"Provides an Bootstrap vertical button group."
+
+	^ self buttonGroupVertical
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> buttonToolbar [
 	"Provide a bootstrap button toolbar."
 	

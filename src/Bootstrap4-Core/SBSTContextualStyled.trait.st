@@ -24,7 +24,7 @@ SBSTContextualStyled >> beDanger [
 SBSTContextualStyled >> beDangerIf: aBlock [
 	"Creates a danger type button if aBlock is true."
 	
-	self class: tagModifier, modifier, 'danger' if: aBlock value
+	self class: contextStyle, modifier, 'danger' if: aBlock value
 ]
 
 { #category : #options }
@@ -38,7 +38,7 @@ SBSTContextualStyled >> beDark [
 SBSTContextualStyled >> beDarkIf: aBlock [
 	"Creates a dark type button if aBlock is true."
 	
-	self class: tagModifier, modifier, 'dark' if: aBlock value
+	self class: contextStyle, modifier, 'dark' if: aBlock value
 ]
 
 { #category : #options }
@@ -52,7 +52,7 @@ SBSTContextualStyled >> beInfo [
 SBSTContextualStyled >> beInfoIf: aBlock [
 	"Creates an info type button if aBlock is true."
 	
-	self class: tagModifier, modifier, 'info' if: aBlock value
+	self class: contextStyle, modifier, 'info' if: aBlock value
 ]
 
 { #category : #options }
@@ -66,7 +66,7 @@ SBSTContextualStyled >> beLight [
 SBSTContextualStyled >> beLightIf: aBlock [
 	"Creates a light type button if aBlock is true."
 	
-	self class: tagModifier, modifier, 'light' if: aBlock value
+	self class: contextStyle, modifier, 'light' if: aBlock value
 ]
 
 { #category : #options }
@@ -80,7 +80,7 @@ SBSTContextualStyled >> bePrimary [
 SBSTContextualStyled >> bePrimaryIf: aBlock [
 	"Creates a primary type button if aBlock is true."
 	
-	self class: tagModifier, modifier, 'primary' if: aBlock value
+	self class: contextStyle, modifier, 'primary' if: aBlock value
 ]
 
 { #category : #options }
@@ -94,7 +94,7 @@ SBSTContextualStyled >> beSecondary [
 SBSTContextualStyled >> beSecondaryIf: aBlock [
 	"Creates a secondary type button if aBlock is true."
 	
-	self class: tagModifier, modifier, 'secondary' if: aBlock value
+	self class: contextStyle, modifier, 'secondary' if: aBlock value
 ]
 
 { #category : #options }
@@ -108,7 +108,7 @@ SBSTContextualStyled >> beSuccess [
 SBSTContextualStyled >> beSuccessIf: aBlock [
 	"Creates a success type button if aBlock is true."
 	
-	self class: tagModifier, modifier, 'success' if: aBlock value
+	self class: contextStyle, modifier, 'success' if: aBlock value
 ]
 
 { #category : #options }
@@ -122,7 +122,19 @@ SBSTContextualStyled >> beWarning [
 SBSTContextualStyled >> beWarningIf: aBlock [
 	"Creates a warning type button if aBlock is true."
 	
-	self class: tagModifier, modifier, 'warning' if: aBlock value
+	self class: contextStyle, modifier, 'warning' if: aBlock value
+]
+
+{ #category : #accessing }
+SBSTContextualStyled >> contextStyle [
+
+	^contextStyle
+]
+
+{ #category : #accessing }
+SBSTContextualStyled >> contextStyle: aString [
+
+	contextStyle := aString
 ]
 
 { #category : #accessing }
@@ -135,16 +147,4 @@ SBSTContextualStyled >> modifier [
 SBSTContextualStyled >> modifier: aString [
 
 	modifier := aString
-]
-
-{ #category : #accessing }
-SBSTContextualStyled >> tagModifier [
-
-	^tagModifier
-]
-
-{ #category : #accessing }
-SBSTContextualStyled >> tagModifier: aString [
-
-	tagModifier := aString
 ]

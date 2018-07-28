@@ -438,11 +438,51 @@ SBSCanvasBrushTest >> testButtonGroupGroupRole [
 ]
 
 { #category : #'tests - buttongroups - options' }
+SBSCanvasBrushTest >> testButtonGroupLarge [
+
+	self
+		assert: [:html | html buttonGroup beLarge ]
+		gives: '<div class="btn-group btn-group-lg"></div>'
+
+	
+]
+
+{ #category : #'tests - buttongroups - options' }
+SBSCanvasBrushTest >> testButtonGroupSmall [
+
+	self
+		assert: [:html | html buttonGroup beSmall ]
+		gives: '<div class="btn-group btn-group-sm"></div>'
+
+	
+]
+
+{ #category : #'tests - buttongroups - options' }
 SBSCanvasBrushTest >> testButtonGroupToolbarRole [
 
 	self
 		assert: [:html | html buttonGroup toolbarRole ]
 		gives: '<div class="btn-group" role="toolbar"></div>'
+
+	
+]
+
+{ #category : #'tests - buttongroups' }
+SBSCanvasBrushTest >> testButtonGroupVertical [
+
+	self
+		assert: [:html | html buttonGroupVertical ]
+		gives: '<div class="btn-group-vertical"></div>'
+
+	
+]
+
+{ #category : #'tests - buttongroups' }
+SBSCanvasBrushTest >> testButtonGroupVerticalWithContent [
+
+	self
+		assert: [:html | html buttonGroupVertical: 'Bootstrap' ]
+		gives: '<div class="btn-group-vertical">Bootstrap</div>'
 
 	
 ]

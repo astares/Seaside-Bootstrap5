@@ -4,6 +4,8 @@ A Bootstrap button group
 Class {
 	#name : #SBSButtonGroupTag,
 	#superclass : #SBSGenericTag,
+	#traits : 'SBSTSizeStyled',
+	#classTraits : 'SBSTSizeStyled classTrait',
 	#category : #'Bootstrap4-Core-Canvas'
 }
 
@@ -23,6 +25,12 @@ SBSButtonGroupTag >> defaultStyleClass [
 SBSButtonGroupTag >> groupRole [
 
 	self attributeAt: 'role' put: 'group' 
+]
+
+{ #category : #initialization }
+SBSButtonGroupTag >> initialize [
+	super initialize.
+	self sizeStyle: 'btn-group-'
 ]
 
 { #category : #'screen reader support' }

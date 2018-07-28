@@ -1,14 +1,11 @@
-"
-A button toolbar
-"
 Class {
-	#name : #SBSButtonToolbarTag,
+	#name : #SBSButtonGroupVerticalTag,
 	#superclass : #SBSButtonGroupTag,
 	#category : #'Bootstrap4-Core-Canvas'
 }
 
 { #category : #defaults }
-SBSButtonToolbarTag >> defaultStyleClass [
+SBSButtonGroupVerticalTag >> defaultStyleClass [
 
-	^'btn-toolbar'
+	^'btn-group-vertical'
 ]

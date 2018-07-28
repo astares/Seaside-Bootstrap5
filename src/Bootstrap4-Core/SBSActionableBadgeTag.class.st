@@ -13,6 +13,6 @@ Class {
 SBSActionableBadgeTag >> initialize [
 	super initialize.
 	self class: 'badge'.
-	self tagModifier: 'badge-'.
+	self contextStyle: 'badge-'.
 	self modifier: ''
 ]
