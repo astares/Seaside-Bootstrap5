@@ -21,9 +21,12 @@ SBSBootstrapExample class >> isAbstract [
 
 { #category : #rendering }
 SBSBootstrapExample >> renderContentOn: html [
-
+	html containerFluid: [ 
+	html break.	
 	html heading: self class exampleName; horizontalRule.
 	self renderExampleOn: html
+	
+ 	]
 ]
 
 { #category : #rendering }
