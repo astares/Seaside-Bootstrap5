@@ -387,6 +387,57 @@ WAHtmlCanvas >> containerFluid: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> dropdown [
+	"Provide a bootstrap dropdown."
+	
+	^ self brush: SBSDropdownTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> dropdown: aBlock [
+	"Provides a Boostrap dropdown."
+	
+	 ^ self dropdown
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> dropdownItem [
+	"Provide a bootstrap dropdown item."
+	
+	^ self brush: SBSDropdownItemTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> dropdownItem: aBlock [
+	"Provides a Boostrap dropdown item."
+	
+	 ^ self dropdownItem
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> dropdownMenu [
+	"Provide a bootstrap dropdown menu."
+	
+	^ self brush: SBSDropdownMenuTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> dropdownMenu: aBlock [
+	"Provides a Boostrap dropdown menu."
+	
+	 ^ self dropdownMenu
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> equalWidthColumn [
 	"Defines a Bootstrap layout column.
         Use size messages like #mediumSize, #smallSize:, ... according to Bootstrap layouts to be more specific after sending this message."

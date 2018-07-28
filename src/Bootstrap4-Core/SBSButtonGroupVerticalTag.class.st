@@ -1,3 +1,6 @@
+"
+Vertical button group for Bootstrap
+"
 Class {
 	#name : #SBSButtonGroupVerticalTag,
 	#superclass : #SBSButtonGroupTag,

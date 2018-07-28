@@ -843,8 +843,6 @@ SBSCanvasBrushTest >> testCollapse [
 	self
 		assert: [ :html | html collapse ]
 		gives: '<div class="collapse"></div>'
-
-	
 ]
 
 { #category : #'tests - collapse - options' }
@@ -1023,6 +1021,54 @@ SBSCanvasBrushTest >> testContainerWithContent [
 		gives: '<div class="container">Bootstrap</div>'
 
 	
+]
+
+{ #category : #'tests - dropdown' }
+SBSCanvasBrushTest >> testDropdown [
+
+	self
+		assert: [ :html | html dropdown ]
+		gives: '<div class="dropdown"></div>'
+]
+
+{ #category : #'tests - dropdown' }
+SBSCanvasBrushTest >> testDropdownItem [
+
+	self
+		assert: [ :html | html dropdownItem ]
+		gives: '<a class="dropdown-item"></a>'
+]
+
+{ #category : #'tests - dropdown' }
+SBSCanvasBrushTest >> testDropdownItemWithContent [
+
+	self
+		assert: [ :html | html dropdownItem: 'Bootstrap' ]
+		gives: '<a class="dropdown-item">Bootstrap</a>'
+]
+
+{ #category : #'tests - dropdown' }
+SBSCanvasBrushTest >> testDropdownMenu [
+
+	self
+		assert: [ :html | html dropdownMenu ]
+		gives: '<div class="dropdown-menu"></div>'
+]
+
+{ #category : #'tests - dropdown - options' }
+SBSCanvasBrushTest >> testDropdownShow [
+
+	self
+		assert: [ :html | html dropdown show ]
+		gives: '<div class="dropdown show"></div>'
+]
+
+{ #category : #'tests - dropdown' }
+SBSCanvasBrushTest >> testDropdownWithContent [
+
+	self
+		assert: [ :html | html dropdown: 'Bootstrap' ]
+		gives: '<div class="dropdown">Bootstrap</div>'
 ]
 
 { #category : #'tests - layout' }
