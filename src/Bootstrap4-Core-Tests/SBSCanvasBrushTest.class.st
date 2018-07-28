@@ -417,6 +417,36 @@ SBSCanvasBrushTest >> testButtonGroup [
 	
 ]
 
+{ #category : #'tests - buttongroups - options' }
+SBSCanvasBrushTest >> testButtonGroupAriaLabel [
+
+	self
+		assert: [:html | html buttonGroup ariaLabel: 'Bootstrap' ]
+		gives: '<div class="btn-group" aria-label="Bootstrap"></div>'
+
+	
+]
+
+{ #category : #'tests - buttongroups - options' }
+SBSCanvasBrushTest >> testButtonGroupGroupRole [
+
+	self
+		assert: [:html | html buttonGroup groupRole ]
+		gives: '<div class="btn-group" role="group"></div>'
+
+	
+]
+
+{ #category : #'tests - buttongroups - options' }
+SBSCanvasBrushTest >> testButtonGroupToolbarRole [
+
+	self
+		assert: [:html | html buttonGroup toolbarRole ]
+		gives: '<div class="btn-group" role="toolbar"></div>'
+
+	
+]
+
 { #category : #'tests - buttongroups' }
 SBSCanvasBrushTest >> testButtonGroupWithContent [
 
@@ -503,6 +533,26 @@ SBSCanvasBrushTest >> testButtonSuccess [
 	self
 		assert: [ :html | html formButton beSuccess ]
 		gives: '<button class="btn btn-success"></button>'
+
+	
+]
+
+{ #category : #'tests - buttontoolbar' }
+SBSCanvasBrushTest >> testButtonToolbar [
+
+	self
+		assert: [:html | html buttonToolbar ]
+		gives: '<div class="btn-toolbar"></div>'
+
+	
+]
+
+{ #category : #'tests - buttontoolbar' }
+SBSCanvasBrushTest >> testButtonToolbarWithContent [
+
+	self
+		assert: [:html | html buttonToolbar: 'Bootstrap' ]
+		gives: '<div class="btn-toolbar">Bootstrap</div>'
 
 	
 ]

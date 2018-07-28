@@ -117,6 +117,22 @@ WAHtmlCanvas >> buttonGroup: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> buttonToolbar [
+	"Provide a bootstrap button toolbar."
+	
+	^ self brush: SBSButtonToolbarTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> buttonToolbar: aBlock [
+	"Provides an Bootstrap button toolbar."
+
+	^ self buttonToolbar
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> column [
 	"Defines a Bootstrap layout column.
         Use size messages like #mediumSize, #smallSize:, ... according to Bootstrap layouts to be more specific after sending this message."
