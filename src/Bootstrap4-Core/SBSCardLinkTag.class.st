@@ -1,14 +1,14 @@
 "
-A boostrap alert link
+Links on Bootstrap cards
 "
 Class {
-	#name : #SBSAlertLinkTag,
+	#name : #SBSCardLinkTag,
 	#superclass : #SBSAnchorTag,
 	#category : #'Bootstrap4-Core-Canvas'
 }
 
 { #category : #defaults }
-SBSAlertLinkTag >> defaultStyleClass [
+SBSCardLinkTag >> defaultStyleClass [
 
-	^'alert-link'
+	^'card-link'
 ]

@@ -617,6 +617,136 @@ SBSCanvasBrushTest >> testButtonWithContent [
 	
 ]
 
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCard [
+
+	self
+		assert: [ :html | html card ]
+		gives: '<div class="card"></div>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardBody [
+
+	self
+		assert: [ :html | html cardBody ]
+		gives: '<div class="card-body"></div>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardBodyWithContent [
+
+	self
+		assert: [ :html | html cardBody: 'Bootstrap' ]
+		gives: '<div class="card-body">Bootstrap</div>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardImage [
+
+	self
+		assert: [ :html | html cardImage ]
+		gives: '<img alt="" class="card-img-top"/>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardLink [
+
+	self
+		assert: [ :html | html cardLink ]
+		gives: '<a class="card-link"></a>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardLinkWithContent [
+
+	self
+		assert: [ :html | html cardLink: 'Boostrap' ]
+		gives: '<a class="card-link">Boostrap</a>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardSubtitle [
+
+	self
+		assert: [ :html | html cardSubtitle ]
+		gives: '<h1 class="card-subtitle"></h1>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardSubtitleWithContent [
+
+	self
+		assert: [ :html | html cardSubtitle: 'Bootstrap' ]
+		gives: '<h1 class="card-subtitle">Bootstrap</h1>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardText [
+
+	self
+		assert: [ :html | html cardText ]
+		gives: '<p class="card-text"></p>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardTextWithContent [
+
+	self
+		assert: [ :html | html cardText: 'Bootstrap' ]
+		gives: '<p class="card-text">Bootstrap</p>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardTitle [
+
+	self
+		assert: [ :html | html cardTitle ]
+		gives: '<h1 class="card-title"></h1>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardTitleWithContent [
+
+	self
+		assert: [ :html | html cardTitle: 'Bootstrap' ]
+		gives: '<h1 class="card-title">Bootstrap</h1>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardWithContent [
+
+	self
+		assert: [ :html | html card: 'Bootstrap' ]
+		gives: '<div class="card">Bootstrap</div>'
+
+	
+]
+
 { #category : #'tests - layout' }
 SBSCanvasBrushTest >> testColumn [
 

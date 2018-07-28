@@ -149,6 +149,110 @@ WAHtmlCanvas >> buttonToolbar: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> card [
+	"Provide a bootstrap card."
+	
+	^ self brush: SBSCardTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> card: aBlock [
+	"Provides a Bootstrap card."
+
+	^ self card
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardBody [
+	"Provide a bootstrap card body."
+	
+	^ self brush: SBSCardBodyTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardBody: aBlock [
+	"Provides a Bootstrap card body."
+
+	^ self cardBody
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardImage [
+	"Provide a bootstrap card image."
+	
+	^ self brush: SBSCardImageTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardLink [
+	"Provide a bootstrap card link."
+	
+	^ self brush: SBSCardLinkTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardLink: aBlock [
+	"Provides a Bootstrap card link."
+
+	^ self cardLink
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardSubtitle [
+	"Provide a bootstrap card subtitle."
+	
+	^ self brush: SBSCardSubtitleTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardSubtitle: aBlock [
+	"Provides a Bootstrap card subtitle."
+
+	^ self cardSubtitle
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardText [
+	"Provide a bootstrap card text."
+	
+	^ self paragraph
+		class: 'card-text'
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardText: aBlock [
+	"Provide a bootstrap card text."
+	
+	^ self cardText
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardTitle [
+	"Provide a bootstrap card title."
+	
+	^ self brush: SBSCardTitleTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardTitle: aBlock [
+	"Provides a Bootstrap card title."
+
+	^ self cardTitle
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> column [
 	"Defines a Bootstrap layout column.
         Use size messages like #mediumSize, #smallSize:, ... according to Bootstrap layouts to be more specific after sending this message."
