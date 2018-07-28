@@ -101,6 +101,22 @@ WAHtmlCanvas >> breadcrumbSection: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> buttonGroup [
+	"Provide a bootstrap button group."
+	
+	^ self brush: SBSButtonGroupTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> buttonGroup: aBlock [
+	"Provides an Bootstrap button group."
+
+	^ self buttonGroup
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> column [
 	"Defines a Bootstrap layout column.
         Use size messages like #mediumSize, #smallSize:, ... according to Bootstrap layouts to be more specific after sending this message."

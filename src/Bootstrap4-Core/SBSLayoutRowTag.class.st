@@ -9,10 +9,10 @@ Class {
 	#category : 'Bootstrap4-Core-Canvas'
 }
 
-{ #category : #initialization }
-SBSLayoutRowTag >> initialize [
-	super initialize.
-	self class: 'row'
+{ #category : #defaults }
+SBSLayoutRowTag >> defaultStyleClass [
+
+	^'row'
 ]
 
 { #category : #options }

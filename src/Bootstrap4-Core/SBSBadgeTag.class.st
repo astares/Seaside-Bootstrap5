@@ -23,10 +23,15 @@ SBSBadgeTag >> bePillIf: aBlock [
 	self class: self tagModifier, self modifier, 'danger' if: aBlock value
 ]
 
+{ #category : #defaults }
+SBSBadgeTag >> defaultStyleClass [
+
+	^'badge'
+]
+
 { #category : #initialization }
 SBSBadgeTag >> initialize [
 	super initialize.
-	self class: 'badge'.
 	self tagModifier: 'badge-'.
 	self modifier: ''
 ]

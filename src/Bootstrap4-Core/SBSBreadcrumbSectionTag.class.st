@@ -7,8 +7,14 @@ Class {
 	#category : #'Bootstrap4-Core-Canvas'
 }
 
+{ #category : #defaults }
+SBSBreadcrumbSectionTag >> defaultStyleClass [
+
+	^'breadcrumb-item'
+]
+
 { #category : #initialization }
 SBSBreadcrumbSectionTag >> initialize [
 	super initialize.
-	self class: 'breadcrumb-item'
+	self class: self defaultStyleClass
 ]

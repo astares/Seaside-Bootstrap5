@@ -4,8 +4,8 @@ Class {
 	#category : #'Bootstrap4-Core-Canvas'
 }
 
-{ #category : #initialization }
-SBSEqualWidthColumnsOnMultipleRowsTag >> initialize [
-	super initialize.
-	self class: 'w-100'
+{ #category : #defaults }
+SBSEqualWidthColumnsOnMultipleRowsTag >> defaultStyleClass [
+
+	^'w-100'
 ]

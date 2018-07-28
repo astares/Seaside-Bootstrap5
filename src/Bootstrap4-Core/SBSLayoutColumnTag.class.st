@@ -9,6 +9,12 @@ Class {
 	#category : 'Bootstrap4-Core-Canvas'
 }
 
+{ #category : #defaults }
+SBSLayoutColumnTag >> defaultStyleClass [
+
+	^''
+]
+
 { #category : #sizes }
 SBSLayoutColumnTag >> extraLargeSize: anInteger [
 	"Use the given number of columns on screen width equal to or greater than 1200px"
@@ -26,6 +32,12 @@ SBSLayoutColumnTag >> extraSmallSize: anInteger [
 	"Use the given number of columns on screen width less than 576px"
 
 	self class: 'col-', anInteger greaseString
+]
+
+{ #category : #'private - initialization' }
+SBSLayoutColumnTag >> initStyleClass [
+	"do nothing"
+	
 ]
 
 { #category : #sizes }

@@ -407,6 +407,26 @@ SBSCanvasBrushTest >> testButtonDark [
 	
 ]
 
+{ #category : #'tests - buttongroups' }
+SBSCanvasBrushTest >> testButtonGroup [
+
+	self
+		assert: [:html | html buttonGroup ]
+		gives: '<div class="btn-group"></div>'
+
+	
+]
+
+{ #category : #'tests - buttongroups' }
+SBSCanvasBrushTest >> testButtonGroupWithContent [
+
+	self
+		assert: [:html | html buttonGroup: 'Bootstrap' ]
+		gives: '<div class="btn-group">Bootstrap</div>'
+
+	
+]
+
 { #category : #'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonInfo [
 

@@ -23,10 +23,15 @@ SBSAlertTag >> beDismissibleIf: aBlock [
 	self class: self tagModifier, self modifier, 'dismissible' if: aBlock value
 ]
 
+{ #category : #defaults }
+SBSAlertTag >> defaultStyleClass [
+
+	^'alert'
+]
+
 { #category : #initialization }
 SBSAlertTag >> initialize [
 	super initialize.
-	self class: 'alert'.
 	self tagModifier: 'alert-'.
 	self modifier: ''
 ]
