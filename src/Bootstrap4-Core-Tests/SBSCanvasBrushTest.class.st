@@ -377,6 +377,16 @@ SBSCanvasBrushTest >> testButton [
 	
 ]
 
+{ #category : #'tests - buttons - options' }
+SBSCanvasBrushTest >> testButtonActive [
+
+	self
+		assert: [ :html | html formButton active ]
+		gives: '<button class="btn active"></button>'
+
+	
+]
+
 { #category : #'tests - buttons - sizes' }
 SBSCanvasBrushTest >> testButtonBlock [
 
@@ -413,6 +423,36 @@ SBSCanvasBrushTest >> testButtonDataTarget [
 	self
 		assert: [ :html | html formButton dataTarget: '#bootstrap' ]
 		gives: '<button class="btn" data-target="#bootstrap"></button>'
+
+	
+]
+
+{ #category : #'tests - buttons - options' }
+SBSCanvasBrushTest >> testButtonDisabled [
+
+	self
+		assert: [ :html | html formButton disabled ]
+		gives: '<button class="btn" disabled="disabled"></button>'
+
+	
+]
+
+{ #category : #'tests - buttons - options' }
+SBSCanvasBrushTest >> testButtonDropdown [
+
+	self
+		assert: [ :html | html formButton dropdown ]
+		gives: '<button class="btn dropdown-toggle"></button>'
+
+	
+]
+
+{ #category : #'tests - buttons - options' }
+SBSCanvasBrushTest >> testButtonDropdownSplitted [
+
+	self
+		assert: [ :html | html formButton dropdownSplitted ]
+		gives: '<button class="btn dropdown-toggle dropdown-toggle-split"></button>'
 
 	
 ]
@@ -1099,6 +1139,62 @@ SBSCanvasBrushTest >> testEqualWidthColumnsOnMultipleRows [
 		gives: '<div class="w-100"></div>'
 
 	
+]
+
+{ #category : #'tests - image - options' }
+SBSCanvasBrushTest >> testImageCentered [
+
+	self
+		assert: [ :html | html image centered ]
+		gives: '<img alt="" class="mx-auto d-block"/>'
+]
+
+{ #category : #'tests - image - options' }
+SBSCanvasBrushTest >> testImageCircle [
+
+	self
+		assert: [ :html | html image circle ]
+		gives: '<img alt="" class="rounded-circle"/>'
+]
+
+{ #category : #'tests - image - options' }
+SBSCanvasBrushTest >> testImageFloatLeft [
+
+	self
+		assert: [ :html | html image floatLeft ]
+		gives: '<img alt="" class="float-left"/>'
+]
+
+{ #category : #'tests - image - options' }
+SBSCanvasBrushTest >> testImageFloatRight [
+
+	self
+		assert: [ :html | html image floatRight ]
+		gives: '<img alt="" class="float-right"/>'
+]
+
+{ #category : #'tests - image' }
+SBSCanvasBrushTest >> testImageFluid [
+
+	self
+		assert: [ :html | html imageFluid ]
+		gives: '<img alt="" class="image-fluid"/>'
+]
+
+{ #category : #'tests - image - options' }
+SBSCanvasBrushTest >> testImageRounded [
+
+	self
+		assert: [ :html | html image rounded ]
+		gives: '<img alt="" class="rounded"/>'
+]
+
+{ #category : #'tests - image - options' }
+SBSCanvasBrushTest >> testImageThumbnail [
+
+	self
+		assert: [ :html | html image thumbnail ]
+		gives: '<img alt="" class="img-thumbnail"/>'
 ]
 
 { #category : #'tests - jumbotron' }

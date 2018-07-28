@@ -15,6 +15,12 @@ SBSButtonTag class >> isAbstract [
 	^self name = #SBSButtonTag
 ]
 
+{ #category : #options }
+SBSButtonTag >> active [
+
+	self class: 'active'
+]
+
 { #category : #sizes }
 SBSButtonTag >> beBlock [
 	"Creates an extra small sized button."
@@ -48,11 +54,31 @@ SBSButtonTag >> defaultModifier [
 	^''
 ]
 
+{ #category : #defaults }
+SBSButtonTag >> defaultStyleClass [
+
+	^'btn'
+]
+
+{ #category : #options }
+SBSButtonTag >> dropdown [
+
+	self class: 'dropdown-toggle'
+]
+
+{ #category : #options }
+SBSButtonTag >> dropdownSplitted [
+
+	self 
+		dropdown;
+		class: 'dropdown-toggle-split'
+]
+
 { #category : #initialization }
 SBSButtonTag >> initialize [ 
 	super initialize.
 	self resetType.
-	self class: 'btn'.
+	self class: self defaultStyleClass.
 	self contextStyle: 'btn-'.
 	self sizeStyle: 'btn-'.
 	self modifier: self defaultModifier

@@ -480,6 +480,15 @@ WAHtmlCanvas >> formButton: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> imageFluid [
+	"Defines an image."
+
+	^self image 
+		class: 'image-fluid'
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> jumbotron [
 	"Defines a Bootstrap jumbotron."
 	
