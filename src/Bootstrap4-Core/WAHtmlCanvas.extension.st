@@ -181,6 +181,22 @@ WAHtmlCanvas >> cardBody: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardFooter [
+	"Provide a bootstrap card footer."
+	
+	^ self brush: SBSCardFooterTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardFooter: aBlock [
+	"Provides a Bootstrap card footer."
+
+	^ self cardFooter
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> cardHeader [
 	"Provide a bootstrap card header."
 	
@@ -201,6 +217,14 @@ WAHtmlCanvas >> cardImage [
 	"Provide a bootstrap card image."
 	
 	^ self brush: SBSCardImageTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardImageBottom [
+	"Provide a bootstrap card image for the bottom of a card."
+	
+	^ self brush: SBSCardImageBottomTag new
 
 ]
 

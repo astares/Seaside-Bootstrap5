@@ -698,6 +698,16 @@ SBSCanvasBrushTest >> testCardBodyWithContent [
 ]
 
 { #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardFooter [
+
+	self
+		assert: [ :html | html cardFooter ]
+		gives: '<div class="card-footer"></div>'
+
+	
+]
+
+{ #category : #'tests - cards' }
 SBSCanvasBrushTest >> testCardHeader [
 
 	self
@@ -723,6 +733,16 @@ SBSCanvasBrushTest >> testCardImage [
 	self
 		assert: [ :html | html cardImage ]
 		gives: '<img alt="" class="card-img-top"/>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardImageBottom [
+
+	self
+		assert: [ :html | html cardImageBottom ]
+		gives: '<img alt="" class="card-img-bottom"/>'
 
 	
 ]

@@ -3,7 +3,7 @@ An image on top of a Boostrap card
 "
 Class {
 	#name : #SBSCardImageTag,
-	#superclass : #WAImageTag,
+	#superclass : #SBSImageTag,
 	#category : #'Bootstrap4-Core-Canvas'
 }
 
@@ -11,10 +11,4 @@ Class {
 SBSCardImageTag >> defaultStyleClass [
 
 	^'card-img-top'
-]
-
-{ #category : #initialization }
-SBSCardImageTag >> initialize [
-	super initialize.
-	self class: self defaultStyleClass
 ]
