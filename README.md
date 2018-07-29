@@ -20,3 +20,4 @@ based on 4.0 from [http://bootstrap.rtlcss.com/](http://bootstrap.rtlcss.com/)
 - the prefix is gone, so use container instead of tbsContainer, etc.
 - use formButton or outlineButton instead of tbsButton
 - buttons do not have beExtraSmall and beExtraSmallIf: styles anymore
+- breadcrumb section is now called breadcrumb item
