@@ -32,7 +32,7 @@ SBSBadgeTag >> defaultStyleClass [
 { #category : #initialization }
 SBSBadgeTag >> initialize [
 	super initialize.
-	self contextStyle: 'badge-'.
+	self contextStyle: self defaultStyleClass.
 	self modifier: ''
 ]
 

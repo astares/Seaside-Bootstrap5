@@ -12,5 +12,5 @@ Class {
 { #category : #defaults }
 SBSOutlineButtonTag >> defaultModifier [
 
-	^'outline-'
+	^'outline'
 ]

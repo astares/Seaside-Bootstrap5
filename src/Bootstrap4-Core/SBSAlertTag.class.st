@@ -20,7 +20,7 @@ SBSAlertTag >> beDismissible [
 SBSAlertTag >> beDismissibleIf: aBlock [
 	"Creates a danger type button if aBlock is true."
 	
-	self class: self contextStyle, self modifier, 'dismissible' if: aBlock value
+	self class: self contextStyle, self modifier, '-dismissible' if: aBlock value
 ]
 
 { #category : #defaults }
@@ -32,6 +32,6 @@ SBSAlertTag >> defaultStyleClass [
 { #category : #initialization }
 SBSAlertTag >> initialize [
 	super initialize.
-	self contextStyle: 'alert-'.
+	self contextStyle: self defaultStyleClass.
 	self modifier: ''
 ]

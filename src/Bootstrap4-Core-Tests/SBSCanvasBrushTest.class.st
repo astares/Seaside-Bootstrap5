@@ -1379,6 +1379,14 @@ SBSCanvasBrushTest >> testListGroupItemDisabled [
 		gives: '<li class="list-group-item disabled"></li>'
 ]
 
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupItemSuccess [
+
+	self
+		assert: [ :html | html listGroupItem beSuccess ]
+		gives: '<li class="list-group-item list-group-item-success"></li>'
+]
+
 { #category : #'tests - listgroups' }
 SBSCanvasBrushTest >> testListGroupItemWithContent [
 

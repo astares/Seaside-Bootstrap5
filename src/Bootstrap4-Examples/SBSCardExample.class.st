@@ -1,3 +1,6 @@
+"
+Example to demonstrate cards
+"
 Class {
 	#name : #SBSCardExample,
 	#superclass : #SBSBootstrapExample,

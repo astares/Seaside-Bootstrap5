@@ -1,8 +1,8 @@
 Class {
 	#name : #SBSListGroupLinkedItemTag,
 	#superclass : #SBSAnchorTag,
-	#traits : 'SBSTActiveStyled',
-	#classTraits : 'SBSTActiveStyled classTrait',
+	#traits : 'SBSTContextualStyled + SBSTActiveStyled',
+	#classTraits : 'SBSTContextualStyled classTrait + SBSTActiveStyled classTrait',
 	#category : #'Bootstrap4-Core-Canvas'
 }
 
@@ -15,5 +15,7 @@ SBSListGroupLinkedItemTag >> defaultStyleClass [
 { #category : #initialization }
 SBSListGroupLinkedItemTag >> initialize [
 	super initialize.
-	self class: 'list-group-item-action'
+	self class: 'list-group-item-action'.
+	self contextStyle: self defaultStyleClass.
+	self modifier: ''
 ]
