@@ -1457,6 +1457,42 @@ SBSCanvasBrushTest >> testOutlineButtonWithContent [
 	
 ]
 
+{ #category : #'tests - progressbar' }
+SBSCanvasBrushTest >> testProgress [
+
+	self
+		assert: [ :html | html progress  ]
+		gives: '<div class="progress"></div>'
+
+]
+
+{ #category : #'tests - progressbar' }
+SBSCanvasBrushTest >> testProgressBar [
+
+	self
+		assert: [ :html | html progressBar  ]
+		gives: '<div class="progress-bar"></div>'
+
+]
+
+{ #category : #'tests - progressbar' }
+SBSCanvasBrushTest >> testProgressBarWithContent [
+
+	self
+		assert: [ :html | html progressBar: 'Bootstrap'  ]
+		gives: '<div class="progress-bar">Bootstrap</div>'
+
+]
+
+{ #category : #'tests - progressbar' }
+SBSCanvasBrushTest >> testProgressWithContent [
+
+	self
+		assert: [ :html | html progress: 'Bootstrap'  ]
+		gives: '<div class="progress">Bootstrap</div>'
+
+]
+
 { #category : #'tests - layout' }
 SBSCanvasBrushTest >> testRow [
 

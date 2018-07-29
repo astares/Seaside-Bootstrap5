@@ -578,6 +578,40 @@ WAHtmlCanvas >> outlineButton: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> progress [
+	"Provide a bootstrap progress parent."
+	
+	^ self brush: SBSProgressTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> progress: aBlock [
+	"Provides a Bootstrap progress parent."
+	
+	 ^ self progress
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> progressBar [
+	"Provide a bootstrap progress bar."
+	
+	^ self brush: SBSProgressBarTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> progressBar: aBlock [
+	"Provides a Bootstrap progress bar."
+	
+	 ^ self progressBar
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> row [
 	"Provide a Bootstrap layout row"
 	
