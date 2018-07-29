@@ -1530,6 +1530,15 @@ SBSCanvasBrushTest >> testProgressBar [
 ]
 
 { #category : #'tests - progressbar' }
+SBSCanvasBrushTest >> testProgressBarValueNow [
+
+	self
+		assert: [ :html | html progressBar valueNow: 75 ]
+		gives: '<div class="progress-bar" style="width: 75%"></div>'
+
+]
+
+{ #category : #'tests - progressbar' }
 SBSCanvasBrushTest >> testProgressBarWithContent [
 
 	self

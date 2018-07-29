@@ -14,3 +14,9 @@ SBSProgressBarTag >> defaultStyleClass [
 
 	^'progress-bar'
 ]
+
+{ #category : #options }
+SBSProgressBarTag >> valueNow: anInteger [
+
+	self attributeAt: 'style' put: ('width: ', anInteger greaseString, '%')
+]
