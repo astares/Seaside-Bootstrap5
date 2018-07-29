@@ -624,6 +624,21 @@ WAHtmlCanvas >> listGroupItem: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> listGroupLinkedItem [
+	"Provide a bootstrap list group linked item."
+	
+	^ self brush: SBSListGroupLinkedItemTag new
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> listGroupLinkedItem: aBlock [
+	"Defines a Bootstrap list group linked item."
+	
+	^ self listGroupLinkedItem
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> navigation [
 	"Provide a Bootstrap navigation"
 	

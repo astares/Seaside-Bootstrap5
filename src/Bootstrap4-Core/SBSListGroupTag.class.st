@@ -14,3 +14,9 @@ SBSListGroupTag >> defaultStyleClass [
 
 	^'list-group'
 ]
+
+{ #category : #options }
+SBSListGroupTag >> removeBorders [
+
+	self class: 'list-group-flush'
+]

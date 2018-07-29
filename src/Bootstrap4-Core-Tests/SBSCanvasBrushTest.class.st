@@ -1388,6 +1388,46 @@ SBSCanvasBrushTest >> testListGroupItemWithContent [
 ]
 
 { #category : #'tests - listgroups' }
+SBSCanvasBrushTest >> testListGroupLinkedItem [
+
+	self
+		assert: [ :html | html listGroupLinkedItem ]
+		gives: '<a class="list-group-item list-group-item-action"></a>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupLinkedItemActive [
+
+	self
+		assert: [ :html | html listGroupLinkedItem beActive ]
+		gives: '<a class="list-group-item list-group-item-action active"></a>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupLinkedItemDisabled [
+
+	self
+		assert: [ :html | html listGroupLinkedItem beDisabled ]
+		gives: '<a class="list-group-item list-group-item-action disabled"></a>'
+]
+
+{ #category : #'tests - listgroups' }
+SBSCanvasBrushTest >> testListGroupLinkedItemWithContent [
+
+	self
+		assert: [ :html | html listGroupLinkedItem: 'Bootstrap' ]
+		gives: '<a class="list-group-item list-group-item-action">Bootstrap</a>'
+]
+
+{ #category : #'tests - listgroups' }
+SBSCanvasBrushTest >> testListGroupRemoveBorders [
+
+	self
+		assert: [ :html | html listGroup removeBorders ]
+		gives: '<ul class="list-group list-group-flush"></ul>'
+]
+
+{ #category : #'tests - listgroups' }
 SBSCanvasBrushTest >> testListGroupWithContent [
 
 	self
