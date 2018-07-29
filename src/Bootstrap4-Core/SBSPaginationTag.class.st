@@ -1,0 +1,23 @@
+"
+Pagination
+"
+Class {
+	#name : #SBSPaginationTag,
+	#superclass : #WAUnorderedListTag,
+	#traits : 'SBSTSizeStyled',
+	#classTraits : 'SBSTSizeStyled classTrait',
+	#category : #'Bootstrap4-Core-Canvas'
+}
+
+{ #category : #defaults }
+SBSPaginationTag >> defaultStyleClass [
+
+	^'pagination'
+]
+
+{ #category : #initialization }
+SBSPaginationTag >> initialize [
+	super initialize.
+	self class: self defaultStyleClass.
+	self sizeStyle: self defaultStyleClass.
+]

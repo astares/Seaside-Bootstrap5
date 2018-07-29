@@ -31,6 +31,18 @@ SBSListItemTag >> beDisabled [
 	self class: 'disabled'
 ]
 
+{ #category : #defaults }
+SBSListItemTag >> defaultStyleClass [
+
+	^self subclassResponsibility
+]
+
+{ #category : #initialization }
+SBSListItemTag >> initialize [
+	super initialize.
+	self class: self defaultStyleClass
+]
+
 { #category : #accessing }
 SBSListItemTag >> tag [
 

@@ -12,9 +12,3 @@ SBSBreadcrumbSectionTag >> defaultStyleClass [
 
 	^'breadcrumb-item'
 ]
-
-{ #category : #initialization }
-SBSBreadcrumbSectionTag >> initialize [
-	super initialize.
-	self class: self defaultStyleClass
-]

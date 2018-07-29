@@ -20,7 +20,7 @@ SBSTSizeStyled >> beLarge [
 SBSTSizeStyled >> beLargeIf: aBlock [
 	"Creates an large sized widget if aBlock is true."
 	
-	self class: sizeStyle, 'lg' if: aBlock
+	self class: sizeStyle, '-lg' if: aBlock
 ]
 
 { #category : #sizes }
@@ -34,7 +34,7 @@ SBSTSizeStyled >> beSmall [
 SBSTSizeStyled >> beSmallIf: aBlock [
 	"Creates a small sized widget if aBlock' is true."
 	
-	self class: sizeStyle, 'sm' if: aBlock
+	self class: sizeStyle, '-sm' if: aBlock
 ]
 
 { #category : #accessing }

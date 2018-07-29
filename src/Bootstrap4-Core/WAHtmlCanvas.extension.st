@@ -578,6 +578,55 @@ WAHtmlCanvas >> outlineButton: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> pageItem [
+	"Provide a bootstrap page item."
+	
+	^ self brush: SBSPageItemTag new
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> pageItem: aBlock [
+	"Provides a Bootstrap page item."
+	
+	 ^ self pageItem
+			with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> pageLink [
+	"Provide a bootstrap page link."
+	
+	^ self brush: SBSPageLinkTag new
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> pageLink: aBlock [
+	"Provides a Bootstrap page link."
+	
+	 ^ self pageLink
+			with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> pagination [
+	"Provide a bootstrap pagination."
+	
+	^ self unorderedList 
+		class: 'pagination'
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> pagination: aBlock [
+	"Provides a Bootstrap pagination."
+	
+	 ^ self pagination
+			with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> progress [
 	"Provide a bootstrap progress parent."
 	
@@ -590,7 +639,7 @@ WAHtmlCanvas >> progress: aBlock [
 	"Provides a Bootstrap progress parent."
 	
 	 ^ self progress
-		with: aBlock
+			with: aBlock
 
 ]
 
@@ -607,7 +656,7 @@ WAHtmlCanvas >> progressBar: aBlock [
 	"Provides a Bootstrap progress bar."
 	
 	 ^ self progressBar
-		with: aBlock
+			with: aBlock
 
 ]
 

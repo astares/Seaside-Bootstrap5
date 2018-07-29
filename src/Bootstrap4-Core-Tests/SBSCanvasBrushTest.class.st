@@ -1457,6 +1457,60 @@ SBSCanvasBrushTest >> testOutlineButtonWithContent [
 	
 ]
 
+{ #category : #'tests - pagination' }
+SBSCanvasBrushTest >> testPageItem [
+
+	self
+		assert: [ :html | html pageItem ]
+		gives: '<li class="page-item"></li>'
+
+]
+
+{ #category : #'tests - pagination' }
+SBSCanvasBrushTest >> testPageItemWithContent [
+
+	self
+		assert: [ :html | html pageItem: 'Bootstrap'  ]
+		gives: '<li class="page-item">Bootstrap</li>'
+
+]
+
+{ #category : #'tests - pagination' }
+SBSCanvasBrushTest >> testPageLink [
+
+	self
+		assert: [ :html | html pageLink  ]
+		gives: '<a class="page-link"></a>'
+
+]
+
+{ #category : #'tests - pagination' }
+SBSCanvasBrushTest >> testPageLinkWithContent [
+
+	self
+		assert: [ :html | html pageLink: 'Bootstrap'  ]
+		gives: '<a class="page-link">Bootstrap</a>'
+
+]
+
+{ #category : #'tests - pagination' }
+SBSCanvasBrushTest >> testPagination [
+
+	self
+		assert: [ :html | html pagination  ]
+		gives: '<ul class="pagination"></ul>'
+
+]
+
+{ #category : #'tests - pagination' }
+SBSCanvasBrushTest >> testPaginationWithContent [
+
+	self
+		assert: [ :html | html pagination: 'Bootstrap'  ]
+		gives: '<ul class="pagination">Bootstrap</ul>'
+
+]
+
 { #category : #'tests - progressbar' }
 SBSCanvasBrushTest >> testProgress [
 

@@ -30,7 +30,7 @@ SBSButtonGroupTag >> groupRole [
 { #category : #initialization }
 SBSButtonGroupTag >> initialize [
 	super initialize.
-	self sizeStyle: 'btn-group-'
+	self sizeStyle: self defaultStyleClass
 ]
 
 { #category : #'screen reader support' }

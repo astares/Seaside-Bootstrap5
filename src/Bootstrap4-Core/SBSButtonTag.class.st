@@ -79,9 +79,11 @@ SBSButtonTag >> initialize [
 	super initialize.
 	self resetType.
 	self class: self defaultStyleClass.
+	
 	self contextStyle: 'btn-'.
-	self sizeStyle: 'btn-'.
-	self modifier: self defaultModifier
+	self modifier: self defaultModifier.
+	
+	self sizeStyle: self defaultStyleClass
 ]
 
 { #category : #private }
