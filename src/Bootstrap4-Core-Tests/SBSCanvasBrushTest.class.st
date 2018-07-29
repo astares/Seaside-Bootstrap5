@@ -1372,6 +1372,22 @@ SBSCanvasBrushTest >> testListGroupItemActive [
 ]
 
 { #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupItemDanger [
+
+	self
+		assert: [ :html | html listGroupItem beDanger ]
+		gives: '<li class="list-group-item list-group-item-danger"></li>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupItemDark [
+
+	self
+		assert: [ :html | html listGroupItem beDark ]
+		gives: '<li class="list-group-item list-group-item-dark"></li>'
+]
+
+{ #category : #'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupItemDisabled [
 
 	self
@@ -1380,11 +1396,51 @@ SBSCanvasBrushTest >> testListGroupItemDisabled [
 ]
 
 { #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupItemInfo [
+
+	self
+		assert: [ :html | html listGroupItem beInfo ]
+		gives: '<li class="list-group-item list-group-item-info"></li>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupItemLight [
+
+	self
+		assert: [ :html | html listGroupItem beLight ]
+		gives: '<li class="list-group-item list-group-item-light"></li>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupItemPrimary [
+
+	self
+		assert: [ :html | html listGroupItem bePrimary ]
+		gives: '<li class="list-group-item list-group-item-primary"></li>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupItemSecondary [
+
+	self
+		assert: [ :html | html listGroupItem beSecondary ]
+		gives: '<li class="list-group-item list-group-item-secondary"></li>'
+]
+
+{ #category : #'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupItemSuccess [
 
 	self
 		assert: [ :html | html listGroupItem beSuccess ]
 		gives: '<li class="list-group-item list-group-item-success"></li>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupItemWarning [
+
+	self
+		assert: [ :html | html listGroupItem beWarning ]
+		gives: '<li class="list-group-item list-group-item-warning"></li>'
 ]
 
 { #category : #'tests - listgroups' }
@@ -1412,11 +1468,75 @@ SBSCanvasBrushTest >> testListGroupLinkedItemActive [
 ]
 
 { #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupLinkedItemDanger [
+
+	self
+		assert: [ :html | html listGroupLinkedItem beDanger ]
+		gives: '<a class="list-group-item list-group-item-action list-group-item-danger"></a>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupLinkedItemDark [
+
+	self
+		assert: [ :html | html listGroupLinkedItem beDark ]
+		gives: '<a class="list-group-item list-group-item-action list-group-item-dark"></a>'
+]
+
+{ #category : #'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupLinkedItemDisabled [
 
 	self
 		assert: [ :html | html listGroupLinkedItem beDisabled ]
 		gives: '<a class="list-group-item list-group-item-action disabled"></a>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupLinkedItemInfo [
+
+	self
+		assert: [ :html | html listGroupLinkedItem beInfo ]
+		gives: '<a class="list-group-item list-group-item-action list-group-item-info"></a>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupLinkedItemLight [
+
+	self
+		assert: [ :html | html listGroupLinkedItem beLight ]
+		gives: '<a class="list-group-item list-group-item-action list-group-item-light"></a>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupLinkedItemPrimary [
+
+	self
+		assert: [ :html | html listGroupLinkedItem bePrimary ]
+		gives: '<a class="list-group-item list-group-item-action list-group-item-primary"></a>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupLinkedItemSecondary [
+
+	self
+		assert: [ :html | html listGroupLinkedItem beSecondary ]
+		gives: '<a class="list-group-item list-group-item-action list-group-item-secondary"></a>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupLinkedItemSuccess [
+
+	self
+		assert: [ :html | html listGroupLinkedItem beSuccess ]
+		gives: '<a class="list-group-item list-group-item-action list-group-item-success"></a>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupLinkedItemWarning [
+
+	self
+		assert: [ :html | html listGroupLinkedItem beWarning ]
+		gives: '<a class="list-group-item list-group-item-action list-group-item-warning"></a>'
 ]
 
 { #category : #'tests - listgroups' }

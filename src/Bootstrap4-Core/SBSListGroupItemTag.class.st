@@ -4,8 +4,8 @@ List group items
 Class {
 	#name : #SBSListGroupItemTag,
 	#superclass : #SBSListItemTag,
-	#traits : 'SBSTContextualStyled',
-	#classTraits : 'SBSTContextualStyled classTrait',
+	#traits : 'SBSTContextualStyled + SBSTContentJustification',
+	#classTraits : 'SBSTContextualStyled classTrait + SBSTContentJustification classTrait',
 	#category : #'Bootstrap4-Core-Canvas'
 }
 
