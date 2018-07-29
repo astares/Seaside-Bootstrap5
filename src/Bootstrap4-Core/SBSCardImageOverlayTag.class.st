@@ -1,0 +1,14 @@
+"
+An image overlay for a Bootstrap card
+"
+Class {
+	#name : #SBSCardImageOverlayTag,
+	#superclass : #SBSGenericTag,
+	#category : #'Bootstrap4-Core-Canvas'
+}
+
+{ #category : #defaults }
+SBSCardImageOverlayTag >> defaultStyleClass [
+
+	^'card-img-overlay'
+]

@@ -181,6 +181,38 @@ WAHtmlCanvas >> cardBody: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardColumns [
+	"Provide a bootstrap card columns."
+	
+	^ self brush: SBSCardColumnsTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardColumns: aBlock [
+	"Provides a Bootstrap card columns."
+
+	^ self cardColumns
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardDeck [
+	"Provide a bootstrap card deck."
+	
+	^ self brush: SBSCardDeckTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardDeck: aBlock [
+	"Provides a Bootstrap card deck."
+
+	^ self cardDeck
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> cardFooter [
 	"Provide a bootstrap card footer."
 	
@@ -226,6 +258,22 @@ WAHtmlCanvas >> cardImageBottom [
 	
 	^ self brush: SBSCardImageBottomTag new
 
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardImageOverlay [
+	"Provide a bootstrap card image overlay."
+	
+	^ self brush: SBSCardImageOverlayTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardImageOverlay: aBlock [
+	"Provides a Bootstrap card image overlay."
+
+	^ self cardImageOverlay
+		with: aBlock
 ]
 
 { #category : #'*Bootstrap4-Core' }

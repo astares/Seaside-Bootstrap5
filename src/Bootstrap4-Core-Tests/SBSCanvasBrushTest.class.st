@@ -698,11 +698,61 @@ SBSCanvasBrushTest >> testCardBodyWithContent [
 ]
 
 { #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardColumns [
+
+	self
+		assert: [ :html | html cardColumns ]
+		gives: '<div class="card-columns"></div>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardColumnsWithContent [
+
+	self
+		assert: [ :html | html cardColumns: 'Bootstrap' ]
+		gives: '<div class="card-columns">Bootstrap</div>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardDeck [
+
+	self
+		assert: [ :html | html cardDeck ]
+		gives: '<div class="card-deck"></div>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardDeckWithContent [
+
+	self
+		assert: [ :html | html cardDeck: 'Bootstrap' ]
+		gives: '<div class="card-deck">Bootstrap</div>'
+
+	
+]
+
+{ #category : #'tests - cards' }
 SBSCanvasBrushTest >> testCardFooter [
 
 	self
 		assert: [ :html | html cardFooter ]
 		gives: '<div class="card-footer"></div>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardFooterWithContent [
+
+	self
+		assert: [ :html | html cardFooter: 'Bootstrap' ]
+		gives: '<div class="card-footer">Bootstrap</div>'
 
 	
 ]
@@ -743,6 +793,26 @@ SBSCanvasBrushTest >> testCardImageBottom [
 	self
 		assert: [ :html | html cardImageBottom ]
 		gives: '<img alt="" class="card-img-bottom"/>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardImageOverlay [
+
+	self
+		assert: [ :html | html cardImageOverlay ]
+		gives: '<div class="card-img-overlay"></div>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardImageOverlayWithContent [
+
+	self
+		assert: [ :html | html cardImageOverlay: 'Bootstrap' ]
+		gives: '<div class="card-img-overlay">Bootstrap</div>'
 
 	
 ]
