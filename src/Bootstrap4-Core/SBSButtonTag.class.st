@@ -16,9 +16,15 @@ SBSButtonTag class >> isAbstract [
 ]
 
 { #category : #options }
-SBSButtonTag >> active [
+SBSButtonTag >> beActive [
 
 	self class: 'active'
+]
+
+{ #category : #options }
+SBSButtonTag >> beActiveIf: aBoolean [
+
+	aBoolean value ifTrue: [ self beActive ]
 ]
 
 { #category : #sizes }
@@ -33,6 +39,12 @@ SBSButtonTag >> beBlockIf: aBlock [
 	"Creates an block sized button if aBlock is true."
 	
 	self class: 'btn-block' if: aBlock
+]
+
+{ #category : #options }
+SBSButtonTag >> beDisabled [
+
+	self disabled
 ]
 
 { #category : #callbacks }

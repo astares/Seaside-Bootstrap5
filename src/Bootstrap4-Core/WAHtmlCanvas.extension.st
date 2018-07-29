@@ -85,7 +85,7 @@ WAHtmlCanvas >> breadcrumb: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
-WAHtmlCanvas >> breadcrumbSection [
+WAHtmlCanvas >> breadcrumbItem [
 	"Provide a bootstrap breadcrumb section."
 	
 	^ self brush: SBSBreadcrumbSectionTag new
@@ -93,10 +93,10 @@ WAHtmlCanvas >> breadcrumbSection [
 ]
 
 { #category : #'*Bootstrap4-Core' }
-WAHtmlCanvas >> breadcrumbSection: aBlock [
+WAHtmlCanvas >> breadcrumbItem: aBlock [
 	"Provides an Bootstrap breadcrumb section."
 
-	^ self breadcrumbSection
+	^ self breadcrumbItem
 		with: aBlock
 ]
 
@@ -589,6 +589,37 @@ WAHtmlCanvas >> jumbotron: aBlock [
 	"Defines a Bootstrap jumbotron."
 	
 	^ self jumbotron
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> listGroup [
+	"Provide a Bootstrap list group."
+	
+	^ self brush: SBSListGroupTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> listGroup: aBlock [
+	"Defines a Bootstrap list group."
+	
+	^ self listGroup
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> listGroupItem [
+	"Provide a bootstrap list group item."
+	
+	^ self brush: SBSListGroupItemTag new
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> listGroupItem: aBlock [
+	"Defines a Bootstrap list group item."
+	
+	^ self listGroupItem
 		with: aBlock
 ]
 

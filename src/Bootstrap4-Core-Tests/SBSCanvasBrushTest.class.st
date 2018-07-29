@@ -348,11 +348,21 @@ SBSCanvasBrushTest >> testBreadcrumb [
 ]
 
 { #category : #'tests - breadcrumb' }
-SBSCanvasBrushTest >> testBreadcrumbSection [
+SBSCanvasBrushTest >> testBreadcrumbItem [
 
 	self
-		assert: [ :html | html breadcrumbSection ]
+		assert: [ :html | html breadcrumbItem ]
 		gives: '<li class="breadcrumb-item"></li>'
+
+	
+]
+
+{ #category : #'tests - breadcrumb' }
+SBSCanvasBrushTest >> testBreadcrumbItemWithContent [
+
+	self
+		assert: [ :html | html breadcrumbItem: 'Bootstrap' ]
+		gives: '<li class="breadcrumb-item">Bootstrap</li>'
 
 	
 ]
@@ -381,7 +391,7 @@ SBSCanvasBrushTest >> testButton [
 SBSCanvasBrushTest >> testButtonActive [
 
 	self
-		assert: [ :html | html formButton active ]
+		assert: [ :html | html formButton beActive ]
 		gives: '<button class="btn active"></button>'
 
 	
@@ -431,7 +441,7 @@ SBSCanvasBrushTest >> testButtonDataTarget [
 SBSCanvasBrushTest >> testButtonDisabled [
 
 	self
-		assert: [ :html | html formButton disabled ]
+		assert: [ :html | html formButton beDisabled ]
 		gives: '<button class="btn" disabled="disabled"></button>'
 
 	
@@ -1017,8 +1027,8 @@ SBSCanvasBrushTest >> testCollapseWithContent [
 SBSCanvasBrushTest >> testColumn [
 
 	self
-		assert: [ :html | html column  ]
-		gives: '<div></div>'
+		assert: [ :html | html listGroup  ]
+		gives: '<ul class="list-group"></ul>'
 
 	
 ]
@@ -1337,6 +1347,54 @@ SBSCanvasBrushTest >> testJumbotronWithContent [
 	
 ]
 
+{ #category : #'tests - listgroups' }
+SBSCanvasBrushTest >> testListGroup [
+
+	self
+		assert: [ :html | html listGroup ]
+		gives: '<ul class="list-group"></ul>'
+]
+
+{ #category : #'tests - listgroups' }
+SBSCanvasBrushTest >> testListGroupItem [
+
+	self
+		assert: [ :html | html listGroupItem ]
+		gives: '<li class="list-group-item"></li>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupItemActive [
+
+	self
+		assert: [ :html | html listGroupItem beActive ]
+		gives: '<li class="list-group-item active"></li>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupItemDisabled [
+
+	self
+		assert: [ :html | html listGroupItem beDisabled ]
+		gives: '<li class="list-group-item disabled"></li>'
+]
+
+{ #category : #'tests - listgroups' }
+SBSCanvasBrushTest >> testListGroupItemWithContent [
+
+	self
+		assert: [ :html | html listGroupItem: 'Bootstrap' ]
+		gives: '<li class="list-group-item">Bootstrap</li>'
+]
+
+{ #category : #'tests - listgroups' }
+SBSCanvasBrushTest >> testListGroupWithContent [
+
+	self
+		assert: [ :html | html listGroup: 'Bootstrap' ]
+		gives: '<ul class="list-group">Bootstrap</ul>'
+]
+
 { #category : #'tests - navigation' }
 SBSCanvasBrushTest >> testNavigation [
 
@@ -1387,7 +1445,7 @@ SBSCanvasBrushTest >> testNavigationLink [
 SBSCanvasBrushTest >> testNavigationLinkActive [
 
 	self
-		assert: [ :html | html navigationLink active ]
+		assert: [ :html | html navigationLink beActive ]
 		gives: '<a class="nav-link active"></a>'
 
 ]
@@ -1396,7 +1454,7 @@ SBSCanvasBrushTest >> testNavigationLinkActive [
 SBSCanvasBrushTest >> testNavigationLinkDisabled [
 
 	self
-		assert: [ :html | html navigationLink disabled ]
+		assert: [ :html | html navigationLink beDisabled ]
 		gives: '<a class="nav-link disabled"></a>'
 
 ]
@@ -1580,7 +1638,7 @@ SBSCanvasBrushTest >> testPageItem [
 SBSCanvasBrushTest >> testPageItemActive [
 
 	self
-		assert: [ :html | html pageItem active ]
+		assert: [ :html | html pageItem beActive ]
 		gives: '<li class="page-item active"></li>'
 
 ]
@@ -1589,7 +1647,7 @@ SBSCanvasBrushTest >> testPageItemActive [
 SBSCanvasBrushTest >> testPageItemDisabled [
 
 	self
-		assert: [ :html | html pageItem disabled ]
+		assert: [ :html | html pageItem beDisabled ]
 		gives: '<li class="page-item disabled"></li>'
 
 ]

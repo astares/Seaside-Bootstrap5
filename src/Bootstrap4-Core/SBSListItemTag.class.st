@@ -4,6 +4,8 @@ A common superclass for list item based Bootstrap tags
 Class {
 	#name : #SBSListItemTag,
 	#superclass : #WATagBrush,
+	#traits : 'SBSTActiveStyled',
+	#classTraits : 'SBSTActiveStyled classTrait',
 	#category : #'Bootstrap4-Core-Canvas'
 }
 
@@ -11,24 +13,6 @@ Class {
 SBSListItemTag class >> isAbstract [
 
 	^self name = #SBSListItemTag
-]
-
-{ #category : #options }
-SBSListItemTag >> beActive [
-
-	self class: 'active'
-]
-
-{ #category : #options }
-SBSListItemTag >> beActiveIf: aBoolean [ 
-
-	aBoolean value ifTrue: [ self beActive ]
-]
-
-{ #category : #options }
-SBSListItemTag >> beDisabled [
-
-	self class: 'disabled'
 ]
 
 { #category : #defaults }

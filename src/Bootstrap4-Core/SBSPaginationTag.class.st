@@ -3,7 +3,7 @@ Pagination
 "
 Class {
 	#name : #SBSPaginationTag,
-	#superclass : #WAUnorderedListTag,
+	#superclass : #SBSUnorderedListTag,
 	#traits : 'SBSTSizeStyled',
 	#classTraits : 'SBSTSizeStyled classTrait',
 	#category : #'Bootstrap4-Core-Canvas'
@@ -18,6 +18,5 @@ SBSPaginationTag >> defaultStyleClass [
 { #category : #initialization }
 SBSPaginationTag >> initialize [
 	super initialize.
-	self class: self defaultStyleClass.
-	self sizeStyle: self defaultStyleClass.
+	self sizeStyle: self defaultStyleClass
 ]

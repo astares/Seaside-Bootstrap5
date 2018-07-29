@@ -3,24 +3,14 @@ A navigation link
 "
 Class {
 	#name : #SBSNavigationLinkTag,
-	#superclass : #WAAnchorTag,
+	#superclass : #SBSAnchorTag,
+	#traits : 'SBSTActiveStyled',
+	#classTraits : 'SBSTActiveStyled classTrait',
 	#category : #'Bootstrap4-Core-Canvas'
 }
 
-{ #category : #operations }
-SBSNavigationLinkTag >> active [
+{ #category : #defaults }
+SBSNavigationLinkTag >> defaultStyleClass [
 
-	self class: 'active'
-]
-
-{ #category : #operations }
-SBSNavigationLinkTag >> disabled [
-
-	self class: 'disabled'
-]
-
-{ #category : #initialization }
-SBSNavigationLinkTag >> initialize [
-	super initialize.
-	self class: 'nav-link'
+	^'nav-link'
 ]

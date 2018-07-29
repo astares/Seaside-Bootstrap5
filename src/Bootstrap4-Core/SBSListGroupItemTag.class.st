@@ -1,14 +1,14 @@
 "
-A page item for pagination
+List group items
 "
 Class {
-	#name : #SBSPageItemTag,
+	#name : #SBSListGroupItemTag,
 	#superclass : #SBSListItemTag,
 	#category : #'Bootstrap4-Core-Canvas'
 }
 
 { #category : #defaults }
-SBSPageItemTag >> defaultStyleClass [
+SBSListGroupItemTag >> defaultStyleClass [
 
-	^'page-item'
+	^'list-group-item'
 ]
