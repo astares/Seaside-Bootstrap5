@@ -18,3 +18,9 @@ SBSPageItemTag >> defaultStyleClass [
 
 	^'page-item'
 ]
+
+{ #category : #options }
+SBSPageItemTag >> disabled [
+
+	self class: 'disabled'
+]

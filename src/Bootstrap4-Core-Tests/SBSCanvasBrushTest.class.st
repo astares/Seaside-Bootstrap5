@@ -758,6 +758,26 @@ SBSCanvasBrushTest >> testCardFooterWithContent [
 ]
 
 { #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardGroup [
+
+	self
+		assert: [ :html | html cardGroup]
+		gives: '<div class="card-group"></div>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardGroupWithContent [
+
+	self
+		assert: [ :html | html cardGroup: 'Bootstrap' ]
+		gives: '<div class="card-group">Bootstrap</div>'
+
+	
+]
+
+{ #category : #'tests - cards' }
 SBSCanvasBrushTest >> testCardHeader [
 
 	self
@@ -1556,6 +1576,24 @@ SBSCanvasBrushTest >> testPageItem [
 
 ]
 
+{ #category : #'tests - pagination - options' }
+SBSCanvasBrushTest >> testPageItemActive [
+
+	self
+		assert: [ :html | html pageItem active ]
+		gives: '<li class="page-item active"></li>'
+
+]
+
+{ #category : #'tests - pagination - options' }
+SBSCanvasBrushTest >> testPageItemDisabled [
+
+	self
+		assert: [ :html | html pageItem disabled ]
+		gives: '<li class="page-item disabled"></li>'
+
+]
+
 { #category : #'tests - pagination' }
 SBSCanvasBrushTest >> testPageItemWithContent [
 
@@ -1589,6 +1627,24 @@ SBSCanvasBrushTest >> testPagination [
 	self
 		assert: [ :html | html pagination  ]
 		gives: '<ul class="pagination"></ul>'
+
+]
+
+{ #category : #'tests - pagination - options' }
+SBSCanvasBrushTest >> testPaginationLarge [
+
+	self
+		assert: [ :html | html pagination beLarge  ]
+		gives: '<ul class="pagination pagination-lg"></ul>'
+
+]
+
+{ #category : #'tests - pagination - options' }
+SBSCanvasBrushTest >> testPaginationSmall [
+
+	self
+		assert: [ :html | html pagination beSmall  ]
+		gives: '<ul class="pagination pagination-sm"></ul>'
 
 ]
 

@@ -229,6 +229,22 @@ WAHtmlCanvas >> cardFooter: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardGroup [
+	"Provide a Bootstrap card group."
+	
+	^ self brush: SBSCardGroupTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> cardGroup: aBlock [
+	"Provides a Bootstrap card group."
+
+	^ self cardGroup
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> cardHeader [
 	"Provide a bootstrap card header."
 	
@@ -685,8 +701,7 @@ WAHtmlCanvas >> pageLink: aBlock [
 WAHtmlCanvas >> pagination [
 	"Provide a bootstrap pagination."
 	
-	^ self unorderedList 
-		class: 'pagination'
+	^ self brush: SBSPaginationTag new
 ]
 
 { #category : #'*Bootstrap4-Core' }
