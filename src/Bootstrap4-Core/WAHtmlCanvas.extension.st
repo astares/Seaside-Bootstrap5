@@ -492,6 +492,31 @@ WAHtmlCanvas >> dropdown: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> dropdownDivider [
+	"Provide a bootstrap dropdown divider."
+	
+	^ self div
+		class: 'dropdown-divider'
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> dropdownHeader [
+	"Provide a bootstrap dropdown header."
+	
+	^self brush: SBSDropdownHeaderTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> dropdownHeader: aBlock [
+	"Provides a Boostrap dropdown header."
+	
+	 ^ self dropdownHeader
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> dropdownItem [
 	"Provide a bootstrap dropdown item."
 	
@@ -521,6 +546,23 @@ WAHtmlCanvas >> dropdownMenu: aBlock [
 	"Provides a Boostrap dropdown menu."
 	
 	 ^ self dropdownMenu
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> dropup [
+	"Provide a bootstrap dropup."
+	
+	^ self brush: SBSDropupTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> dropup: aBlock [
+	"Provides a Boostrap dropup."
+	
+	 ^ self dropup
 		with: aBlock
 
 ]
@@ -563,6 +605,40 @@ WAHtmlCanvas >> formButton: aBlock [
 	"Provides a Bootstrap button."
 	
 	 ^ self formButton
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formCheckLabel [
+	"Provides a Bootstrap label for a checkbox."
+	
+	 ^ self label 
+			class: 'form-check-label'
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formCheckLabel: aBlock [
+	"Provides a Bootstrap form group."
+	
+	 ^ self formCheckLabel
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formGroup [
+	"Provide a bootstrap form group."
+	
+	^ self brush: SBSFormGroupTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formGroup: aBlock [
+	"Provides a Bootstrap form group."
+	
+	 ^ self formGroup
 		with: aBlock
 
 ]

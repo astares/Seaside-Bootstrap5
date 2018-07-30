@@ -1192,11 +1192,67 @@ SBSCanvasBrushTest >> testDropdown [
 ]
 
 { #category : #'tests - dropdown' }
+SBSCanvasBrushTest >> testDropdownDivider [
+
+	self
+		assert: [ :html | html dropdownDivider ]
+		gives: '<div class="dropdown-divider"></div>'
+]
+
+{ #category : #'tests - dropdown - options' }
+SBSCanvasBrushTest >> testDropdownDropLeft [
+
+	self
+		assert: [ :html | html dropdown dropLeft ]
+		gives: '<div class="dropdown dropleft"></div>'
+]
+
+{ #category : #'tests - dropdown - options' }
+SBSCanvasBrushTest >> testDropdownDropRight [
+
+	self
+		assert: [ :html | html dropdown dropRight ]
+		gives: '<div class="dropdown dropright"></div>'
+]
+
+{ #category : #'tests - dropdown' }
+SBSCanvasBrushTest >> testDropdownHeader [
+
+	self
+		assert: [ :html | html dropdownHeader ]
+		gives: '<h1 class="dropdown-header"></h1>'
+]
+
+{ #category : #'tests - dropdown' }
+SBSCanvasBrushTest >> testDropdownHeaderWithContent [
+
+	self
+		assert: [ :html | html dropdownHeader: 'Bootstrap' ]
+		gives: '<h1 class="dropdown-header">Bootstrap</h1>'
+]
+
+{ #category : #'tests - dropdown' }
 SBSCanvasBrushTest >> testDropdownItem [
 
 	self
 		assert: [ :html | html dropdownItem ]
 		gives: '<a class="dropdown-item"></a>'
+]
+
+{ #category : #'tests - dropdown - options' }
+SBSCanvasBrushTest >> testDropdownItemActive [
+
+	self
+		assert: [ :html | html dropdownItem beActive ]
+		gives: '<a class="dropdown-item active"></a>'
+]
+
+{ #category : #'tests - dropdown - options' }
+SBSCanvasBrushTest >> testDropdownItemDisabled [
+
+	self
+		assert: [ :html | html dropdownItem beDisabled ]
+		gives: '<a class="dropdown-item disabled"></a>'
 ]
 
 { #category : #'tests - dropdown' }
@@ -1215,6 +1271,14 @@ SBSCanvasBrushTest >> testDropdownMenu [
 		gives: '<div class="dropdown-menu"></div>'
 ]
 
+{ #category : #'tests - dropdown' }
+SBSCanvasBrushTest >> testDropdownMenuDropRight [
+
+	self
+		assert: [ :html | html dropdownMenu dropRight ]
+		gives: '<div class="dropdown-menu dropdown-menu-right"></div>'
+]
+
 { #category : #'tests - dropdown - options' }
 SBSCanvasBrushTest >> testDropdownShow [
 
@@ -1229,6 +1293,22 @@ SBSCanvasBrushTest >> testDropdownWithContent [
 	self
 		assert: [ :html | html dropdown: 'Bootstrap' ]
 		gives: '<div class="dropdown">Bootstrap</div>'
+]
+
+{ #category : #'tests - dropdown' }
+SBSCanvasBrushTest >> testDropup [
+
+	self
+		assert: [ :html | html dropup ]
+		gives: '<div class="dropup"></div>'
+]
+
+{ #category : #'tests - dropdown' }
+SBSCanvasBrushTest >> testDropupWithContent [
+
+	self
+		assert: [ :html | html dropup: 'Bootstrap' ]
+		gives: '<div class="dropup">Bootstrap</div>'
 ]
 
 { #category : #'tests - layout' }
@@ -1259,6 +1339,46 @@ SBSCanvasBrushTest >> testEqualWidthColumnsOnMultipleRows [
 		gives: '<div class="w-100"></div>'
 
 	
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormCheckLabel [
+
+	self
+		assert: [ :html | html formCheckLabel ]
+		gives: '<label class="form-check-label"></label>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormCheckLabelWithContent [
+
+	self
+		assert: [ :html | html formCheckLabel: 'Bootstrap' ]
+		gives: '<label class="form-check-label">Bootstrap</label>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormGroup [
+
+	self
+		assert: [ :html | html formGroup ]
+		gives: '<div class="form-group"></div>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormGroupCheck [
+
+	self
+		assert: [ :html | html formGroup check ]
+		gives: '<div class="form-group form-check"></div>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormGroupWithContent [
+
+	self
+		assert: [ :html | html formGroup: 'Bootstrap' ]
+		gives: '<div class="form-group">Bootstrap</div>'
 ]
 
 { #category : #'tests - image - options' }

@@ -14,6 +14,18 @@ SBSDropdownTag >> defaultStyleClass [
 ]
 
 { #category : #operations }
+SBSDropdownTag >> dropLeft [
+
+	self class: 'dropleft'
+]
+
+{ #category : #operations }
+SBSDropdownTag >> dropRight [
+
+	self class: 'dropright'
+]
+
+{ #category : #operations }
 SBSDropdownTag >> show [
 
 	self class: 'show'

@@ -12,3 +12,9 @@ SBSDropdownMenuTag >> defaultStyleClass [
 
 	^'dropdown-menu'
 ]
+
+{ #category : #options }
+SBSDropdownMenuTag >> dropRight [
+
+	self class: 'dropdown-menu-right'
+]

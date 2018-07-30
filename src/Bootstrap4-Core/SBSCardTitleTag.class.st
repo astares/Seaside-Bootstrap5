@@ -3,7 +3,7 @@ A card title
 "
 Class {
 	#name : #SBSCardTitleTag,
-	#superclass : #WAHeadingTag,
+	#superclass : #SBSHeadingTag,
 	#category : #'Bootstrap4-Core-Canvas'
 }
 
@@ -11,10 +11,4 @@ Class {
 SBSCardTitleTag >> defaultStyleClass [
 
 	^'card-title'
-]
-
-{ #category : #initialization }
-SBSCardTitleTag >> initialize [
-	super initialize.
-	self class: self defaultStyleClass
 ]
