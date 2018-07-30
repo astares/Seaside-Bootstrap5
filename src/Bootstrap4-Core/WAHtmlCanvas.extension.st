@@ -610,6 +610,15 @@ WAHtmlCanvas >> formButton: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formCheckInput [
+	"Provide a bootstrap form check input."
+	
+	^ self checkbox
+		class: 'form-check-input'
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> formCheckLabel [
 	"Provides a Bootstrap label for a checkbox."
 	

@@ -1342,6 +1342,14 @@ SBSCanvasBrushTest >> testEqualWidthColumnsOnMultipleRows [
 ]
 
 { #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormCheckInput [
+
+	self
+		assert: [ :html | html formCheckInput ]
+		gives: '<input class="form-check-input" type="checkbox"/>'
+]
+
+{ #category : #'tests - forms' }
 SBSCanvasBrushTest >> testFormCheckLabel [
 
 	self
@@ -1379,6 +1387,14 @@ SBSCanvasBrushTest >> testFormGroupWithContent [
 	self
 		assert: [ :html | html formGroup: 'Bootstrap' ]
 		gives: '<div class="form-group">Bootstrap</div>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormInline [
+
+	self
+		assert: [ :html | html form inline ]
+		gives: '<form accept-charset="utf-8" method="post" action="/" class="form-inline"></form>'
 ]
 
 { #category : #'tests - image - options' }
