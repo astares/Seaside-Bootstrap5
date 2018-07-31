@@ -1581,6 +1581,38 @@ SBSCanvasBrushTest >> testImageThumbnail [
 		gives: '<img alt="" class="img-thumbnail"/>'
 ]
 
+{ #category : #'tests - inputgroup' }
+SBSCanvasBrushTest >> testInputGroup [
+
+	self
+		assert: [ :html | html inputGroup  ]
+		gives: '<div class="input-group"></div>'
+]
+
+{ #category : #'tests - inputgroup - options' }
+SBSCanvasBrushTest >> testInputGroupLarge [
+
+	self
+		assert: [ :html | html inputGroup beLarge ]
+		gives: '<div class="input-group input-group-lg"></div>'
+]
+
+{ #category : #'tests - inputgroup - options' }
+SBSCanvasBrushTest >> testInputGroupSmall [
+
+	self
+		assert: [ :html | html inputGroup beSmall ]
+		gives: '<div class="input-group input-group-sm"></div>'
+]
+
+{ #category : #'tests - inputgroup' }
+SBSCanvasBrushTest >> testInputGroupWithContent [
+
+	self
+		assert: [ :html | html inputGroup: 'Bootstrap'  ]
+		gives: '<div class="input-group">Bootstrap</div>'
+]
+
 { #category : #'tests - jumbotron' }
 SBSCanvasBrushTest >> testJumbotron [
 
@@ -2198,8 +2230,6 @@ SBSCanvasBrushTest >> testRow [
 	self
 		assert: [ :html | html row  ]
 		gives: '<div class="row"></div>'
-
-	
 ]
 
 { #category : #'tests - layout - options' }

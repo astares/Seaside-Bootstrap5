@@ -800,6 +800,23 @@ WAHtmlCanvas >> imageFluid [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> inputGroup [
+	"Provide a bootstrap input group."
+	
+	^ self brush: SBSInputGroupTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> inputGroup: aBlock [
+	"Provides a Bootstrap form text input."
+	
+	 ^ self inputGroup
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> jumbotron [
 	"Defines a Bootstrap jumbotron."
 	
