@@ -1342,14 +1342,6 @@ SBSCanvasBrushTest >> testEqualWidthColumnsOnMultipleRows [
 ]
 
 { #category : #'tests - forms' }
-SBSCanvasBrushTest >> testFormCheckInput [
-
-	self
-		assert: [ :html | html formCheckInput ]
-		gives: '<input class="form-check-input" type="checkbox"/>'
-]
-
-{ #category : #'tests - forms' }
 SBSCanvasBrushTest >> testFormCheckLabel [
 
 	self
@@ -1363,6 +1355,38 @@ SBSCanvasBrushTest >> testFormCheckLabelWithContent [
 	self
 		assert: [ :html | html formCheckLabel: 'Bootstrap' ]
 		gives: '<label class="form-check-label">Bootstrap</label>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormCheckbox [
+
+	self
+		assert: [ :html | html formCheckbox ]
+		gives: '<input class="form-check-input" type="checkbox"/>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormCheckboxInline [
+
+	self
+		assert: [ :html | html formCheckboxInline ]
+		gives: '<div class="form-check-inline"></div>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormCheckboxInlineWithContent [
+
+	self
+		assert: [ :html | html formCheckboxInline: 'Bootstrap' ]
+		gives: '<div class="form-check-inline">Bootstrap</div>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormFileUpload [
+
+	self
+		assert: [ :html | html formFileUpload ]
+		gives: '<input class="form-control-file" type="file"/>'
 ]
 
 { #category : #'tests - forms' }
@@ -1430,6 +1454,30 @@ SBSCanvasBrushTest >> testFormPasswordInputWithContent [
 ]
 
 { #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormPlainTextInput [
+
+	self
+		assert: [ :html | html formPlainTextInput ]
+		gives: '<input class="form-control-plaintext" type="text"/>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormRadiobutton [
+
+	self
+		assert: [ :html | html formRadiobutton ]
+		gives: '<input class="form-check-input" type="radio"/>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormRangeInput [
+
+	self
+		assert: [ :html | html formRangeInput ]
+		gives: '<input class="form-control-range" type="range"/>'
+]
+
+{ #category : #'tests - forms' }
 SBSCanvasBrushTest >> testFormSelect [
 
 	self
@@ -1443,6 +1491,22 @@ SBSCanvasBrushTest >> testFormSelectWithContent [
 	self
 		assert: [ :html | html formSelect: 'Bootstrap' ]
 		gives: '<select class="form-control">Bootstrap</select>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormTextArea [
+
+	self
+		assert: [ :html | html formTextArea ]
+		gives: '<textarea rows="auto" cols="auto" class="form-control"></textarea>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormTextAreaWithContent [
+
+	self
+		assert: [ :html | html formTextArea: 'Bootstrap' ]
+		gives: '<textarea rows="auto" cols="auto" class="form-control">Bootstrap</textarea>'
 ]
 
 { #category : #'tests - forms' }

@@ -610,15 +610,6 @@ WAHtmlCanvas >> formButton: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
-WAHtmlCanvas >> formCheckInput [
-	"Provide a bootstrap form check input."
-	
-	^ self checkbox
-		class: 'form-check-input'
-
-]
-
-{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> formCheckLabel [
 	"Provides a Bootstrap label for a checkbox."
 	
@@ -632,6 +623,41 @@ WAHtmlCanvas >> formCheckLabel: aBlock [
 	
 	 ^ self formCheckLabel
 		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formCheckbox [
+	"Provide a bootstrap form checkbox input."
+	
+	^ self checkbox
+		class: 'form-check-input'
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formCheckboxInline [
+	"Provide a bootstrap form checkbox inline element to display checkboxes in a single line."
+	
+	^ self div
+		class: 'form-check-inline'
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formCheckboxInline: aBlock [
+	"Provide a bootstrap form checkbox inline element to display checkboxes in a single line."
+	
+	 ^ self formCheckboxInline
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formFileUpload [
+	"Provide a bootstrap form radio button input."
+	
+	^ self fileUpload
+		class: 'form-control-file'
 
 ]
 
@@ -688,6 +714,32 @@ WAHtmlCanvas >> formPasswordInput: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formPlainTextInput [
+	"Provide a bootstrap form text input."
+	
+	^ self textInput 
+		class: 'form-control-plaintext'
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formRadiobutton [
+	"Provide a bootstrap form radio button input."
+	
+	^ self radioButton
+		class: 'form-check-input'
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formRangeInput [
+	"Provide a bootstrap form radio button input."
+	
+	^ self rangeInput
+		class: 'form-control-range'
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> formSelect [
 	"Provide a bootstrap form selection."
 	
@@ -700,6 +752,23 @@ WAHtmlCanvas >> formSelect: aBlock [
 	"Provides a Bootstrap form select."
 	
 	 ^ self formSelect
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formTextArea [
+	"Provide a bootstrap form text area."
+	
+	^ self textArea 
+		class: 'form-control'
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formTextArea: aBlock [
+	"Provides a Bootstrap form text area."
+	
+	 ^ self formTextArea
 		with: aBlock
 
 ]
