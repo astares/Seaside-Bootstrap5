@@ -653,6 +653,75 @@ WAHtmlCanvas >> formGroup: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formMultiSelect [
+	"Provide a bootstrap form multi select."
+	
+	^ self multiSelect
+		class: 'form-control'
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formMultiSelect: aBlock [
+	"Provides a Bootstrap form multi select."
+	
+	 ^ self formMultiSelect
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formPasswordInput [
+	"Provide a bootstrap form password input."
+	
+	^ self passwordInput 
+		class: 'form-control'
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formPasswordInput: aBlock [
+	"Provides a Bootstrap form password input."
+	
+	 ^ self formPasswordInput
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formSelect [
+	"Provide a bootstrap form selection."
+	
+	^ self select 
+		class: 'form-control'
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formSelect: aBlock [
+	"Provides a Bootstrap form select."
+	
+	 ^ self formSelect
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formTextInput [
+	"Provide a bootstrap form text input."
+	
+	^ self textInput 
+		class: 'form-control'
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formTextInput: aBlock [
+	"Provides a Bootstrap form text input."
+	
+	 ^ self formTextInput
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> imageFluid [
 	"Defines an image."
 

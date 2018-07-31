@@ -1397,6 +1397,70 @@ SBSCanvasBrushTest >> testFormInline [
 		gives: '<form accept-charset="utf-8" method="post" action="/" class="form-inline"></form>'
 ]
 
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormMultiSelect [
+
+	self
+		assert: [ :html | html formMultiSelect ]
+		gives: '<select class="form-control" multiple="multiple"></select>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormMultiSelectWithContent [
+
+	self
+		assert: [ :html | html formMultiSelect: 'Bootstrap' ]
+		gives: '<select class="form-control" multiple="multiple">Bootstrap</select>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormPasswordInput [
+
+	self
+		assert: [ :html | html formPasswordInput ]
+		gives: '<input class="form-control" type="password"/>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormPasswordInputWithContent [
+
+	self
+		assert: [ :html | html formPasswordInput: 'Bootstrap' ]
+		gives: '<input class="form-control" value="Bootstrap" type="password"/>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormSelect [
+
+	self
+		assert: [ :html | html formSelect ]
+		gives: '<select class="form-control"></select>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormSelectWithContent [
+
+	self
+		assert: [ :html | html formSelect: 'Bootstrap' ]
+		gives: '<select class="form-control">Bootstrap</select>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormTextInput [
+
+	self
+		assert: [ :html | html formTextInput ]
+		gives: '<input class="form-control" type="text"/>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormTextInputWithContent [
+
+	self
+		assert: [ :html | html formTextInput: 'Bootstrap' ]
+		gives: '<input class="form-control" value="Bootstrap" type="text"/>'
+]
+
 { #category : #'tests - image - options' }
 SBSCanvasBrushTest >> testImageCentered [
 
