@@ -7,6 +7,15 @@ Class {
 	#category : #'Bootstrap4-Core-Tests-Canvas'
 }
 
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> nav [
+
+	self
+		assert: [ :html | html nav  ]
+		gives: '<nav></nav>'
+
+]
+
 { #category : #'tests - badges' }
 SBSCanvasBrushTest >> testActionBadge [
 
@@ -1876,11 +1885,47 @@ SBSCanvasBrushTest >> testListGroupWithContent [
 ]
 
 { #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNav [
+
+	self
+		assert: [ :html | html nav  ]
+		gives: '<nav></nav>'
+
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavWithContent [
+
+	self
+		assert: [ :html | html nav: 'Bootstrap'  ]
+		gives: '<nav>Bootstrap</nav>'
+
+]
+
+{ #category : #'tests - navigation' }
 SBSCanvasBrushTest >> testNavigation [
 
 	self
 		assert: [ :html | html navigation  ]
-		gives: '<nav></nav>'
+		gives: '<nav class="nav"></nav>'
+
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationBar [
+
+	self
+		assert: [ :html | html navigationBar ]
+		gives: '<nav class="navbar-nav"></nav>'
+
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationBarWithContent [
+
+	self
+		assert: [ :html | html navigationBar: 'Bootstrap' ]
+		gives: '<nav class="navbar-nav">Bootstrap</nav>'
 
 ]
 
@@ -1888,7 +1933,7 @@ SBSCanvasBrushTest >> testNavigation [
 SBSCanvasBrushTest >> testNavigationBreadcrumb [
 
 	self
-		assert: [ :html | html navigation beBreadcrumb ]
+		assert: [ :html | html nav beBreadcrumb ]
 		gives: '<nav aria-label="breadcrumb"></nav>'
 
 	
@@ -1970,8 +2015,8 @@ SBSCanvasBrushTest >> testNavigationListWithContent [
 SBSCanvasBrushTest >> testNavigationWithContent [
 
 	self
-		assert: [ :html | html navigation: 'Bootstrap' ]
-		gives: '<nav>Bootstrap</nav>'
+		assert: [ :html | html navigation: 'Bootstrap'  ]
+		gives: '<nav class="nav">Bootstrap</nav>'
 
 ]
 

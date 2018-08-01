@@ -897,6 +897,21 @@ WAHtmlCanvas >> listGroupLinkedItem: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> nav [
+	"Provide a nav tag"
+	
+	^ self brush: SBSNavTag new
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> nav: aBlock [
+	"Provide a nav tag"
+	
+	^ self nav 
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> navigation [
 	"Provide a Bootstrap navigation"
 	
@@ -908,6 +923,22 @@ WAHtmlCanvas >> navigation: aBlock [
  	"Defines a Bootstrap Navigation."
 	
 	^self navigation
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> navigationBar [
+	"Provide a bootstrap navigation bar."
+	
+	^ self brush: SBSNavigationBarTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> navigationBar: aBlock [
+ 	"Defines a Bootstrap Navigation."
+	
+	^self navigationBar
 		with: aBlock
 ]
 

@@ -1,20 +1,17 @@
-"
-Bootstrap navigation
-"
 Class {
-	#name : #SBSNavigationTag,
+	#name : #SBSNavigationBarTag,
 	#superclass : #SBSNavTag,
 	#category : #'Bootstrap4-Core-Canvas'
 }
 
 { #category : #defaults }
-SBSNavigationTag >> defaultStyleClass [
+SBSNavigationBarTag >> defaultStyleClass [
 
-	^'nav'
+	^'navbar-nav'
 ]
 
 { #category : #initialization }
-SBSNavigationTag >> initialize [
+SBSNavigationBarTag >> initialize [
 	super initialize.
 	self class: self defaultStyleClass
 ]
