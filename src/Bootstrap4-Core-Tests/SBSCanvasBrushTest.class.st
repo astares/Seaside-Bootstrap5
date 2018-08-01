@@ -1036,10 +1036,8 @@ SBSCanvasBrushTest >> testCollapseWithContent [
 SBSCanvasBrushTest >> testColumn [
 
 	self
-		assert: [ :html | html listGroup  ]
-		gives: '<ul class="list-group"></ul>'
-
-	
+		assert: [ :html | html column ]
+		gives: '<div></div>'
 ]
 
 { #category : #'tests - layout - options' }

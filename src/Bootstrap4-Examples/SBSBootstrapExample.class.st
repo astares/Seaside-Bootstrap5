@@ -10,7 +10,7 @@ Class {
 { #category : #accessing }
 SBSBootstrapExample class >> exampleName [
 
-	^self name greaseString 
+	^self subclassResponsibility 
 ]
 
 { #category : #testing }
@@ -32,5 +32,5 @@ SBSBootstrapExample >> renderContentOn: html [
 { #category : #rendering }
 SBSBootstrapExample >> renderExampleOn: html [
 
-	
+	self subclassResponsibility 
 ]

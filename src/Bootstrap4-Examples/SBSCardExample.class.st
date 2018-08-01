@@ -7,6 +7,12 @@ Class {
 	#category : #'Bootstrap4-Examples-Examples'
 }
 
+{ #category : #accessing }
+SBSCardExample class >> exampleName [
+
+	^'Cards'
+]
+
 { #category : #rendering }
 SBSCardExample >> renderExampleOn: html [
  

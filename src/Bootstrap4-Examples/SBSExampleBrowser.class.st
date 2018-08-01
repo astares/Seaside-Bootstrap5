@@ -47,6 +47,42 @@ SBSExampleBrowser >> navigateToExample: example [
 	currentExample := example
 ]
 
+{ #category : #rendering }
+SBSExampleBrowser >> renderContentOn: html [
+
+	html row 
+		with: [ 
+		html column: [ self renderNavigationOn: html ] mediumSize: 2.
+		html column: [ self renderExampleOn: html ] mediumSize: 10	
+	]
+]
+
+{ #category : #rendering }
+SBSExampleBrowser >> renderExampleOn: html [
+
+	currentExample ifNotNil: [
+		currentExample renderOn: html.
+		html break;break.
+		html heading: 'Smalltalk source code'; horizontalRule.		
+		html textArea style: 'width: 100%; height: 400px'; text:  (currentExample class methodNamed: #renderExampleOn:) sourceCode. 
+	].
+	
+]
+
+{ #category : #rendering }
+SBSExampleBrowser >> renderNavigationOn: html [
+	
+	|examples item|
+	examples := self allExamples.
+	html form: [ 
+	html listGroup: [ 
+		examples do: [:ex |
+			item := html listGroupLinkedItem.
+			currentExample class = ex ifTrue: [ item beActive ].
+			item callback: [ self navigateToExample: ex new ];
+				  with: ex exampleName ]] ]
+]
+
 { #category : #updating }
 SBSExampleBrowser >> updateUrl: url [
 	super updateUrl: url.

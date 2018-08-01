@@ -441,6 +441,14 @@ WAHtmlCanvas >> column: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> column: aBlock mediumSize: anInteger [
+
+	^self column
+		mediumSize: anInteger;
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> container [
 	"Easily center a page's contents by wrapping its contents."
 	

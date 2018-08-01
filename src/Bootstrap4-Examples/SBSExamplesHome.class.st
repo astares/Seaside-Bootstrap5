@@ -82,6 +82,16 @@ SBSExamplesHome >> renderContentOn: html [
 ]
 
 { #category : #'rendering components' }
+SBSExamplesHome >> renderHomeButtonOn: html [
+
+	html form: [ 	
+		html formButton 
+			bePrimary  
+			callback: [ self returnToIntro ]; 
+			with: 'Home'  ]
+]
+
+{ #category : #'rendering components' }
 SBSExamplesHome >> renderIntroOn: html [
 	html container: [ 	
 		html break.
@@ -125,8 +135,17 @@ SBSExamplesHome >> renderNavigationbarOn: html [
 	 html navigationBar 
 				lightBackground;
 				with: [ 
-					self renderBrandOn: html.
-					self renderNavigationLinkOn: html ]
+					self 
+						renderBrandOn: html;
+						renderNavigationLinkOn: html;
+						renderHomeButtonOn: html ]
+]
+
+{ #category : #actions }
+SBSExamplesHome >> returnToIntro [
+
+	displayIntro := true.
+  
 ]
 
 { #category : #updating }
