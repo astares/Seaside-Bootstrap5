@@ -943,6 +943,39 @@ WAHtmlCanvas >> navigationBar: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> navigationBarBrand [
+	"Provide a bootstrap navigation bar brand."
+	
+	^ self brush: SBSNavigationBarBrandTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> navigationBarBrand: aBlock [
+ 	"Defines a Bootstrap navigation bar brand."
+	
+	^self navigationBarBrand
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> navigationBarNavigation [
+	"Provide a bootstrap navigation bar navigation."
+	
+	^ self unorderedList 
+		class: 'navbar-nav'
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> navigationBarNavigation: aBlock [
+	"Provides an Bootstrap navigation bar navigation."
+
+	^ self navigationBarNavigation
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> navigationItem [
 	^self listItem 
 		class: 'nav-item'

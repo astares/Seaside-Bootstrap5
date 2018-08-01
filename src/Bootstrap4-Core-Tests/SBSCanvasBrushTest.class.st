@@ -1916,7 +1916,25 @@ SBSCanvasBrushTest >> testNavigationBar [
 
 	self
 		assert: [ :html | html navigationBar ]
-		gives: '<nav class="navbar-nav"></nav>'
+		gives: '<nav class="navbar"></nav>'
+
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationBarNavigation [
+
+	self
+		assert: [ :html | html navigationBarNavigation ]
+		gives: '<ul class="navbar-nav"></ul>'
+
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationBarNavigationWithContent [
+
+	self
+		assert: [ :html | html navigationBarNavigation: 'Bootstrap' ]
+		gives: '<ul class="navbar-nav">Bootstrap</ul>'
 
 ]
 
@@ -1925,7 +1943,7 @@ SBSCanvasBrushTest >> testNavigationBarWithContent [
 
 	self
 		assert: [ :html | html navigationBar: 'Bootstrap' ]
-		gives: '<nav class="navbar-nav">Bootstrap</nav>'
+		gives: '<nav class="navbar">Bootstrap</nav>'
 
 ]
 

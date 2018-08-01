@@ -7,7 +7,7 @@ Class {
 { #category : #defaults }
 SBSNavigationBarTag >> defaultStyleClass [
 
-	^'navbar-nav'
+	^'navbar'
 ]
 
 { #category : #initialization }

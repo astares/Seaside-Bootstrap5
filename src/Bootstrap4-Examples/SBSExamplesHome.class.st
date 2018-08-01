@@ -57,6 +57,20 @@ SBSExamplesHome >> isDisplayingIntro [
 	^displayIntro  
 ]
 
+{ #category : #'rendering components' }
+SBSExamplesHome >> renderBrandOn: html [ 
+	
+ html navigationBarBrand
+	with:  [ 
+			html image 
+				style: 'padding: 5px 30px;';
+				url: SBSExamplesLibrary / #logosmallPng.
+			 
+ ].
+	
+	 
+]
+
 { #category : #rendering }
 SBSExamplesHome >> renderContentOn: html [
 
@@ -97,7 +111,26 @@ SBSExamplesHome >> renderIntroOn: html [
 ]
 
 { #category : #'rendering components' }
+SBSExamplesHome >> renderNavigationLinkOn: html [
+
+	 html navigationLink
+						url: 'https://github.com/astares/Seaside-Bootstrap4';
+						with: 'Bootstrap4 for Seaside' 
+	 
+]
+
+{ #category : #'rendering components' }
 SBSExamplesHome >> renderNavigationbarOn: html [
 	
-	 
+	 html navigationBar 
+				lightBackground;
+				with: [ 
+					self renderBrandOn: html.
+					self renderNavigationLinkOn: html ]
+]
+
+{ #category : #updating }
+SBSExamplesHome >> updateRoot: htmlRoot [
+	super updateRoot: htmlRoot.
+	htmlRoot title: 'Bootstrap4 for Seaside'
 ]
