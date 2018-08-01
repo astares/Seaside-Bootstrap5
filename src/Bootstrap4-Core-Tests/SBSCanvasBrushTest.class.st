@@ -1597,6 +1597,22 @@ SBSCanvasBrushTest >> testInputGroupLarge [
 		gives: '<div class="input-group input-group-lg"></div>'
 ]
 
+{ #category : #'tests - inputgroup' }
+SBSCanvasBrushTest >> testInputGroupPrepend [
+
+	self
+		assert: [ :html | html inputGroupPrepend  ]
+		gives: '<div class="input-group-prepend"></div>'
+]
+
+{ #category : #'tests - inputgroup' }
+SBSCanvasBrushTest >> testInputGroupPrependWithContent [
+
+	self
+		assert: [ :html | html inputGroupPrepend: 'Bootstrap'  ]
+		gives: '<div class="input-group-prepend">Bootstrap</div>'
+]
+
 { #category : #'tests - inputgroup - options' }
 SBSCanvasBrushTest >> testInputGroupSmall [
 

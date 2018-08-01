@@ -817,6 +817,24 @@ WAHtmlCanvas >> inputGroup: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> inputGroupPrepend [
+	"Provide a bootstrap input group prepend."
+	
+	^ self div 
+		class: 'input-group-prepend'
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> inputGroupPrepend: aBlock [
+	"Provides a Bootstrap form input group prepend."
+	
+	 ^ self inputGroupPrepend
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> jumbotron [
 	"Defines a Bootstrap jumbotron."
 	
