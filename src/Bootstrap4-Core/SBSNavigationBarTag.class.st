@@ -1,3 +1,6 @@
+"
+A Bootstrap navigation bar
+"
 Class {
 	#name : #SBSNavigationBarTag,
 	#superclass : #SBSNavTag,

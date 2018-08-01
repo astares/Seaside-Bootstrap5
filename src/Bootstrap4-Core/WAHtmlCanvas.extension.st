@@ -483,6 +483,14 @@ WAHtmlCanvas >> containerFluid: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> displayHeading [
+	"Provide a bootstrap display heading."
+	
+	^ self brush: SBSDisplayHeadingTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> dropdown [
 	"Provide a bootstrap dropdown."
 	

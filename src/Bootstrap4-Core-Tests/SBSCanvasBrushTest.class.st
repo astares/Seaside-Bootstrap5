@@ -1090,14 +1090,12 @@ SBSCanvasBrushTest >> testColumnLargeVariableWidth [
 	
 ]
 
-{ #category : #'tests - layout - options' }
+{ #category : #'tests - layout' }
 SBSCanvasBrushTest >> testColumnMediumSize [
 
 	self
-		assert: [ :html | html column mediumSize: 1 ]
-		gives: '<div class="col-md-1"></div>'
-
-	
+		assert: [ :html | html column: 'Bootstrap' mediumSize: 2 ]
+		gives: '<div class="col-md-2">Bootstrap</div>'
 ]
 
 { #category : #'tests - layout - options' }
@@ -1188,6 +1186,14 @@ SBSCanvasBrushTest >> testContainerWithContent [
 		gives: '<div class="container">Bootstrap</div>'
 
 	
+]
+
+{ #category : #'tests - headings' }
+SBSCanvasBrushTest >> testDisplayHeading [
+
+	self
+		assert: [ :html | html displayHeading level: 1 ]
+		gives: '<h1 class="display-1"></h1>'	
 ]
 
 { #category : #'tests - dropdown' }
