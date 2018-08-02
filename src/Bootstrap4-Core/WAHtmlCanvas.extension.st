@@ -35,6 +35,23 @@ WAHtmlCanvas >> alert: aBlock [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> alertHeading [
+	"Defines a Bootstrap alert heading."
+	
+	^self brush: SBSAlertHeadingTag new
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> alertHeading: aBlock [
+	"Provides a Bootstrap alert heading."
+	
+	 ^ self alertHeading
+		with: aBlock
+
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> alertLink [
 	"Defines a Bootstrap alert link."
 	

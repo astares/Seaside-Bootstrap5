@@ -4,10 +4,20 @@ A progress bar tag, child of progress
 Class {
 	#name : #SBSProgressBarTag,
 	#superclass : #SBSGenericTag,
-	#traits : 'SBSTContextualStyled',
-	#classTraits : 'SBSTContextualStyled classTrait',
 	#category : #'Bootstrap4-Core-Canvas'
 }
+
+{ #category : #options }
+SBSProgressBarTag >> beAnimated [
+
+	self class: 'progress-bar-animated'
+]
+
+{ #category : #options }
+SBSProgressBarTag >> beStriped [
+
+	self class: 'progress-bar-striped'
+]
 
 { #category : #defaults }
 SBSProgressBarTag >> defaultStyleClass [

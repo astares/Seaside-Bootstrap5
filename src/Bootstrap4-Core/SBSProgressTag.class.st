@@ -4,8 +4,6 @@ A progress, parent element of a progress bar
 Class {
 	#name : #SBSProgressTag,
 	#superclass : #SBSGenericTag,
-	#traits : 'SBSTContextualStyled',
-	#classTraits : 'SBSTContextualStyled classTrait',
 	#category : #'Bootstrap4-Core-Canvas'
 }
 
@@ -13,4 +11,10 @@ Class {
 SBSProgressTag >> defaultStyleClass [
 
 	^'progress'
+]
+
+{ #category : #options }
+SBSProgressTag >> height: anInteger [
+
+	self style: ('height: {1}px;' format: { anInteger })
 ]

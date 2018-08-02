@@ -20,7 +20,7 @@ SBSBadgeTag >> bePill [
 SBSBadgeTag >> bePillIf: aBlock [
 	"Creates a more rounded type badge if aBlock is true."
 	
-	self class: self contextStyle, self modifier, 'danger' if: aBlock value
+	self class: self contextStyle, self modifier, '-pill' if: aBlock value
 ]
 
 { #category : #defaults }

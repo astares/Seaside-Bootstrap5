@@ -156,6 +156,26 @@ SBSCanvasBrushTest >> testAlertDismissible [
 	
 ]
 
+{ #category : #'tests - alerts' }
+SBSCanvasBrushTest >> testAlertHeading [
+
+	self
+		assert: [ :html | html alertHeading ]
+		gives: '<h1 class="alert-heading"></h1>'
+
+	
+]
+
+{ #category : #'tests - alerts' }
+SBSCanvasBrushTest >> testAlertHeadingWithContent [
+
+	self
+		assert: [ :html | html alertHeading: 'Bootstrap' ]
+		gives: '<h1 class="alert-heading">Bootstrap</h1>'
+
+	
+]
+
 { #category : #'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertInfo [
 
@@ -2277,6 +2297,15 @@ SBSCanvasBrushTest >> testProgressBar [
 	self
 		assert: [ :html | html progressBar  ]
 		gives: '<div class="progress-bar"></div>'
+
+]
+
+{ #category : #'tests - progressbar' }
+SBSCanvasBrushTest >> testProgressBarStriped [
+
+	self
+		assert: [ :html | html progressBar beStriped  ]
+		gives: '<div class="progress-bar progress-bar-striped"></div>'
 
 ]
 
