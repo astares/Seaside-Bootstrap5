@@ -7,14 +7,14 @@ Class {
 	#category : #'Bootstrap4-Core-Canvas'
 }
 
-{ #category : #options }
-SBSFormGroupTag >> check [
-
-	self class: 'form-check'
-]
-
 { #category : #defaults }
 SBSFormGroupTag >> defaultStyleClass [
 
 	^'form-group'
+]
+
+{ #category : #options }
+SBSFormGroupTag >> formCheck [
+
+	self class: 'form-check'
 ]

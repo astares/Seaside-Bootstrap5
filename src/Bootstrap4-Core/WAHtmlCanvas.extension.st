@@ -669,6 +669,14 @@ WAHtmlCanvas >> formCheckbox [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WAHtmlCanvas >> formCheckbox: aBlock [
+	"Provide a bootstrap form checkbox input."
+	
+	^ self formCheckbox
+		with: aBlock
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WAHtmlCanvas >> formCheckboxInline [
 	"Provide a bootstrap form checkbox inline element to display checkboxes in a single line."
 	

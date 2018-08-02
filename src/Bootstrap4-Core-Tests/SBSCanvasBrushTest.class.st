@@ -1415,6 +1415,14 @@ SBSCanvasBrushTest >> testFormCheckboxInlineWithContent [
 ]
 
 { #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormCheckboxWithContent [
+
+	self
+		assert: [ :html | html formCheckbox: 'Bootstrap' ]
+		gives: '<input class="form-check-input" type="checkbox"/>Bootstrap'
+]
+
+{ #category : #'tests - forms' }
 SBSCanvasBrushTest >> testFormFileUpload [
 
 	self
@@ -1434,7 +1442,7 @@ SBSCanvasBrushTest >> testFormGroup [
 SBSCanvasBrushTest >> testFormGroupCheck [
 
 	self
-		assert: [ :html | html formGroup check ]
+		assert: [ :html | html formGroup formCheck ]
 		gives: '<div class="form-group form-check"></div>'
 ]
 
