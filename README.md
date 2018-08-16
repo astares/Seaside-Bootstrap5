@@ -20,7 +20,7 @@ First install [Pharo](http://www.pharo.org) on your machine. Pharo 7 onwards is 
 Start the web server for [Seaside](http://www.seaside.st) - for instance with Zinc evaluate
 ```Smalltalk
 ZnZincServerAdaptor startOn: 8080.
-WebBrowser openOn: 'http://localhost:8080/boostrap4/'
+WebBrowser openOn: 'http://localhost:8080/bootstrap4/'
 ```
 
 ## Learn
