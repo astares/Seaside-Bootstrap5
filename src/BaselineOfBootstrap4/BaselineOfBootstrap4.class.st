@@ -39,5 +39,5 @@ BaselineOfBootstrap4 >> seaside: spec [
         	with: [ 
 				spec
 					loads: #('default');
-					repository: 'github://SeasideSt/Seaside:pharo7/repository' ]
+					repository: 'github://SeasideSt/Seaside:develop/repository' ]
 ]
