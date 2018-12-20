@@ -13,7 +13,7 @@ wget -O- get.pharo.org/64/70+vm | bash
 ./pharo-ui Pharo.image
 ```
 
-## Load
+## Load all in one
 
 ```Smalltalk
   Metacello new
@@ -21,6 +21,17 @@ wget -O- get.pharo.org/64/70+vm | bash
       repository: 'github://astares/Seaside-Bootstrap4:master/src';
       load
 ```
+
+## Load Seaside and then manually
+
+```Smalltalk
+Metacello new
+  baseline:'Seaside3';
+  repository: 'github://SeasideSt/Seaside:develop/repository';
+  load.
+```
+
+and then load the packages you need using Iceberg
 
 ## Run
 
