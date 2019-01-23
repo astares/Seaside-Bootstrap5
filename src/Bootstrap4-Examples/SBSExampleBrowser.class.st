@@ -83,6 +83,12 @@ SBSExampleBrowser >> renderNavigationOn: html [
 				  with: ex exampleName ]] ]
 ]
 
+{ #category : #accessing }
+SBSExampleBrowser >> rendererClass [
+		
+	^ SBSHtmlCanvas 
+]
+
 { #category : #updating }
 SBSExampleBrowser >> updateUrl: url [
 	super updateUrl: url.

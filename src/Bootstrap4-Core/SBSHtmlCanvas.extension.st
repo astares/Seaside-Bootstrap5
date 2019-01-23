@@ -1,33 +1,16 @@
 Extension { #name : #SBSHtmlCanvas }
 
 { #category : #'*Bootstrap4-Core' }
-SBSHtmlCanvas >> navigation [
-	"Provide a Bootstrap navigation"
+SBSHtmlCanvas >> collapse [
+	"Provide a bootstrap collapse."
 	
-	^ self brush: SBSNavigationTag new
+	^ self brush: SBSCollapseTag new
 ]
 
 { #category : #'*Bootstrap4-Core' }
-SBSHtmlCanvas >> navigation: aBlock [
- 	"Defines a Bootstrap Navigation."
+SBSHtmlCanvas >> collapse: aBlock [
+ 	"Defines a Bootstrap collapse."
 	
-	^self navigation
+	^self collapse
 		with: aBlock
-]
-
-{ #category : #'*Bootstrap4-Core' }
-SBSHtmlCanvas >> progress [
-	"Provide a bootstrap progress parent."
-	
-	^ self brush: SBSProgressTag new
-
-]
-
-{ #category : #'*Bootstrap4-Core' }
-SBSHtmlCanvas >> progress: aBlock [
-	"Provides a Bootstrap progress parent."
-	
-	 ^ self progress
-			with: aBlock
-
 ]

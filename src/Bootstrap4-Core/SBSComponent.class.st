@@ -7,6 +7,12 @@ Class {
 	#category : #'Bootstrap4-Core-Component'
 }
 
+{ #category : #rendering }
+SBSComponent >> rendererClass [	
+	
+	^SBSHtmlCanvas 
+]
+
 { #category : #updating }
 SBSComponent >> updateRoot: htmlRoot [
 

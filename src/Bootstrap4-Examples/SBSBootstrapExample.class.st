@@ -24,13 +24,17 @@ SBSBootstrapExample >> renderContentOn: html [
 	html containerFluid: [ 
 	html break.	
 	html heading: self class exampleName; horizontalRule.
-	self renderExampleOn: html
-	
- 	]
+	self renderExampleOn: html ]
 ]
 
 { #category : #rendering }
 SBSBootstrapExample >> renderExampleOn: html [
 
 	self subclassResponsibility 
+]
+
+{ #category : #rendering }
+SBSBootstrapExample >> rendererClass [
+	
+	^ SBSHtmlCanvas 
 ]
