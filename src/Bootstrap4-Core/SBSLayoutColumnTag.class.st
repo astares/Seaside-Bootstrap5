@@ -6,7 +6,7 @@ Class {
 	#superclass : #SBSLayoutTag,
 	#traits : 'SBSTVisualOrder + SBSTOffsetting + SBSTColumnSelfAlignment',
 	#classTraits : 'SBSTVisualOrder classTrait + SBSTOffsetting classTrait + SBSTColumnSelfAlignment classTrait',
-	#category : 'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

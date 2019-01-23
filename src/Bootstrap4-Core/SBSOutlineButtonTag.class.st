@@ -6,7 +6,7 @@ have an outlined look.
 Class {
 	#name : #SBSOutlineButtonTag,
 	#superclass : #SBSButtonTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

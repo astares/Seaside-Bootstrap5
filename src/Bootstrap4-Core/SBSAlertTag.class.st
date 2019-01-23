@@ -6,7 +6,7 @@ Class {
 	#superclass : #SBSGenericTag,
 	#traits : 'SBSTContextualStyled',
 	#classTraits : 'SBSTContextualStyled classTrait',
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #options }

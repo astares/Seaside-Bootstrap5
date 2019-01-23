@@ -4,7 +4,7 @@ Links on Bootstrap cards
 Class {
 	#name : #SBSCardLinkTag,
 	#superclass : #SBSAnchorTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

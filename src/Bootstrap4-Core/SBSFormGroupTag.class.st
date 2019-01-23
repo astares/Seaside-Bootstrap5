@@ -4,7 +4,7 @@ A boostrap form group
 Class {
 	#name : #SBSFormGroupTag,
 	#superclass : #SBSGenericTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

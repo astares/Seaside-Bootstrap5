@@ -6,7 +6,7 @@ Class {
 	#superclass : #SBSUnorderedListTag,
 	#traits : 'SBSTSizeStyled',
 	#classTraits : 'SBSTSizeStyled classTrait',
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

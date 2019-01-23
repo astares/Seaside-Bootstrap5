@@ -4,7 +4,7 @@ A bootstrap dropdown
 Class {
 	#name : #SBSDropdownTag,
 	#superclass : #SBSGenericTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

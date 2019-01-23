@@ -4,7 +4,7 @@ An image overlay for a Bootstrap card
 Class {
 	#name : #SBSCardImageOverlayTag,
 	#superclass : #SBSGenericTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

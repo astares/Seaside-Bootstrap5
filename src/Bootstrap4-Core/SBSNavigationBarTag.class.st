@@ -4,7 +4,7 @@ A Bootstrap navigation bar
 Class {
 	#name : #SBSNavigationBarTag,
 	#superclass : #SBSNavTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

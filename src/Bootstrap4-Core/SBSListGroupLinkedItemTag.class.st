@@ -3,7 +3,7 @@ Class {
 	#superclass : #SBSAnchorTag,
 	#traits : 'SBSTContextualStyled + SBSTActiveStyled + SBSTContentJustification',
 	#classTraits : 'SBSTContextualStyled classTrait + SBSTActiveStyled classTrait + SBSTContentJustification classTrait',
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

@@ -4,7 +4,7 @@ Body of a bootstrap card.
 Class {
 	#name : #SBSCardBodyTag,
 	#superclass : #SBSGenericTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

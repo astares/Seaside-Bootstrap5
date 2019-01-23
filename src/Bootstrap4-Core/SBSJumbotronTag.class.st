@@ -4,7 +4,7 @@ Bootstrap jumbotron
 Class {
 	#name : #SBSJumbotronTag,
 	#superclass : #SBSGenericTag,
-	#category : 'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #options }

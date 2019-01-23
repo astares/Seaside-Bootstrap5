@@ -4,7 +4,7 @@ A Bootstrap display heading
 Class {
 	#name : #SBSDisplayHeadingTag,
 	#superclass : #WAHeadingTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #accessing }

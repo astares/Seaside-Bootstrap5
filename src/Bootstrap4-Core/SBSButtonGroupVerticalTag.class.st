@@ -4,7 +4,7 @@ Vertical button group for Bootstrap
 Class {
 	#name : #SBSButtonGroupVerticalTag,
 	#superclass : #SBSButtonGroupTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

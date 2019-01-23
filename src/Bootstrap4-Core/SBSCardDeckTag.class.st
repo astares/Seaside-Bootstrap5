@@ -4,7 +4,7 @@ Provides a grid of cards that are of equal height and width. The layout will aut
 Class {
 	#name : #SBSCardDeckTag,
 	#superclass : #SBSGenericTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

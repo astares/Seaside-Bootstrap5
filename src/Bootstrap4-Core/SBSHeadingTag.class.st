@@ -4,7 +4,7 @@ Abstract superclass for Bootstrap headings
 Class {
 	#name : #SBSHeadingTag,
 	#superclass : #WAHeadingTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #testing }

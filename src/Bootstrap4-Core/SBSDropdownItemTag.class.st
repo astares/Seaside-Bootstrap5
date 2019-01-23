@@ -6,7 +6,7 @@ Class {
 	#superclass : #SBSAnchorTag,
 	#traits : 'SBSTActiveStyled',
 	#classTraits : 'SBSTActiveStyled classTrait',
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

@@ -4,7 +4,7 @@ Bootstrap button
 Class {
 	#name : #SBSFormButtonTag,
 	#superclass : #SBSButtonTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #'options - styles' }

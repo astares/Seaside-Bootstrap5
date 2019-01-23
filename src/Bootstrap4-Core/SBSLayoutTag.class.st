@@ -4,7 +4,7 @@ Abstract superclass for layout tags
 Class {
 	#name : #SBSLayoutTag,
 	#superclass : #SBSGenericTag,
-	#category : 'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #testing }

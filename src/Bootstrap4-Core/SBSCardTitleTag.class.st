@@ -4,7 +4,7 @@ A card title
 Class {
 	#name : #SBSCardTitleTag,
 	#superclass : #SBSHeadingTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

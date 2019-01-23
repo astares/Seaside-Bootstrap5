@@ -6,7 +6,7 @@ Class {
 	#superclass : #WAButtonTag,
 	#traits : 'SBSTContextualStyled + SBSTSizeStyled',
 	#classTraits : 'SBSTContextualStyled classTrait + SBSTSizeStyled classTrait',
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #testing }

@@ -4,7 +4,7 @@ A page link for Bootstrap pagination
 Class {
 	#name : #SBSPageLinkTag,
 	#superclass : #SBSAnchorTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

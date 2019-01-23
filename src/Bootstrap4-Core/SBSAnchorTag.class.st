@@ -4,7 +4,7 @@ Common superclass for link based boostrap tags
 Class {
 	#name : #SBSAnchorTag,
 	#superclass : #WAAnchorTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #testing }

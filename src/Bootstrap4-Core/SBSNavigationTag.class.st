@@ -4,7 +4,7 @@ Bootstrap navigation
 Class {
 	#name : #SBSNavigationTag,
 	#superclass : #SBSNavTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

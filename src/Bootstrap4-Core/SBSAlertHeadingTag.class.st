@@ -4,7 +4,7 @@ Bootstrap alert heading
 Class {
 	#name : #SBSAlertHeadingTag,
 	#superclass : #SBSHeadingTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

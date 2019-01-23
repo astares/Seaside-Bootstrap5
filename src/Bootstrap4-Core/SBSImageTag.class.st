@@ -4,7 +4,7 @@ Common superclass for Bootstrap image tags
 Class {
 	#name : #SBSImageTag,
 	#superclass : #WAImageTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #testing }

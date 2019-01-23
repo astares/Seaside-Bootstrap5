@@ -4,7 +4,7 @@ Similar to a card deck. The only difference is that the card group removes left 
 Class {
 	#name : #SBSCardGroupTag,
 	#superclass : #SBSGenericTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

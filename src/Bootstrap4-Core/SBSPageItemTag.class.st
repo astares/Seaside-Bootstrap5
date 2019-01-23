@@ -4,7 +4,7 @@ A page item for pagination
 Class {
 	#name : #SBSPageItemTag,
 	#superclass : #SBSListItemTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

@@ -6,7 +6,7 @@ Class {
 	#superclass : #SBSListItemTag,
 	#traits : 'SBSTContextualStyled + SBSTContentJustification',
 	#classTraits : 'SBSTContextualStyled classTrait + SBSTContentJustification classTrait',
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

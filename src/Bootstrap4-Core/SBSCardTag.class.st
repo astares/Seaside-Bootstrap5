@@ -4,7 +4,7 @@ Provide a bootstrap card.
 Class {
 	#name : #SBSCardTag,
 	#superclass : #SBSGenericTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

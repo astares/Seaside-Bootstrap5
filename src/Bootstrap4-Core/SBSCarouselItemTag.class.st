@@ -4,7 +4,7 @@ A carousel item
 Class {
 	#name : #SBSCarouselItemTag,
 	#superclass : #SBSGenericTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #options }

@@ -4,7 +4,7 @@ Common superclass for unordered list based boostrap parts
 Class {
 	#name : #SBSUnorderedListTag,
 	#superclass : #WAUnorderedListTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #testing }

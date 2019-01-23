@@ -6,7 +6,7 @@ Class {
 	#superclass : #SBSLayoutTag,
 	#traits : 'SBSTContentJustification + SBSTRowItemAlignment',
 	#classTraits : 'SBSTContentJustification classTrait + SBSTRowItemAlignment classTrait',
-	#category : 'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

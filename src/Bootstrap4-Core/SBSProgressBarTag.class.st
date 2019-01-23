@@ -4,7 +4,7 @@ A progress bar tag, child of progress
 Class {
 	#name : #SBSProgressBarTag,
 	#superclass : #SBSGenericTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #options }

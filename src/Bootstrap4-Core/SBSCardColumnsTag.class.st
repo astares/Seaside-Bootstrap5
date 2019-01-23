@@ -4,7 +4,7 @@ Creates a masonry-like grid of cards (like pinterest). The layout will automatic
 Class {
 	#name : #SBSCardColumnsTag,
 	#superclass : #SBSGenericTag,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #defaults }

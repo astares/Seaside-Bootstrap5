@@ -4,7 +4,7 @@ nav tag
 Class {
 	#name : #SBSNavTag,
 	#superclass : #WATagBrush,
-	#category : #'Bootstrap4-Core-Canvas'
+	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #options }
