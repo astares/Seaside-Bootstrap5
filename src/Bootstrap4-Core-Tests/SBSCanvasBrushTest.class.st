@@ -7,13 +7,9 @@ Class {
 	#category : #'Bootstrap4-Core-Tests-Canvas'
 }
 
-{ #category : #'tests - navigation' }
-SBSCanvasBrushTest >> nav [
-
-	self
-		assert: [ :html | html nav  ]
-		gives: '<nav></nav>'
-
+{ #category : #private }
+SBSCanvasBrushTest >> builder [
+	^ SBSHtmlCanvas builder
 ]
 
 { #category : #'tests - badges' }
@@ -471,7 +467,7 @@ SBSCanvasBrushTest >> testButtonDisabled [
 
 	self
 		assert: [ :html | html formButton beDisabled ]
-		gives: '<button class="btn" disabled="disabled"></button>'
+		gives: '<button class="btn" disabled></button>'
 
 	
 ]
@@ -1467,7 +1463,7 @@ SBSCanvasBrushTest >> testFormMultiSelect [
 
 	self
 		assert: [ :html | html formMultiSelect ]
-		gives: '<select class="form-control" multiple="multiple"></select>'
+		gives: '<select class="form-control" multiple></select>'
 ]
 
 { #category : #'tests - forms' }
@@ -1475,7 +1471,7 @@ SBSCanvasBrushTest >> testFormMultiSelectWithContent [
 
 	self
 		assert: [ :html | html formMultiSelect: 'Bootstrap' ]
-		gives: '<select class="form-control" multiple="multiple">Bootstrap</select>'
+		gives: '<select class="form-control" multiple>Bootstrap</select>'
 ]
 
 { #category : #'tests - forms' }
