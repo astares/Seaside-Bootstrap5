@@ -429,14 +429,14 @@ SBSHtmlCanvas >> carouselItem: aBlock [
 		with: aBlock
 ]
 
-{ #category : #'*Bootstrap4-Core' }
+{ #category : #collapsing }
 SBSHtmlCanvas >> collapse [
 	"Provide a bootstrap collapse."
 	
 	^ self brush: SBSCollapseTag new
 ]
 
-{ #category : #'*Bootstrap4-Core' }
+{ #category : #collapsing }
 SBSHtmlCanvas >> collapse: aBlock [
  	"Defines a Bootstrap collapse."
 	
