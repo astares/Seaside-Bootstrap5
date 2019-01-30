@@ -39,5 +39,5 @@ BaselineOfBootstrap4 >> seaside: spec [
         	with: [ 
 				spec
 					loads: #('default');
-					repository: 'github://SeasideSt/Seaside:develop/repository' ]
+					repository: 'github://SeasideSt/Seaside:master-tonel/repository' ]
 ]
