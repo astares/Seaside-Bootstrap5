@@ -3,7 +3,7 @@ SUnit tests for SBSTOffsetting
 "
 Class {
 	#name : #SBSTOffsettingTest,
-	#superclass : #WAAbstractCanvasBrushTest,
+	#superclass : #SBSAbstractCanvasBrushTest,
 	#category : #'Bootstrap4-Core-Tests-Traits'
 }
 

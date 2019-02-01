@@ -3,7 +3,7 @@ SUnit tests for SBSTRowItemAlignment
 "
 Class {
 	#name : #SBSTRowItemAlignmentTest,
-	#superclass : #WAAbstractCanvasBrushTest,
+	#superclass : #SBSAbstractCanvasBrushTest,
 	#category : #'Bootstrap4-Core-Tests-Traits'
 }
 

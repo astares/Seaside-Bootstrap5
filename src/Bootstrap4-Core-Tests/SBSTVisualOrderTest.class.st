@@ -3,7 +3,7 @@ SUnit tests for SBSTVisualOrder
 "
 Class {
 	#name : #SBSTVisualOrderTest,
-	#superclass : #WAAbstractCanvasBrushTest,
+	#superclass : #SBSAbstractCanvasBrushTest,
 	#category : #'Bootstrap4-Core-Tests-Traits'
 }
 

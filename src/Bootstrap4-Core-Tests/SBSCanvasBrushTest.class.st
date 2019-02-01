@@ -3,14 +3,9 @@ Tests for the Bootstrap brushes
 "
 Class {
 	#name : #SBSCanvasBrushTest,
-	#superclass : #WAAbstractCanvasBrushTest,
+	#superclass : #SBSAbstractCanvasBrushTest,
 	#category : #'Bootstrap4-Core-Tests-Canvas'
 }
-
-{ #category : #private }
-SBSCanvasBrushTest >> builder [
-	^ SBSHtmlCanvas builder
-]
 
 { #category : #'tests - badges' }
 SBSCanvasBrushTest >> testActionBadge [

@@ -3,7 +3,7 @@ Tests for specific background colors
 "
 Class {
 	#name : #SBSBackgroundColorTests,
-	#superclass : #WAAbstractCanvasBrushTest,
+	#superclass : #SBSAbstractCanvasBrushTest,
 	#category : #'Bootstrap4-Core-Tests-Other'
 }
 

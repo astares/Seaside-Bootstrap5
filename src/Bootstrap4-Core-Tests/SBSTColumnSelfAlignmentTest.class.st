@@ -3,7 +3,7 @@ SUnit tests for SBSTColumnSelfAlignment
 "
 Class {
 	#name : #SBSTColumnSelfAlignmentTest,
-	#superclass : #WAAbstractCanvasBrushTest,
+	#superclass : #SBSAbstractCanvasBrushTest,
 	#category : #'Bootstrap4-Core-Tests-Traits'
 }
 

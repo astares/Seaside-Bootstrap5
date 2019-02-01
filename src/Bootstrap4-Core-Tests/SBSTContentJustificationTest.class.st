@@ -3,7 +3,7 @@ SUnit tests for SBSTHorizontalAlignable trait
 "
 Class {
 	#name : #SBSTContentJustificationTest,
-	#superclass : #WAAbstractCanvasBrushTest,
+	#superclass : #SBSAbstractCanvasBrushTest,
 	#category : #'Bootstrap4-Core-Tests-Traits'
 }
 
