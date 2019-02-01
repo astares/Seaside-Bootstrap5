@@ -2,19 +2,19 @@
 Example to demonstrate buttons
 "
 Class {
-	#name : #SBSButtonsExample,
+	#name : #SBSButtonExample,
 	#superclass : #SBSBootstrapExample,
 	#category : #'Bootstrap4-Examples-Examples'
 }
 
 { #category : #accessing }
-SBSButtonsExample class >> exampleName [
+SBSButtonExample class >> exampleName [
 
 	^'Buttons'
 ]
 
 { #category : #rendering }
-SBSButtonsExample >> renderExampleOn: html [
+SBSButtonExample >> renderExampleOn: html [
 
 	html formButton bePrimary; with: 'Primary'. html space.
 	html formButton beSecondary with: 'Secondary'. html space.
@@ -33,4 +33,14 @@ SBSButtonsExample >> renderExampleOn: html [
 	html outlineButton beInfo with: 'Info'. html space.
 	html outlineButton beLight with: 'Light'. html space.
 	html outlineButton beDark with: 'Dark'. html space.	
+	html break; break.			
+	html formButton bePrimary; beLarge; with: 'Large button'. html space.	
+	html formButton bePrimary; beSmall; with: 'Small button'. html space.		
+	html formButton beDisabled; bePrimary; with: 'Disabled button'. 
+	html break; break.	
+	html buttonGroup: [ 
+		html formButton bePrimary; beActive; with: 'Active button'.  	
+		html formButton bePrimary; with: 'Radio'.  
+		html formButton bePrimary; with: 'Radio'.  		
+	]
 ]
