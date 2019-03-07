@@ -1974,7 +1974,7 @@ SBSCanvasBrushTest >> testNavigation [
 
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation bar' }
 SBSCanvasBrushTest >> testNavigationBar [
 
 	self
@@ -1983,7 +1983,160 @@ SBSCanvasBrushTest >> testNavigationBar [
 
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation bar - backgrounds' }
+SBSCanvasBrushTest >> testNavigationBarBackgroundColor [
+
+	self
+		assert: [ :html | html navigationBar background color: Color white ]
+		gives: '<nav class="navbar" style="background-color: #ffffff"></nav>'
+
+]
+
+{ #category : #'tests - navigation bar - backgrounds' }
+SBSCanvasBrushTest >> testNavigationBarBackgroundColorString [
+
+	self
+		assert: [ :html | html navigationBar background colorString: '#ffffce' ]
+		gives: '<nav class="navbar" style="background-color: #ffffce"></nav>'
+
+]
+
+{ #category : #'tests - navigation bar - backgrounds' }
+SBSCanvasBrushTest >> testNavigationBarBackgroundDanger [
+
+	self
+		assert: [ :html | html navigationBar background beDanger ]
+		gives: '<nav class="navbar bg-danger"></nav>'
+
+]
+
+{ #category : #'tests - navigation bar - backgrounds' }
+SBSCanvasBrushTest >> testNavigationBarBackgroundDark [
+
+	self
+		assert: [ :html | html navigationBar background beDark ]
+		gives: '<nav class="navbar bg-dark"></nav>'
+
+]
+
+{ #category : #'tests - navigation bar - backgrounds' }
+SBSCanvasBrushTest >> testNavigationBarBackgroundInfo [
+
+	self
+		assert: [ :html | html navigationBar background beInfo ]
+		gives: '<nav class="navbar bg-info"></nav>'
+
+]
+
+{ #category : #'tests - navigation bar - backgrounds' }
+SBSCanvasBrushTest >> testNavigationBarBackgroundLight [
+
+	self
+		assert: [ :html | html navigationBar background beLight ]
+		gives: '<nav class="navbar bg-light"></nav>'
+
+]
+
+{ #category : #'tests - navigation bar - backgrounds' }
+SBSCanvasBrushTest >> testNavigationBarBackgroundPrimary [
+
+	self
+		assert: [ :html | html navigationBar background bePrimary ]
+		gives: '<nav class="navbar bg-primary"></nav>'
+
+]
+
+{ #category : #'tests - navigation bar - backgrounds' }
+SBSCanvasBrushTest >> testNavigationBarBackgroundSuccess [
+
+	self
+		assert: [ :html | html navigationBar background beSuccess ]
+		gives: '<nav class="navbar bg-success"></nav>'
+
+]
+
+{ #category : #'tests - navigation bar - backgrounds' }
+SBSCanvasBrushTest >> testNavigationBarBackgroundWarning [
+
+	self
+		assert: [ :html | html navigationBar background beWarning ]
+		gives: '<nav class="navbar bg-warning"></nav>'
+
+]
+
+{ #category : #'tests - navigation bar' }
+SBSCanvasBrushTest >> testNavigationBarCollapse [
+
+	self
+		assert: [ :html | html navigationBarCollapse ]
+		gives: '<div class="navbar-collapse"></div>'
+
+]
+
+{ #category : #'tests - navigation bar' }
+SBSCanvasBrushTest >> testNavigationBarCollapseWithContent [
+
+	self
+		assert: [ :html | html navigationBarCollapse: 'Bootstrap' ]
+		gives: '<div class="navbar-collapse">Bootstrap</div>'
+
+]
+
+{ #category : #'tests - navigation bar - options' }
+SBSCanvasBrushTest >> testNavigationBarDark [
+
+	self
+		assert: [ :html | html navigationBar beDark ]
+		gives: '<nav class="navbar navbar-dark"></nav>'
+
+]
+
+{ #category : #'tests - navigation bar - options' }
+SBSCanvasBrushTest >> testNavigationBarExpandExtraLarge [
+
+	self
+		assert: [ :html | html navigationBar expandExtraLarge ]
+		gives: '<nav class="navbar navbar-expand-xl"></nav>'
+
+]
+
+{ #category : #'tests - navigation bar - options' }
+SBSCanvasBrushTest >> testNavigationBarExpandLarge [
+
+	self
+		assert: [ :html | html navigationBar expandLarge ]
+		gives: '<nav class="navbar navbar-expand-lg"></nav>'
+
+]
+
+{ #category : #'tests - navigation bar - options' }
+SBSCanvasBrushTest >> testNavigationBarExpandMiddle [
+
+	self
+		assert: [ :html | html navigationBar expandMiddle ]
+		gives: '<nav class="navbar navbar-expand-md"></nav>'
+
+]
+
+{ #category : #'tests - navigation bar - options' }
+SBSCanvasBrushTest >> testNavigationBarExpandSmall [
+
+	self
+		assert: [ :html | html navigationBar expandSmall ]
+		gives: '<nav class="navbar navbar-expand-sm"></nav>'
+
+]
+
+{ #category : #'tests - navigation bar - options' }
+SBSCanvasBrushTest >> testNavigationBarLight [
+
+	self
+		assert: [ :html | html navigationBar beLight ]
+		gives: '<nav class="navbar navbar-light"></nav>'
+
+]
+
+{ #category : #'tests - navigation bar' }
 SBSCanvasBrushTest >> testNavigationBarNavigation [
 
 	self
@@ -1992,7 +2145,7 @@ SBSCanvasBrushTest >> testNavigationBarNavigation [
 
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation bar' }
 SBSCanvasBrushTest >> testNavigationBarNavigationWithContent [
 
 	self
@@ -2001,7 +2154,61 @@ SBSCanvasBrushTest >> testNavigationBarNavigationWithContent [
 
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation bar' }
+SBSCanvasBrushTest >> testNavigationBarToggler [
+
+	self
+		assert: [ :html | html navigationBarToggler ]
+		gives: '<button class="navbar-toggler"></button>'
+
+]
+
+{ #category : #'tests - navigation bar' }
+SBSCanvasBrushTest >> testNavigationBarTogglerButtonType [
+
+	self
+		assert: [ :html | html navigationBarToggler beButtonType ]
+		gives: '<button class="navbar-toggler" type="button"></button>'
+
+]
+
+{ #category : #'tests - navigation bar' }
+SBSCanvasBrushTest >> testNavigationBarTogglerCollapse [
+
+	self
+		assert: [ :html | html navigationBarToggler collapse ]
+		gives: '<button class="navbar-toggler" data-toggle="collapse"></button>'
+
+]
+
+{ #category : #'tests - navigation bar' }
+SBSCanvasBrushTest >> testNavigationBarTogglerDataTarget [
+
+	self
+		assert: [ :html | html navigationBarToggler dataTarget: '#id_1' ]
+		gives: '<button class="navbar-toggler" data-target="#id_1"></button>'
+
+]
+
+{ #category : #'tests - navigation bar' }
+SBSCanvasBrushTest >> testNavigationBarTogglerIcon [
+
+	self
+		assert: [ :html | html navigationBarTogglerIcon ]
+		gives: '<span class="navbar-toggler-icon"></span>'
+
+]
+
+{ #category : #'tests - navigation bar' }
+SBSCanvasBrushTest >> testNavigationBarTogglerWithContent [
+
+	self
+		assert: [ :html | html navigationBarToggler: 'Bootstrap' ]
+		gives: '<button class="navbar-toggler">Bootstrap</button>'
+
+]
+
+{ #category : #'tests - navigation bar' }
 SBSCanvasBrushTest >> testNavigationBarWithContent [
 
 	self
@@ -2026,6 +2233,24 @@ SBSCanvasBrushTest >> testNavigationItem [
 	self
 		assert: [ :html | html navigationItem ]
 		gives: '<li class="nav-item"></li>'
+
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationItemActive [
+
+	self
+		assert: [ :html | html navigationItem beActive ]
+		gives: '<li class="nav-item active"></li>'
+
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationItemDropdown [
+
+	self
+		assert: [ :html | html navigationItem dropdown ]
+		gives: '<li class="nav-item dropdown"></li>'
 
 ]
 

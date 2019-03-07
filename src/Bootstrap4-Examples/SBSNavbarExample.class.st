@@ -1,0 +1,45 @@
+"
+Example for a Bootstrap navigation bar
+"
+Class {
+	#name : #SBSNavbarExample,
+	#superclass : #SBSBootstrapExample,
+	#category : #'Bootstrap4-Examples-Examples'
+}
+
+{ #category : #accessing }
+SBSNavbarExample class >> exampleName [
+
+	^'Navbar'
+]
+
+{ #category : #rendering }
+SBSNavbarExample >> renderExampleOn: html [
+
+	| bar id|
+	id := 'navbarSupportedContent'.
+	bar := html navigationBar.
+	bar beLight; expandLarge.
+	bar background beLight.
+	bar with: [ 
+		html navigationBarBrand: 'Navbar'.
+		
+		"The toggler that is only visible when reducing the width of screen"
+		html
+			navigationBarToggler
+			beButtonType;
+			collapse;
+			dataTarget: id;
+			with: [ html navigationBarTogglerIcon ].
+				
+		html navigationBarCollapse collapse with: [ 
+			html navigationBarNavigation: [
+				html navigationItem beActive with: [ html navigationLink: 'Home' ].
+				html navigationItem with: [ html navigationLink: 'Link' ] 
+			]
+			
+		]
+	] 
+		
+
+]

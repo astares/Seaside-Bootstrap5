@@ -1036,7 +1036,7 @@ SBSHtmlCanvas >> navigation: aBlock [
 		with: aBlock
 ]
 
-{ #category : #navigation }
+{ #category : #'navigation bar' }
 SBSHtmlCanvas >> navigationBar [
 	"Provide a bootstrap navigation bar."
 	
@@ -1044,7 +1044,7 @@ SBSHtmlCanvas >> navigationBar [
 
 ]
 
-{ #category : #navigation }
+{ #category : #'navigation bar' }
 SBSHtmlCanvas >> navigationBar: aBlock [
  	"Defines a Bootstrap Navigation."
 	
@@ -1052,7 +1052,7 @@ SBSHtmlCanvas >> navigationBar: aBlock [
 		with: aBlock
 ]
 
-{ #category : #navigation }
+{ #category : #'navigation bar' }
 SBSHtmlCanvas >> navigationBarBrand [
 	"Provide a bootstrap navigation bar brand."
 	
@@ -1060,7 +1060,7 @@ SBSHtmlCanvas >> navigationBarBrand [
 
 ]
 
-{ #category : #navigation }
+{ #category : #'navigation bar' }
 SBSHtmlCanvas >> navigationBarBrand: aBlock [
  	"Defines a Bootstrap navigation bar brand."
 	
@@ -1068,7 +1068,19 @@ SBSHtmlCanvas >> navigationBarBrand: aBlock [
 		with: aBlock
 ]
 
-{ #category : #navigation }
+{ #category : #'navigation bar' }
+SBSHtmlCanvas >> navigationBarCollapse [
+		
+	^ self brush: SBSNavgationBarCollapseTag new
+]
+
+{ #category : #'navigation bar' }
+SBSHtmlCanvas >> navigationBarCollapse: aBlock [
+		
+	^ self navigationBarCollapse with: aBlock
+]
+
+{ #category : #'navigation bar' }
 SBSHtmlCanvas >> navigationBarNavigation [
 	"Provide a bootstrap navigation bar navigation."
 	
@@ -1077,7 +1089,7 @@ SBSHtmlCanvas >> navigationBarNavigation [
 
 ]
 
-{ #category : #navigation }
+{ #category : #'navigation bar' }
 SBSHtmlCanvas >> navigationBarNavigation: aBlock [
 	"Provides an Bootstrap navigation bar navigation."
 
@@ -1085,10 +1097,27 @@ SBSHtmlCanvas >> navigationBarNavigation: aBlock [
 		with: aBlock
 ]
 
+{ #category : #'navigation bar' }
+SBSHtmlCanvas >> navigationBarToggler [
+		
+	^ self brush: SBSNavbarTogglerTag new
+]
+
+{ #category : #'navigation bar' }
+SBSHtmlCanvas >> navigationBarToggler: aBlock [
+		
+	^self navigationBarToggler with: aBlock
+]
+
+{ #category : #'navigation bar' }
+SBSHtmlCanvas >> navigationBarTogglerIcon [
+		
+	^ self span class: 'navbar-toggler-icon' 
+]
+
 { #category : #navigation }
 SBSHtmlCanvas >> navigationItem [
-	^self listItem 
-		class: 'nav-item'
+	^self brush: SBSNavigationItemTag new
 ]
 
 { #category : #navigation }
