@@ -1,3 +1,6 @@
+"
+A linked item in a Bootstrap list group
+"
 Class {
 	#name : #SBSListGroupLinkedItemTag,
 	#superclass : #SBSAnchorTag,

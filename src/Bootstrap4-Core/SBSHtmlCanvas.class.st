@@ -397,6 +397,68 @@ SBSHtmlCanvas >> carousel: aBlock [
 ]
 
 { #category : #carousel }
+SBSHtmlCanvas >> carouselControlNext [
+	"Provide a Bootstrap carousel next control button."
+	
+	^ self anchor
+		class: 'carousel-control-next'
+
+]
+
+{ #category : #carousel }
+SBSHtmlCanvas >> carouselControlNext: aStringOrBlock [
+	"Provide a Bootstrap carousel next control button with the given content."
+	
+	^ self carouselControlNext 
+			with: aStringOrBlock 
+]
+
+{ #category : #carousel }
+SBSHtmlCanvas >> carouselControlNextFor: anID [
+	"Provide a Bootstrap carousel previous control button."
+	
+	^ self anchor
+		class: 'carousel-control-next';
+		attributeAt: 'role' put: 'button';
+		attributeAt: 'data-slide' put: 'next';
+		url: '#',anID;
+		with: [ self html: '<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>']
+
+]
+
+{ #category : #carousel }
+SBSHtmlCanvas >> carouselControlPrevious [
+	"Provide a Bootstrap carousel previous control button."
+	
+	^ self anchor
+		class: 'carousel-control-prev';
+		yourself
+]
+
+{ #category : #carousel }
+SBSHtmlCanvas >> carouselControlPrevious: aStringOrBlock [
+	"Provide a Bootstrap carousel previous control button with the given content."
+	
+	^ self carouselControlPrevious 
+			with: aStringOrBlock
+]
+
+{ #category : #carousel }
+SBSHtmlCanvas >> carouselControlPreviousFor: anID [
+	"Provide a Bootstrap carousel previous control button."
+	
+	^ self anchor
+		class: 'carousel-control-prev';
+		attributeAt: 'role' put: 'button';
+		attributeAt: 'data-slide' put: 'prev';
+		url: '#',anID;
+		with: [ self html: '<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>']
+
+]
+
+{ #category : #carousel }
 SBSHtmlCanvas >> carouselInner [
 	"Provide a Bootstrap carousel inner part."
 	

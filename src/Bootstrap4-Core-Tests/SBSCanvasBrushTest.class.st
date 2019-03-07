@@ -968,6 +968,46 @@ SBSCanvasBrushTest >> testCarousel [
 ]
 
 { #category : #'tests - carousel' }
+SBSCanvasBrushTest >> testCarouselControlNext [
+
+	self
+		assert: [ :html | html carouselControlNext ]
+		gives: '<a class="carousel-control-next"></a>'
+
+	
+]
+
+{ #category : #'tests - carousel' }
+SBSCanvasBrushTest >> testCarouselControlNextWithContent [
+
+	self
+		assert: [ :html | html carouselControlNext: 'Bootstrap' ]
+		gives: '<a class="carousel-control-next">Bootstrap</a>'
+
+	
+]
+
+{ #category : #'tests - carousel' }
+SBSCanvasBrushTest >> testCarouselControlPrevious [
+
+	self
+		assert: [ :html | html carouselControlPrevious ]
+		gives: '<a class="carousel-control-prev"></a>'
+
+	
+]
+
+{ #category : #'tests - carousel' }
+SBSCanvasBrushTest >> testCarouselControlPreviousWithContent [
+
+	self
+		assert: [ :html | html carouselControlPrevious: 'Bootstrap' ]
+		gives: '<a class="carousel-control-prev">Bootstrap</a>'
+
+	
+]
+
+{ #category : #'tests - carousel' }
 SBSCanvasBrushTest >> testCarouselInner [
 
 	self
