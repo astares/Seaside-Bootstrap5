@@ -2290,6 +2290,15 @@ SBSCanvasBrushTest >> testNavigationLinkDisabled [
 
 ]
 
+{ #category : #'tests - navigation - options' }
+SBSCanvasBrushTest >> testNavigationLinkDropdownToggle [
+
+	self
+		assert: [ :html | html navigationLink dropdownToggle ]
+		gives: '<a class="nav-link dropdown-toggle"></a>'
+
+]
+
 { #category : #'tests - navigation' }
 SBSCanvasBrushTest >> testNavigationLinkWithContent [
 

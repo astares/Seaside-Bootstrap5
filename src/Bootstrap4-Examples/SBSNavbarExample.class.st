@@ -35,8 +35,23 @@ SBSNavbarExample >> renderExampleOn: html [
 		html navigationBarCollapse collapse with: [ 
 			html navigationBarNavigation: [
 				html navigationItem beActive with: [ html navigationLink: 'Home' ].
-				html navigationItem with: [ html navigationLink: 'Link' ] 
-			]
+				html navigationItem: [ html navigationLink: 'Link' ].
+				
+				html navigationItem dropdown with: [ 
+					html navigationLink dropdownToggle; dataToggle: 'dropdown'; with: 'Dropdown'.
+				 
+					html dropdownMenu 
+						attributeAt: 'aria-labelledby' put: 'navbarDropdown';
+						with: [ 
+						html dropdownItem: 'Actions'.
+						html dropdownItem: 'Another action'.
+						html dropdownDivider.
+						html dropdownItem: 'Something else here'.
+					 ]
+				].
+				html navigationItem: [ html navigationLink beDisabled with: 'Disabled' ].	
+			].
+			 
 			
 		]
 	] 
