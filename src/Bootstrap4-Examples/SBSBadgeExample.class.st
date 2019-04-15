@@ -15,28 +15,26 @@ SBSBadgeExample class >> exampleName [
 
 { #category : #rendering }
 SBSBadgeExample >> renderExampleOn: html [
-
-	html heading: [ 
-		html text: 'Heading with badge '.
-		html badge bePrimary with: 'Badge'].
-	html heading level2 with: [ 
-		html text: 'Heading with badge '.
-		html badge beSuccess with: 'New'].
-	html formButton bePrimary with: [ 
-		html text: 'Button with badge '.
-		html badge beSuccess with: 'New'
-		 ].
+	html heading level2 with: 'Examples'.
+	1 to: 6 do: [:x |
+		(html heading level: x) with: [ 
+		   html text: 'Example heading '.
+		   html badge beSecondary with: 'New']].
 	html break; break.
-	html formButton beInfo with: [ 
-		html text: 'Button with info '.
+	html formButton bePrimary with: [ 
+		html text: 'Notifications '.
 		html badge beLight with: '4'
 		 ].
 	html break; break.	
+		
+	html heading level2 with: 'Contextual variations'.	
 	html badge beDanger with: 'New'.
 	html badge beSuccess with: 'Success'.
 	html badge beWarning with: 'Warning'.
 	html badge beDark with: 'Dark'.		
 	html break; break.	
+		
+	html heading level2 with: 'Pill bages'.	
 	html badge beDanger bePill with: 'New'.
 	html badge beSuccess bePill with: 'Success'.
 	html badge beWarning bePill with: 'Warning'.
