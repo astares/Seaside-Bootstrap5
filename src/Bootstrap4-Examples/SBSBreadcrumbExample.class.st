@@ -16,6 +16,7 @@ SBSBreadcrumbExample class >> exampleName [
 { #category : #rendering }
 SBSBreadcrumbExample >> renderExampleOn: html [
 
+	html heading level2 with: 'Examples'.
 	html breadcrumb: [ 
 		html breadcrumbItem: 'Home' ].
 	
