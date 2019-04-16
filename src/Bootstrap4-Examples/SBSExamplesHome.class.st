@@ -44,6 +44,12 @@ SBSExamplesHome >> browseExamples [
  
 ]
 
+{ #category : #styling }
+SBSExamplesHome >> children [
+
+	^Array with: browser
+]
+
 { #category : #initialization }
 SBSExamplesHome >> initialize [
 	super initialize.
@@ -144,20 +150,12 @@ SBSExamplesHome >> renderNavigationbarOn: html [
 { #category : #actions }
 SBSExamplesHome >> returnToIntro [
 
-	displayIntro := true.
+	displayIntro := true
   
-]
-
-{ #category : #styling }
-SBSExamplesHome >> style [
-
-	^self isDisplayingIntro
-		ifTrue: [ super style ] 
-		ifFalse: [ browser style ]
 ]
 
 { #category : #updating }
 SBSExamplesHome >> updateRoot: htmlRoot [
 	super updateRoot: htmlRoot.
-	htmlRoot title: 'Bootstrap4 for Seaside'
+	htmlRoot title: 'Bootstrap4 for Seaside' translated
 ]

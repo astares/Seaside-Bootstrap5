@@ -4,7 +4,7 @@ A file library for the examples
 Class {
 	#name : #SBSExamplesLibrary,
 	#superclass : #WAFileLibrary,
-	#category : 'Bootstrap4-Examples-Library'
+	#category : #'Bootstrap4-Examples-Library'
 }
 
 { #category : #uploaded }

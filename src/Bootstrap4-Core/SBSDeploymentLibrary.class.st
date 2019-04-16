@@ -181,5 +181,5 @@ SBSDeploymentLibrary >> jsbootstrapminjsMapContent [
 { #category : #accessing }
 SBSDeploymentLibrary >> selectorsToInclude [
 
-	^#(cssbootstrapminCss jsbootstrapminJs)
+	^#(cssbootstrapminCss jsbootstrapbundleminJs)
 ]
