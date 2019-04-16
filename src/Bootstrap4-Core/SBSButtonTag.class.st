@@ -59,6 +59,12 @@ SBSButtonTag >> dataTarget: aString [
 	self attributeAt: 'data-target' put: aString
 ]
 
+{ #category : #options }
+SBSButtonTag >> dataToggle: aString [
+
+	self attributeAt: 'data-toggle' put: aString
+]
+
 { #category : #defaults }
 SBSButtonTag >> defaultModifier [
 	"Subclasses may override to use a different modifier uses with the class style definitions"

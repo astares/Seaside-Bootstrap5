@@ -32,5 +32,19 @@ SBSCardExample >> renderExampleOn: html [
 				level6; 
 				mutedText;
 				with: 'Subtitle'.
-			html cardText: 'Some quick example text to build on the card title and make up the bulk of the card''s content.' ]] 
+			html cardText: 'Some quick example text to build on the card title and make up the bulk of the card''s content.'.
+			html formButton bePrimary with: 'Go somewhere' ]] 
+]
+
+{ #category : #hooks }
+SBSCardExample >> style [
+ 
+	^'.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}'
 ]

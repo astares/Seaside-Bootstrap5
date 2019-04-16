@@ -4,7 +4,7 @@ A common superclass for the bootstrap examples
 Class {
 	#name : #SBSBootstrapExample,
 	#superclass : #WAComponent,
-	#category : 'Bootstrap4-Examples-Examples'
+	#category : #'Bootstrap4-Examples-Examples'
 }
 
 { #category : #accessing }
@@ -37,4 +37,10 @@ SBSBootstrapExample >> renderExampleOn: html [
 SBSBootstrapExample >> rendererClass [
 	
 	^ SBSHtmlCanvas 
+]
+
+{ #category : #hooks }
+SBSBootstrapExample >> style [ 
+
+	^''
 ]

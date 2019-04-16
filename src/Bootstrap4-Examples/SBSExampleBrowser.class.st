@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'currentExample'
 	],
-	#category : 'Bootstrap4-Examples-Browser'
+	#category : #'Bootstrap4-Examples-Browser'
 }
 
 { #category : #accessing }
@@ -87,6 +87,12 @@ SBSExampleBrowser >> renderNavigationOn: html [
 SBSExampleBrowser >> rendererClass [
 		
 	^ SBSHtmlCanvas 
+]
+
+{ #category : #styling }
+SBSExampleBrowser >> style [ 
+
+	^currentExample style
 ]
 
 { #category : #updating }

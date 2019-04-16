@@ -458,6 +458,16 @@ SBSCanvasBrushTest >> testButtonDataTarget [
 ]
 
 { #category : #'tests - buttons - options' }
+SBSCanvasBrushTest >> testButtonDataToggle [
+
+	self
+		assert: [ :html | html formButton dataToggle: '#bootstrap' ]
+		gives: '<button class="btn" data-toggle="#bootstrap"></button>'
+
+	
+]
+
+{ #category : #'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonDisabled [
 
 	self

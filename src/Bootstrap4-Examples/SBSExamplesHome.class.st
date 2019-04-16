@@ -8,7 +8,7 @@ Class {
 		'browser',
 		'displayIntro'
 	],
-	#category : 'Bootstrap4-Examples-Home'
+	#category : #'Bootstrap4-Examples-Home'
 }
 
 { #category : #utilities }
@@ -146,6 +146,14 @@ SBSExamplesHome >> returnToIntro [
 
 	displayIntro := true.
   
+]
+
+{ #category : #styling }
+SBSExamplesHome >> style [
+
+	^self isDisplayingIntro
+		ifTrue: [ super style ] 
+		ifFalse: [ browser style ]
 ]
 
 { #category : #updating }
