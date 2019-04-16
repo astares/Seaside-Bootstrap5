@@ -778,6 +778,26 @@ SBSCanvasBrushTest >> testCardDeckWithContent [
 ]
 
 { #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardDirectCardBody [
+
+	self
+		assert: [ :html | html card cardBody ]
+		gives: '<div class="card card-body"></div>'
+
+	
+]
+
+{ #category : #'tests - cards' }
+SBSCanvasBrushTest >> testCardDirectCardBodyWithContent [
+
+	self
+		assert: [ :html | html card cardBody: 'Bootstrap' ]
+		gives: '<div class="card card-body">Bootstrap</div>'
+
+	
+]
+
+{ #category : #'tests - cards' }
 SBSCanvasBrushTest >> testCardFooter [
 
 	self

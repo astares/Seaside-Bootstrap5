@@ -7,7 +7,12 @@ Class {
 	#category : #'Bootstrap4-Core-Base'
 }
 
-{ #category : #subelements }
+{ #category : #shortcuts }
+SBSCardTag >> cardBody [
+	self class: 'card-body'
+]
+
+{ #category : #shortcuts }
 SBSCardTag >> cardBody: aBlockOrString [
 	self class: 'card-body';
 	with: aBlockOrString 
