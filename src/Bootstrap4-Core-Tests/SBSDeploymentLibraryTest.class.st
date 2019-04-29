@@ -17,6 +17,6 @@ SBSDeploymentLibraryTest >> testIncludeBootstrapMinCSSByDefault [
 { #category : #tests }
 SBSDeploymentLibraryTest >> testIncludeBootstrapMinJSByDefault [
 
-	self assert: (SBSDeploymentLibrary new selectorsToInclude includes: #jsbootstrapminJs)
+	self assert: (SBSDeploymentLibrary new selectorsToInclude includes: #jsbootstrapbundleminJs)
 	
 ]

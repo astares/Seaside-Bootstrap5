@@ -17,6 +17,6 @@ SBSDevelopmentLibraryTest >> testIncludeBootstrapCSSByDefault [
 { #category : #tests }
 SBSDevelopmentLibraryTest >> testIncludeBootstrapJSByDefault [
 
-	self assert: (SBSDevelopmentLibrary new selectorsToInclude includes: #jsbootstrapJs)
+	self assert: (SBSDevelopmentLibrary new selectorsToInclude includes: #jsbootstrapbundleJs)
 	
 ]
