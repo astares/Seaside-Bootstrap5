@@ -1435,6 +1435,15 @@ SBSCanvasBrushTest >> testEqualWidthColumnsOnMultipleRows [
 	
 ]
 
+{ #category : #'tests - typography' }
+SBSCanvasBrushTest >> testFontStylingOfHeading [
+
+	self
+		assert: [:html | html paragraph heading: 3 ]
+		gives: '<p class="h3"></p>'
+
+]
+
 { #category : #'tests - forms' }
 SBSCanvasBrushTest >> testFormCheckLabel [
 
@@ -2829,4 +2838,13 @@ SBSCanvasBrushTest >> testRowWithContent [
 		gives: '<div class="row">Bootstrap</div>'
 
 	
+]
+
+{ #category : #'tests - typography' }
+SBSCanvasBrushTest >> testTextMuted [
+
+	self
+		assert: [:html | html small textMuted ]
+		gives: '<small class="text-muted"></small>'
+
 ]

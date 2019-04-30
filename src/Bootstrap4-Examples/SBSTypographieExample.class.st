@@ -21,7 +21,20 @@ SBSTypographieExample >> renderExampleOn: html [
 			with: 'Heading ', x greaseString ].
 	
 	html horizontalRule.
-		
+	
+	1 to: 6 do: [:x | 
+		html paragraph  
+			heading: x;
+			with: 'h',x greaseString,'. Bootstrap Heading ' ].
+
+	html horizontalRule.
+	
+	html span heading: 3; with: [ 
+		html text: 'Fancy display heading'.
+		html small textMuted with: ' With faded secondary text'  ].
+	
+	html horizontalRule.
+			
 	1 to: 6 do: [:x | 
 		html displayHeading 
 			level: x;
@@ -30,8 +43,8 @@ SBSTypographieExample >> renderExampleOn: html [
 	html horizontalRule.
 		
 	1 to: 6 do: [:x | 
-		html heading 
-			level: x;
-			with: [ html text: 'Heading ', x greaseString. html space. html small: 'Secondary text' ]]
+		html div 
+			heading: x;
+			with: [ html text: 'Heading ', x greaseString. html space. html small textMuted with: 'Secondary text' ]]
 			
 ]

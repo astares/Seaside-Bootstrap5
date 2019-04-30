@@ -25,6 +25,12 @@ WATagBrush >> darkText [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WATagBrush >> heading: aLevel [
+
+	self class: 'h', aLevel asString
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WATagBrush >> infoBackground [
 
 	self class: 'bg-info'
@@ -168,6 +174,12 @@ WATagBrush >> successBackground [
 WATagBrush >> successText [
 
 	self class: 'text-success'
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WATagBrush >> textMuted [
+
+	self class: 'text-muted'
 ]
 
 { #category : #'*Bootstrap4-Core' }
