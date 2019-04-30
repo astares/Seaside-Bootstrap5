@@ -24,8 +24,15 @@ SBSFormExample >> renderExampleOn: html [
 			html label: 'Password'.
 			html passwordInput formControl placeholder: 'Enter Password' ].
 		html formGroup formCheck; with: [ 
-			html formCheckLabel with: [ 	
-			html formCheckbox: 'Remember me'.	
-		 ] ]
+			html formCheckLabel with: [ html formCheckbox: 'Remember me']].
+		html formGroup: [ 
+			html select formControl list: #(1 2 3 4 5) ].
+		html formGroup: [ 
+			html multiSelect formControl list: #(1 2 3 4 5) ].
+		 html formGroup: [ 
+			html textArea formControl rows: 3 ]. 
+		
+		
+		
  	]
 ]

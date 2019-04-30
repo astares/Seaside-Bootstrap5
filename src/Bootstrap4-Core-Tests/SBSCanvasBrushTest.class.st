@@ -1484,6 +1484,30 @@ SBSCanvasBrushTest >> testFormCheckboxWithContent [
 ]
 
 { #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormControl [
+
+	self
+		assert: [ :html | html textInput formControl ]
+		gives: '<input class="form-control" type="text"/>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormControlOnSelect [
+
+	self
+		assert: [ :html | html select formControl ]
+		gives: '<select class="form-control"></select>'
+]
+
+{ #category : #'tests - forms' }
+SBSCanvasBrushTest >> testFormControlOnTextArea [
+
+	self
+		assert: [ :html | html textArea formControl ]
+		gives: '<textarea rows="auto" cols="auto" class="form-control"></textarea>'
+]
+
+{ #category : #'tests - forms' }
 SBSCanvasBrushTest >> testFormFileUpload [
 
 	self
