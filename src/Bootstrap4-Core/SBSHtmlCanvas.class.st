@@ -927,6 +927,24 @@ SBSHtmlCanvas >> inputGroup: aBlock [
 ]
 
 { #category : #inputgroup }
+SBSHtmlCanvas >> inputGroupAppend [
+	"Provide a bootstrap input group appending."
+	
+	^ self div 
+		class: 'input-group-append'
+
+]
+
+{ #category : #inputgroup }
+SBSHtmlCanvas >> inputGroupAppend: aBlock [
+	"Provides a Bootstrap form input group appending."
+	
+	 ^ self inputGroupAppend
+		with: aBlock
+
+]
+
+{ #category : #inputgroup }
 SBSHtmlCanvas >> inputGroupPrepend [
 	"Provide a bootstrap input group prepend."
 	
@@ -940,6 +958,24 @@ SBSHtmlCanvas >> inputGroupPrepend: aBlock [
 	"Provides a Bootstrap form input group prepend."
 	
 	 ^ self inputGroupPrepend
+		with: aBlock
+
+]
+
+{ #category : #inputgroup }
+SBSHtmlCanvas >> inputGroupText [
+	"Provide a bootstrap input group text."
+	
+	^ self span 
+		class: 'input-group-text'
+
+]
+
+{ #category : #inputgroup }
+SBSHtmlCanvas >> inputGroupText: aBlock [
+	"Provides a Bootstrap form input group text."
+	
+	 ^ self inputGroupText
 		with: aBlock
 
 ]

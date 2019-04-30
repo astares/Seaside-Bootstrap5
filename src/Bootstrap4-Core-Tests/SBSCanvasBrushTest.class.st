@@ -1711,8 +1711,24 @@ SBSCanvasBrushTest >> testImageThumbnail [
 SBSCanvasBrushTest >> testInputGroup [
 
 	self
-		assert: [ :html | html inputGroup  ]
+		assert: [ :html | html inputGroup ]
 		gives: '<div class="input-group"></div>'
+]
+
+{ #category : #'tests - inputgroup' }
+SBSCanvasBrushTest >> testInputGroupAppend [
+
+	self
+		assert: [ :html | html inputGroupAppend ]
+		gives: '<div class="input-group-append"></div>'
+]
+
+{ #category : #'tests - inputgroup' }
+SBSCanvasBrushTest >> testInputGroupAppendWithContent [
+
+	self
+		assert: [ :html | html inputGroupAppend: 'Bootstrap' ]
+		gives: '<div class="input-group-append">Bootstrap</div>'
 ]
 
 { #category : #'tests - inputgroup - options' }
@@ -1727,7 +1743,7 @@ SBSCanvasBrushTest >> testInputGroupLarge [
 SBSCanvasBrushTest >> testInputGroupPrepend [
 
 	self
-		assert: [ :html | html inputGroupPrepend  ]
+		assert: [ :html | html inputGroupPrepend ]
 		gives: '<div class="input-group-prepend"></div>'
 ]
 
@@ -1735,7 +1751,7 @@ SBSCanvasBrushTest >> testInputGroupPrepend [
 SBSCanvasBrushTest >> testInputGroupPrependWithContent [
 
 	self
-		assert: [ :html | html inputGroupPrepend: 'Bootstrap'  ]
+		assert: [ :html | html inputGroupPrepend: 'Bootstrap' ]
 		gives: '<div class="input-group-prepend">Bootstrap</div>'
 ]
 
@@ -1748,10 +1764,26 @@ SBSCanvasBrushTest >> testInputGroupSmall [
 ]
 
 { #category : #'tests - inputgroup' }
+SBSCanvasBrushTest >> testInputGroupText [
+
+	self
+		assert: [ :html | html inputGroupText ]
+		gives: '<span class="input-group-text"></span>'
+]
+
+{ #category : #'tests - inputgroup' }
+SBSCanvasBrushTest >> testInputGroupTextWithContent [
+
+	self
+		assert: [ :html | html inputGroupText: 'Bootstrap' ]
+		gives: '<span class="input-group-text">Bootstrap</span>'
+]
+
+{ #category : #'tests - inputgroup' }
 SBSCanvasBrushTest >> testInputGroupWithContent [
 
 	self
-		assert: [ :html | html inputGroup: 'Bootstrap'  ]
+		assert: [ :html | html inputGroup: 'Bootstrap' ]
 		gives: '<div class="input-group">Bootstrap</div>'
 ]
 
@@ -1999,6 +2031,60 @@ SBSCanvasBrushTest >> testListGroupWithContent [
 	self
 		assert: [ :html | html listGroup: 'Bootstrap' ]
 		gives: '<ul class="list-group">Bootstrap</ul>'
+]
+
+{ #category : #'tests - spacing' }
+SBSCanvasBrushTest >> testMarginBottom [
+
+	self
+		assert: [:html | html div marginBottom: 3 ]
+		gives: '<div class="mb-3"></div>'
+
+]
+
+{ #category : #'tests - spacing' }
+SBSCanvasBrushTest >> testMarginLeft [
+
+	self
+		assert: [:html | html div marginLeft: 3 ]
+		gives: '<div class="ml-3"></div>'
+
+]
+
+{ #category : #'tests - spacing' }
+SBSCanvasBrushTest >> testMarginLeftAndRight [
+
+	self
+		assert: [:html | html div marginLeftAndRight: 3 ]
+		gives: '<div class="mx-3"></div>'
+
+]
+
+{ #category : #'tests - spacing' }
+SBSCanvasBrushTest >> testMarginRight [
+
+	self
+		assert: [:html | html div marginRight: 3 ]
+		gives: '<div class="mr-3"></div>'
+
+]
+
+{ #category : #'tests - spacing' }
+SBSCanvasBrushTest >> testMarginTop [
+
+	self
+		assert: [:html | html div marginTop: 3 ]
+		gives: '<div class="mt-3"></div>'
+
+]
+
+{ #category : #'tests - spacing' }
+SBSCanvasBrushTest >> testMarginTopAndBottom [
+
+	self
+		assert: [:html | html div marginTopAndBottom: 3 ]
+		gives: '<div class="my-3"></div>'
+
 ]
 
 { #category : #'tests - navigation' }
@@ -2517,6 +2603,60 @@ SBSCanvasBrushTest >> testOutlineButtonWithContent [
 		gives: '<button class="btn">Bootstrap</button>'
 
 	
+]
+
+{ #category : #'tests - spacing' }
+SBSCanvasBrushTest >> testPaddingBottom [
+
+	self
+		assert: [:html | html div paddingBottom: 3 ]
+		gives: '<div class="pb-3"></div>'
+
+]
+
+{ #category : #'tests - spacing' }
+SBSCanvasBrushTest >> testPaddingLeft [
+
+	self
+		assert: [:html | html div paddingLeft: 3 ]
+		gives: '<div class="pl-3"></div>'
+
+]
+
+{ #category : #'tests - spacing' }
+SBSCanvasBrushTest >> testPaddingLeftAndRight [
+
+	self
+		assert: [:html | html div paddingLeftAndRight: 3 ]
+		gives: '<div class="px-3"></div>'
+
+]
+
+{ #category : #'tests - spacing' }
+SBSCanvasBrushTest >> testPaddingRight [
+
+	self
+		assert: [:html | html div paddingRight: 3 ]
+		gives: '<div class="pr-3"></div>'
+
+]
+
+{ #category : #'tests - spacing' }
+SBSCanvasBrushTest >> testPaddingTop [
+
+	self
+		assert: [:html | html div paddingTop: 3 ]
+		gives: '<div class="pt-3"></div>'
+
+]
+
+{ #category : #'tests - spacing' }
+SBSCanvasBrushTest >> testPaddingTopAndBottom [
+
+	self
+		assert: [:html | html div paddingTopAndBottom: 3 ]
+		gives: '<div class="py-3"></div>'
+
 ]
 
 { #category : #'tests - pagination' }

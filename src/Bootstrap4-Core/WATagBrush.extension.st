@@ -57,9 +57,81 @@ WATagBrush >> lightTextWithDarkBackground [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WATagBrush >> marginBottom: aNumber [
+
+	self class: 'mb-', aNumber asString
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WATagBrush >> marginLeft: aNumber [
+
+	self class: 'ml-', aNumber asString
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WATagBrush >> marginLeftAndRight: aNumber [
+
+	self class: 'mx-', aNumber asString
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WATagBrush >> marginRight: aNumber [
+
+	self class: 'mr-', aNumber asString
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WATagBrush >> marginTop: aNumber [
+
+	self class: 'mt-', aNumber asString
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WATagBrush >> marginTopAndBottom: aNumber [
+
+	self class: 'my-', aNumber asString
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WATagBrush >> mutedText [
 
 	self class: 'text-muted'
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WATagBrush >> paddingBottom: aNumber [
+
+	self class: 'pb-', aNumber asString
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WATagBrush >> paddingLeft: aNumber [
+
+	self class: 'pl-', aNumber asString
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WATagBrush >> paddingLeftAndRight: aNumber [
+
+	self class: 'px-', aNumber asString
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WATagBrush >> paddingRight: aNumber [
+
+	self class: 'pr-', aNumber asString
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WATagBrush >> paddingTop: aNumber [
+
+	self class: 'pt-', aNumber asString
+]
+
+{ #category : #'*Bootstrap4-Core' }
+WATagBrush >> paddingTopAndBottom: aNumber [
+
+	self class: 'py-', aNumber asString
 ]
 
 { #category : #'*Bootstrap4-Core' }
