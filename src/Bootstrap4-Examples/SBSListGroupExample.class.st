@@ -74,5 +74,27 @@ SBSListGroupExample >> renderExampleOn: html [
 	html listGroup beHorizontal with: [ 
 		html listGroupItem flexFill; with: 'Equal width'.
 		html listGroupItem flexFill; with: 'Equal width'.
-		html listGroupItem flexFill; with: 'Equal width' ].							 
+		html listGroupItem flexFill; with: 'Equal width' ].	
+	html break.		
+	html listGroup beHorizontalSmall with: [ 
+		html listGroupItem: 'Small'.
+		html listGroupItem: 'Small'.
+		html listGroupItem: 'Small' ].	
+	html break.		
+	html listGroup beHorizontalMedium with: [ 
+		html listGroupItem: 'Medium'.
+		html listGroupItem: 'Medium'.
+		html listGroupItem: 'Medium' ].	
+	html break.		
+	html listGroup beHorizontalLarge with: [ 
+		html listGroupItem: 'Large'.
+		html listGroupItem: 'Large'.
+		html listGroupItem: 'Large' ].	
+	html break.		
+	html listGroup beHorizontalVeryLarge with: [ 
+		html listGroupItem: 'Very Large'.
+		html listGroupItem: 'Very Large'.
+		html listGroupItem: 'Very Large' ].				
+								 				
+								 
 ]

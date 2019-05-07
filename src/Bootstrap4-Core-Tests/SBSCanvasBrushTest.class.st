@@ -1594,6 +1594,38 @@ SBSCanvasBrushTest >> testListGroupHorizontal [
 		gives: '<ul class="list-group list-group-horizontal"></ul>'
 ]
 
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupHorizontalLarge [
+
+	self
+		assert: [ :html | html listGroup beHorizontalLarge ]
+		gives: '<ul class="list-group list-group-horizontal-lg"></ul>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupHorizontalMedium [
+
+	self
+		assert: [ :html | html listGroup beHorizontalMedium ]
+		gives: '<ul class="list-group list-group-horizontal-md"></ul>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupHorizontalSmall [
+
+	self
+		assert: [ :html | html listGroup beHorizontalSmall ]
+		gives: '<ul class="list-group list-group-horizontal-sm"></ul>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupHorizontalVeryLarge [
+
+	self
+		assert: [ :html | html listGroup beHorizontalVeryLarge ]
+		gives: '<ul class="list-group list-group-horizontal-xl"></ul>'
+]
+
 { #category : #'tests - listgroups' }
 SBSCanvasBrushTest >> testListGroupItem [
 
