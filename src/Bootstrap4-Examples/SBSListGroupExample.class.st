@@ -106,9 +106,17 @@ SBSListGroupExample >> renderExampleOn: html [
 		html listGroupItem beWarning with: 'A simple warning list group item.'.
 		html listGroupItem beInfo with: 'A simple info list group item.'.
 		html listGroupItem beLight with: 'A simple light list group item.'.
-		html listGroupItem beDark with: 'A simple dark list group item.'.
-			
-	]			
-								 				
+		html listGroupItem beDark with: 'A simple dark list group item.'.].
+	html break.
+	html listGroup: [ 
+		html listGroupLinkedItem: 'Dapibus ac facilisis in'.
+		html listGroupLinkedItem bePrimary with: 'A simple primary list group linked item.'.
+		html listGroupLinkedItem beSecondary with: 'A simple secondary list group linked item.'.
+		html listGroupLinkedItem beSuccess with: 'A simple success list group linked item.'.
+		html listGroupLinkedItem beDanger with: 'A simple danger list group linked item.'.
+		html listGroupLinkedItem beWarning with: 'A simple warning list group linked item.'.
+		html listGroupLinkedItem beInfo with: 'A simple info list group linked item.'.
+		html listGroupLinkedItem beLight with: 'A simple light list group linked item.'.
+		html listGroupLinkedItem beDark with: 'A simple dark list group linked item.'.]
 								 
 ]
