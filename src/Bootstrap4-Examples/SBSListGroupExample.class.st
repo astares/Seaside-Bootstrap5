@@ -69,5 +69,10 @@ SBSListGroupExample >> renderExampleOn: html [
 		html
 			listGroupItem: 'Cras justo odio';
 			listGroupItem: 'Dapibus ac facilisis in';
-			listGroupItem: 'Morbi leo risus' ].					 
+			listGroupItem: 'Morbi leo risus' ].	
+	html break.		
+	html listGroup beHorizontal with: [ 
+		html listGroupItem flexFill; with: 'Equal width'.
+		html listGroupItem flexFill; with: 'Equal width'.
+		html listGroupItem flexFill; with: 'Equal width' ].							 
 ]

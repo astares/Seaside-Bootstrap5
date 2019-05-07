@@ -15,6 +15,12 @@ SBSListGroupItemTag >> defaultStyleClass [
 	^'list-group-item'
 ]
 
+{ #category : #options }
+SBSListGroupItemTag >> flexFill [
+
+	self class: 'flex-fill'
+]
+
 { #category : #initialization }
 SBSListGroupItemTag >> initialize [
 	super initialize.

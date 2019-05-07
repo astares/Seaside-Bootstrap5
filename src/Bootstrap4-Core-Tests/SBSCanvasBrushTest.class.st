@@ -1635,6 +1635,14 @@ SBSCanvasBrushTest >> testListGroupItemDisabled [
 ]
 
 { #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupItemFlexFill [
+
+	self
+		assert: [ :html | html listGroupItem flexFill ]
+		gives: '<li class="list-group-item flex-fill"></li>'
+]
+
+{ #category : #'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupItemInfo [
 
 	self
