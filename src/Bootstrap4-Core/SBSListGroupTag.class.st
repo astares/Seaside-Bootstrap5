@@ -9,10 +9,21 @@ Class {
 	#category : #'Bootstrap4-Core-Base'
 }
 
+{ #category : #orientation }
+SBSListGroupTag >> beHorizontal [
+
+	self class: self defaultStyleClass, '-horizontal'
+]
+
 { #category : #defaults }
 SBSListGroupTag >> defaultStyleClass [
 
 	^'list-group'
+]
+
+{ #category : #states }
+SBSListGroupTag >> flush [
+	self class: self defaultStyleClass, '-flush'
 ]
 
 { #category : #options }

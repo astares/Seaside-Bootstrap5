@@ -1578,6 +1578,22 @@ SBSCanvasBrushTest >> testListGroup [
 		gives: '<ul class="list-group"></ul>'
 ]
 
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupFlush [
+
+	self
+		assert: [ :html | html listGroup flush ]
+		gives: '<ul class="list-group list-group-flush"></ul>'
+]
+
+{ #category : #'tests - listgroups - options' }
+SBSCanvasBrushTest >> testListGroupHorizontal [
+
+	self
+		assert: [ :html | html listGroup beHorizontal ]
+		gives: '<ul class="list-group list-group-horizontal"></ul>'
+]
+
 { #category : #'tests - listgroups' }
 SBSCanvasBrushTest >> testListGroupItem [
 
