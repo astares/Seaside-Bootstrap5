@@ -95,6 +95,20 @@ SBSListGroupExample >> renderExampleOn: html [
 		html listGroupItem: 'Very Large'.
 		html listGroupItem: 'Very Large'.
 		html listGroupItem: 'Very Large' ].				
+	html break; break.	
+	html heading level2 with: 'Contextual classes'.	
+	html listGroup: [ 
+		html listGroupItem: 'Dapibus ac facilisis in'.
+		html listGroupItem bePrimary with: 'A simple primary list group item.'.
+		html listGroupItem beSecondary with: 'A simple secondary list group item.'.
+		html listGroupItem beSuccess with: 'A simple success list group item.'.
+		html listGroupItem beDanger with: 'A simple danger list group item.'.
+		html listGroupItem beWarning with: 'A simple warning list group item.'.
+		html listGroupItem beInfo with: 'A simple info list group item.'.
+		html listGroupItem beLight with: 'A simple light list group item.'.
+		html listGroupItem beDark with: 'A simple dark list group item.'.
+			
+	]			
 								 				
 								 
 ]
