@@ -117,6 +117,12 @@ SBSListGroupExample >> renderExampleOn: html [
 		html listGroupLinkedItem beWarning with: 'A simple warning list group linked item.'.
 		html listGroupLinkedItem beInfo with: 'A simple info list group linked item.'.
 		html listGroupLinkedItem beLight with: 'A simple light list group linked item.'.
-		html listGroupLinkedItem beDark with: 'A simple dark list group linked item.'.]
-								 
+		html listGroupLinkedItem beDark with: 'A simple dark list group linked item.'.].
+	html break; break.	
+	html heading level2 with: 'Contextual classes'.	
+	html listGroup: [ 
+		html listGroupItem displayFlex; justifyContentBetween; alignItemsCenter; with: [ html text: 'Cras justo odio'.  html badge bePrimary; bePill; with: '14' ].
+		html listGroupItem displayFlex; justifyContentBetween; alignItemsCenter; with: [ html text: 'Dapibus ac facilisis in'.].
+		html listGroupItem displayFlex; justifyContentBetween; alignItemsCenter; with: [ html text: 'Morbi leo risus'.]
+	 ]
 ]

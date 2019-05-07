@@ -4,8 +4,8 @@ A common superclass for list item based Bootstrap tags
 Class {
 	#name : #SBSListItemTag,
 	#superclass : #WATagBrush,
-	#traits : 'SBSTActiveStyled',
-	#classTraits : 'SBSTActiveStyled classTrait',
+	#traits : 'SBSTActiveStyled + SBSTRowItemAlignment',
+	#classTraits : 'SBSTActiveStyled classTrait + SBSTRowItemAlignment classTrait',
 	#category : #'Bootstrap4-Core-Base'
 }
 

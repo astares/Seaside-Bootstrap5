@@ -25,6 +25,12 @@ WATagBrush >> darkText [
 ]
 
 { #category : #'*Bootstrap4-Core' }
+WATagBrush >> displayFlex [
+
+	self class: 'd-flex'
+]
+
+{ #category : #'*Bootstrap4-Core' }
 WATagBrush >> heading: aLevel [
 
 	self class: 'h', aLevel asString
