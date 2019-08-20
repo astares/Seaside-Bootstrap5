@@ -19,9 +19,57 @@ SBSTFlexboxContainer >> flexColumn [
 ]
 
 { #category : #'alignment direction' }
+SBSTFlexboxContainer >> flexColumnLarge [
+
+	self class: 'flex-lg-column'
+]
+
+{ #category : #'alignment direction' }
+SBSTFlexboxContainer >> flexColumnLargeReverse [
+
+	self class: 'flex-lg-column-reverse'
+]
+
+{ #category : #'alignment direction' }
+SBSTFlexboxContainer >> flexColumnMedium [
+
+	self class: 'flex-md-column'
+]
+
+{ #category : #'alignment direction' }
+SBSTFlexboxContainer >> flexColumnMediumReverse [
+
+	self class: 'flex-md-column-reverse'
+]
+
+{ #category : #'alignment direction' }
 SBSTFlexboxContainer >> flexColumnReverse [
 
 	self class: 'flex-column-reverse'
+]
+
+{ #category : #'alignment direction' }
+SBSTFlexboxContainer >> flexColumnSmall [
+
+	self class: 'flex-sm-column'
+]
+
+{ #category : #'alignment direction' }
+SBSTFlexboxContainer >> flexColumnSmallReverse [
+
+	self class: 'flex-sm-column-reverse'
+]
+
+{ #category : #'alignment direction' }
+SBSTFlexboxContainer >> flexColumnVeryLarge [
+
+	self class: 'flex-xl-column'
+]
+
+{ #category : #'alignment direction' }
+SBSTFlexboxContainer >> flexColumnVeryLargeReverse [
+
+	self class: 'flex-xl-column-reverse'
 ]
 
 { #category : #container }
@@ -61,9 +109,57 @@ SBSTFlexboxContainer >> flexRow [
 ]
 
 { #category : #'alignment direction' }
+SBSTFlexboxContainer >> flexRowLarge [
+
+	self class: 'flex-lg-row'
+]
+
+{ #category : #'alignment direction' }
+SBSTFlexboxContainer >> flexRowLargeReverse [
+
+	self class: 'flex-lg-row-reverse'
+]
+
+{ #category : #'alignment direction' }
+SBSTFlexboxContainer >> flexRowMedium [
+
+	self class: 'flex-md-row'
+]
+
+{ #category : #'alignment direction' }
+SBSTFlexboxContainer >> flexRowMediumReverse [
+
+	self class: 'flex-md-row-reverse'
+]
+
+{ #category : #'alignment direction' }
 SBSTFlexboxContainer >> flexRowReverse [
 
 	self class: 'flex-row-reverse'
+]
+
+{ #category : #'alignment direction' }
+SBSTFlexboxContainer >> flexRowSmall [
+
+	self class: 'flex-sm-row'
+]
+
+{ #category : #'alignment direction' }
+SBSTFlexboxContainer >> flexRowSmallReverse [
+
+	self class: 'flex-sm-row-reverse'
+]
+
+{ #category : #'alignment direction' }
+SBSTFlexboxContainer >> flexRowVeryLarge [
+
+	self class: 'flex-xl-row'
+]
+
+{ #category : #'alignment direction' }
+SBSTFlexboxContainer >> flexRowVeryLargeReverse [
+
+	self class: 'flex-xl-row-reverse'
 ]
 
 { #category : #container }

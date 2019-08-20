@@ -2138,7 +2138,7 @@ SBSCanvasBrushTest >> testNavigationBreadcrumb [
 		gives: '<nav aria-label="breadcrumb"></nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlex [
 
 	self
@@ -2146,7 +2146,7 @@ SBSCanvasBrushTest >> testNavigationFlex [
 		gives: '<nav class="nav d-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexColumn [
 
 	self
@@ -2154,7 +2154,79 @@ SBSCanvasBrushTest >> testNavigationFlexColumn [
 		gives: '<nav class="nav flex-column"></nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexColumnLarge [
+
+	self
+		assert: [ :html | html navigation flexColumnLarge ]
+		gives: '<nav class="nav flex-lg-column"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexColumnLargeReverse [
+
+	self
+		assert: [ :html | html navigation flexColumnLargeReverse ]
+		gives: '<nav class="nav flex-lg-column-reverse"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexColumnMedium [
+
+	self
+		assert: [ :html | html navigation flexColumnMedium ]
+		gives: '<nav class="nav flex-md-column"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexColumnMediumReverse [
+
+	self
+		assert: [ :html | html navigation flexColumnMediumReverse ]
+		gives: '<nav class="nav flex-md-column-reverse"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexColumnReverse [
+
+	self
+		assert: [ :html | html navigation flexColumnReverse ]
+		gives: '<nav class="nav flex-column-reverse"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexColumnSmall [
+
+	self
+		assert: [ :html | html navigation flexColumnSmall ]
+		gives: '<nav class="nav flex-sm-column"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexColumnSmallReverse [
+
+	self
+		assert: [ :html | html navigation flexColumnSmallReverse ]
+		gives: '<nav class="nav flex-sm-column-reverse"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexColumnVeryLarge [
+
+	self
+		assert: [ :html | html navigation flexColumnVeryLarge ]
+		gives: '<nav class="nav flex-xl-column"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexColumnVeryLargeReverse [
+
+	self
+		assert: [ :html | html navigation flexColumnVeryLargeReverse ]
+		gives: '<nav class="nav flex-xl-column-reverse"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexInline [
 
 	self
@@ -2162,7 +2234,7 @@ SBSCanvasBrushTest >> testNavigationFlexInline [
 		gives: '<nav class="nav d-inline-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexLarge [
 
 	self
@@ -2170,7 +2242,7 @@ SBSCanvasBrushTest >> testNavigationFlexLarge [
 		gives: '<nav class="nav d-lg-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexLargeInline [
 
 	self
@@ -2178,7 +2250,7 @@ SBSCanvasBrushTest >> testNavigationFlexLargeInline [
 		gives: '<nav class="nav d-lg-inline-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexMedium [
 
 	self
@@ -2186,7 +2258,7 @@ SBSCanvasBrushTest >> testNavigationFlexMedium [
 		gives: '<nav class="nav d-md-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexMediumInline [
 
 	self
@@ -2194,7 +2266,87 @@ SBSCanvasBrushTest >> testNavigationFlexMediumInline [
 		gives: '<nav class="nav d-md-inline-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexRow [
+
+	self
+		assert: [ :html | html navigation flexRow ]
+		gives: '<nav class="nav flex-row"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexRowLarge [
+
+	self
+		assert: [ :html | html navigation flexRowLarge ]
+		gives: '<nav class="nav flex-lg-row"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexRowLargeReverse [
+
+	self
+		assert: [ :html | html navigation flexRowLargeReverse ]
+		gives: '<nav class="nav flex-lg-row-reverse"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexRowMedium [
+
+	self
+		assert: [ :html | html navigation flexRowMedium ]
+		gives: '<nav class="nav flex-md-row"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexRowMediumReverse [
+
+	self
+		assert: [ :html | html navigation flexRowMediumReverse ]
+		gives: '<nav class="nav flex-md-row-reverse"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexRowReverse [
+
+	self
+		assert: [ :html | html navigation flexRowReverse ]
+		gives: '<nav class="nav flex-row-reverse"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexRowSmall [
+
+	self
+		assert: [ :html | html navigation flexRowSmall ]
+		gives: '<nav class="nav flex-sm-row"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexRowSmallReverse [
+
+	self
+		assert: [ :html | html navigation flexRowSmallReverse ]
+		gives: '<nav class="nav flex-sm-row-reverse"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexRowVeryLarge [
+
+	self
+		assert: [ :html | html navigation flexRowVeryLarge ]
+		gives: '<nav class="nav flex-xl-row"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
+SBSCanvasBrushTest >> testNavigationFlexRowVeryLargeReverse [
+
+	self
+		assert: [ :html | html navigation flexRowVeryLargeReverse ]
+		gives: '<nav class="nav flex-xl-row-reverse"></nav>'
+]
+
+{ #category : #'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexSmall [
 
 	self
@@ -2202,7 +2354,7 @@ SBSCanvasBrushTest >> testNavigationFlexSmall [
 		gives: '<nav class="nav d-sm-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexSmallInline [
 
 	self
@@ -2210,7 +2362,7 @@ SBSCanvasBrushTest >> testNavigationFlexSmallInline [
 		gives: '<nav class="nav d-sm-inline-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexVeryLarge [
 
 	self
@@ -2218,7 +2370,7 @@ SBSCanvasBrushTest >> testNavigationFlexVeryLarge [
 		gives: '<nav class="nav d-xl-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexVeryLargeInline [
 
 	self
