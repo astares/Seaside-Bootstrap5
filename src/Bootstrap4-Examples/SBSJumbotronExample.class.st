@@ -17,9 +17,9 @@ SBSJumbotronExample class >> exampleName [
 SBSJumbotronExample >> renderExampleOn: html [
 
 	html jumbotron: [ 
-		html heading: 'Jumbutron' ].
+		html heading: 'Jumbotron' ].
 
 	html break.
 	html jumbotron beFluid 
-		with: [ html heading: 'Fluid Jumbutron' ]
+		with: [ html heading: 'Fluid Jumbotron' ]
 ]
