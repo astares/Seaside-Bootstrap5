@@ -2410,7 +2410,7 @@ SBSCanvasBrushTest >> testNavigationItemWithContent [
 		gives: '<li class="nav-item">Bootstrap</li>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentAround [
 
 	self
@@ -2418,7 +2418,39 @@ SBSCanvasBrushTest >> testNavigationJustifyContentAround [
 		gives: '<nav class="nav justify-content-around"></nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentAroundLarge [
+
+	self
+		assert: [ :html | html navigation justifyContentAroundLarge  ]
+		gives: '<nav class="nav justify-content-lg-around"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentAroundMedium [
+
+	self
+		assert: [ :html | html navigation justifyContentAroundMedium  ]
+		gives: '<nav class="nav justify-content-md-around"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentAroundSmall [
+
+	self
+		assert: [ :html | html navigation justifyContentAroundSmall  ]
+		gives: '<nav class="nav justify-content-sm-around"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentAroundVeryLarge [
+
+	self
+		assert: [ :html | html navigation justifyContentAroundVeryLarge  ]
+		gives: '<nav class="nav justify-content-xl-around"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentBetween [
 
 	self
@@ -2426,7 +2458,39 @@ SBSCanvasBrushTest >> testNavigationJustifyContentBetween [
 		gives: '<nav class="nav justify-content-between"></nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentBetweenLarge [
+
+	self
+		assert: [ :html | html navigation justifyContentBetweenLarge  ]
+		gives: '<nav class="nav justify-content-lg-between"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentBetweenMedium [
+
+	self
+		assert: [ :html | html navigation justifyContentBetweenMedium  ]
+		gives: '<nav class="nav justify-content-md-between"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentBetweenSmall [
+
+	self
+		assert: [ :html | html navigation justifyContentBetweenSmall  ]
+		gives: '<nav class="nav justify-content-sm-between"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentBetweenVeryLarge [
+
+	self
+		assert: [ :html | html navigation justifyContentBetweenVeryLarge  ]
+		gives: '<nav class="nav justify-content-xl-between"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentCenter [
 
 	self
@@ -2434,12 +2498,116 @@ SBSCanvasBrushTest >> testNavigationJustifyContentCenter [
 		gives: '<nav class="nav justify-content-center"></nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentCenterLarge [
+
+	self
+		assert: [ :html | html navigation justifyContentCenterLarge  ]
+		gives: '<nav class="nav justify-content-lg-center"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentCenterMedium [
+
+	self
+		assert: [ :html | html navigation justifyContentCenterMedium  ]
+		gives: '<nav class="nav justify-content-md-center"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentCenterSmall [
+
+	self
+		assert: [ :html | html navigation justifyContentCenterSmall  ]
+		gives: '<nav class="nav justify-content-sm-center"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentCenterVeryLarge [
+
+	self
+		assert: [ :html | html navigation justifyContentCenterVeryLarge  ]
+		gives: '<nav class="nav justify-content-xl-center"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentEnd [
+
+	self
+		assert: [ :html | html navigation justifyContentEnd  ]
+		gives: '<nav class="nav justify-content-end"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentEndLarge [
+
+	self
+		assert: [ :html | html navigation justifyContentEndLarge  ]
+		gives: '<nav class="nav justify-content-lg-end"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentEndMedium [
+
+	self
+		assert: [ :html | html navigation justifyContentEndMedium  ]
+		gives: '<nav class="nav justify-content-md-end"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentEndSmall [
+
+	self
+		assert: [ :html | html navigation justifyContentEndSmall  ]
+		gives: '<nav class="nav justify-content-sm-end"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentEndVeryLarge [
+
+	self
+		assert: [ :html | html navigation justifyContentEndVeryLarge  ]
+		gives: '<nav class="nav justify-content-xl-end"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentStart [
 
 	self
 		assert: [ :html | html navigation justifyContentStart  ]
 		gives: '<nav class="nav justify-content-start"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentStartLarge [
+
+	self
+		assert: [ :html | html navigation justifyContentStartLarge  ]
+		gives: '<nav class="nav justify-content-lg-start"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentStartMedium [
+
+	self
+		assert: [ :html | html navigation justifyContentStartMedium  ]
+		gives: '<nav class="nav justify-content-md-start"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentStartSmall [
+
+	self
+		assert: [ :html | html navigation justifyContentStartSmall  ]
+		gives: '<nav class="nav justify-content-sm-start"></nav>'
+]
+
+{ #category : #'tests - navigation - justification' }
+SBSCanvasBrushTest >> testNavigationJustifyContentStartVeryLarge [
+
+	self
+		assert: [ :html | html navigation justifyContentStartVeryLarge  ]
+		gives: '<nav class="nav justify-content-xl-start"></nav>'
 ]
 
 { #category : #'tests - navigation' }
