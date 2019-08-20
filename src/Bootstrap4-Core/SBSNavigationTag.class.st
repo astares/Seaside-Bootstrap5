@@ -4,6 +4,8 @@ Bootstrap navigation
 Class {
 	#name : #SBSNavigationTag,
 	#superclass : #SBSNavTag,
+	#traits : 'SBSTContentJustification + SBSTFlexboxContainer',
+	#classTraits : 'SBSTContentJustification classTrait + SBSTFlexboxContainer classTrait',
 	#category : #'Bootstrap4-Core-Base'
 }
 

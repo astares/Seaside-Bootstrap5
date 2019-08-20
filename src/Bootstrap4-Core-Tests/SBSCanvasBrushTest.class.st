@@ -2139,6 +2139,94 @@ SBSCanvasBrushTest >> testNavigationBreadcrumb [
 ]
 
 { #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationFlex [
+
+	self
+		assert: [ :html | html navigation flex ]
+		gives: '<nav class="nav d-flex"></nav>'
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationFlexColumn [
+
+	self
+		assert: [ :html | html navigation flexColumn ]
+		gives: '<nav class="nav flex-column"></nav>'
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationFlexInline [
+
+	self
+		assert: [ :html | html navigation flexInline ]
+		gives: '<nav class="nav d-inline-flex"></nav>'
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationFlexLarge [
+
+	self
+		assert: [ :html | html navigation flexLarge ]
+		gives: '<nav class="nav d-lg-flex"></nav>'
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationFlexLargeInline [
+
+	self
+		assert: [ :html | html navigation flexLargeInline ]
+		gives: '<nav class="nav d-lg-inline-flex"></nav>'
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationFlexMedium [
+
+	self
+		assert: [ :html | html navigation flexMedium ]
+		gives: '<nav class="nav d-md-flex"></nav>'
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationFlexMediumInline [
+
+	self
+		assert: [ :html | html navigation flexMediumInline ]
+		gives: '<nav class="nav d-md-inline-flex"></nav>'
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationFlexSmall [
+
+	self
+		assert: [ :html | html navigation flexSmall ]
+		gives: '<nav class="nav d-sm-flex"></nav>'
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationFlexSmallInline [
+
+	self
+		assert: [ :html | html navigation flexSmallInline ]
+		gives: '<nav class="nav d-sm-inline-flex"></nav>'
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationFlexVeryLarge [
+
+	self
+		assert: [ :html | html navigation flexVeryLarge ]
+		gives: '<nav class="nav d-xl-flex"></nav>'
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationFlexVeryLargeInline [
+
+	self
+		assert: [ :html | html navigation flexVeryLargeInline ]
+		gives: '<nav class="nav d-xl-inline-flex"></nav>'
+]
+
+{ #category : #'tests - navigation' }
 SBSCanvasBrushTest >> testNavigationItem [
 
 	self
@@ -2168,6 +2256,38 @@ SBSCanvasBrushTest >> testNavigationItemWithContent [
 	self
 		assert: [ :html | html navigationItem: 'Bootstrap' ]
 		gives: '<li class="nav-item">Bootstrap</li>'
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationJustifyContentAround [
+
+	self
+		assert: [ :html | html navigation justifyContentAround  ]
+		gives: '<nav class="nav justify-content-around"></nav>'
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationJustifyContentBetween [
+
+	self
+		assert: [ :html | html navigation justifyContentBetween  ]
+		gives: '<nav class="nav justify-content-between"></nav>'
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationJustifyContentCenter [
+
+	self
+		assert: [ :html | html navigation justifyContentCenter  ]
+		gives: '<nav class="nav justify-content-center"></nav>'
+]
+
+{ #category : #'tests - navigation' }
+SBSCanvasBrushTest >> testNavigationJustifyContentEnd [
+
+	self
+		assert: [ :html | html navigation justifyContentStart  ]
+		gives: '<nav class="nav justify-content-start"></nav>'
 ]
 
 { #category : #'tests - navigation' }
