@@ -4,14 +4,10 @@ A Bootstrap navigation item
 Class {
 	#name : #SBSNavigationItemTag,
 	#superclass : #SBSListItemTag,
+	#traits : 'SBSTActiveStyled',
+	#classTraits : 'SBSTActiveStyled classTrait',
 	#category : #'Bootstrap4-Core-Base'
 }
-
-{ #category : #options }
-SBSNavigationItemTag >> beActive [
-
-	self class: 'active'
-]
 
 { #category : #defaults }
 SBSNavigationItemTag >> defaultStyleClass [

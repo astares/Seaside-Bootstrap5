@@ -1107,7 +1107,7 @@ SBSHtmlCanvas >> navigationBarBrand: aBlock [
 { #category : #'navigation bar' }
 SBSHtmlCanvas >> navigationBarCollapse [
 		
-	^ self brush: SBSNavgationBarCollapseTag new
+	^ self brush: SBSNavigationBarCollapseTag new
 ]
 
 { #category : #'navigation bar' }
@@ -1189,6 +1189,20 @@ SBSHtmlCanvas >> navigationList: aBlock [
 	
 	^self navigationList
 		with: aBlock
+]
+
+{ #category : #pagination }
+SBSHtmlCanvas >> navigationTabs [
+	"Provide a Bootstrap navigation tabs container."
+
+	^ self brush: SBSNavigationTabTag new
+]
+
+{ #category : #pagination }
+SBSHtmlCanvas >> navigationTabs: aRenderable [
+	"Provide a Bootstrap navigation tabs container."
+
+	^ self navigationTabs with: aRenderable
 ]
 
 { #category : #buttons }
@@ -1303,4 +1317,34 @@ SBSHtmlCanvas >> row: aBlock [
 	
 	^self row
 		with: aBlock
+]
+
+{ #category : #listgroups }
+SBSHtmlCanvas >> tabContent [
+	"Provide a Bootstrap tab content container."
+	
+	^ self brush: SBSTabContentTag new
+
+]
+
+{ #category : #listgroups }
+SBSHtmlCanvas >> tabContent: aRenderable [
+	"Provide a Bootstrap tab content container with aRenderable as its content."
+	
+	^ self tabContent with: aRenderable
+
+]
+
+{ #category : #pagination }
+SBSHtmlCanvas >> tabPane [
+	"Provide a Bootstrap tab pane."
+	
+	^ self brush: SBSTabPaneTag new
+]
+
+{ #category : #pagination }
+SBSHtmlCanvas >> tabPane: aRenderable [
+	"Provide a Bootstrap tab pane with aRenderable within."
+	
+	^ self tabPane with: aRenderable 
 ]
