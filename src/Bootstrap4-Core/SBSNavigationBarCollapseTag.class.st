@@ -2,18 +2,18 @@
 Used for grouping and hiding navbar contents by a parent breakpoint
 "
 Class {
-	#name : #SBSNavgationBarCollapseTag,
+	#name : #SBSNavigationBarCollapseTag,
 	#superclass : #SBSGenericTag,
 	#category : #'Bootstrap4-Core-Base'
 }
 
 { #category : #options }
-SBSNavgationBarCollapseTag >> collapse [ 
+SBSNavigationBarCollapseTag >> collapse [ 
 	self class: 'collapse'
 ]
 
 { #category : #defaults }
-SBSNavgationBarCollapseTag >> defaultStyleClass [
+SBSNavigationBarCollapseTag >> defaultStyleClass [
 
 	^'navbar-collapse'
 ]

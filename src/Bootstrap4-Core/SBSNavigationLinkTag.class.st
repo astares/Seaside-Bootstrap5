@@ -10,6 +10,12 @@ Class {
 }
 
 { #category : #options }
+SBSNavigationLinkTag >> beTab [
+
+	self attributeAt: 'role' put: 'tab'
+]
+
+{ #category : #options }
 SBSNavigationLinkTag >> dataToggle: aString [ 
 	self attributeAt: 'data-toggle' put: aString 
 ]
@@ -24,4 +30,12 @@ SBSNavigationLinkTag >> defaultStyleClass [
 SBSNavigationLinkTag >> dropdownToggle [
 
 	self class: 'dropdown-toggle'
+]
+
+{ #category : #options }
+SBSNavigationLinkTag >> toggle: elementId [
+
+	self dataToggle: elementId.
+	self url: '#', elementId.
+	self attributeAt: 'aria-controls' put: elementId
 ]
