@@ -7,12 +7,12 @@ Bootstrap 4 wrapper for Seaside for Pharo 7
 based on 4.0 from [http://bootstrap.rtlcss.com/](http://bootstrap.rtlcss.com/)
 
 ## Installation
-First install [Pharo](http://www.pharo.org) on your machine. Pharo 7 onwards is recommended. Either using [PharoLauncher](https://github.com/pharo-project/pharo-launcher) or [Pharo ZeroConf](http://get.pharo.org/):
+First install [Pharo](http://www.pharo.org) on your machine. Pharo 8 onwards is recommended. Either using [PharoLauncher](https://github.com/pharo-project/pharo-launcher) or [Pharo ZeroConf](http://get.pharo.org/):
 
 ## Load Pharo using ZeroConf 
 
 ```
-wget -O- get.pharo.org/64/70+vm | bash
+wget -O- get.pharo.org/64/80+vm | bash
 ./pharo-ui Pharo.image
 ```
 
