@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/astares/Seaside-Bootstrap4.svg?branch=master)](https://travis-ci.org/astares/Seaside-Bootstrap4) [![Coverage Status](https://coveralls.io/repos/github/astares/Seaside-Bootstrap4/badge.svg?branch=master)](https://coveralls.io/github/astares/Seaside-Bootstrap4?branch=master)
 
-Bootstrap 4 wrapper for Seaside for Pharo 7
+Bootstrap 4 wrapper for Seaside for Pharo 8
 
 based on 4.0 from [http://bootstrap.rtlcss.com/](http://bootstrap.rtlcss.com/)
 
