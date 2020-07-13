@@ -47,6 +47,12 @@ SBSButtonTag >> beDisabled [
 	self disabled
 ]
 
+{ #category : #options }
+SBSButtonTag >> beDisabledIf: aBoolean [
+
+	aBoolean value ifTrue: [ self beDisabled ]
+]
+
 { #category : #callbacks }
 SBSButtonTag >> cancelCallback: aBlock [
 
