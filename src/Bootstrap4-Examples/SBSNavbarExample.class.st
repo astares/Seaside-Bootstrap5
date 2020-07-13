@@ -17,7 +17,7 @@ SBSNavbarExample class >> exampleName [
 SBSNavbarExample >> renderExampleOn: html [
 
 	| bar id|
-	id := 'navbarSupportedContent'.
+	id := '#navbarCollapsed'.
 	bar := html navigationBar.
 	bar beLight; expandLarge.
 	bar background beLight.
@@ -32,7 +32,7 @@ SBSNavbarExample >> renderExampleOn: html [
 			dataTarget: id;
 			with: [ html navigationBarTogglerIcon ].
 				
-		html navigationBarCollapse collapse with: [ 
+		html navigationBarCollapse collapse id: 'navbarCollapsed'; with: [ 
 			html navigationBarNavigation: [
 				html navigationItem beActive with: [ html navigationLink: 'Home' ].
 				html navigationItem: [ html navigationLink: 'Link' ].
@@ -54,7 +54,5 @@ SBSNavbarExample >> renderExampleOn: html [
 			 
 			
 		]
-	] 
-		
-
+	]  
 ]
