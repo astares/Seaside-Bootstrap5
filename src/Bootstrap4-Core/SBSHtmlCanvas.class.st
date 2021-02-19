@@ -491,6 +491,21 @@ SBSHtmlCanvas >> carouselItem: aBlock [
 		with: aBlock
 ]
 
+{ #category : #buttons }
+SBSHtmlCanvas >> closeButton [
+	"Defines a Bootstrap close button."
+	
+	^self brush: SBSCloseButtonTag new
+
+]
+
+{ #category : #buttons }
+SBSHtmlCanvas >> closeButton: aBlock [
+
+	^self closeButton 
+		with: aBlock
+]
+
 { #category : #collapsing }
 SBSHtmlCanvas >> collapse [
 	"Provide a bootstrap collapse."
@@ -1039,6 +1054,118 @@ SBSHtmlCanvas >> listGroupLinkedItem: aBlock [
 	"Defines a Bootstrap list group linked item."
 	
 	^ self listGroupLinkedItem
+		with: aBlock
+]
+
+{ #category : #modal }
+SBSHtmlCanvas >> modal [
+	"Defines a Bootstrap modal."
+	
+	^self brush: SBSModalTag new
+
+]
+
+{ #category : #modal }
+SBSHtmlCanvas >> modal: aBlock [ 
+
+	^self modal
+		with: aBlock
+]
+
+{ #category : #modal }
+SBSHtmlCanvas >> modalBody [
+
+	^self div 
+		class:'modal-body'
+		
+]
+
+{ #category : #modal }
+SBSHtmlCanvas >> modalBody: aBlock [
+
+	^self modalBody
+		with: aBlock
+]
+
+{ #category : #modal }
+SBSHtmlCanvas >> modalCloseButton [
+
+	^self closeButton 
+		dataDismiss: 'modal';
+		with: [ self html: '&times;' ]
+]
+
+{ #category : #modal }
+SBSHtmlCanvas >> modalContent [ 
+
+	^self div 
+		class:'modal-content'
+		
+]
+
+{ #category : #modal }
+SBSHtmlCanvas >> modalContent: aBlock [ 
+
+	^self modalContent
+		with: aBlock
+]
+
+{ #category : #modal }
+SBSHtmlCanvas >> modalDialog [
+
+	^self brush: SBSModalDialogTag new
+		
+]
+
+{ #category : #modal }
+SBSHtmlCanvas >> modalDialog: aBlock [
+
+	^self modalDialog
+		with: aBlock
+		
+]
+
+{ #category : #modal }
+SBSHtmlCanvas >> modalFooter [
+	
+	^self div 
+		class: 'modal-footer'
+]
+
+{ #category : #modal }
+SBSHtmlCanvas >> modalFooter: aBlock [
+	
+	^self modalFooter
+		with: aBlock
+]
+
+{ #category : #modal }
+SBSHtmlCanvas >> modalHeader [
+
+	^self div 
+		class:'modal-header'
+		
+]
+
+{ #category : #modal }
+SBSHtmlCanvas >> modalHeader: aBlock [
+
+	^self modalHeader
+		with: aBlock
+		
+]
+
+{ #category : #modal }
+SBSHtmlCanvas >> modalTitle [
+
+	^self brush: SBSModalTitleTag new
+		
+]
+
+{ #category : #modal }
+SBSHtmlCanvas >> modalTitle: aBlock [
+
+	^self modalTitle
 		with: aBlock
 ]
 

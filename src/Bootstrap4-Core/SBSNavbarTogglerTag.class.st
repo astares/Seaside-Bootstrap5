@@ -19,12 +19,6 @@ SBSNavbarTogglerTag >> collapse [
 	self dataToggle: 'collapse'
 ]
 
-{ #category : #accessing }
-SBSNavbarTogglerTag >> dataToggle: aString [
-
-	self attributeAt: 'data-toggle' put: aString
-]
-
 { #category : #defaults }
 SBSNavbarTogglerTag >> defaultStyleClass [ 
 

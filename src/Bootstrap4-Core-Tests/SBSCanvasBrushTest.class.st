@@ -874,6 +874,14 @@ SBSCanvasBrushTest >> testCarouselWithContent [
 		gives: '<div class="carousel">Bootstrap</div>'
 ]
 
+{ #category : #'tests - buttons' }
+SBSCanvasBrushTest >> testCloseButton [
+
+	self
+		assert: [ :html | html closeButton ]
+		gives: '<button class="close"></button>'
+]
+
 { #category : #'tests - collapse' }
 SBSCanvasBrushTest >> testCollapse [
 
@@ -1888,6 +1896,141 @@ SBSCanvasBrushTest >> testMarginTopAndBottom [
 	self
 		assert: [:html | html div marginTopAndBottom: 3 ]
 		gives: '<div class="my-3"></div>'
+]
+
+{ #category : #'tests - modal' }
+SBSCanvasBrushTest >> testModal [
+
+	self
+		assert: [ :html | html modal ]
+		gives: '<div class="modal" tabindex="-1" role="dialog"></div>'
+]
+
+{ #category : #'tests - modal' }
+SBSCanvasBrushTest >> testModalBody [
+
+	self
+		assert: [ :html | html modalBody ]
+		gives: '<div class="modal-body"></div>'
+]
+
+{ #category : #'tests - modal' }
+SBSCanvasBrushTest >> testModalBodyWithContent [
+
+	self
+		assert: [ :html | html modalBody: 'Bootstrap' ]
+		gives: '<div class="modal-body">Bootstrap</div>'
+]
+
+{ #category : #'tests - modal' }
+SBSCanvasBrushTest >> testModalCloseButton [
+
+	self
+		assert: [ :html | html modalCloseButton ]
+		gives: '<button class="close" data-dismiss="modal">&times;</button>'
+]
+
+{ #category : #'tests - modal' }
+SBSCanvasBrushTest >> testModalContent [
+
+	self
+		assert: [ :html | html modalContent ]
+		gives: '<div class="modal-content"></div>'
+]
+
+{ #category : #'tests - modal' }
+SBSCanvasBrushTest >> testModalContentWithContent [
+
+	self
+		assert: [ :html | html modalContent: 'Bootstrap' ]
+		gives: '<div class="modal-content">Bootstrap</div>'
+]
+
+{ #category : #'tests - modal' }
+SBSCanvasBrushTest >> testModalDialog [
+
+	self
+		assert: [ :html | html modalDialog ]
+		gives: '<div class="modal-dialog" role="document"></div>'
+]
+
+{ #category : #'tests - modal - options' }
+SBSCanvasBrushTest >> testModalDialogCentered [
+	self
+		assert: [ :html | html modalDialog beCentered ]
+		gives: '<div class="modal-dialog modal-dialog-centered" role="document"></div>'
+]
+
+{ #category : #'tests - modal' }
+SBSCanvasBrushTest >> testModalDialogWithContent [
+
+	self
+		assert: [ :html | html modalDialog: 'Bootstrap' ]
+		gives: '<div class="modal-dialog" role="document">Bootstrap</div>'
+]
+
+{ #category : #'tests - modal - options' }
+SBSCanvasBrushTest >> testModalFade [
+
+	self
+		assert: [ :html | html modal fade]
+		gives: '<div class="modal fade" tabindex="-1" role="dialog"></div>'
+]
+
+{ #category : #'tests - modal' }
+SBSCanvasBrushTest >> testModalFooter [
+
+	self
+		assert: [ :html | html modalFooter ]
+		gives: '<div class="modal-footer"></div>'
+]
+
+{ #category : #'tests - modal' }
+SBSCanvasBrushTest >> testModalFooterWithContent [
+
+	self
+		assert: [ :html | html modalFooter: 'Bootstrap' ]
+		gives: '<div class="modal-footer">Bootstrap</div>'
+]
+
+{ #category : #'tests - modal' }
+SBSCanvasBrushTest >> testModalHeader [
+
+	self
+		assert: [ :html | html modalHeader ]
+		gives: '<div class="modal-header"></div>'
+]
+
+{ #category : #'tests - modal' }
+SBSCanvasBrushTest >> testModalHeaderWithContent [
+
+	self
+		assert: [ :html | html modalHeader: 'Bootstrap' ]
+		gives: '<div class="modal-header">Bootstrap</div>'
+]
+
+{ #category : #'tests - modal' }
+SBSCanvasBrushTest >> testModalTitle [
+
+	self
+		assert: [ :html | html modalTitle ]
+		gives: '<h1 class="modal-title"></h1>'
+]
+
+{ #category : #'tests - modal' }
+SBSCanvasBrushTest >> testModalTitleWithContent [
+
+	self
+		assert: [ :html | html modalTitle: 'Bootstrap' ]
+		gives: '<h1 class="modal-title">Bootstrap</h1>'
+]
+
+{ #category : #'tests - modal' }
+SBSCanvasBrushTest >> testModalWithContent [
+
+	self
+		assert: [ :html | html modal: 'Bootstrap' ]
+		gives: '<div class="modal" tabindex="-1" role="dialog">Bootstrap</div>'
 ]
 
 { #category : #'tests - navigation' }
