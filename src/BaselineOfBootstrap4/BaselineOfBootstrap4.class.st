@@ -1,12 +1,12 @@
 "
 Baseline for Seaside wrapper for Bootstrap 4
 
-https://github.com/astares/Seaside-Bootstrap4
+[https://github.com/astares/Seaside-Bootstrap4](https://github.com/astares/Seaside-Bootstrap4)
 "
 Class {
 	#name : #BaselineOfBootstrap4,
 	#superclass : #BaselineOf,
-	#category : 'BaselineOfBootstrap4'
+	#category : #BaselineOfBootstrap4
 }
 
 { #category : #baseline }
