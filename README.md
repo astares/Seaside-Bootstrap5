@@ -1,18 +1,18 @@
-# Seaside-Bootstrap4
+# Seaside-Bootstrap5
 
-[![Build Status](https://travis-ci.org/astares/Seaside-Bootstrap4.svg?branch=master)](https://travis-ci.org/astares/Seaside-Bootstrap4) [![Coverage Status](https://coveralls.io/repos/github/astares/Seaside-Bootstrap4/badge.svg?branch=master)](https://coveralls.io/github/astares/Seaside-Bootstrap4?branch=master)
+[![Build Status](https://travis-ci.org/astares/Seaside-Bootstrap5.svg?branch=master)](https://travis-ci.org/astares/Seaside-Bootstrap5) [![Coverage Status](https://coveralls.io/repos/github/astares/Seaside-Bootstrap5/badge.svg?branch=master)](https://coveralls.io/github/astares/Seaside-Bootstrap5?branch=master)
 
-Bootstrap 4 wrapper for Seaside for Pharo 8
+Bootstrap 5 wrapper for Seaside for Pharo 9
 
-based on 4.0 from [http://bootstrap.rtlcss.com/](http://bootstrap.rtlcss.com/)
+based on 5.0 from [http://bootstrap.rtlcss.com/](http://bootstrap.rtlcss.com/)
 
 ## Installation
-First install [Pharo](http://www.pharo.org) on your machine. Pharo 8 onwards is recommended. Either using [PharoLauncher](https://github.com/pharo-project/pharo-launcher) or [Pharo ZeroConf](http://get.pharo.org/):
+First install [Pharo](http://www.pharo.org) on your machine. Pharo 9 onwards is recommended. Either using [PharoLauncher](https://github.com/pharo-project/pharo-launcher) or [Pharo ZeroConf](http://get.pharo.org/):
 
 ## Load Pharo using ZeroConf 
 
 ```
-wget -O- get.pharo.org/64/80+vm | bash
+wget -O- get.pharo.org/64/90+vm | bash
 ./pharo-ui Pharo.image
 ```
 
@@ -20,8 +20,8 @@ wget -O- get.pharo.org/64/80+vm | bash
 
 ```Smalltalk
   Metacello new
-      baseline:'Bootstrap4';
-      repository: 'github://astares/Seaside-Bootstrap4:master/src';
+      baseline:'Bootstrap5';
+      repository: 'github://astares/Seaside-Bootstrap5:master/src';
       load
 ```
 
@@ -45,11 +45,8 @@ WebBrowser openOn: 'http://localhost:8080/bootstrap4/'
 ```
 
 ## Learn
-- see [https://www.w3schools.com/bootstrap4/](https://www.w3schools.com/bootstrap4/)
+- see [https://www.w3schools.com/bootstrap5/](https://www.w3schools.com/bootstrap5/)
 
-## Migration from Bootstrap 3 to 4
+## Migration from Bootstrap 4 to 5
 
-- the prefix is gone, so use container instead of tbsContainer, etc.
-- use formButton or outlineButton instead of tbsButton
-- buttons do not have beExtraSmall and beExtraSmallIf: styles anymore
-- breadcrumb section is now called breadcrumb item
+- ...
