@@ -10,5 +10,5 @@ Class {
 { #category : #testing }
 SBSFileLibrary class >> isAbstract [
 
-	^self == SBSFileLibrary 
+	^ self == SBSFileLibrary
 ]
