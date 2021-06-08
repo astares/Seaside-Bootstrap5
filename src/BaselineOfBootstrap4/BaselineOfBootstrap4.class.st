@@ -9,7 +9,7 @@ Class {
 	#category : #BaselineOfBootstrap4
 }
 
-{ #category : #baseline }
+{ #category : #baselines }
 BaselineOfBootstrap4 >> baseline: spec [ 
 	<baseline>
 	
@@ -31,7 +31,7 @@ BaselineOfBootstrap4 >> baseline: spec [
 
 ]
 
-{ #category : #baseline }
+{ #category : #baselines }
 BaselineOfBootstrap4 >> seaside: spec [
 
 	spec
