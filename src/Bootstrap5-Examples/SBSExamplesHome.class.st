@@ -102,7 +102,7 @@ SBSExamplesHome >> renderIntroOn: html [
 	html container: [ 	
 		html break.
 		html jumbotron: [ 
-		html heading: 'Bootstrap4 for Seaside'.
+		html heading: 'Bootstrap5 for Seaside'.
 		html image url: SBSExamplesLibrary / #logoPng.
 		html break; break.
 		html paragraph: [
@@ -114,7 +114,7 @@ SBSExamplesHome >> renderIntroOn: html [
 			html anchor url: 'http://www.pharo.org'; with: 'innovative open source development platform'.
 			html text: ' for faster and easier web application development '.
 			html text: ' using the latest version of '.
-			html anchor url: 'https://github.com/astares/Seaside-Bootstrap4'; with: 'Bootstrap4 for Seaside'.	].
+			html anchor url: 'https://github.com/astares/Seaside-Bootstrap5'; with: 'Bootstrap5 for Seaside'.	].
 		
 		html paragraph: [
 			html form: [  
@@ -130,8 +130,8 @@ SBSExamplesHome >> renderIntroOn: html [
 SBSExamplesHome >> renderNavigationLinkOn: html [
 
 	 html navigationLink
-						url: 'https://github.com/astares/Seaside-Bootstrap4';
-						with: 'Bootstrap4 for Seaside' 
+						url: 'https://github.com/astares/Seaside-Bootstrap5';
+						with: 'Bootstrap5 for Seaside' 
 	 
 ]
 
