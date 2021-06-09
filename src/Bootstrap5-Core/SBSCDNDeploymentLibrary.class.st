@@ -8,8 +8,15 @@ Class {
 }
 
 { #category : #'accessing - defaults' }
-SBSCDNDeploymentLibrary >> cdnLocation [ 
-	^''
+SBSCDNDeploymentLibrary >> cdnLocation [
+
+	^'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css'
+]
+
+{ #category : #updating }
+SBSCDNDeploymentLibrary >> cdnLocationIntegrity [
+
+	^ 'sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x'
 ]
 
 { #category : #updating }
@@ -20,8 +27,9 @@ SBSCDNDeploymentLibrary >> updateRoot: anHTMLRoot [
 	style := anHTMLRoot stylesheet.
 	style url: self cdnLocation.
 	style attributes 
-		at: 'integrity' append: 'sha384-LPvXVVAlyPoBSGkX8UddpctDks+1P4HG8MhT7/YwqHtJ40bstjzCqjj+VVVDhsCo';
+		at: 'integrity' append: self cdnLocationIntegrity;
 		at: 'crossorigin' append: 'anonymous'.
+	
 		
 	script := anHTMLRoot javascript.
 	script url: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js'.
