@@ -20,7 +20,7 @@ SBSExamplesHome class >> browse [
 { #category : #accessing }
 SBSExamplesHome class >> contextRoot [
 
-	^'bootstrap4'
+	^'bootstrap5'
 ]
 
 { #category : #'class initialization' }
