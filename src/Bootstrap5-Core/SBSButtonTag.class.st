@@ -74,7 +74,7 @@ SBSButtonTag >> dataTarget: aString [
 { #category : #options }
 SBSButtonTag >> dataToggle: aString [
 
-	self attributeAt: 'data-toggle' put: aString
+	self attributeAt: 'data-bs-toggle' put: aString
 ]
 
 { #category : #defaults }
