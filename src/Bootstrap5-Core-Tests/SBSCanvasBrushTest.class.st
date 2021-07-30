@@ -375,7 +375,7 @@ SBSCanvasBrushTest >> testButtonDataToggle [
 
 	self
 		assert: [ :html | html formButton dataToggle: '#bootstrap' ]
-		gives: '<button class="btn" data-toggle="#bootstrap"></button>'
+		gives: '<button class="btn" data-bs-toggle="#bootstrap"></button>'
 ]
 
 { #category : #'tests - buttons - options' }
@@ -2230,7 +2230,7 @@ SBSCanvasBrushTest >> testNavigationBarTogglerCollapse [
 
 	self
 		assert: [ :html | html navigationBarToggler collapse ]
-		gives: '<button class="navbar-toggler" data-toggle="collapse"></button>'
+		gives: '<button class="navbar-toggler" data-bs-toggle="collapse"></button>'
 ]
 
 { #category : #'tests - navigation bar' }
