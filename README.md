@@ -1,6 +1,6 @@
 # Seaside-Bootstrap5
 
-[![Unit Tests](https://github.com/ba-st/RenoirSt/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/ba-st/RenoirSt/actions/workflows/unit-tests.yml)
+[![Unit Tests](https://github.com/astares/Seaside-Bootstrap5/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/astares/Seaside-Bootstrap5/actions/workflows/unit-tests.yml)
 
 Bootstrap 5 wrapper for Seaside for Pharo 9
 
