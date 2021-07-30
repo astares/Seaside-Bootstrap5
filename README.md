@@ -1,6 +1,6 @@
 # Seaside-Bootstrap5
 
-[![Build Status](https://travis-ci.org/astares/Seaside-Bootstrap5.svg?branch=master)](https://travis-ci.org/astares/Seaside-Bootstrap5) [![Coverage Status](https://coveralls.io/repos/github/astares/Seaside-Bootstrap5/badge.svg?branch=master)](https://coveralls.io/github/astares/Seaside-Bootstrap5?branch=master)
+[![Unit Tests](https://github.com/ba-st/RenoirSt/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/ba-st/RenoirSt/actions/workflows/unit-tests.yml)
 
 Bootstrap 5 wrapper for Seaside for Pharo 9
 
