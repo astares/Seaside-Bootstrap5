@@ -157,5 +157,5 @@ SBSExamplesHome >> returnToIntro [
 { #category : #updating }
 SBSExamplesHome >> updateRoot: htmlRoot [
 	super updateRoot: htmlRoot.
-	htmlRoot title: 'Bootstrap4 for Seaside' translated
+	htmlRoot title: 'Bootstrap5 for Seaside' translated
 ]
