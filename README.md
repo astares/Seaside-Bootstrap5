@@ -1,10 +1,10 @@
 # Seaside-Bootstrap5
 
-[![Build Status](https://travis-ci.org/astares/Seaside-Bootstrap5.svg?branch=master)](https://travis-ci.org/astares/Seaside-Bootstrap5) [![Coverage Status](https://coveralls.io/repos/github/astares/Seaside-Bootstrap5/badge.svg?branch=master)](https://coveralls.io/github/astares/Seaside-Bootstrap5?branch=master)
+[![Unit Tests](https://github.com/astares/Seaside-Bootstrap5/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/astares/Seaside-Bootstrap5/actions/workflows/unit-tests.yml)
 
 Bootstrap 5 wrapper for Seaside for Pharo 9
 
-based on 5.0 from [http://bootstrap.rtlcss.com/](http://bootstrap.rtlcss.com/)
+based on 5.0 from [https://getbootstrap.com/](https://getbootstrap.com/)
 
 ## Installation
 First install [Pharo](http://www.pharo.org) on your machine. Pharo 9 onwards is recommended. Either using [PharoLauncher](https://github.com/pharo-project/pharo-launcher) or [Pharo ZeroConf](http://get.pharo.org/):
@@ -41,7 +41,7 @@ and then load the packages you need using Iceberg
 Start the web server for [Seaside](http://www.seaside.st) - for instance with Zinc evaluate
 ```Smalltalk
 ZnZincServerAdaptor startOn: 8080.
-WebBrowser openOn: 'http://localhost:8080/bootstrap4/'
+WebBrowser openOn: 'http://localhost:8080/bootstrap5/'
 ```
 
 ## Learn
