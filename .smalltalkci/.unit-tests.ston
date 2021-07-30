@@ -1,0 +1,16 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'Bootstrap5',
+      #directory : '../src',
+      #load : [ 'Tests' ],
+      #platforms : [  #pharo ]
+    }
+  ],
+  #testing : {
+    #coverage : {
+      #packages : [ 'Bootstrap5*' ],
+      #format: #lcov
+    }
+  }
+}
