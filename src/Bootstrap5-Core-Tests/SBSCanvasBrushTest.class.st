@@ -3113,6 +3113,22 @@ SBSCanvasBrushTest >> testRowWithContent [
 		gives: '<div class="row">Bootstrap</div>'
 ]
 
+{ #category : #'tests - tabs' }
+SBSCanvasBrushTest >> testTabContent [
+
+	self
+		assert: [:html | html tabContent ]
+		gives: '<div class="tab-content"></div>'
+]
+
+{ #category : #'tests - tabs' }
+SBSCanvasBrushTest >> testTabContentWithContent [
+
+	self
+		assert: [:html | html tabContent: 'Bootstrap' ]
+		gives: '<div class="tab-content">Bootstrap</div>'
+]
+
 { #category : #'tests - typography' }
 SBSCanvasBrushTest >> testTextMuted [
 

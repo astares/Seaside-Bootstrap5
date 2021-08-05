@@ -3,7 +3,7 @@ I'm a Bootstrap tabs container
 "
 Class {
 	#name : #SBSTabContentTag,
-	#superclass : #SBSUnorderedListTag,
+	#superclass : #SBSGenericTag,
 	#traits : 'SBSTSizeStyled',
 	#classTraits : 'SBSTSizeStyled classTrait',
 	#category : #'Bootstrap5-Core-Base'
