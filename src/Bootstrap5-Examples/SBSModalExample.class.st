@@ -17,7 +17,8 @@ SBSModalExample >> renderExampleOn: html [
 	html formButton
 		bePrimary;
 		dataToggle: 'modal';
-		dataTarget: '#testModal';
+		attributeAt: 'data-bs-target' put: '#testModal';			"<sm> changes here"
+		"dataTarget: '#testModal';"										"<sm> changes here"
 		with: 'Launch Demo Modal'.
 	html modal
 		id: 'testModal';

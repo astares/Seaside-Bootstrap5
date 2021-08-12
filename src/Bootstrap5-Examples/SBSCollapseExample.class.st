@@ -18,7 +18,8 @@ SBSCollapseExample >> renderExampleOn: html [
 	html paragraph: [ 
 		html formButton bePrimary 
 			dataToggle: 'collapse';
-			dataTarget: '#collapseExample';
+			attributeAt: 'data-bs-target' put: '#collapseExample';		"<sm> changes here"
+			"dataTarget: '#collapseExample';"									"<sm> changes here"
 			with: 'Button with data-target' ].
 	html collapse 
 		id: 'collapseExample';
