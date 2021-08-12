@@ -29,7 +29,8 @@ SBSNavbarExample >> renderExampleOn: html [
 			navigationBarToggler
 			beButtonType;
 			collapse;
-			dataTarget: id;
+			attributeAt: 'data-bs-target' put: id; 
+			"dataTarget: id;"
 			with: [ html navigationBarTogglerIcon ].
 				
 		html navigationBarCollapse collapse id: 'navbarCollapsed'; with: [ 

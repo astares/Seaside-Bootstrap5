@@ -10,13 +10,14 @@ Class {
 { #category : #'accessing - defaults' }
 SBSCDNDeploymentLibrary >> cdnLocation [
 
-	^'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css'
+	^'https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css'
+
 ]
 
 { #category : #updating }
 SBSCDNDeploymentLibrary >> cdnLocationIntegrity [
 
-	^ 'sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x'
+	^ 'sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We'
 ]
 
 { #category : #updating }
@@ -30,11 +31,11 @@ SBSCDNDeploymentLibrary >> updateRoot: anHTMLRoot [
 		at: 'integrity' append: self cdnLocationIntegrity;
 		at: 'crossorigin' append: 'anonymous'.
 	
-		
-	script := anHTMLRoot javascript.
-	script url: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js'.
+	"<sm> commented / disabled as this is not reqd in header instead before closing /body tag"	
+	"script := anHTMLRoot javascript.
+	script url: 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js'.
 	script attributes 
-		at: 'integrity' append: 'sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4';
-		at: 'crossorigin' append: 'anonymous'.	
+		at: 'integrity' append: 'sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj';
+		at: 'crossorigin' append: 'anonymous'."	
 		
 ]

@@ -18,6 +18,7 @@ SBSCarouselExample >> renderExampleOn: html [
 
 	html carousel 
 		id: 'example';
+		attributeAt: 'data-bs-ride' put: 'carousel'; 	"<sm> changes"
 		slide; with:[ 
 		html carouselInner: [
 			html carouselItem active with: [ html html: SBSCardExample imagePlaceHolderSVG ].
@@ -27,5 +28,5 @@ SBSCarouselExample >> renderExampleOn: html [
 		html carouselControlPreviousFor: 'example'.	
 		html carouselControlNextFor: 'example'. 	
 	].
-	html script: '$(".carousel").carousel()'
+	"html script: '$("".carousel"").carousel()'"			"<sm> changes here - seems not needed"
 ]

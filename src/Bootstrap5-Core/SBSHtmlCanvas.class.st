@@ -419,9 +419,10 @@ SBSHtmlCanvas >> carouselControlNextFor: anID [
 	
 	^ self anchor
 		class: 'carousel-control-next';
-		attributeAt: 'role' put: 'button';
-		attributeAt: 'data-slide' put: 'next';
-		url: '#',anID;
+		attributeAt: 'type' put: 'button';							"<sm> changes here" 
+		attributeAt: 'data-bs-target' put: '#example';				"<sm> changes here"
+		attributeAt: 'data-bs-slide' put: 'next';					"<sm> changes here"
+		url: '#',anID;														"<sm> getbootstrap example is with a button and not anchor type and to check if this needed"
 		with: [ self html: '<span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>']
 
@@ -450,9 +451,10 @@ SBSHtmlCanvas >> carouselControlPreviousFor: anID [
 	
 	^ self anchor
 		class: 'carousel-control-prev';
-		attributeAt: 'role' put: 'button';
-		attributeAt: 'data-slide' put: 'prev';
-		url: '#',anID;
+		attributeAt: 'type' put: 'button';					"<sm> changes here"
+		attributeAt: 'data-bs-target' put: '#example'; 	"<sm> changes here"
+		attributeAt: 'data-bs-slide' put: 'prev';			"<sm> changes here"
+		url: '#',anID;												"<sm> getbootstrap example is with a button and not anchor type and to check if this needed"
 		with: [ self html: '<span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>']
 
