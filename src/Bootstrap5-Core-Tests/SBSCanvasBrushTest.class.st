@@ -367,7 +367,7 @@ SBSCanvasBrushTest >> testButtonDataTarget [
 
 	self
 		assert: [ :html | html formButton dataTarget: '#bootstrap' ]
-		gives: '<button class="btn" data-target="#bootstrap"></button>'
+		gives: '<button class="btn" data-bs-target="#bootstrap"></button>'
 ]
 
 { #category : #'tests - buttons - options' }
@@ -2238,7 +2238,7 @@ SBSCanvasBrushTest >> testNavigationBarTogglerDataTarget [
 
 	self
 		assert: [ :html | html navigationBarToggler dataTarget: '#id_1' ]
-		gives: '<button class="navbar-toggler" data-target="#id_1"></button>'
+		gives: '<button class="navbar-toggler" data-bs-target="#id_1"></button>'
 ]
 
 { #category : #'tests - navigation bar' }

@@ -68,7 +68,7 @@ SBSButtonTag >> dataDismiss: aString [
 { #category : #options }
 SBSButtonTag >> dataTarget: aString [
 
-	self attributeAt: 'data-target' put: aString
+	self attributeAt: 'data-bs-target' put: aString
 ]
 
 { #category : #options }
