@@ -420,8 +420,8 @@ SBSHtmlCanvas >> carouselControlNextFor: anID [
 	^ self anchor
 		class: 'carousel-control-next';
 		attributeAt: 'role' put: 'button';
-		attributeAt: 'data-slide' put: 'next';
-		url: '#',anID;
+		attributeAt: 'data-bs-slide' put: 'next';
+		attributeAt: 'data-bs-target' put: '#',anID;
 		with: [ self html: '<span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>']
 
@@ -451,8 +451,8 @@ SBSHtmlCanvas >> carouselControlPreviousFor: anID [
 	^ self anchor
 		class: 'carousel-control-prev';
 		attributeAt: 'role' put: 'button';
-		attributeAt: 'data-slide' put: 'prev';
-		url: '#',anID;
+		attributeAt: 'data-bs-slide' put: 'prev';
+		attributeAt: 'data-bs-target' put: '#',anID;
 		with: [ self html: '<span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>']
 
