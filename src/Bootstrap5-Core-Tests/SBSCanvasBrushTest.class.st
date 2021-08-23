@@ -734,8 +734,8 @@ SBSCanvasBrushTest >> testCardLink [
 SBSCanvasBrushTest >> testCardLinkWithContent [
 
 	self
-		assert: [ :html | html cardLink: 'Boostrap' ]
-		gives: '<a class="card-link">Boostrap</a>'
+		assert: [ :html | html cardLink: 'Bootstrap' ]
+		gives: '<a class="card-link">Bootstrap</a>'
 ]
 
 { #category : #'tests - cards' }

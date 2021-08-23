@@ -601,7 +601,7 @@ SBSHtmlCanvas >> dropdown [
 
 { #category : #dropdown }
 SBSHtmlCanvas >> dropdown: aBlock [
-	"Provides a Boostrap dropdown."
+	"Provides a Bootstrap dropdown."
 	
 	 ^ self dropdown
 		with: aBlock
@@ -626,7 +626,7 @@ SBSHtmlCanvas >> dropdownHeader [
 
 { #category : #dropdown }
 SBSHtmlCanvas >> dropdownHeader: aBlock [
-	"Provides a Boostrap dropdown header."
+	"Provides a Bootstrap dropdown header."
 	
 	 ^ self dropdownHeader
 		with: aBlock
@@ -643,7 +643,7 @@ SBSHtmlCanvas >> dropdownItem [
 
 { #category : #dropdown }
 SBSHtmlCanvas >> dropdownItem: aBlock [
-	"Provides a Boostrap dropdown item."
+	"Provides a Bootstrap dropdown item."
 	
 	 ^ self dropdownItem
 		with: aBlock
@@ -660,7 +660,7 @@ SBSHtmlCanvas >> dropdownMenu [
 
 { #category : #dropdown }
 SBSHtmlCanvas >> dropdownMenu: aBlock [
-	"Provides a Boostrap dropdown menu."
+	"Provides a Bootstrap dropdown menu."
 	
 	 ^ self dropdownMenu
 		with: aBlock
@@ -677,7 +677,7 @@ SBSHtmlCanvas >> dropup [
 
 { #category : #dropdown }
 SBSHtmlCanvas >> dropup: aBlock [
-	"Provides a Boostrap dropup."
+	"Provides a Bootstrap dropup."
 	
 	 ^ self dropup
 		with: aBlock
