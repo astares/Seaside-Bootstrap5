@@ -26,8 +26,11 @@ SBSBootstrapExample >> renderContentOn: html [
 	html heading: self class exampleName; horizontalRule.
 	self renderExampleOn: html ].
 
-	html script 
-		url: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'
+				"<sm> line below moved to end SBSExamplesHome - also changed to 5.1.0 
+				but suggest a feature to automatically insert at end of each displayed page"
+
+	"html script 
+		url: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'"
 ]
 
 { #category : #rendering }
@@ -52,7 +55,10 @@ SBSBootstrapExample >> style [
 SBSBootstrapExample >> updateRoot: htmlRoot [
 
 	super updateRoot: htmlRoot.
+
+				"<sm> line below moved to end SBSExamplesHome - also changed to 5.1.0 
+				but suggest a feature to automatically insert at end of each displayed page"
 	 
-htmlRoot javascript 
-	url: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' 
+"htmlRoot javascript 
+	url: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' "
 ]
