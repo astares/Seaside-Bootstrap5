@@ -83,8 +83,15 @@ SBSExamplesHome >> renderContentOn: html [
 	self renderNavigationbarOn: html.
 	self isDisplayingIntro 
 			ifTrue: [ self renderIntroOn: html ]
-			ifFalse: [ browser renderOn: html ]
+			ifFalse: [ browser renderOn: html ].
 	 
+		"<sm> inserted as bs5 requires their javascript to be at end of the page before </body> tag for all UIs, also changed to 5.1.0 
+		but suggest a feature to automatically insert at end of each displayed page"
+			
+	html script  
+		url: 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js';
+		attributeAt: 'integrity' put: 'sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj';
+		attributeAt: 'crossorigin' put: 'anonymous'.	
 ]
 
 { #category : #'rendering components' }

@@ -22,7 +22,7 @@ SBSCDNDeploymentLibrary >> cdnLocationIntegrity [
 { #category : #updating }
 SBSCDNDeploymentLibrary >> updateRoot: anHTMLRoot [
 
-	| style script |
+	| style "script" |								"<sm> variable script not required "
 	super updateRoot: anHTMLRoot.
 	style := anHTMLRoot stylesheet.
 	style url: self cdnLocation.
@@ -30,11 +30,12 @@ SBSCDNDeploymentLibrary >> updateRoot: anHTMLRoot [
 		at: 'integrity' append: self cdnLocationIntegrity;
 		at: 'crossorigin' append: 'anonymous'.
 	
+	"<sm> commented / disabled as this is not reqd in header instead before closing /body tag"	
 		
-	script := anHTMLRoot javascript.
+	"script := anHTMLRoot javascript.
 	script url: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js'.
 	script attributes 
 		at: 'integrity' append: 'sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4';
-		at: 'crossorigin' append: 'anonymous'.	
+		at: 'crossorigin' append: 'anonymous'."	
 		
 ]
