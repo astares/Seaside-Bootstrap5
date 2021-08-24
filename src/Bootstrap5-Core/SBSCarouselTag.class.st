@@ -7,6 +7,11 @@ Class {
 	#category : #'Bootstrap5-Core-Base'
 }
 
+{ #category : #operations }
+SBSCarouselTag >> autoplay [
+	self attributeAt: 'data-bs-ride' put: 'carousel'
+]
+
 { #category : #defaults }
 SBSCarouselTag >> defaultStyleClass [
 

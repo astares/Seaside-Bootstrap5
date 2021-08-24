@@ -803,6 +803,14 @@ SBSCanvasBrushTest >> testCarousel [
 ]
 
 { #category : #'tests - carousel' }
+SBSCanvasBrushTest >> testCarouselAutoplay [
+
+	self
+		assert: [ :html | html carousel autoplay ]
+		gives: '<div class="carousel" data-bs-ride="carousel"></div>'
+]
+
+{ #category : #'tests - carousel' }
 SBSCanvasBrushTest >> testCarouselControlNext [
 
 	self

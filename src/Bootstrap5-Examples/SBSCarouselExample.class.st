@@ -18,7 +18,9 @@ SBSCarouselExample >> renderExampleOn: html [
 
 	html carousel 
 		id: 'example';
-		slide; with:[ 
+		slide; 
+		autoplay;
+		with:[ 
 		html carouselInner: [
 			html carouselItem active with: [ html html: SBSCardExample imagePlaceHolderSVG ].
 			html carouselItem with: [ 
@@ -26,6 +28,5 @@ SBSCarouselExample >> renderExampleOn: html [
 		].		
 		html carouselControlPreviousFor: 'example'.	
 		html carouselControlNextFor: 'example'. 	
-	].
-	html script: '$(".carousel").carousel()'
+	] 
 ]
