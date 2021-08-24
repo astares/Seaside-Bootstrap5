@@ -21,13 +21,16 @@ SBSBootstrapExample class >> isAbstract [
 
 { #category : #rendering }
 SBSBootstrapExample >> renderContentOn: html [
-	html containerFluid: [ 
-	html break.	
-	html heading: self class exampleName; horizontalRule.
-	self renderExampleOn: html ].
 
-	html script 
-		url: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'
+	html containerFluid: [ 
+		html break.
+		html
+			heading: self class exampleName;
+			horizontalRule.
+		self renderExampleOn: html ].
+
+	"Add the necessary JS scripts - use the library (SBSFileLibrary subclass) that fits best your deployment purposes"
+	SBSDeploymentLibrary addLoadScriptTo: html
 ]
 
 { #category : #rendering }
