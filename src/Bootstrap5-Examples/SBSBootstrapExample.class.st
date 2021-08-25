@@ -56,6 +56,6 @@ SBSBootstrapExample >> updateRoot: htmlRoot [
 
 	super updateRoot: htmlRoot.
 	 
-htmlRoot javascript 
-	url: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' 
+"htmlRoot javascript 
+	url: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' "
 ]
