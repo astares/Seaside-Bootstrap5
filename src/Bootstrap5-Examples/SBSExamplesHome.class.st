@@ -11,12 +11,6 @@ Class {
 	#category : #'Bootstrap5-Examples-Home'
 }
 
-{ #category : #utilities }
-SBSExamplesHome class >> browse [
-	<script>
-	WebBrowser openOn: 'http://localhost:8080/', self contextRoot 
-]
-
 { #category : #accessing }
 SBSExamplesHome class >> contextRoot [
 
@@ -27,6 +21,12 @@ SBSExamplesHome class >> contextRoot [
 SBSExamplesHome class >> initialize [
 
 	self register
+]
+
+{ #category : #utilities }
+SBSExamplesHome class >> openBrowser [
+	<script>
+	WebBrowser openOn: 'http://localhost:8080/', self contextRoot 
 ]
 
 { #category : #registration }
@@ -44,7 +44,7 @@ SBSExamplesHome >> browseExamples [
  
 ]
 
-{ #category : #styling }
+{ #category : #hooks }
 SBSExamplesHome >> children [
 
 	^Array with: browser
