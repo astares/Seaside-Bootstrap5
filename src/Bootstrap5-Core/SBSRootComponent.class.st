@@ -32,8 +32,7 @@ SBSRootComponent class >> register [
 
 	|app|
 	app := WAAdmin register: self asApplicationAt: self contextRoot.
-	app 
-		addLibrary: JQDeploymentLibrary;
+	app
 		addLibrary: SBSDevelopmentLibrary.
 	^app	
 	
