@@ -30,7 +30,7 @@ wget -O- get.pharo.org/64/90+vm | bash
 ```Smalltalk
 Metacello new
   baseline:'Seaside3';
-  repository: 'github://SeasideSt/Seaside:develop/repository';
+  repository: 'github://SeasideSt/Seaside:master/repository';
   load.
 ```
 
