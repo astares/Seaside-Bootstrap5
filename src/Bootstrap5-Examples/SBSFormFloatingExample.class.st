@@ -18,7 +18,7 @@ SBSFormFloatingExample >> renderExampleOn: html [
 	html form: [ 
 
 	html formGroup: [
-		html div class: 'form-floating'; with: [  
+		html div class: 'form-floating'; marginBottom: 3; with: [  
 			html formTextInput
 				attributeAt: 'aria-describedby' put: (controlID := html nextId); 
 				placeholder: 'RequiredEntry-PutItAndDoNotUse';
@@ -30,7 +30,7 @@ SBSFormFloatingExample >> renderExampleOn: html [
 	].
 
 	html formGroup: [
-		html div class: 'form-floating'; with: [  
+		html div class: 'form-floating'; marginBottom: 3; with: [  
 			html formTextArea
 				style: 'height: 80px'; 
 				attributeAt: 'aria-describedby' put: (controlID := html nextId); 
@@ -44,7 +44,7 @@ SBSFormFloatingExample >> renderExampleOn: html [
 
 
 		html formGroup: [
-			html div class: 'form-floating'; with: [  
+			html div class: 'form-floating'; marginBottom: 3; with: [  
 				html emailInput 
 					formControl 
 					attributeAt: 'aria-describedby' put: (controlID := html nextId); 
@@ -57,7 +57,7 @@ SBSFormFloatingExample >> renderExampleOn: html [
 		].
 
 		html formGroup: [
-			html div class: 'form-floating'; with: [  
+			html div class: 'form-floating'; marginBottom: 3; with: [  
 				html formPasswordInput 
 					attributeAt: 'aria-describedby' put: (controlID := html nextId); 
 					placeholder: 'RequiredEntry-PutItAndDoNotUse';
@@ -69,7 +69,7 @@ SBSFormFloatingExample >> renderExampleOn: html [
 		].
 
 		html formGroup: [
-			html div class: 'form-floating'; with: [  
+			html div class: 'form-floating'; marginBottom: 3; with: [  
 				html numberInput
 					formControl;  
 					attributeAt: 'aria-describedby' put: (controlID := html nextId); 
@@ -82,7 +82,7 @@ SBSFormFloatingExample >> renderExampleOn: html [
 		].
 		
 	html formGroup: [
-		html div class: 'form-floating'; with: [  
+		html div class: 'form-floating'; marginBottom: 3; with: [  
 			html dateInput5     
 				formControl
 				attributeAt: 'aria-describedby' put: (controlID := html nextId); 
@@ -95,7 +95,7 @@ SBSFormFloatingExample >> renderExampleOn: html [
 	].
 
 	html formGroup: [
-		html div class: 'form-floating'; with: [  
+		html div class: 'form-floating'; marginBottom: 3; with: [  
 			html dateTimeLocalInput 
 				formControl
 				attributeAt: 'aria-describedby' put: (controlID := html nextId); 
@@ -108,7 +108,7 @@ SBSFormFloatingExample >> renderExampleOn: html [
 	].
 
 	html formGroup: [
-		html div class: 'form-floating'; with: [  
+		html div class: 'form-floating'; marginBottom: 3; with: [  
 			html timeInput5 
 				formControl
 				attributeAt: 'aria-describedby' put: (controlID := html nextId); 
@@ -120,7 +120,7 @@ SBSFormFloatingExample >> renderExampleOn: html [
 		]
 	].
 	html formGroup: [
-		html div class: 'form-floating'; with: [  
+		html div class: 'form-floating'; marginBottom: 3; with: [  
 			html formSelect 
 				class: 'form-select';
 				attributeAt: 'aria-describedby' put: (controlID := html nextId); 
