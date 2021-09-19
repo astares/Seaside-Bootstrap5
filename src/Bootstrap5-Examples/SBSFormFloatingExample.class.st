@@ -38,7 +38,7 @@ SBSFormFloatingExample >> renderExampleOn: html [
 				callback: [ :input | ];
 				value: ''.
 			html label: 'Multi line input'.
-			html div class: 'form-text'; id: controlID; with: [ html text: 'Enter a multi line input here'  ] 
+			html div class: 'form-text'; id: controlID; with: [ html text: 'Enter a multi line text here'  ] 
 		]
 	].
 
@@ -103,7 +103,7 @@ SBSFormFloatingExample >> renderExampleOn: html [
 				callback: [:input | ];
 				value: '2021-09-25T17:45'.
 			html label: 'Date and Time'.
-			html div class: 'form-text'; id: controlID; with: [ html text: 'enter a date and time here here 12Hr format with AM/PM'  ] 
+			html div class: 'form-text'; id: controlID; with: [ html text: 'enter a date and time here in 12Hr format with AM/PM'  ] 
 		]
 	].
 
@@ -116,7 +116,7 @@ SBSFormFloatingExample >> renderExampleOn: html [
 				callback: [:input | ];
 				value: '17:45'.
 			html label: 'Time'.
-			html div class: 'form-text'; id: controlID; with: [ html text: 'enter time here here 12Hr format with AM/PM'  ] 
+			html div class: 'form-text'; id: controlID; with: [ html text: 'enter time here in 12Hr format with AM/PM'  ] 
 		]
 	].
 	html formGroup: [
