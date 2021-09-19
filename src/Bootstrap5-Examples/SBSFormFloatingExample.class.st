@@ -75,7 +75,7 @@ SBSFormFloatingExample >> renderExampleOn: html [
 					attributeAt: 'aria-describedby' put: (controlID := html nextId); 
 					placeholder: 'RequiredEntry-PutItAndDoNotUse';
 					callback: [ :input | ];
-					value: '"1234567.89"'.						
+					value: ''.						
 				html label: 'enter a number'.
 				html div class: 'form-text'; id: controlID; with: [ html text: 'enter only digits and a decimal here'   ] 
 			]
