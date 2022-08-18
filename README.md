@@ -45,7 +45,7 @@ WebBrowser openOn: 'http://localhost:8080/bootstrap5/'
 ```
 
 ## Learn
-- see [https://www.w3schools.com/bootstrap5/](https://www.w3schools.com/bootstrap5/)
+- see [https://www.w3schools.com/bootstrap5/](https://www.w3schools.com/bootstrap5/), [https://www.scaler.com/topics/css/bootstrap/](https://www.scaler.com/topics/css/bootstrap/)
 
 ## Migration from Bootstrap 4 to 5
 
