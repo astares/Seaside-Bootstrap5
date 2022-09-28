@@ -62,7 +62,7 @@ SBSButtonTag >> cancelCallback: aBlock [
 { #category : #options }
 SBSButtonTag >> dataDismiss: aString [
 
-	self attributeAt: 'data-dismiss' put: aString
+	self attributeAt: 'data-bs-dismiss' put: aString
 ]
 
 { #category : #options }
