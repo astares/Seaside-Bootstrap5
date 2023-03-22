@@ -10,11 +10,12 @@ Class {
 { #category : #'accessing - defaults' }
 SBSCDNDeploymentLibraryRTL class >> cdnCSSLocation [
 
-	^ 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.rtl.min.css'
+	^ 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css'
 ]
 
 { #category : #'accessing - defaults' }
 SBSCDNDeploymentLibraryRTL class >> cdnCSSLocationIntegrity [
+	"Calculated via https://www.srihash.org"
 
-	^ 'sha384-LPvXVVAlyPoBSGkX8UddpctDks+1P4HG8MhT7/YwqHtJ40bstjzCqjj+VVVDhsCo'
+	^ 'sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU'
 ]
