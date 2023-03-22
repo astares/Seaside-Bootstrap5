@@ -8,9 +8,9 @@ Class {
 }
 
 { #category : #testing }
-SBSAbstractCanvasBrushTest class >> isAbstract [ 
+SBSAbstractCanvasBrushTest class >> isAbstract [
 
-	^self name = #SBSAbstractCanvasBrushTest 
+	^self name = #SBSAbstractCanvasBrushTest
 ]
 
 { #category : #'private - accessing' }

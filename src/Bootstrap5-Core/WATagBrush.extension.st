@@ -63,9 +63,9 @@ WATagBrush >> lightText [
 { #category : #'*Bootstrap5-Core' }
 WATagBrush >> lightTextWithDarkBackground [
 
-	self 
+	self
 		lightText;
-		darkBackground 
+		darkBackground
 ]
 
 { #category : #'*Bootstrap5-Core' }
@@ -215,7 +215,7 @@ WATagBrush >> whiteText [
 { #category : #'*Bootstrap5-Core' }
 WATagBrush >> whiteTextWithDarkBackground [
 
-	self 
+	self
 		whiteText;
-		darkBackground 
+		darkBackground
 ]

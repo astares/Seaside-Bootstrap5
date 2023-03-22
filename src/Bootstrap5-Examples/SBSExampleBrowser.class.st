@@ -12,8 +12,8 @@ Class {
 
 { #category : #accessing }
 SBSExampleBrowser >> allExamples [
-	^(SBSBootstrapExample allSubclasses 
-		select: [:ea| ea isAbstract not ]) 
+	^(SBSBootstrapExample allSubclasses
+		select: [:ea| ea isAbstract not ])
 			sort: [:a :b | a name <= b name ]
 ]
 
@@ -28,8 +28,8 @@ SBSExampleBrowser >> initialRequest: request [
 	| exampleName |
 	super initialRequest: request.
 	exampleName := request url path last.
-	currentExample := 
-		(self allExamples 
+	currentExample :=
+		(self allExamples
 			detect: [ :each |
 				each exampleName = exampleName ]
 			ifNone: [ self allExamples first ]) new
@@ -38,7 +38,7 @@ SBSExampleBrowser >> initialRequest: request [
 { #category : #initialization }
 SBSExampleBrowser >> initialize [
 	super initialize.
-	currentExample := self allExamples first new.
+	currentExample := self allExamples first new
 ]
 
 { #category : #accessing }
@@ -50,10 +50,10 @@ SBSExampleBrowser >> navigateToExample: example [
 { #category : #rendering }
 SBSExampleBrowser >> renderContentOn: html [
 
-	html row 
-		with: [ 
+	html row
+		with: [
 		html column: [ self renderNavigationOn: html ] mediumSize: 2.
-		html column: [ self renderExampleOn: html ] mediumSize: 10	
+		html column: [ self renderExampleOn: html ] mediumSize: 10
 	]
 ]
 
@@ -63,19 +63,18 @@ SBSExampleBrowser >> renderExampleOn: html [
 	currentExample ifNotNil: [
 		currentExample renderOn: html.
 		html break;break.
-		html heading: 'Smalltalk source code'; horizontalRule.		
-		html textArea style: 'width: 100%; height: 400px'; text:  (currentExample class methodNamed: #renderExampleOn:) sourceCode. 
-	].
-	
+		html heading: 'Smalltalk source code'; horizontalRule.
+		html textArea style: 'width: 100%; height: 400px'; text:  (currentExample class methodNamed: #renderExampleOn:) sourceCode.
+	]
 ]
 
 { #category : #rendering }
 SBSExampleBrowser >> renderNavigationOn: html [
-	
+
 	|examples item|
 	examples := self allExamples.
-	html form: [ 
-	html listGroup: [ 
+	html form: [
+	html listGroup: [
 		examples do: [:ex |
 			item := html listGroupLinkedItem.
 			currentExample class = ex ifTrue: [ item beActive ].
@@ -85,12 +84,12 @@ SBSExampleBrowser >> renderNavigationOn: html [
 
 { #category : #accessing }
 SBSExampleBrowser >> rendererClass [
-		
-	^ SBSHtmlCanvas 
+
+	^ SBSHtmlCanvas
 ]
 
 { #category : #styling }
-SBSExampleBrowser >> style [ 
+SBSExampleBrowser >> style [
 
 	^currentExample style
 ]

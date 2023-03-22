@@ -26,7 +26,7 @@ SBSExamplesHome class >> initialize [
 { #category : #utilities }
 SBSExamplesHome class >> openBrowser [
 	<script>
-	WebBrowser openOn: 'http://localhost:8080/', self contextRoot 
+	WebBrowser openOn: 'http://localhost:8080/', self contextRoot
 ]
 
 { #category : #registration }
@@ -34,14 +34,13 @@ SBSExamplesHome class >> register [
 
 	|app|
 	app := super register.
-	app 
-		addLibrary: SBSExamplesLibrary 
+	app
+		addLibrary: SBSExamplesLibrary
 ]
 
 { #category : #actions }
 SBSExamplesHome >> browseExamples [
 	displayIntro := false
- 
 ]
 
 { #category : #hooks }
@@ -60,48 +59,45 @@ SBSExamplesHome >> initialize [
 { #category : #testing }
 SBSExamplesHome >> isDisplayingIntro [
 
-	^displayIntro  
+	^displayIntro
 ]
 
 { #category : #'rendering components' }
-SBSExamplesHome >> renderBrandOn: html [ 
-	
+SBSExamplesHome >> renderBrandOn: html [
+
  html navigationBarBrand
-	with:  [ 
-			html image 
+	with:  [
+			html image
 				style: 'padding: 5px 30px;';
 				url: SBSExamplesLibrary / #logosmallPng.
-			 
- ].
-	
-	 
+
+ ]
 ]
 
 { #category : #rendering }
 SBSExamplesHome >> renderContentOn: html [
 
 	self renderNavigationbarOn: html.
-	self isDisplayingIntro 
+	self isDisplayingIntro
 			ifTrue: [ self renderIntroOn: html ]
 			ifFalse: [ browser renderOn: html ]
-	 
 ]
 
 { #category : #'rendering components' }
 SBSExamplesHome >> renderHomeButtonOn: html [
 
-	html form: [ 	
-		html formButton 
-			bePrimary  
-			callback: [ self returnToIntro ]; 
+	html form: [
+		html formButton
+			bePrimary
+			callback: [ self returnToIntro ];
 			with: 'Home'  ]
 ]
 
 { #category : #'rendering components' }
 SBSExamplesHome >> renderIntroOn: html [
-	html container: [ 	
+	html container: [
 		html break.
-		html jumbotron: [ 
+		html jumbotron: [
 		html heading: 'Bootstrap5 for Seaside'.
 		html image url: SBSExamplesLibrary / #logoPng.
 		html break; break.
@@ -115,10 +111,10 @@ SBSExamplesHome >> renderIntroOn: html [
 			html text: ' for faster and easier web application development '.
 			html text: ' using the latest version of '.
 			html anchor url: 'https://github.com/astares/Seaside-Bootstrap5'; with: 'Bootstrap5 for Seaside'.	].
-		
+
 		html paragraph: [
-			html form: [  
-			html formButton 
+			html form: [
+			html formButton
 				bePrimary;
 				beLarge;
 				callback: [ self browseExamples ];
@@ -131,17 +127,16 @@ SBSExamplesHome >> renderNavigationLinkOn: html [
 
 	 html navigationLink
 						url: 'https://github.com/astares/Seaside-Bootstrap5';
-						with: 'Bootstrap5 for Seaside' 
-	 
+						with: 'Bootstrap5 for Seaside'
 ]
 
 { #category : #'rendering components' }
 SBSExamplesHome >> renderNavigationbarOn: html [
-	
-	 html navigationBar 
+
+	 html navigationBar
 				lightBackground;
-				with: [ 
-					self 
+				with: [
+					self
 						renderBrandOn: html;
 						renderNavigationLinkOn: html;
 						renderHomeButtonOn: html ]
@@ -151,7 +146,6 @@ SBSExamplesHome >> renderNavigationbarOn: html [
 SBSExamplesHome >> returnToIntro [
 
 	displayIntro := true
-  
 ]
 
 { #category : #updating }

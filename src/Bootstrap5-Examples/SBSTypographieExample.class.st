@@ -15,36 +15,35 @@ SBSTypographieExample class >> exampleName [
 { #category : #rendering }
 SBSTypographieExample >> renderExampleOn: html [
 
-	1 to: 6 do: [:x | 
-		html heading 
+	1 to: 6 do: [:x |
+		html heading
 			level: x;
 			with: 'Heading ', x greaseString ].
-	
+
 	html horizontalRule.
-	
-	1 to: 6 do: [:x | 
-		html paragraph  
+
+	1 to: 6 do: [:x |
+		html paragraph
 			heading: x;
 			with: 'h',x greaseString,'. Bootstrap Heading ' ].
 
 	html horizontalRule.
-	
-	html span heading: 3; with: [ 
+
+	html span heading: 3; with: [
 		html text: 'Fancy display heading'.
 		html small textMuted with: ' With faded secondary text'  ].
-	
+
 	html horizontalRule.
-			
-	1 to: 6 do: [:x | 
-		html displayHeading 
+
+	1 to: 6 do: [:x |
+		html displayHeading
 			level: x;
 			with: 'Display Heading ', x greaseString ].
-	
+
 	html horizontalRule.
-		
-	1 to: 6 do: [:x | 
-		html div 
+
+	1 to: 6 do: [:x |
+		html div
 			heading: x;
 			with: [ html text: 'Heading ', x greaseString. html space. html small textMuted with: 'Secondary text' ]]
-			
 ]

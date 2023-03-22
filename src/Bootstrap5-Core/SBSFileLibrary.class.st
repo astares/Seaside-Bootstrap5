@@ -10,7 +10,7 @@ Class {
 { #category : #updating }
 SBSFileLibrary class >> addLoadScriptTo: html [
 	"Subclasses should override to add their load scripts to the given html canvas"
-	
+
 	self subclassResponsibility
 ]
 

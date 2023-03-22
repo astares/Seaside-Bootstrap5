@@ -23,11 +23,11 @@ SBSProgressBarExample >> renderExampleOn: html [
 	html break.
 	html progress: [ html progressBar infoBackground; valueNow: 25; with: '25%' ].
 	html break.
-	html progress: [ html progressBar beStriped; infoBackground; valueNow: 25; with: '25%' ].	
+	html progress: [ html progressBar beStriped; infoBackground; valueNow: 25; with: '25%' ].
 	html break.
-	html progress: [ html progressBar beStriped; beAnimated; successBackground; valueNow: 25; with: '25%' ].			
+	html progress: [ html progressBar beStriped; beAnimated; successBackground; valueNow: 25; with: '25%' ].
 	html break.
 	html progress
 		height: 40;
-		with: [ html progressBar infoBackground; valueNow: 25; with: '25%' ].
+		with: [ html progressBar infoBackground; valueNow: 25; with: '25%' ]
 ]

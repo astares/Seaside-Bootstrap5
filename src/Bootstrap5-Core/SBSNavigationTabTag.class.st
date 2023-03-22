@@ -19,5 +19,5 @@ SBSNavigationTabTag >> defaultStyleClass [
 SBSNavigationTabTag >> initialize [
 
 	super initialize.
-	self attributeAt: 'role' put: 'tablist'.
+	self attributeAt: 'role' put: 'tablist'
 ]

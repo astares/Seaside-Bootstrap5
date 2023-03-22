@@ -18,5 +18,5 @@ SBSInputGroupTag >> defaultStyleClass [
 { #category : #initialization }
 SBSInputGroupTag >> initialize [
 	super initialize.
-	self sizeStyle: self defaultStyleClass 
+	self sizeStyle: self defaultStyleClass
 ]

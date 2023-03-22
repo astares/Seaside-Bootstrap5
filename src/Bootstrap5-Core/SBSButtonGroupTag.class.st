@@ -24,7 +24,7 @@ SBSButtonGroupTag >> defaultStyleClass [
 { #category : #'screen reader support' }
 SBSButtonGroupTag >> groupRole [
 
-	self attributeAt: 'role' put: 'group' 
+	self attributeAt: 'role' put: 'group'
 ]
 
 { #category : #initialization }
@@ -36,5 +36,5 @@ SBSButtonGroupTag >> initialize [
 { #category : #'screen reader support' }
 SBSButtonGroupTag >> toolbarRole [
 
-	self attributeAt: 'role' put: 'toolbar' 
+	self attributeAt: 'role' put: 'toolbar'
 ]

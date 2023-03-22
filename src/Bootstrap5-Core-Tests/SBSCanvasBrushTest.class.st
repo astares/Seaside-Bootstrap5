@@ -13,8 +13,6 @@ SBSCanvasBrushTest >> testActionBadge [
 	self
 		assert: [ :html | html actionBadge ]
 		gives: '<a class="badge"></a>'
-
-	
 ]
 
 { #category : #'tests - badges - options' }
@@ -38,7 +36,7 @@ SBSCanvasBrushTest >> testActionBadgeInfo [
 
 	self
 		assert: [ :html | html actionBadge beInfo ]
-		gives: '<a class="badge badge-info"></a>'	
+		gives: '<a class="badge badge-info"></a>'
 ]
 
 { #category : #'tests - badges - options' }
@@ -47,7 +45,6 @@ SBSCanvasBrushTest >> testActionBadgeLight [
 	self
 		assert: [ :html | html actionBadge beLight ]
 		gives: '<a class="badge badge-light"></a>'
-	
 ]
 
 { #category : #'tests - badges - options' }

@@ -9,12 +9,11 @@ Class {
 
 { #category : #updating }
 SBSCDNDeploymentLibrary class >> addLoadScriptTo: html [
-		
+
 	html script
 			url: self cdnJSLocation;
 			attributeAt: 'integrity' put: self cdnJSLocationIntegrity;
-			attributeAt: 'crossorigin' put: 'anonymous'.	
-		
+			attributeAt: 'crossorigin' put: 'anonymous'.
 ]
 
 { #category : #'accessing - defaults' }
@@ -39,7 +38,6 @@ SBSCDNDeploymentLibrary class >> cdnJSLocation [
 SBSCDNDeploymentLibrary class >> cdnJSLocationIntegrity [
 
 	^ 'sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4'
-	
 ]
 
 { #category : #updating }
@@ -49,7 +47,7 @@ SBSCDNDeploymentLibrary >> updateRoot: anHTMLRoot [
 	super updateRoot: anHTMLRoot.
 	style := anHTMLRoot stylesheet.
 	style url: self class cdnCSSLocation.
-	style attributes 
+	style attributes
 		at: 'integrity' append: self class cdnCSSLocationIntegrity;
-		at: 'crossorigin' append: 'anonymous'	
+		at: 'crossorigin' append: 'anonymous'
 ]

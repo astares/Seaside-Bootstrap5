@@ -20,7 +20,7 @@ SBSNavbarTogglerTag >> collapse [
 ]
 
 { #category : #defaults }
-SBSNavbarTogglerTag >> defaultStyleClass [ 
+SBSNavbarTogglerTag >> defaultStyleClass [
 
 	^'navbar-toggler'
 ]

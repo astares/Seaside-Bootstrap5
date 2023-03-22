@@ -37,7 +37,7 @@ SBSNavbarBackground >> class: aString if: aBoolean [
 { #category : #accessing }
 SBSNavbarBackground >> color: aColor [
 
-	self colorString: '#', aColor asHexString asLowercase 
+	self colorString: '#', aColor asHexString asLowercase
 ]
 
 { #category : #accessing }

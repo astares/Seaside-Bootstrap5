@@ -23,8 +23,8 @@ SBSRootComponent class >> canBeRoot [
 SBSRootComponent class >> contextRoot [
 	"Return a string representing the context root name (part of the URL) to access this
 	 component as a standalone application"
-	
-	^self subclassResponsibility 
+
+	^self subclassResponsibility
 ]
 
 { #category : #registration }
@@ -34,6 +34,5 @@ SBSRootComponent class >> register [
 	app := WAAdmin register: self asApplicationAt: self contextRoot.
 	app
 		addLibrary: SBSDevelopmentLibrary.
-	^app	
-	
+	^app
 ]

@@ -9,17 +9,17 @@ Class {
 
 { #category : #accessing }
 SBSNavigationBarTag >> background [
- 
+
 	^SBSNavbarBackground on: self
 ]
 
 { #category : #options }
-SBSNavigationBarTag >> beDark [ 
+SBSNavigationBarTag >> beDark [
 	self class: 'navbar-dark'
 ]
 
 { #category : #options }
-SBSNavigationBarTag >> beLight [ 
+SBSNavigationBarTag >> beLight [
 	self class: 'navbar-light'
 ]
 

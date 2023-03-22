@@ -11,5 +11,4 @@ Class {
 SBSDeploymentLibraryTest >> testIncludeBootstrapMinCSSByDefault [
 
 	self assert: (SBSDeploymentLibrary new selectorsToInclude includes: #cssbootstrapminCss)
-	
 ]

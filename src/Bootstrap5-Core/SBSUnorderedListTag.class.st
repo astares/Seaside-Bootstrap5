@@ -22,5 +22,5 @@ SBSUnorderedListTag >> defaultStyleClass [
 { #category : #initialization }
 SBSUnorderedListTag >> initialize [
 	super initialize.
-	self class: self defaultStyleClass.
+	self class: self defaultStyleClass
 ]

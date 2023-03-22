@@ -8,16 +8,14 @@ Class {
 }
 
 { #category : #rendering }
-SBSComponent >> rendererClass [	
-	
-	^SBSHtmlCanvas 
+SBSComponent >> rendererClass [
+
+	^SBSHtmlCanvas
 ]
 
 { #category : #updating }
 SBSComponent >> updateRoot: htmlRoot [
 
 	super updateRoot: htmlRoot.
-	htmlRoot beHtml5.
-	
-	
+	htmlRoot beHtml5
 ]

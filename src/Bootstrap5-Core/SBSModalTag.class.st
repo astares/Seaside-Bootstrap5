@@ -14,7 +14,7 @@ SBSModalTag >> defaultStyleClass [
 ]
 
 { #category : #initialization }
-SBSModalTag >> fade [ 
+SBSModalTag >> fade [
 	self class: 'fade'
 ]
 

@@ -9,5 +9,5 @@ Class {
 
 { #category : #defaults }
 SBSModalTitleTag >> defaultStyleClass [
-	^'modal-title' 
+	^'modal-title'
 ]

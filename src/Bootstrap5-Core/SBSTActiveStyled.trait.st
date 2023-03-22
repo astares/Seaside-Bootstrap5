@@ -16,7 +16,7 @@ SBSTActiveStyled >> beActive [
 ]
 
 { #category : #options }
-SBSTActiveStyled >> beActiveIf: aBoolean [ 
+SBSTActiveStyled >> beActiveIf: aBoolean [
 
 	aBoolean value ifTrue: [ self beActive ]
 ]
@@ -28,7 +28,7 @@ SBSTActiveStyled >> beDisabled [
 ]
 
 { #category : #options }
-SBSTActiveStyled >> beDisabledIf: aBoolean [ 
+SBSTActiveStyled >> beDisabledIf: aBoolean [
 
 	aBoolean value ifTrue: [ self beDisabled ]
 ]

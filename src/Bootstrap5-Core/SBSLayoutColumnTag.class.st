@@ -37,13 +37,12 @@ SBSLayoutColumnTag >> extraSmallSize: anInteger [
 { #category : #'private - initialization' }
 SBSLayoutColumnTag >> initStyleClass [
 	"do nothing"
-	
 ]
 
 { #category : #sizes }
 SBSLayoutColumnTag >> largeSize: anInteger [
 	"Use the given number of columns on screen width equal to or greater than 992px"
-	
+
 	self class: 'col-lg-', anInteger greaseString
 ]
 
@@ -55,7 +54,7 @@ SBSLayoutColumnTag >> largeVariableWidth [
 { #category : #sizes }
 SBSLayoutColumnTag >> mediumSize: anInteger [
 	"Use the given number of columns on screen width equal to or greater than 768px"
-	
+
 	self class: 'col-md-', anInteger greaseString
 ]
 
@@ -74,7 +73,7 @@ SBSLayoutColumnTag >> small [
 { #category : #sizes }
 SBSLayoutColumnTag >> smallSize: anInteger [
 	"Use the given number of columns on screen width equal to or greater than 576px"
-	
+
 	self class: 'col-sm-', anInteger greaseString
 ]
 

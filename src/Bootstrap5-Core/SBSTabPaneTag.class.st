@@ -16,7 +16,7 @@ SBSTabPaneTag >> defaultStyleClass [
 ]
 
 { #category : #defaults }
-SBSTabPaneTag >> initialize [ 
+SBSTabPaneTag >> initialize [
 	super initialize.
 	self attributeAt: 'role' put: 'tabpanel'
 ]

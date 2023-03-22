@@ -8,7 +8,7 @@ Class {
 }
 
 { #category : #options }
-SBSNavigationBarCollapseTag >> collapse [ 
+SBSNavigationBarCollapseTag >> collapse [
 	self class: 'collapse'
 ]
 

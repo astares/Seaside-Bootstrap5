@@ -12,14 +12,14 @@ Class {
 { #category : #options }
 SBSAlertTag >> beDismissible [
 	"Creates a dismissable type button."
-	
+
 	self beDismissibleIf: true
 ]
 
 { #category : #options }
 SBSAlertTag >> beDismissibleIf: aBlock [
 	"Creates a danger type button if aBlock is true."
-	
+
 	self class: self contextStyle, self modifier, '-dismissible' if: aBlock value
 ]
 

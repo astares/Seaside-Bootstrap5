@@ -23,13 +23,12 @@ SBSColorExample >> renderExampleOn: html [
 	html paragraph dangerText with: 'Danger'.
 	html paragraph infoText with: 'Info'.
 	html paragraph darkText with: 'Dark'.
-	html paragraph 
-			lightText 
-			darkBackground 
+	html paragraph
+			lightText
+			darkBackground
 			with: 'Light'.
-	html paragraph 
-			whiteText 
-			darkBackground 
-			with: 'White'.
-	 		
+	html paragraph
+			whiteText
+			darkBackground
+			with: 'White'
 ]

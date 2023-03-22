@@ -10,5 +10,5 @@ Class {
 { #category : #defaults }
 SBSCardColumnsTag >> defaultStyleClass [
 
-	^'card-columns' 
+	^'card-columns'
 ]

@@ -19,7 +19,7 @@ SBSModalDialogTag >> defaultStyleClass [
 ]
 
 { #category : #defaults }
-SBSModalDialogTag >> initialize [ 
+SBSModalDialogTag >> initialize [
 	super initialize.
 	self attributeAt: 'role' put: 'document'
 ]

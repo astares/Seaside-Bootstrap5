@@ -30,14 +30,14 @@ SBSButtonTag >> beActiveIf: aBoolean [
 { #category : #sizes }
 SBSButtonTag >> beBlock [
 	"Creates an extra small sized button."
-	
+
 	self beBlockIf: true
 ]
 
 { #category : #sizes }
 SBSButtonTag >> beBlockIf: aBlock [
 	"Creates an block sized button if aBlock is true."
-	
+
 	self class: 'btn-block' if: aBlock
 ]
 
@@ -80,7 +80,7 @@ SBSButtonTag >> dataToggle: aString [
 { #category : #defaults }
 SBSButtonTag >> defaultModifier [
 	"Subclasses may override to use a different modifier uses with the class style definitions"
-	
+
 	^''
 ]
 
@@ -99,25 +99,24 @@ SBSButtonTag >> dropdown [
 { #category : #options }
 SBSButtonTag >> dropdownSplitted [
 
-	self 
+	self
 		dropdown;
 		class: 'dropdown-toggle-split'
 ]
 
 { #category : #initialization }
-SBSButtonTag >> initialize [ 
+SBSButtonTag >> initialize [
 	super initialize.
 	self resetType.
 	self class: self defaultStyleClass.
-	
+
 	self contextStyle: self defaultStyleClass.
 	self modifier: self defaultModifier.
-	
+
 	self sizeStyle: self defaultStyleClass
 ]
 
 { #category : #private }
 SBSButtonTag >> resetType [
 	type := nil
-	
 ]

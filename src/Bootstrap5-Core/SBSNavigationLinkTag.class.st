@@ -16,8 +16,8 @@ SBSNavigationLinkTag >> beTab [
 ]
 
 { #category : #options }
-SBSNavigationLinkTag >> dataToggle: aString [ 
-	self attributeAt: 'data-bs-toggle' put: aString 
+SBSNavigationLinkTag >> dataToggle: aString [
+	self attributeAt: 'data-bs-toggle' put: aString
 ]
 
 { #category : #defaults }

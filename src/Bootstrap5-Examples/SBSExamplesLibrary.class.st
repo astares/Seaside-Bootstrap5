@@ -23,7 +23,7 @@ SBSExamplesLibrary >> logosmallPng [
 ]
 
 { #category : #accessing }
-SBSExamplesLibrary >> selectorsToInclude [ 
+SBSExamplesLibrary >> selectorsToInclude [
 
 	^#(faviconIco)
 ]

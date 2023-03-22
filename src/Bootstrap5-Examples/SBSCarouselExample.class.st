@@ -16,17 +16,17 @@ SBSCarouselExample class >> exampleName [
 { #category : #rendering }
 SBSCarouselExample >> renderExampleOn: html [
 
-	html carousel 
+	html carousel
 		id: 'example';
-		slide; 
+		slide;
 		autoplay;
-		with:[ 
+		with:[
 		html carouselInner: [
 			html carouselItem active with: [ html html: SBSCardExample imagePlaceHolderSVG ].
-			html carouselItem with: [ 
-				html html: SBSCardExample imagePlaceHolderSVG ].					
-		].		
-		html carouselControlPreviousFor: 'example'.	
-		html carouselControlNextFor: 'example'. 	
-	] 
+			html carouselItem with: [
+				html html: SBSCardExample imagePlaceHolderSVG ].
+		].
+		html carouselControlPreviousFor: 'example'.
+		html carouselControlNextFor: 'example'.
+	]
 ]

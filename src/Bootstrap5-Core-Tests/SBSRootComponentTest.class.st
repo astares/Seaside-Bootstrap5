@@ -10,5 +10,5 @@ Class {
 { #category : #tests }
 SBSRootComponentTest >> testCanBeRoot [
 
-	self assert: SBSRootComponent canBeRoot 
+	self assert: SBSRootComponent canBeRoot
 ]

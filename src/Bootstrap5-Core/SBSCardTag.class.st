@@ -15,7 +15,7 @@ SBSCardTag >> cardBody [
 { #category : #shortcuts }
 SBSCardTag >> cardBody: aBlockOrString [
 	self class: 'card-body';
-	with: aBlockOrString 
+	with: aBlockOrString
 ]
 
 { #category : #defaults }

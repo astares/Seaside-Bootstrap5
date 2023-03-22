@@ -10,19 +10,19 @@ Class {
 { #category : #accessing }
 SBSBootstrapExample class >> exampleName [
 
-	^self subclassResponsibility 
+	^self subclassResponsibility
 ]
 
 { #category : #testing }
 SBSBootstrapExample class >> isAbstract [
 
-	^self name = #SBSBootstrapExample 
+	^self name = #SBSBootstrapExample
 ]
 
 { #category : #rendering }
 SBSBootstrapExample >> renderContentOn: html [
 
-	html containerFluid: [ 
+	html containerFluid: [
 		html break.
 		html
 			heading: self class exampleName;
@@ -36,17 +36,17 @@ SBSBootstrapExample >> renderContentOn: html [
 { #category : #rendering }
 SBSBootstrapExample >> renderExampleOn: html [
 
-	self subclassResponsibility 
+	self subclassResponsibility
 ]
 
 { #category : #rendering }
 SBSBootstrapExample >> rendererClass [
-	
-	^ SBSHtmlCanvas 
+
+	^ SBSHtmlCanvas
 ]
 
 { #category : #hooks }
-SBSBootstrapExample >> style [ 
+SBSBootstrapExample >> style [
 
 	^''
 ]
