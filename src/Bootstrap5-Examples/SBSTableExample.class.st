@@ -31,7 +31,7 @@ SBSTableExample >> renderExampleOn: html [
 	self renderTableOn: html usingStyle: 'table table-dark table-hover'.
 
 	html horizontalRule;heading: 'Dark Hovered Striped Table'.
-	self renderTableOn: html usingStyle: 'table table-dark table-hover table-striped'.
+	self renderTableOn: html usingStyle: 'table table-dark table-hover table-striped'
 ]
 
 { #category : #rendering }

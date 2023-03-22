@@ -15,7 +15,7 @@ SBSNavigationTabTag >> defaultStyleClass [
 	^'nav nav-tabs'
 ]
 
-{ #category : #defaults }
+{ #category : #initialization }
 SBSNavigationTabTag >> initialize [
 
 	super initialize.

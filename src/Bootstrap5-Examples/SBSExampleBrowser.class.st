@@ -88,7 +88,7 @@ SBSExampleBrowser >> rendererClass [
 	^ SBSHtmlCanvas
 ]
 
-{ #category : #styling }
+{ #category : #hooks }
 SBSExampleBrowser >> style [
 
 	^currentExample style

@@ -38,5 +38,5 @@ SBSBadgeExample >> renderExampleOn: html [
 	html badge beDanger bePill with: 'New'.
 	html badge beSuccess bePill with: 'Success'.
 	html badge beWarning bePill with: 'Warning'.
-	html badge beDark bePill with: 'Dark'.
+	html badge beDark bePill with: 'Dark'
 ]
