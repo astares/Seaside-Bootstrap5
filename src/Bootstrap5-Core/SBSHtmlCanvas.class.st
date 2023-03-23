@@ -7,6 +7,92 @@ Class {
 	#category : #'Bootstrap5-Core-Canvas'
 }
 
+{ #category : #accordion }
+SBSHtmlCanvas >> accordion [
+	"Defines a Bootstrap accordion."
+
+	^self brush: SBSAccordionTag new
+]
+
+{ #category : #accordion }
+SBSHtmlCanvas >> accordion: aBlock [
+	"Provides a Bootstrap accordion."
+
+	^ self accordion with: aBlock
+]
+
+{ #category : #accordion }
+SBSHtmlCanvas >> accordionBody [
+	"Defines a Bootstrap accordion body."
+
+	^ self brush: SBSAccordionBodyTag new
+]
+
+{ #category : #accordion }
+SBSHtmlCanvas >> accordionBody: aBlock [
+	"Provides a Bootstrap accordion body."
+
+	 ^ self accordionBody
+		with: aBlock
+]
+
+{ #category : #accordion }
+SBSHtmlCanvas >> accordionButton [
+	"Defines a Bootstrap accordion button."
+
+	^self brush: SBSAccordionButtonTag new
+]
+
+{ #category : #accordion }
+SBSHtmlCanvas >> accordionButton: aBlock [
+	"Provides a Bootstrap accordion button."
+
+	 ^ self accordionButton
+		with: aBlock
+]
+
+{ #category : #accordion }
+SBSHtmlCanvas >> accordionCollapse [
+	"Defines a Bootstrap accordion collapse."
+
+	^ self brush: SBSAccordionCollapseTag new
+]
+
+{ #category : #accordion }
+SBSHtmlCanvas >> accordionCollapse: aBlock [
+	"Provides a Bootstrap accordion collapse."
+
+	^ self accordionCollapse with: aBlock
+]
+
+{ #category : #accordion }
+SBSHtmlCanvas >> accordionHeading [
+	"Defines a Bootstrap accordion heading."
+
+	^self brush: SBSAccordionHeadingTag new
+]
+
+{ #category : #accordion }
+SBSHtmlCanvas >> accordionHeading: aBlock [
+	"Provides a Bootstrap accordion heading."
+
+	^ self accordionHeading with: aBlock
+]
+
+{ #category : #accordion }
+SBSHtmlCanvas >> accordionItem [
+	"Defines a Bootstrap accordion item."
+
+	^self brush: SBSAccordionItemTag new
+]
+
+{ #category : #accordion }
+SBSHtmlCanvas >> accordionItem: aBlock [
+	"Provides a Bootstrap accordion item."
+
+	^ self accordionItem with: aBlock
+]
+
 { #category : #badges }
 SBSHtmlCanvas >> actionBadge [
 	"Defines an actionable Bootstrap badge."

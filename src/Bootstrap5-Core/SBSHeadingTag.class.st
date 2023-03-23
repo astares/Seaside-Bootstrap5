@@ -16,7 +16,7 @@ SBSHeadingTag class >> isAbstract [
 { #category : #defaults }
 SBSHeadingTag >> defaultStyleClass [
 
-	^self subclassResponsibility
+	^ self subclassResponsibility
 ]
 
 { #category : #initialization }

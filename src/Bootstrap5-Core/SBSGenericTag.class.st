@@ -10,7 +10,7 @@ Class {
 { #category : #defaults }
 SBSGenericTag >> defaultStyleClass [
 
-	^self subclassResponsibility
+	^ self subclassResponsibility
 ]
 
 { #category : #'private - initialization' }
@@ -21,11 +21,13 @@ SBSGenericTag >> initStyleClass [
 
 { #category : #initialization }
 SBSGenericTag >> initialize [
+
 	super initialize.
 	self initStyleClass
 ]
 
 { #category : #accessing }
 SBSGenericTag >> tag [
+
 	^ 'div'
 ]

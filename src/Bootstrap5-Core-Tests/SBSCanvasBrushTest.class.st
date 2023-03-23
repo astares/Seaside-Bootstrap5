@@ -7,6 +7,102 @@ Class {
 	#category : #'Bootstrap5-Core-Tests-Canvas'
 }
 
+{ #category : #'tests - accordion' }
+SBSCanvasBrushTest >> testAccordion [
+
+	self
+		assert: [ :html | html accordion ]
+		gives: '<div class="accordion"></div>'
+]
+
+{ #category : #'tests - accordion' }
+SBSCanvasBrushTest >> testAccordionBody [
+
+	self
+		assert: [ :html | html accordionBody ]
+		gives: '<div class="accordion-body"></div>'
+]
+
+{ #category : #'tests - accordion' }
+SBSCanvasBrushTest >> testAccordionBodyWithContent [
+
+	self
+		assert: [ :html | html accordionBody: 'Bootstrap' ]
+		gives: '<div class="accordion-body">Bootstrap</div>'
+]
+
+{ #category : #'tests - accordion' }
+SBSCanvasBrushTest >> testAccordionButton [
+
+	self
+		assert: [ :html | html accordionButton ]
+		gives: '<button class="accordion-button"></button>'
+]
+
+{ #category : #'tests - accordion' }
+SBSCanvasBrushTest >> testAccordionButtonWithContent [
+
+	self
+		assert: [ :html | html accordionButton: 'Bootstrap' ]
+		gives: '<button class="accordion-button">Bootstrap</button>'
+]
+
+{ #category : #'tests - accordion' }
+SBSCanvasBrushTest >> testAccordionCollapse [
+
+	self
+		assert: [ :html | html accordionCollapse ]
+		gives: '<div class="accordion-collapse"></div>'
+]
+
+{ #category : #'tests - accordion' }
+SBSCanvasBrushTest >> testAccordionCollapseWithContent [
+
+	self
+		assert: [ :html | html accordionCollapse: 'Bootstrap' ]
+		gives: '<div class="accordion-collapse">Bootstrap</div>'
+]
+
+{ #category : #'tests - accordion' }
+SBSCanvasBrushTest >> testAccordionHeading [
+
+	self
+		assert: [ :html | html accordionHeading ]
+		gives: '<h1 class="accordion-heading"></h1>'
+]
+
+{ #category : #'tests - accordion' }
+SBSCanvasBrushTest >> testAccordionHeadingWithContent [
+
+	self
+		assert: [ :html | html accordionHeading: 'Bootstrap' ]
+		gives: '<h1 class="accordion-heading">Bootstrap</h1>'
+]
+
+{ #category : #'tests - accordion' }
+SBSCanvasBrushTest >> testAccordionItem [
+
+	self
+		assert: [ :html | html accordionItem ]
+		gives: '<div class="accordion-item"></div>'
+]
+
+{ #category : #'tests - accordion' }
+SBSCanvasBrushTest >> testAccordionItemWithContent [
+
+	self
+		assert: [ :html | html accordionItem: 'Bootstrap' ]
+		gives: '<div class="accordion-item">Bootstrap</div>'
+]
+
+{ #category : #'tests - accordion' }
+SBSCanvasBrushTest >> testAccordionWithContent [
+
+	self
+		assert: [ :html | html accordion: 'Bootstrap' ]
+		gives: '<div class="accordion">Bootstrap</div>'
+]
+
 { #category : #'tests - badges' }
 SBSCanvasBrushTest >> testActionBadge [
 
