@@ -220,7 +220,7 @@ SBSCanvasBrushTest >> testBadgeDanger [
 
 	self
 		assert: [ :html | html badge beDanger ]
-		gives: '<span class="badge badge-danger"></span>'
+		gives: '<span class="badge bg-danger"></span>'
 ]
 
 { #category : #'tests - badges - options' }
@@ -228,7 +228,7 @@ SBSCanvasBrushTest >> testBadgeDark [
 
 	self
 		assert: [ :html | html badge beDark ]
-		gives: '<span class="badge badge-dark"></span>'
+		gives: '<span class="badge bg-dark"></span>'
 ]
 
 { #category : #'tests - badges - options' }
@@ -236,7 +236,7 @@ SBSCanvasBrushTest >> testBadgeInfo [
 
 	self
 		assert: [ :html | html badge beInfo ]
-		gives: '<span class="badge badge-info"></span>'
+		gives: '<span class="badge bg-info"></span>'
 ]
 
 { #category : #'tests - badges - options' }
@@ -244,7 +244,7 @@ SBSCanvasBrushTest >> testBadgeLight [
 
 	self
 		assert: [ :html | html badge beLight ]
-		gives: '<span class="badge badge-light"></span>'
+		gives: '<span class="badge bg-light"></span>'
 ]
 
 { #category : #'tests - badges - options' }
@@ -252,7 +252,7 @@ SBSCanvasBrushTest >> testBadgePrimary [
 
 	self
 		assert: [ :html | html badge bePrimary ]
-		gives: '<span class="badge badge-primary"></span>'
+		gives: '<span class="badge bg-primary"></span>'
 ]
 
 { #category : #'tests - badges - options' }
@@ -260,7 +260,7 @@ SBSCanvasBrushTest >> testBadgeSecondary [
 
 	self
 		assert: [ :html | html badge beSecondary ]
-		gives: '<span class="badge badge-secondary"></span>'
+		gives: '<span class="badge bg-secondary"></span>'
 ]
 
 { #category : #'tests - badges - options' }
@@ -268,7 +268,7 @@ SBSCanvasBrushTest >> testBadgeSuccess [
 
 	self
 		assert: [ :html | html badge beSuccess ]
-		gives: '<span class="badge badge-success"></span>'
+		gives: '<span class="badge bg-success"></span>'
 ]
 
 { #category : #'tests - badges - options' }
@@ -276,7 +276,7 @@ SBSCanvasBrushTest >> testBadgeWarning [
 
 	self
 		assert: [ :html | html badge beWarning ]
-		gives: '<span class="badge badge-warning"></span>'
+		gives: '<span class="badge bg-warning"></span>'
 ]
 
 { #category : #'tests - badges' }
