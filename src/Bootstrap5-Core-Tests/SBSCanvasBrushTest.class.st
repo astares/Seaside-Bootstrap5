@@ -980,7 +980,15 @@ SBSCanvasBrushTest >> testCloseButton [
 
 	self
 		assert: [ :html | html closeButton ]
-		gives: '<button class="close"></button>'
+		gives: '<button class="btn-close"></button>'
+]
+
+{ #category : #'tests - collapse' }
+SBSCanvasBrushTest >> testCloseButtonWithContent [
+
+	self
+		assert: [ :html | html closeButton: 'Bootstrap' ]
+		gives: '<button class="btn-close">Bootstrap</button>'
 ]
 
 { #category : #'tests - collapse' }
@@ -2020,7 +2028,7 @@ SBSCanvasBrushTest >> testModalCloseButton [
 
 	self
 		assert: [ :html | html modalCloseButton ]
-		gives: '<button class="close" data-bs-dismiss="modal">&times;</button>'
+		gives: '<button class="btn-close" data-bs-dismiss="modal">&times;</button>'
 ]
 
 { #category : #'tests - modal' }

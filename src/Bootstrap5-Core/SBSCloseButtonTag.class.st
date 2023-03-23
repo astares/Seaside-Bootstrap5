@@ -10,5 +10,5 @@ Class {
 { #category : #defaults }
 SBSCloseButtonTag >> defaultStyleClass [
 
-	^'close'
+	^'btn-close'
 ]
