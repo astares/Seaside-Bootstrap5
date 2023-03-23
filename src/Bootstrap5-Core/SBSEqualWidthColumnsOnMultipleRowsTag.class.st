@@ -1,3 +1,6 @@
+"
+Bootstrap layout row
+"
 Class {
 	#name : #SBSEqualWidthColumnsOnMultipleRowsTag,
 	#superclass : #SBSLayoutTag,
