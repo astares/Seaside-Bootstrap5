@@ -30,7 +30,7 @@ SBSAccordionExample >> renderExampleOn: html [
 					html html: '<strong>This is the second item''s accordion body.</strong>' ]]].	
 		
 		html accordionItem: [
-			html accordionHeading: [ html accordionButton dataToggle: 'collapse'; dataTarget: '#collapseThree'; with: 'Accordion Item #2' ].
+			html accordionHeading: [ html accordionButton dataToggle: 'collapse'; dataTarget: '#collapseThree'; with: 'Accordion Item #3' ].
 			html accordionCollapse id: 'collapseThree'; with: [  
 				html accordionBody: [ 
 					html html: '<strong>This is the third item''s accordion body.</strong>' ]]].	
