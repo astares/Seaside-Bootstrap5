@@ -1,6 +1,6 @@
 # Seaside-Bootstrap5
 [![Unit Tests](https://github.com/astares/Seaside-Bootstrap5/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/astares/Seaside-Bootstrap5/actions?query=workflow%3ABuild)
-[![Coverage Status](https://codecov.io/github/astares/Seaside-Bootstrap5/coverage.svg?branch=master)]([https://codecov.io/gh/astaresSeaside-Bootstrap5/branch/master](https://app.codecov.io/gh/astares/Seaside-Bootstrap5))
+[![Coverage Status](https://codecov.io/github/astares/Seaside-Bootstrap5/coverage.svg?branch=master)](https://app.codecov.io/gh/astares/Seaside-Bootstrap5)
 
 [![Pharo 8](https://img.shields.io/badge/Pharo-8.0-%23aac9ff.svg)](https://pharo.org/download)
 [![Pharo 9](https://img.shields.io/badge/Pharo-9.0-%23aac9ff.svg)](https://pharo.org/download)
