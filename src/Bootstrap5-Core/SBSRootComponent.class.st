@@ -33,6 +33,6 @@ SBSRootComponent class >> register [
 	|app|
 	app := WAAdmin register: self asApplicationAt: self contextRoot.
 	app
-		addLibrary: SBSDevelopmentLibrary.
+		addLibrary: SBSDeploymentLibrary.
 	^app
 ]
