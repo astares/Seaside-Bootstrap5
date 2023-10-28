@@ -1021,6 +1021,21 @@ SBSHtmlCanvas >> jumbotron: aBlock [
 		with: aBlock
 ]
 
+{ #category : #'as yet unclassified' }
+SBSHtmlCanvas >> linkButton [
+	"Defines a Bootstrap button."
+
+	^self brush: SBSLinkButtonTag new
+]
+
+{ #category : #'as yet unclassified' }
+SBSHtmlCanvas >> linkButton: aBlock [
+	"Provides a Bootstrap button that is a link."
+
+	 ^ self linkButton
+		with: aBlock
+]
+
 { #category : #listgroups }
 SBSHtmlCanvas >> listGroup [
 	"Provide a Bootstrap list group."
