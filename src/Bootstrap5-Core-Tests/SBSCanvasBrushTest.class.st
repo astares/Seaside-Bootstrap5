@@ -1484,7 +1484,7 @@ SBSCanvasBrushTest >> testFormSelect [
 
 	self
 		assert: [ :html | html formSelect ]
-		gives: '<select class="form-control"></select>'
+		gives: '<select class="form-select"></select>'
 ]
 
 { #category : #'tests - forms' }

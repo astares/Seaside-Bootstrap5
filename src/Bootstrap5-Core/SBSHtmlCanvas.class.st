@@ -892,7 +892,7 @@ SBSHtmlCanvas >> formSelect [
 	"Provide a bootstrap form selection."
 
 	^ self select
-		class: 'form-control'
+		class: 'form-select'
 ]
 
 { #category : #forms }
