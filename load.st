@@ -1,6 +1,6 @@
 Metacello new
-      baseline:'Bootstrap4';
-      repository: 'github://astares/Seaside-Bootstrap4:master/src';
+      baseline:'Bootstrap5';
+      repository: 'github://astares/Seaside-Bootstrap5:master/src';
       load.
 
 ZnZincServerAdaptor startOn: 8080.
