@@ -122,7 +122,6 @@ SBSFormFloatingExample >> renderExampleOn: html [
 	html formGroup: [
 		html div class: 'form-floating'; marginBottom: 3; with: [
 			html formSelect
-				class: 'form-select';
 				attributeAt: 'aria-describedby' put: (controlID := html nextId);
 				list: #('choice 1' 'choice 2' 'choice 3' 123 456) ;
 				callback: [:input| ];
