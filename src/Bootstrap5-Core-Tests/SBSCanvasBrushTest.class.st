@@ -1492,7 +1492,7 @@ SBSCanvasBrushTest >> testFormSelectWithContent [
 
 	self
 		assert: [ :html | html formSelect: 'Bootstrap' ]
-		gives: '<select class="form-control">Bootstrap</select>'
+		gives: '<select class="form-select">Bootstrap</select>'
 ]
 
 { #category : #'tests - forms' }
