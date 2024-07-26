@@ -23,8 +23,8 @@ BaselineOfBootstrap5 >> baseline: spec [
 
 		spec
 			group: 'Core' with: #('Bootstrap5-Core');
-			group: 'Tests' with: #('Bootstrap5-Core-Tests');
-			group: 'Examples' with: #('Bootstrap5-Examples');
+			group: 'Tests' with: #('Bootstrap5-Core-Tests' 'Seaside3-default');
+			group: 'Examples' with: #('Bootstrap5-Examples' 'Seaside3-default');
 			group: 'all' with: #('Tests' 'Examples' 'Seaside3-default');
 			group: 'default' with: #('all').
 	]
