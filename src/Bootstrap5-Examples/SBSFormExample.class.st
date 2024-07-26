@@ -26,7 +26,7 @@ SBSFormExample >> renderExampleOn: html [
 		html formGroup formCheck; with: [
 			html formCheckLabel with: [ html formCheckbox: 'Remember me']].
 		html formGroup: [
-			html select formControl list: #(1 2 3 4 5) ].
+			html formSelect list: #(1 2 3 4 5) ].
 		html formGroup: [
 			html multiSelect formControl list: #(1 2 3 4 5) ].
 		 html formGroup: [

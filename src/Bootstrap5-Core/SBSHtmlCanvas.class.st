@@ -892,7 +892,7 @@ SBSHtmlCanvas >> formSelect [
 	"Provide a bootstrap form selection."
 
 	^ self select
-		class: 'form-control'
+		class: 'form-select'
 ]
 
 { #category : #forms }
@@ -1018,6 +1018,21 @@ SBSHtmlCanvas >> jumbotron: aBlock [
 	"Defines a Bootstrap jumbotron."
 
 	^ self jumbotron
+		with: aBlock
+]
+
+{ #category : #'as yet unclassified' }
+SBSHtmlCanvas >> linkButton [
+	"Defines a Bootstrap button."
+
+	^self brush: SBSLinkButtonTag new
+]
+
+{ #category : #'as yet unclassified' }
+SBSHtmlCanvas >> linkButton: aBlock [
+	"Provides a Bootstrap button that is a link."
+
+	 ^ self linkButton
 		with: aBlock
 ]
 

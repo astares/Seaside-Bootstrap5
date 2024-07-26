@@ -6,8 +6,9 @@
 [![Pharo 9](https://img.shields.io/badge/Pharo-9.0-%23aac9ff.svg)](https://pharo.org/download)
 [![Pharo 10](https://img.shields.io/badge/Pharo-10-%23aac9ff.svg)](https://pharo.org/download)
 [![Pharo 11](https://img.shields.io/badge/Pharo-11-%23aac9ff.svg)](https://pharo.org/download)
+[![Pharo 12](https://img.shields.io/badge/Pharo-11-%23aac9ff.svg)](https://pharo.org/download)
 
-Bootstrap 5 wrapper for Seaside for Pharo 9 and upcoming Pharo 10
+Bootstrap 5 wrapper for Seaside for Pharo 9, Pharo 10, Pharo 11, Pharo 12
 
 based on 5.0 from [https://getbootstrap.com/](https://getbootstrap.com/)
 
@@ -17,7 +18,7 @@ First install [Pharo](http://www.pharo.org) on your machine. Pharo 9 onwards is 
 ## Load Pharo using ZeroConf 
 
 ```
-wget -O- get.pharo.org/64/90+vm | bash
+wget -O- get.pharo.org/64/110+vm | bash
 ./pharo-ui Pharo.image
 ```
 
