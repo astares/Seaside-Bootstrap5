@@ -17,15 +17,15 @@ BaselineOfBootstrap5 >> baseline: spec [
 		self seaside: spec.
 
 		spec
-			package: 'Bootstrap5-Core' with: [ spec requires: #('Seaside3') ];
+			package: 'Bootstrap5-Core' with: [ spec requires: #('Seaside3-Core') ];
 		 	package: 'Bootstrap5-Core-Tests' with: [ spec requires: #('Bootstrap5-Core') ];
 			package: 'Bootstrap5-Examples' with: [ spec requires: #('Bootstrap5-Core') ].
 
 		spec
 			group: 'Core' with: #('Bootstrap5-Core');
-			group: 'Tests' with: #('Bootstrap5-Core-Tests');
-			group: 'Examples' with: #('Bootstrap5-Examples');
-			group: 'all' with: #('Tests' 'Examples');
+			group: 'Tests' with: #('Bootstrap5-Core-Tests' 'Seaside3-default');
+			group: 'Examples' with: #('Bootstrap5-Examples' 'Seaside3-default');
+			group: 'all' with: #('Tests' 'Examples' 'Seaside3-default');
 			group: 'default' with: #('all').
 	]
 ]
@@ -34,9 +34,7 @@ BaselineOfBootstrap5 >> baseline: spec [
 BaselineOfBootstrap5 >> seaside: spec [
 
 	spec
-			baseline: 'Seaside3'
-        	with: [
-				spec
-					loads: #('default');
-					repository: 'github://SeasideSt/Seaside:master/repository' ]
+		baseline: 'Seaside3' with: [ spec repository: 'github://SeasideSt/Seaside:master/repository' ];
+		project: 'Seaside3-Core' copyFrom: 'Seaside3' with: [ spec loads: #( 'Core' ) ];
+		project: 'Seaside3-default' copyFrom: 'Seaside3' with: [ spec loads: #( 'default' ) ]
 ]
