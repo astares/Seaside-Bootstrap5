@@ -4,12 +4,13 @@ Baseline for Seaside wrapper for Bootstrap 5
 [https://github.com/astares/Seaside-Bootstrap5](https://github.com/astares/Seaside-Bootstrap5)
 "
 Class {
-	#name : #BaselineOfBootstrap5,
-	#superclass : #BaselineOf,
-	#category : #BaselineOfBootstrap5
+	#name : 'BaselineOfBootstrap5',
+	#superclass : 'BaselineOf',
+	#category : 'BaselineOfBootstrap5',
+	#package : 'BaselineOfBootstrap5'
 }
 
-{ #category : #baselines }
+{ #category : 'baselines' }
 BaselineOfBootstrap5 >> baseline: spec [
 	<baseline>
 
@@ -30,7 +31,7 @@ BaselineOfBootstrap5 >> baseline: spec [
 	]
 ]
 
-{ #category : #baselines }
+{ #category : 'baselines' }
 BaselineOfBootstrap5 >> seaside: spec [
 
 	spec

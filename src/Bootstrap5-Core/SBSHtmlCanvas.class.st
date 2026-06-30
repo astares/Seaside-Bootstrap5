@@ -2,33 +2,35 @@
 An HTML Canvase for Seaside Bootstrap
 "
 Class {
-	#name : #SBSHtmlCanvas,
-	#superclass : #WAHtmlCanvas,
-	#category : #'Bootstrap5-Core-Canvas'
+	#name : 'SBSHtmlCanvas',
+	#superclass : 'WAHtmlCanvas',
+	#category : 'Bootstrap5-Core-Canvas',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Canvas'
 }
 
-{ #category : #accordion }
+{ #category : 'accordion' }
 SBSHtmlCanvas >> accordion [
 	"Defines a Bootstrap accordion."
 
 	^self brush: SBSAccordionTag new
 ]
 
-{ #category : #accordion }
+{ #category : 'accordion' }
 SBSHtmlCanvas >> accordion: aBlock [
 	"Provides a Bootstrap accordion."
 
 	^ self accordion with: aBlock
 ]
 
-{ #category : #accordion }
+{ #category : 'accordion' }
 SBSHtmlCanvas >> accordionBody [
 	"Defines a Bootstrap accordion body."
 
 	^ self brush: SBSAccordionBodyTag new
 ]
 
-{ #category : #accordion }
+{ #category : 'accordion' }
 SBSHtmlCanvas >> accordionBody: aBlock [
 	"Provides a Bootstrap accordion body."
 
@@ -36,14 +38,14 @@ SBSHtmlCanvas >> accordionBody: aBlock [
 		with: aBlock
 ]
 
-{ #category : #accordion }
+{ #category : 'accordion' }
 SBSHtmlCanvas >> accordionButton [
 	"Defines a Bootstrap accordion button."
 
 	^self brush: SBSAccordionButtonTag new
 ]
 
-{ #category : #accordion }
+{ #category : 'accordion' }
 SBSHtmlCanvas >> accordionButton: aBlock [
 	"Provides a Bootstrap accordion button."
 
@@ -51,56 +53,56 @@ SBSHtmlCanvas >> accordionButton: aBlock [
 		with: aBlock
 ]
 
-{ #category : #accordion }
+{ #category : 'accordion' }
 SBSHtmlCanvas >> accordionCollapse [
 	"Defines a Bootstrap accordion collapse."
 
 	^ self brush: SBSAccordionCollapseTag new
 ]
 
-{ #category : #accordion }
+{ #category : 'accordion' }
 SBSHtmlCanvas >> accordionCollapse: aBlock [
 	"Provides a Bootstrap accordion collapse."
 
 	^ self accordionCollapse with: aBlock
 ]
 
-{ #category : #accordion }
+{ #category : 'accordion' }
 SBSHtmlCanvas >> accordionHeading [
 	"Defines a Bootstrap accordion heading."
 
 	^self brush: SBSAccordionHeadingTag new
 ]
 
-{ #category : #accordion }
+{ #category : 'accordion' }
 SBSHtmlCanvas >> accordionHeading: aBlock [
 	"Provides a Bootstrap accordion heading."
 
 	^ self accordionHeading with: aBlock
 ]
 
-{ #category : #accordion }
+{ #category : 'accordion' }
 SBSHtmlCanvas >> accordionItem [
 	"Defines a Bootstrap accordion item."
 
 	^self brush: SBSAccordionItemTag new
 ]
 
-{ #category : #accordion }
+{ #category : 'accordion' }
 SBSHtmlCanvas >> accordionItem: aBlock [
 	"Provides a Bootstrap accordion item."
 
 	^ self accordionItem with: aBlock
 ]
 
-{ #category : #badges }
+{ #category : 'badges' }
 SBSHtmlCanvas >> actionBadge [
 	"Defines an actionable Bootstrap badge."
 
 	^self brush: SBSActionableBadgeTag new
 ]
 
-{ #category : #badges }
+{ #category : 'badges' }
 SBSHtmlCanvas >> actionBadge: aBlock [
 	"Provides an actionable Bootstrap badge."
 
@@ -108,14 +110,14 @@ SBSHtmlCanvas >> actionBadge: aBlock [
 		with: aBlock
 ]
 
-{ #category : #alerts }
+{ #category : 'alerts' }
 SBSHtmlCanvas >> alert [
 	"Defines a Bootstrap alert."
 
 	^self brush: SBSAlertTag new
 ]
 
-{ #category : #alerts }
+{ #category : 'alerts' }
 SBSHtmlCanvas >> alert: aBlock [
 	"Provides a Bootstrap alert."
 
@@ -123,14 +125,14 @@ SBSHtmlCanvas >> alert: aBlock [
 		with: aBlock
 ]
 
-{ #category : #alerts }
+{ #category : 'alerts' }
 SBSHtmlCanvas >> alertHeading [
 	"Defines a Bootstrap alert heading."
 
 	^self brush: SBSAlertHeadingTag new
 ]
 
-{ #category : #alerts }
+{ #category : 'alerts' }
 SBSHtmlCanvas >> alertHeading: aBlock [
 	"Provides a Bootstrap alert heading."
 
@@ -138,14 +140,14 @@ SBSHtmlCanvas >> alertHeading: aBlock [
 		with: aBlock
 ]
 
-{ #category : #alerts }
+{ #category : 'alerts' }
 SBSHtmlCanvas >> alertLink [
 	"Defines a Bootstrap alert link."
 
 	^self brush: SBSAlertLinkTag new
 ]
 
-{ #category : #alerts }
+{ #category : 'alerts' }
 SBSHtmlCanvas >> alertLink: aBlock [
 	"Provides a Bootstrap alert link."
 
@@ -153,14 +155,14 @@ SBSHtmlCanvas >> alertLink: aBlock [
 		with: aBlock
 ]
 
-{ #category : #badges }
+{ #category : 'badges' }
 SBSHtmlCanvas >> badge [
 	"Defines a Bootstrap badge."
 
 	^self brush: SBSBadgeTag new
 ]
 
-{ #category : #badges }
+{ #category : 'badges' }
 SBSHtmlCanvas >> badge: aBlock [
 	"Provides a Bootstrap badge."
 
@@ -168,7 +170,7 @@ SBSHtmlCanvas >> badge: aBlock [
 		with: aBlock
 ]
 
-{ #category : #breadcrumb }
+{ #category : 'breadcrumb' }
 SBSHtmlCanvas >> breadcrumb [
 	"Provide a bootstrap breadcrumb."
 
@@ -176,7 +178,7 @@ SBSHtmlCanvas >> breadcrumb [
 		class: 'breadcrumb'
 ]
 
-{ #category : #breadcrumb }
+{ #category : 'breadcrumb' }
 SBSHtmlCanvas >> breadcrumb: aBlock [
 	"Provides an Bootstrap breadcrumb."
 
@@ -184,14 +186,14 @@ SBSHtmlCanvas >> breadcrumb: aBlock [
 		with: aBlock
 ]
 
-{ #category : #breadcrumb }
+{ #category : 'breadcrumb' }
 SBSHtmlCanvas >> breadcrumbItem [
 	"Provide a bootstrap breadcrumb section."
 
 	^ self brush: SBSBreadcrumbSectionTag new
 ]
 
-{ #category : #breadcrumb }
+{ #category : 'breadcrumb' }
 SBSHtmlCanvas >> breadcrumbItem: aBlock [
 	"Provides an Bootstrap breadcrumb section."
 
@@ -199,14 +201,14 @@ SBSHtmlCanvas >> breadcrumbItem: aBlock [
 		with: aBlock
 ]
 
-{ #category : #buttongroups }
+{ #category : 'buttongroups' }
 SBSHtmlCanvas >> buttonGroup [
 	"Provide a bootstrap button group."
 
 	^ self brush: SBSButtonGroupTag new
 ]
 
-{ #category : #buttongroups }
+{ #category : 'buttongroups' }
 SBSHtmlCanvas >> buttonGroup: aBlock [
 	"Provides an Bootstrap button group."
 
@@ -214,14 +216,14 @@ SBSHtmlCanvas >> buttonGroup: aBlock [
 		with: aBlock
 ]
 
-{ #category : #buttongroups }
+{ #category : 'buttongroups' }
 SBSHtmlCanvas >> buttonGroupVertical [
 	"Provide a bootstrap vertical button group."
 
 	^ self brush: SBSButtonGroupVerticalTag new
 ]
 
-{ #category : #buttongroups }
+{ #category : 'buttongroups' }
 SBSHtmlCanvas >> buttonGroupVertical: aBlock [
 	"Provides an Bootstrap vertical button group."
 
@@ -229,14 +231,14 @@ SBSHtmlCanvas >> buttonGroupVertical: aBlock [
 		with: aBlock
 ]
 
-{ #category : #buttontoolbar }
+{ #category : 'buttontoolbar' }
 SBSHtmlCanvas >> buttonToolbar [
 	"Provide a bootstrap button toolbar."
 
 	^ self brush: SBSButtonToolbarTag new
 ]
 
-{ #category : #buttontoolbar }
+{ #category : 'buttontoolbar' }
 SBSHtmlCanvas >> buttonToolbar: aBlock [
 	"Provides an Bootstrap button toolbar."
 
@@ -244,14 +246,14 @@ SBSHtmlCanvas >> buttonToolbar: aBlock [
 		with: aBlock
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> card [
 	"Provide a bootstrap card."
 
 	^ self brush: SBSCardTag new
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> card: aBlock [
 	"Provides a Bootstrap card."
 
@@ -259,14 +261,14 @@ SBSHtmlCanvas >> card: aBlock [
 		with: aBlock
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardBody [
 	"Provide a bootstrap card body."
 
 	^ self brush: SBSCardBodyTag new
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardBody: aBlock [
 	"Provides a Bootstrap card body."
 
@@ -274,14 +276,14 @@ SBSHtmlCanvas >> cardBody: aBlock [
 		with: aBlock
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardColumns [
 	"Provide a bootstrap card columns."
 
 	^ self brush: SBSCardColumnsTag new
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardColumns: aBlock [
 	"Provides a Bootstrap card columns."
 
@@ -289,14 +291,14 @@ SBSHtmlCanvas >> cardColumns: aBlock [
 		with: aBlock
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardDeck [
 	"Provide a bootstrap card deck."
 
 	^ self brush: SBSCardDeckTag new
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardDeck: aBlock [
 	"Provides a Bootstrap card deck."
 
@@ -304,14 +306,14 @@ SBSHtmlCanvas >> cardDeck: aBlock [
 		with: aBlock
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardFooter [
 	"Provide a bootstrap card footer."
 
 	^ self brush: SBSCardFooterTag new
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardFooter: aBlock [
 	"Provides a Bootstrap card footer."
 
@@ -319,14 +321,14 @@ SBSHtmlCanvas >> cardFooter: aBlock [
 		with: aBlock
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardGroup [
 	"Provide a Bootstrap card group."
 
 	^ self brush: SBSCardGroupTag new
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardGroup: aBlock [
 	"Provides a Bootstrap card group."
 
@@ -334,14 +336,14 @@ SBSHtmlCanvas >> cardGroup: aBlock [
 		with: aBlock
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardHeader [
 	"Provide a bootstrap card header."
 
 	^ self brush: SBSCardHeaderTag new
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardHeader: aBlock [
 	"Provides a Bootstrap card header."
 
@@ -349,28 +351,28 @@ SBSHtmlCanvas >> cardHeader: aBlock [
 		with: aBlock
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardImage [
 	"Provide a bootstrap card image."
 
 	^ self brush: SBSCardImageTag new
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardImageBottom [
 	"Provide a bootstrap card image for the bottom of a card."
 
 	^ self brush: SBSCardImageBottomTag new
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardImageOverlay [
 	"Provide a bootstrap card image overlay."
 
 	^ self brush: SBSCardImageOverlayTag new
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardImageOverlay: aBlock [
 	"Provides a Bootstrap card image overlay."
 
@@ -378,14 +380,14 @@ SBSHtmlCanvas >> cardImageOverlay: aBlock [
 		with: aBlock
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardLink [
 	"Provide a bootstrap card link."
 
 	^ self brush: SBSCardLinkTag new
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardLink: aBlock [
 	"Provides a Bootstrap card link."
 
@@ -393,14 +395,14 @@ SBSHtmlCanvas >> cardLink: aBlock [
 		with: aBlock
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardSubtitle [
 	"Provide a bootstrap card subtitle."
 
 	^ self brush: SBSCardSubtitleTag new
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardSubtitle: aBlock [
 	"Provides a Bootstrap card subtitle."
 
@@ -408,7 +410,7 @@ SBSHtmlCanvas >> cardSubtitle: aBlock [
 		with: aBlock
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardText [
 	"Provide a bootstrap card text."
 
@@ -416,7 +418,7 @@ SBSHtmlCanvas >> cardText [
 		class: 'card-text'
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardText: aBlock [
 	"Provide a bootstrap card text."
 
@@ -424,14 +426,14 @@ SBSHtmlCanvas >> cardText: aBlock [
 		with: aBlock
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardTitle [
 	"Provide a bootstrap card title."
 
 	^ self brush: SBSCardTitleTag new
 ]
 
-{ #category : #cards }
+{ #category : 'cards' }
 SBSHtmlCanvas >> cardTitle: aBlock [
 	"Provides a Bootstrap card title."
 
@@ -439,14 +441,14 @@ SBSHtmlCanvas >> cardTitle: aBlock [
 		with: aBlock
 ]
 
-{ #category : #carousel }
+{ #category : 'carousel' }
 SBSHtmlCanvas >> carousel [
 	"Provide a Bootstrap carousel."
 
 	^ self brush: SBSCarouselTag new
 ]
 
-{ #category : #carousel }
+{ #category : 'carousel' }
 SBSHtmlCanvas >> carousel: aBlock [
  	"Defines a Bootstrap carousel."
 
@@ -454,7 +456,7 @@ SBSHtmlCanvas >> carousel: aBlock [
 		with: aBlock
 ]
 
-{ #category : #carousel }
+{ #category : 'carousel' }
 SBSHtmlCanvas >> carouselControlNext [
 	"Provide a Bootstrap carousel next control button."
 
@@ -462,7 +464,7 @@ SBSHtmlCanvas >> carouselControlNext [
 		class: 'carousel-control-next'
 ]
 
-{ #category : #carousel }
+{ #category : 'carousel' }
 SBSHtmlCanvas >> carouselControlNext: aStringOrBlock [
 	"Provide a Bootstrap carousel next control button with the given content."
 
@@ -470,7 +472,7 @@ SBSHtmlCanvas >> carouselControlNext: aStringOrBlock [
 			with: aStringOrBlock
 ]
 
-{ #category : #carousel }
+{ #category : 'carousel' }
 SBSHtmlCanvas >> carouselControlNextFor: anID [
 	"Provide a Bootstrap carousel previous control button."
 
@@ -483,7 +485,7 @@ SBSHtmlCanvas >> carouselControlNextFor: anID [
     <span class="sr-only">Next</span>']
 ]
 
-{ #category : #carousel }
+{ #category : 'carousel' }
 SBSHtmlCanvas >> carouselControlPrevious [
 	"Provide a Bootstrap carousel previous control button."
 
@@ -492,7 +494,7 @@ SBSHtmlCanvas >> carouselControlPrevious [
 		yourself
 ]
 
-{ #category : #carousel }
+{ #category : 'carousel' }
 SBSHtmlCanvas >> carouselControlPrevious: aStringOrBlock [
 	"Provide a Bootstrap carousel previous control button with the given content."
 
@@ -500,7 +502,7 @@ SBSHtmlCanvas >> carouselControlPrevious: aStringOrBlock [
 			with: aStringOrBlock
 ]
 
-{ #category : #carousel }
+{ #category : 'carousel' }
 SBSHtmlCanvas >> carouselControlPreviousFor: anID [
 	"Provide a Bootstrap carousel previous control button."
 
@@ -513,7 +515,7 @@ SBSHtmlCanvas >> carouselControlPreviousFor: anID [
     <span class="sr-only">Previous</span>']
 ]
 
-{ #category : #carousel }
+{ #category : 'carousel' }
 SBSHtmlCanvas >> carouselInner [
 	"Provide a Bootstrap carousel inner part."
 
@@ -521,7 +523,7 @@ SBSHtmlCanvas >> carouselInner [
 		class: 'carousel-inner'
 ]
 
-{ #category : #carousel }
+{ #category : 'carousel' }
 SBSHtmlCanvas >> carouselInner: aBlock [
  	"Defines a Bootstrap carousel inner part."
 
@@ -529,14 +531,14 @@ SBSHtmlCanvas >> carouselInner: aBlock [
 		with: aBlock
 ]
 
-{ #category : #carousel }
+{ #category : 'carousel' }
 SBSHtmlCanvas >> carouselItem [
 	"Provide a Bootstrap carousel item."
 
 	^ self brush: SBSCarouselItemTag new
 ]
 
-{ #category : #carousel }
+{ #category : 'carousel' }
 SBSHtmlCanvas >> carouselItem: aBlock [
  	"Defines a Bootstrap carousel item."
 
@@ -544,28 +546,28 @@ SBSHtmlCanvas >> carouselItem: aBlock [
 		with: aBlock
 ]
 
-{ #category : #buttons }
+{ #category : 'buttons' }
 SBSHtmlCanvas >> closeButton [
 	"Defines a Bootstrap close button."
 
 	^self brush: SBSCloseButtonTag new
 ]
 
-{ #category : #buttons }
+{ #category : 'buttons' }
 SBSHtmlCanvas >> closeButton: aBlock [
 
 	^self closeButton
 		with: aBlock
 ]
 
-{ #category : #collapsing }
+{ #category : 'collapsing' }
 SBSHtmlCanvas >> collapse [
 	"Provide a bootstrap collapse."
 
 	^ self brush: SBSCollapseTag new
 ]
 
-{ #category : #collapsing }
+{ #category : 'collapsing' }
 SBSHtmlCanvas >> collapse: aBlock [
  	"Defines a Bootstrap collapse."
 
@@ -573,7 +575,7 @@ SBSHtmlCanvas >> collapse: aBlock [
 		with: aBlock
 ]
 
-{ #category : #layout }
+{ #category : 'layout' }
 SBSHtmlCanvas >> column [
 	"Defines a Bootstrap layout column.
         Use size messages like #mediumSize, #smallSize:, ... according to Bootstrap layouts to be more specific after sending this message."
@@ -581,7 +583,7 @@ SBSHtmlCanvas >> column [
 	^ self brush: SBSLayoutColumnTag new
 ]
 
-{ #category : #layout }
+{ #category : 'layout' }
 SBSHtmlCanvas >> column: aBlock [
 	"Provide the given block as a column, nothing more than an ordinary <div> tag.
 	 We recommend to better use #sbsColumn instead and give the sizes
@@ -591,7 +593,7 @@ SBSHtmlCanvas >> column: aBlock [
 			with: aBlock
 ]
 
-{ #category : #layout }
+{ #category : 'layout' }
 SBSHtmlCanvas >> column: aBlock mediumSize: anInteger [
 
 	^self column
@@ -599,7 +601,7 @@ SBSHtmlCanvas >> column: aBlock mediumSize: anInteger [
 		with: aBlock
 ]
 
-{ #category : #container }
+{ #category : 'container' }
 SBSHtmlCanvas >> container [
 	"Easily center a page's contents by wrapping its contents."
 
@@ -607,7 +609,7 @@ SBSHtmlCanvas >> container [
 		class: 'container'
 ]
 
-{ #category : #container }
+{ #category : 'container' }
 SBSHtmlCanvas >> container: aBlock [
 	"Easily center a page's contents by wrapping its contents given by a block"
 
@@ -615,7 +617,7 @@ SBSHtmlCanvas >> container: aBlock [
 		with: aBlock
 ]
 
-{ #category : #container }
+{ #category : 'container' }
 SBSHtmlCanvas >> containerFluid [
 	"Provides a full width container, spanning the entire width of your viewport."
 
@@ -623,7 +625,7 @@ SBSHtmlCanvas >> containerFluid [
 		class: 'container-fluid'
 ]
 
-{ #category : #container }
+{ #category : 'container' }
 SBSHtmlCanvas >> containerFluid: aBlock [
 	"Provides a full width container, spanning the entire width of your viewport."
 
@@ -631,21 +633,21 @@ SBSHtmlCanvas >> containerFluid: aBlock [
 		with: aBlock
 ]
 
-{ #category : #headings }
+{ #category : 'headings' }
 SBSHtmlCanvas >> displayHeading [
 	"Provide a bootstrap display heading."
 
 	^ self brush: SBSDisplayHeadingTag new
 ]
 
-{ #category : #dropdown }
+{ #category : 'dropdown' }
 SBSHtmlCanvas >> dropdown [
 	"Provide a bootstrap dropdown."
 
 	^ self brush: SBSDropdownTag new
 ]
 
-{ #category : #dropdown }
+{ #category : 'dropdown' }
 SBSHtmlCanvas >> dropdown: aBlock [
 	"Provides a Bootstrap dropdown."
 
@@ -653,7 +655,7 @@ SBSHtmlCanvas >> dropdown: aBlock [
 		with: aBlock
 ]
 
-{ #category : #dropdown }
+{ #category : 'dropdown' }
 SBSHtmlCanvas >> dropdownDivider [
 	"Provide a bootstrap dropdown divider."
 
@@ -661,14 +663,14 @@ SBSHtmlCanvas >> dropdownDivider [
 		class: 'dropdown-divider'
 ]
 
-{ #category : #dropdown }
+{ #category : 'dropdown' }
 SBSHtmlCanvas >> dropdownHeader [
 	"Provide a bootstrap dropdown header."
 
 	^self brush: SBSDropdownHeaderTag new
 ]
 
-{ #category : #dropdown }
+{ #category : 'dropdown' }
 SBSHtmlCanvas >> dropdownHeader: aBlock [
 	"Provides a Bootstrap dropdown header."
 
@@ -676,14 +678,14 @@ SBSHtmlCanvas >> dropdownHeader: aBlock [
 		with: aBlock
 ]
 
-{ #category : #dropdown }
+{ #category : 'dropdown' }
 SBSHtmlCanvas >> dropdownItem [
 	"Provide a bootstrap dropdown item."
 
 	^ self brush: SBSDropdownItemTag new
 ]
 
-{ #category : #dropdown }
+{ #category : 'dropdown' }
 SBSHtmlCanvas >> dropdownItem: aBlock [
 	"Provides a Bootstrap dropdown item."
 
@@ -691,14 +693,14 @@ SBSHtmlCanvas >> dropdownItem: aBlock [
 		with: aBlock
 ]
 
-{ #category : #dropdown }
+{ #category : 'dropdown' }
 SBSHtmlCanvas >> dropdownMenu [
 	"Provide a bootstrap dropdown menu."
 
 	^ self brush: SBSDropdownMenuTag new
 ]
 
-{ #category : #dropdown }
+{ #category : 'dropdown' }
 SBSHtmlCanvas >> dropdownMenu: aBlock [
 	"Provides a Bootstrap dropdown menu."
 
@@ -706,14 +708,14 @@ SBSHtmlCanvas >> dropdownMenu: aBlock [
 		with: aBlock
 ]
 
-{ #category : #dropdown }
+{ #category : 'dropdown' }
 SBSHtmlCanvas >> dropup [
 	"Provide a bootstrap dropup."
 
 	^ self brush: SBSDropupTag new
 ]
 
-{ #category : #dropdown }
+{ #category : 'dropdown' }
 SBSHtmlCanvas >> dropup: aBlock [
 	"Provides a Bootstrap dropup."
 
@@ -721,7 +723,7 @@ SBSHtmlCanvas >> dropup: aBlock [
 		with: aBlock
 ]
 
-{ #category : #layout }
+{ #category : 'layout' }
 SBSHtmlCanvas >> equalWidthColumn [
 	"Defines a Bootstrap layout column.
         Use size messages like #mediumSize, #smallSize:, ... according to Bootstrap layouts to be more specific after sending this message."
@@ -730,7 +732,7 @@ SBSHtmlCanvas >> equalWidthColumn [
 			variableWidth
 ]
 
-{ #category : #layout }
+{ #category : 'layout' }
 SBSHtmlCanvas >> equalWidthColumn: aBlock [
 	"Provide the given block as a column with equal size by applying only the col style"
 
@@ -738,21 +740,21 @@ SBSHtmlCanvas >> equalWidthColumn: aBlock [
 			with: aBlock
 ]
 
-{ #category : #layout }
+{ #category : 'layout' }
 SBSHtmlCanvas >> equalWidthColumnsOnMultipleRows [
 	"Provide a Bootstrap layout row"
 
 	^ self brush: SBSEqualWidthColumnsOnMultipleRowsTag new
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formButton [
 	"Defines a Bootstrap button."
 
 	^self brush: SBSFormButtonTag new
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formButton: aBlock [
 	"Provides a Bootstrap button."
 
@@ -760,7 +762,7 @@ SBSHtmlCanvas >> formButton: aBlock [
 		with: aBlock
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formCheckLabel [
 	"Provides a Bootstrap label for a checkbox."
 
@@ -768,7 +770,7 @@ SBSHtmlCanvas >> formCheckLabel [
 			class: 'form-check-label'
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formCheckLabel: aBlock [
 	"Provides a Bootstrap form group."
 
@@ -776,7 +778,7 @@ SBSHtmlCanvas >> formCheckLabel: aBlock [
 		with: aBlock
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formCheckbox [
 	"Provide a bootstrap form checkbox input."
 
@@ -784,7 +786,7 @@ SBSHtmlCanvas >> formCheckbox [
 		class: 'form-check-input'
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formCheckbox: aBlock [
 	"Provide a bootstrap form checkbox input."
 
@@ -792,7 +794,7 @@ SBSHtmlCanvas >> formCheckbox: aBlock [
 		with: aBlock
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formCheckboxInline [
 	"Provide a bootstrap form checkbox inline element to display checkboxes in a single line."
 
@@ -800,7 +802,7 @@ SBSHtmlCanvas >> formCheckboxInline [
 		class: 'form-check-inline'
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formCheckboxInline: aBlock [
 	"Provide a bootstrap form checkbox inline element to display checkboxes in a single line."
 
@@ -808,7 +810,7 @@ SBSHtmlCanvas >> formCheckboxInline: aBlock [
 		with: aBlock
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formFileUpload [
 	"Provide a bootstrap form radio button input."
 
@@ -816,14 +818,14 @@ SBSHtmlCanvas >> formFileUpload [
 		class: 'form-control-file'
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formGroup [
 	"Provide a bootstrap form group."
 
 	^ self brush: SBSFormGroupTag new
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formGroup: aBlock [
 	"Provides a Bootstrap form group."
 
@@ -831,7 +833,7 @@ SBSHtmlCanvas >> formGroup: aBlock [
 		with: aBlock
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formMultiSelect [
 	"Provide a bootstrap form multi select."
 
@@ -839,7 +841,7 @@ SBSHtmlCanvas >> formMultiSelect [
 		class: 'form-control'
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formMultiSelect: aBlock [
 	"Provides a Bootstrap form multi select."
 
@@ -847,7 +849,7 @@ SBSHtmlCanvas >> formMultiSelect: aBlock [
 		with: aBlock
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formPasswordInput [
 	"Provide a bootstrap form password input."
 
@@ -855,7 +857,7 @@ SBSHtmlCanvas >> formPasswordInput [
 		class: 'form-control'
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formPasswordInput: aBlock [
 	"Provides a Bootstrap form password input."
 
@@ -863,7 +865,7 @@ SBSHtmlCanvas >> formPasswordInput: aBlock [
 		with: aBlock
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formPlainTextInput [
 	"Provide a bootstrap form text input."
 
@@ -871,7 +873,7 @@ SBSHtmlCanvas >> formPlainTextInput [
 		class: 'form-control-plaintext'
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formRadiobutton [
 	"Provide a bootstrap form radio button input."
 
@@ -879,7 +881,7 @@ SBSHtmlCanvas >> formRadiobutton [
 		class: 'form-check-input'
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formRangeInput [
 	"Provide a bootstrap form radio button input."
 
@@ -887,7 +889,7 @@ SBSHtmlCanvas >> formRangeInput [
 		class: 'form-control-range'
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formSelect [
 	"Provide a bootstrap form selection."
 
@@ -895,7 +897,7 @@ SBSHtmlCanvas >> formSelect [
 		class: 'form-select'
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formSelect: aBlock [
 	"Provides a Bootstrap form select."
 
@@ -903,7 +905,7 @@ SBSHtmlCanvas >> formSelect: aBlock [
 		with: aBlock
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formTextArea [
 	"Provide a bootstrap form text area."
 
@@ -911,7 +913,7 @@ SBSHtmlCanvas >> formTextArea [
 		class: 'form-control'
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formTextArea: aBlock [
 	"Provides a Bootstrap form text area."
 
@@ -919,7 +921,7 @@ SBSHtmlCanvas >> formTextArea: aBlock [
 		with: aBlock
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formTextInput [
 	"Provide a bootstrap form text input."
 
@@ -927,7 +929,7 @@ SBSHtmlCanvas >> formTextInput [
 		class: 'form-control'
 ]
 
-{ #category : #forms }
+{ #category : 'forms' }
 SBSHtmlCanvas >> formTextInput: aBlock [
 	"Provides a Bootstrap form text input."
 
@@ -935,7 +937,7 @@ SBSHtmlCanvas >> formTextInput: aBlock [
 		with: aBlock
 ]
 
-{ #category : #image }
+{ #category : 'image' }
 SBSHtmlCanvas >> imageFluid [
 	"Defines an image."
 
@@ -943,14 +945,14 @@ SBSHtmlCanvas >> imageFluid [
 		class: 'image-fluid'
 ]
 
-{ #category : #inputgroup }
+{ #category : 'inputgroup' }
 SBSHtmlCanvas >> inputGroup [
 	"Provide a bootstrap input group."
 
 	^ self brush: SBSInputGroupTag new
 ]
 
-{ #category : #inputgroup }
+{ #category : 'inputgroup' }
 SBSHtmlCanvas >> inputGroup: aBlock [
 	"Provides a Bootstrap form text input."
 
@@ -958,7 +960,7 @@ SBSHtmlCanvas >> inputGroup: aBlock [
 		with: aBlock
 ]
 
-{ #category : #inputgroup }
+{ #category : 'inputgroup' }
 SBSHtmlCanvas >> inputGroupAppend [
 	"Provide a bootstrap input group appending."
 
@@ -966,7 +968,7 @@ SBSHtmlCanvas >> inputGroupAppend [
 		class: 'input-group-append'
 ]
 
-{ #category : #inputgroup }
+{ #category : 'inputgroup' }
 SBSHtmlCanvas >> inputGroupAppend: aBlock [
 	"Provides a Bootstrap form input group appending."
 
@@ -974,7 +976,7 @@ SBSHtmlCanvas >> inputGroupAppend: aBlock [
 		with: aBlock
 ]
 
-{ #category : #inputgroup }
+{ #category : 'inputgroup' }
 SBSHtmlCanvas >> inputGroupPrepend [
 	"Provide a bootstrap input group prepend."
 
@@ -982,7 +984,7 @@ SBSHtmlCanvas >> inputGroupPrepend [
 		class: 'input-group-prepend'
 ]
 
-{ #category : #inputgroup }
+{ #category : 'inputgroup' }
 SBSHtmlCanvas >> inputGroupPrepend: aBlock [
 	"Provides a Bootstrap form input group prepend."
 
@@ -990,7 +992,7 @@ SBSHtmlCanvas >> inputGroupPrepend: aBlock [
 		with: aBlock
 ]
 
-{ #category : #inputgroup }
+{ #category : 'inputgroup' }
 SBSHtmlCanvas >> inputGroupText [
 	"Provide a bootstrap input group text."
 
@@ -998,7 +1000,7 @@ SBSHtmlCanvas >> inputGroupText [
 		class: 'input-group-text'
 ]
 
-{ #category : #inputgroup }
+{ #category : 'inputgroup' }
 SBSHtmlCanvas >> inputGroupText: aBlock [
 	"Provides a Bootstrap form input group text."
 
@@ -1006,14 +1008,14 @@ SBSHtmlCanvas >> inputGroupText: aBlock [
 		with: aBlock
 ]
 
-{ #category : #jumbotron }
+{ #category : 'jumbotron' }
 SBSHtmlCanvas >> jumbotron [
 	"Defines a Bootstrap jumbotron."
 
 	^self brush: SBSJumbotronTag new
 ]
 
-{ #category : #jumbotron }
+{ #category : 'jumbotron' }
 SBSHtmlCanvas >> jumbotron: aBlock [
 	"Defines a Bootstrap jumbotron."
 
@@ -1021,14 +1023,14 @@ SBSHtmlCanvas >> jumbotron: aBlock [
 		with: aBlock
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 SBSHtmlCanvas >> linkButton [
 	"Defines a Bootstrap button."
 
 	^self brush: SBSLinkButtonTag new
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 SBSHtmlCanvas >> linkButton: aBlock [
 	"Provides a Bootstrap button that is a link."
 
@@ -1036,14 +1038,14 @@ SBSHtmlCanvas >> linkButton: aBlock [
 		with: aBlock
 ]
 
-{ #category : #listgroups }
+{ #category : 'listgroups' }
 SBSHtmlCanvas >> listGroup [
 	"Provide a Bootstrap list group."
 
 	^ self brush: SBSListGroupTag new
 ]
 
-{ #category : #listgroups }
+{ #category : 'listgroups' }
 SBSHtmlCanvas >> listGroup: aBlock [
 	"Defines a Bootstrap list group."
 
@@ -1051,14 +1053,14 @@ SBSHtmlCanvas >> listGroup: aBlock [
 		with: aBlock
 ]
 
-{ #category : #listgroups }
+{ #category : 'listgroups' }
 SBSHtmlCanvas >> listGroupItem [
 	"Provide a bootstrap list group item."
 
 	^ self brush: SBSListGroupItemTag new
 ]
 
-{ #category : #listgroups }
+{ #category : 'listgroups' }
 SBSHtmlCanvas >> listGroupItem: aBlock [
 	"Defines a Bootstrap list group item."
 
@@ -1066,14 +1068,14 @@ SBSHtmlCanvas >> listGroupItem: aBlock [
 		with: aBlock
 ]
 
-{ #category : #listgroups }
+{ #category : 'listgroups' }
 SBSHtmlCanvas >> listGroupLinkedItem [
 	"Provide a bootstrap list group linked item."
 
 	^ self brush: SBSListGroupLinkedItemTag new
 ]
 
-{ #category : #listgroups }
+{ #category : 'listgroups' }
 SBSHtmlCanvas >> listGroupLinkedItem: aBlock [
 	"Defines a Bootstrap list group linked item."
 
@@ -1081,35 +1083,35 @@ SBSHtmlCanvas >> listGroupLinkedItem: aBlock [
 		with: aBlock
 ]
 
-{ #category : #modal }
+{ #category : 'modal' }
 SBSHtmlCanvas >> modal [
 	"Defines a Bootstrap modal."
 
 	^self brush: SBSModalTag new
 ]
 
-{ #category : #modal }
+{ #category : 'modal' }
 SBSHtmlCanvas >> modal: aBlock [
 
 	^self modal
 		with: aBlock
 ]
 
-{ #category : #modal }
+{ #category : 'modal' }
 SBSHtmlCanvas >> modalBody [
 
 	^self div
 		class:'modal-body'
 ]
 
-{ #category : #modal }
+{ #category : 'modal' }
 SBSHtmlCanvas >> modalBody: aBlock [
 
 	^self modalBody
 		with: aBlock
 ]
 
-{ #category : #modal }
+{ #category : 'modal' }
 SBSHtmlCanvas >> modalCloseButton [
 
 	^self closeButton
@@ -1117,82 +1119,82 @@ SBSHtmlCanvas >> modalCloseButton [
 		with: [ self html: '&times;' ]
 ]
 
-{ #category : #modal }
+{ #category : 'modal' }
 SBSHtmlCanvas >> modalContent [
 
 	^self div
 		class:'modal-content'
 ]
 
-{ #category : #modal }
+{ #category : 'modal' }
 SBSHtmlCanvas >> modalContent: aBlock [
 
 	^self modalContent
 		with: aBlock
 ]
 
-{ #category : #modal }
+{ #category : 'modal' }
 SBSHtmlCanvas >> modalDialog [
 
 	^self brush: SBSModalDialogTag new
 ]
 
-{ #category : #modal }
+{ #category : 'modal' }
 SBSHtmlCanvas >> modalDialog: aBlock [
 
 	^self modalDialog
 		with: aBlock
 ]
 
-{ #category : #modal }
+{ #category : 'modal' }
 SBSHtmlCanvas >> modalFooter [
 
 	^self div
 		class: 'modal-footer'
 ]
 
-{ #category : #modal }
+{ #category : 'modal' }
 SBSHtmlCanvas >> modalFooter: aBlock [
 
 	^self modalFooter
 		with: aBlock
 ]
 
-{ #category : #modal }
+{ #category : 'modal' }
 SBSHtmlCanvas >> modalHeader [
 
 	^self div
 		class:'modal-header'
 ]
 
-{ #category : #modal }
+{ #category : 'modal' }
 SBSHtmlCanvas >> modalHeader: aBlock [
 
 	^self modalHeader
 		with: aBlock
 ]
 
-{ #category : #modal }
+{ #category : 'modal' }
 SBSHtmlCanvas >> modalTitle [
 
 	^self brush: SBSModalTitleTag new
 ]
 
-{ #category : #modal }
+{ #category : 'modal' }
 SBSHtmlCanvas >> modalTitle: aBlock [
 
 	^self modalTitle
 		with: aBlock
 ]
 
-{ #category : #navigation }
+{ #category : 'navigation' }
 SBSHtmlCanvas >> nav [
 	"Provide a nav tag"
 
 	^ self brush: SBSNavTag new
 ]
 
-{ #category : #navigation }
+{ #category : 'navigation' }
 SBSHtmlCanvas >> nav: aBlock [
 	"Provide a nav tag"
 
@@ -1200,14 +1202,14 @@ SBSHtmlCanvas >> nav: aBlock [
 		with: aBlock
 ]
 
-{ #category : #navigation }
+{ #category : 'navigation' }
 SBSHtmlCanvas >> navigation [
 	"Provide a Bootstrap navigation"
 
 	^ self brush: SBSNavigationTag new
 ]
 
-{ #category : #navigation }
+{ #category : 'navigation' }
 SBSHtmlCanvas >> navigation: aBlock [
  	"Defines a Bootstrap Navigation."
 
@@ -1215,14 +1217,14 @@ SBSHtmlCanvas >> navigation: aBlock [
 		with: aBlock
 ]
 
-{ #category : #'navigation bar' }
+{ #category : 'navigation bar' }
 SBSHtmlCanvas >> navigationBar [
 	"Provide a bootstrap navigation bar."
 
 	^ self brush: SBSNavigationBarTag new
 ]
 
-{ #category : #'navigation bar' }
+{ #category : 'navigation bar' }
 SBSHtmlCanvas >> navigationBar: aBlock [
  	"Defines a Bootstrap Navigation."
 
@@ -1230,14 +1232,14 @@ SBSHtmlCanvas >> navigationBar: aBlock [
 		with: aBlock
 ]
 
-{ #category : #'navigation bar' }
+{ #category : 'navigation bar' }
 SBSHtmlCanvas >> navigationBarBrand [
 	"Provide a bootstrap navigation bar brand."
 
 	^ self brush: SBSNavigationBarBrandTag new
 ]
 
-{ #category : #'navigation bar' }
+{ #category : 'navigation bar' }
 SBSHtmlCanvas >> navigationBarBrand: aBlock [
  	"Defines a Bootstrap navigation bar brand."
 
@@ -1245,19 +1247,19 @@ SBSHtmlCanvas >> navigationBarBrand: aBlock [
 		with: aBlock
 ]
 
-{ #category : #'navigation bar' }
+{ #category : 'navigation bar' }
 SBSHtmlCanvas >> navigationBarCollapse [
 
 	^ self brush: SBSNavigationBarCollapseTag new
 ]
 
-{ #category : #'navigation bar' }
+{ #category : 'navigation bar' }
 SBSHtmlCanvas >> navigationBarCollapse: aBlock [
 
 	^ self navigationBarCollapse with: aBlock
 ]
 
-{ #category : #'navigation bar' }
+{ #category : 'navigation bar' }
 SBSHtmlCanvas >> navigationBarNavigation [
 	"Provide a bootstrap navigation bar navigation."
 
@@ -1265,7 +1267,7 @@ SBSHtmlCanvas >> navigationBarNavigation [
 		class: 'navbar-nav'
 ]
 
-{ #category : #'navigation bar' }
+{ #category : 'navigation bar' }
 SBSHtmlCanvas >> navigationBarNavigation: aBlock [
 	"Provides an Bootstrap navigation bar navigation."
 
@@ -1273,30 +1275,30 @@ SBSHtmlCanvas >> navigationBarNavigation: aBlock [
 		with: aBlock
 ]
 
-{ #category : #'navigation bar' }
+{ #category : 'navigation bar' }
 SBSHtmlCanvas >> navigationBarToggler [
 
 	^ self brush: SBSNavbarTogglerTag new
 ]
 
-{ #category : #'navigation bar' }
+{ #category : 'navigation bar' }
 SBSHtmlCanvas >> navigationBarToggler: aBlock [
 
 	^self navigationBarToggler with: aBlock
 ]
 
-{ #category : #'navigation bar' }
+{ #category : 'navigation bar' }
 SBSHtmlCanvas >> navigationBarTogglerIcon [
 
 	^ self span class: 'navbar-toggler-icon'
 ]
 
-{ #category : #navigation }
+{ #category : 'navigation' }
 SBSHtmlCanvas >> navigationItem [
 	^self brush: SBSNavigationItemTag new
 ]
 
-{ #category : #navigation }
+{ #category : 'navigation' }
 SBSHtmlCanvas >> navigationItem: aBlock [
  	"Defines a Bootstrap Navigation item."
 
@@ -1304,12 +1306,12 @@ SBSHtmlCanvas >> navigationItem: aBlock [
 		with: aBlock
 ]
 
-{ #category : #navigation }
+{ #category : 'navigation' }
 SBSHtmlCanvas >> navigationLink [
 	^self brush: SBSNavigationLinkTag new
 ]
 
-{ #category : #navigation }
+{ #category : 'navigation' }
 SBSHtmlCanvas >> navigationLink: aBlock [
  	"Defines a Bootstrap Navigation link."
 
@@ -1317,13 +1319,13 @@ SBSHtmlCanvas >> navigationLink: aBlock [
 		with: aBlock
 ]
 
-{ #category : #navigation }
+{ #category : 'navigation' }
 SBSHtmlCanvas >> navigationList [
 	^self unorderedList
 		class: 'nav'
 ]
 
-{ #category : #navigation }
+{ #category : 'navigation' }
 SBSHtmlCanvas >> navigationList: aBlock [
  	"Defines a Bootstrap Navigation list."
 
@@ -1331,28 +1333,28 @@ SBSHtmlCanvas >> navigationList: aBlock [
 		with: aBlock
 ]
 
-{ #category : #pagination }
+{ #category : 'pagination' }
 SBSHtmlCanvas >> navigationTabs [
 	"Provide a Bootstrap navigation tabs container."
 
 	^ self brush: SBSNavigationTabTag new
 ]
 
-{ #category : #pagination }
+{ #category : 'pagination' }
 SBSHtmlCanvas >> navigationTabs: aRenderable [
 	"Provide a Bootstrap navigation tabs container."
 
 	^ self navigationTabs with: aRenderable
 ]
 
-{ #category : #buttons }
+{ #category : 'buttons' }
 SBSHtmlCanvas >> outlineButton [
 	"Defines a Bootstrap outline button."
 
 	^self brush: SBSOutlineButtonTag new
 ]
 
-{ #category : #buttons }
+{ #category : 'buttons' }
 SBSHtmlCanvas >> outlineButton: aBlock [
 	"Provides a Bootstrap outline button."
 
@@ -1360,14 +1362,14 @@ SBSHtmlCanvas >> outlineButton: aBlock [
 		with: aBlock
 ]
 
-{ #category : #pagination }
+{ #category : 'pagination' }
 SBSHtmlCanvas >> pageItem [
 	"Provide a bootstrap page item."
 
 	^ self brush: SBSPageItemTag new
 ]
 
-{ #category : #pagination }
+{ #category : 'pagination' }
 SBSHtmlCanvas >> pageItem: aBlock [
 	"Provides a Bootstrap page item."
 
@@ -1375,14 +1377,14 @@ SBSHtmlCanvas >> pageItem: aBlock [
 			with: aBlock
 ]
 
-{ #category : #pagination }
+{ #category : 'pagination' }
 SBSHtmlCanvas >> pageLink [
 	"Provide a bootstrap page link."
 
 	^ self brush: SBSPageLinkTag new
 ]
 
-{ #category : #pagination }
+{ #category : 'pagination' }
 SBSHtmlCanvas >> pageLink: aBlock [
 	"Provides a Bootstrap page link."
 
@@ -1390,14 +1392,14 @@ SBSHtmlCanvas >> pageLink: aBlock [
 			with: aBlock
 ]
 
-{ #category : #pagination }
+{ #category : 'pagination' }
 SBSHtmlCanvas >> pagination [
 	"Provide a bootstrap pagination."
 
 	^ self brush: SBSPaginationTag new
 ]
 
-{ #category : #pagination }
+{ #category : 'pagination' }
 SBSHtmlCanvas >> pagination: aBlock [
 	"Provides a Bootstrap pagination."
 
@@ -1405,14 +1407,14 @@ SBSHtmlCanvas >> pagination: aBlock [
 			with: aBlock
 ]
 
-{ #category : #progress }
+{ #category : 'progress' }
 SBSHtmlCanvas >> progress [
 	"Provide a bootstrap progress parent."
 
 	^ self brush: SBSProgressTag new
 ]
 
-{ #category : #progress }
+{ #category : 'progress' }
 SBSHtmlCanvas >> progress: aBlock [
 	"Provides a Bootstrap progress parent."
 
@@ -1420,14 +1422,14 @@ SBSHtmlCanvas >> progress: aBlock [
 			with: aBlock
 ]
 
-{ #category : #progress }
+{ #category : 'progress' }
 SBSHtmlCanvas >> progressBar [
 	"Provide a bootstrap progress bar."
 
 	^ self brush: SBSProgressBarTag new
 ]
 
-{ #category : #progress }
+{ #category : 'progress' }
 SBSHtmlCanvas >> progressBar: aBlock [
 	"Provides a Bootstrap progress bar."
 
@@ -1435,14 +1437,14 @@ SBSHtmlCanvas >> progressBar: aBlock [
 			with: aBlock
 ]
 
-{ #category : #'layout - positioning' }
+{ #category : 'layout - positioning' }
 SBSHtmlCanvas >> row [
 	"Provide a Bootstrap layout row"
 
 	^ self brush: SBSLayoutRowTag new
 ]
 
-{ #category : #'layout - positioning' }
+{ #category : 'layout - positioning' }
 SBSHtmlCanvas >> row: aBlock [
  	"Defines a Bootstrap layout row."
 
@@ -1450,28 +1452,28 @@ SBSHtmlCanvas >> row: aBlock [
 		with: aBlock
 ]
 
-{ #category : #listgroups }
+{ #category : 'listgroups' }
 SBSHtmlCanvas >> tabContent [
 	"Provide a Bootstrap tab content container."
 
 	^ self brush: SBSTabContentTag new
 ]
 
-{ #category : #listgroups }
+{ #category : 'listgroups' }
 SBSHtmlCanvas >> tabContent: aRenderable [
 	"Provide a Bootstrap tab content container with aRenderable as its content."
 
 	^ self tabContent with: aRenderable
 ]
 
-{ #category : #pagination }
+{ #category : 'pagination' }
 SBSHtmlCanvas >> tabPane [
 	"Provide a Bootstrap tab pane."
 
 	^ self brush: SBSTabPaneTag new
 ]
 
-{ #category : #pagination }
+{ #category : 'pagination' }
 SBSHtmlCanvas >> tabPane: aRenderable [
 	"Provide a Bootstrap tab pane with aRenderable within."
 

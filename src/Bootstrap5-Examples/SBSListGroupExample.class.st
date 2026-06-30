@@ -2,18 +2,20 @@
 Example for list groups
 "
 Class {
-	#name : #SBSListGroupExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSListGroupExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSListGroupExample class >> exampleName [
 
 	^'List group'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSListGroupExample >> renderExampleOn: html [
 	html heading level2 with: 'Basic example'.
 	html listGroup: [

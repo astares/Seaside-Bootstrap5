@@ -2,12 +2,14 @@
 Bootstrap Accordion Body
 "
 Class {
-	#name : #SBSAccordionBodyTag,
-	#superclass : #SBSGenericTag,
-	#category : #'Bootstrap5-Core-Base'
+	#name : 'SBSAccordionBodyTag',
+	#superclass : 'SBSGenericTag',
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSAccordionBodyTag >> defaultStyleClass [
 
 	^ 'accordion-body'

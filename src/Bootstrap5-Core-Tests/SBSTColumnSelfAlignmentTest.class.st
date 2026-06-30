@@ -2,12 +2,14 @@
 SUnit tests for SBSTColumnSelfAlignment
 "
 Class {
-	#name : #SBSTColumnSelfAlignmentTest,
-	#superclass : #SBSAbstractCanvasBrushTest,
-	#category : #'Bootstrap5-Core-Tests-Traits'
+	#name : 'SBSTColumnSelfAlignmentTest',
+	#superclass : 'SBSAbstractCanvasBrushTest',
+	#category : 'Bootstrap5-Core-Tests-Traits',
+	#package : 'Bootstrap5-Core-Tests',
+	#tag : 'Traits'
 }
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTColumnSelfAlignmentTest >> testEqualWidthColumnAlignCenter [
 
 	self
@@ -15,7 +17,7 @@ SBSTColumnSelfAlignmentTest >> testEqualWidthColumnAlignCenter [
 		gives: '<div class="col align-self-center"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTColumnSelfAlignmentTest >> testEqualWidthColumnAlignEnd [
 
 	self
@@ -23,7 +25,7 @@ SBSTColumnSelfAlignmentTest >> testEqualWidthColumnAlignEnd [
 		gives: '<div class="col align-self-end"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTColumnSelfAlignmentTest >> testEqualWidthColumnAlignStart [
 
 	self

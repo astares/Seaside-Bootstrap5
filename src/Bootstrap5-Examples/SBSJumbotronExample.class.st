@@ -2,25 +2,27 @@
 Jumbotron example
 "
 Class {
-	#name : #SBSJumbotronExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSJumbotronExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSJumbotronExample class >> exampleName [
 
 	^'Jumbotron'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSJumbotronExample >> renderExampleOn: html [
 
 	html jumbotron: [
 		html heading: 'Jumbotron' ]
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSJumbotronExample >> style [
 
 	^'.jumbotron {

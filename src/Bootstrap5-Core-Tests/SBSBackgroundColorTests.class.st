@@ -2,12 +2,14 @@
 Tests for specific background colors
 "
 Class {
-	#name : #SBSBackgroundColorTests,
-	#superclass : #SBSAbstractCanvasBrushTest,
-	#category : #'Bootstrap5-Core-Tests-Other'
+	#name : 'SBSBackgroundColorTests',
+	#superclass : 'SBSAbstractCanvasBrushTest',
+	#category : 'Bootstrap5-Core-Tests-Other',
+	#package : 'Bootstrap5-Core-Tests',
+	#tag : 'Other'
 }
 
-{ #category : #tests }
+{ #category : 'tests' }
 SBSBackgroundColorTests >> testDangerBackground [
 
 	self
@@ -15,7 +17,7 @@ SBSBackgroundColorTests >> testDangerBackground [
 		gives: '<div class="bg-danger"></div>'
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 SBSBackgroundColorTests >> testDarkBackground [
 
 	self
@@ -23,7 +25,7 @@ SBSBackgroundColorTests >> testDarkBackground [
 		gives: '<div class="bg-dark"></div>'
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 SBSBackgroundColorTests >> testInfoBackground [
 
 	self
@@ -31,7 +33,7 @@ SBSBackgroundColorTests >> testInfoBackground [
 		gives: '<div class="bg-info"></div>'
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 SBSBackgroundColorTests >> testLightBackground [
 
 	self
@@ -39,7 +41,7 @@ SBSBackgroundColorTests >> testLightBackground [
 		gives: '<div class="bg-light"></div>'
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 SBSBackgroundColorTests >> testPrimaryBackground [
 
 	self
@@ -47,7 +49,7 @@ SBSBackgroundColorTests >> testPrimaryBackground [
 		gives: '<div class="bg-primary"></div>'
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 SBSBackgroundColorTests >> testSecondaryBackground [
 
 	self
@@ -55,7 +57,7 @@ SBSBackgroundColorTests >> testSecondaryBackground [
 		gives: '<div class="bg-secondary"></div>'
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 SBSBackgroundColorTests >> testSuccessBackground [
 
 	self
@@ -63,7 +65,7 @@ SBSBackgroundColorTests >> testSuccessBackground [
 		gives: '<div class="bg-success"></div>'
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 SBSBackgroundColorTests >> testWarningBackground [
 
 	self
@@ -71,7 +73,7 @@ SBSBackgroundColorTests >> testWarningBackground [
 		gives: '<div class="bg-warning"></div>'
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 SBSBackgroundColorTests >> testWhiteBackground [
 
 	self

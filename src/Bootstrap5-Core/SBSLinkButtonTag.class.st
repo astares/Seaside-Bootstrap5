@@ -6,30 +6,31 @@ link button is be used when the button is to be placed with a form and the butto
 onclick() should perform expected functionality however callback: is used should be checked 
 "
 Class {
-	#name : #SBSLinkButtonTag,
-	#superclass : #SBSAnchorTag,
+	#name : 'SBSLinkButtonTag',
+	#superclass : 'SBSAnchorTag',
 	#traits : 'SBSTContextualStyled + SBSTSizeStyled',
 	#classTraits : 'SBSTContextualStyled classTrait + SBSTSizeStyled classTrait',
 	#instVars : [
 		'type'
 	],
-	#category : #'Bootstrap5-Core'
+	#category : 'Bootstrap5-Core',
+	#package : 'Bootstrap5-Core'
 }
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSLinkButtonTag >> defaultModifier [
 	"Subclasses may override to use a different modifier uses with the class style definitions"
 
 	^''
 ]
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSLinkButtonTag >> defaultStyleClass [
 
 	^'btn'
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 SBSLinkButtonTag >> initialize [
 
 	super initialize.

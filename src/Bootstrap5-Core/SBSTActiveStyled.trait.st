@@ -2,32 +2,34 @@
 Active or disabled
 "
 Trait {
-	#name : #SBSTActiveStyled,
+	#name : 'SBSTActiveStyled',
 	#instVars : [
 		'activeStyle'
 	],
-	#category : #'Bootstrap5-Core-Traits'
+	#category : 'Bootstrap5-Core-Traits',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Traits'
 }
 
-{ #category : #options }
+{ #category : 'options' }
 SBSTActiveStyled >> beActive [
 
 	self class: 'active'
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSTActiveStyled >> beActiveIf: aBoolean [
 
 	aBoolean value ifTrue: [ self beActive ]
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSTActiveStyled >> beDisabled [
 
 	self class: 'disabled'
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSTActiveStyled >> beDisabledIf: aBoolean [
 
 	aBoolean value ifTrue: [ self beDisabled ]

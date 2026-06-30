@@ -2,18 +2,20 @@
 Examples for breadcrumb
 "
 Class {
-	#name : #SBSBreadcrumbExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSBreadcrumbExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSBreadcrumbExample class >> exampleName [
 
 	^'Breadcrumb'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSBreadcrumbExample >> renderExampleOn: html [
 
 	html heading level2 with: 'Examples'.

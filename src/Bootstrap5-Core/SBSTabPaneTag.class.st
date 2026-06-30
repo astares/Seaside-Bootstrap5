@@ -2,20 +2,22 @@
 I'm a Bootstrap tab pane
 "
 Class {
-	#name : #SBSTabPaneTag,
-	#superclass : #SBSGenericTag,
+	#name : 'SBSTabPaneTag',
+	#superclass : 'SBSGenericTag',
 	#traits : 'SBSTActiveStyled',
 	#classTraits : 'SBSTActiveStyled classTrait',
-	#category : #'Bootstrap5-Core-Base'
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSTabPaneTag >> defaultStyleClass [
 
 	^'tab-pane'
 ]
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSTabPaneTag >> initialize [
 	super initialize.
 	self attributeAt: 'role' put: 'tabpanel'

@@ -2,18 +2,20 @@
 Badge example
 "
 Class {
-	#name : #SBSBadgeExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSBadgeExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSBadgeExample class >> exampleName [
 
 	^'Badge'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSBadgeExample >> renderExampleOn: html [
 	html heading level2 with: 'Examples'.
 	1 to: 6 do: [:x |

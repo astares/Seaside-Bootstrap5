@@ -2,18 +2,20 @@
 Example for dropdowns
 "
 Class {
-	#name : #SBSDropdownsExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSDropdownsExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSDropdownsExample class >> exampleName [
 
 	^'Dropdowns'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSDropdownsExample >> renderExampleOn: html [
 
  	html dropdown with: [

@@ -1,6 +1,6 @@
-Extension { #name : #WASelectTag }
+Extension { #name : 'WASelectTag' }
 
-{ #category : #'*Bootstrap5-Core' }
+{ #category : '*Bootstrap5-Core' }
 WASelectTag >> formControl [
 
 	self class: 'form-control'

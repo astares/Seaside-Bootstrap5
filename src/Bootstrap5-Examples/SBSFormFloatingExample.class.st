@@ -1,16 +1,18 @@
 Class {
-	#name : #SBSFormFloatingExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSFormFloatingExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSFormFloatingExample class >> exampleName [
 
 	^'Form (Floating Labels)'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSFormFloatingExample >> renderExampleOn: html [
 
 	| controlID |

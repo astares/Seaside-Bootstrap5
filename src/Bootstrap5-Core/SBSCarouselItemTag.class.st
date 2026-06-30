@@ -2,18 +2,20 @@
 A carousel item
 "
 Class {
-	#name : #SBSCarouselItemTag,
-	#superclass : #SBSGenericTag,
-	#category : #'Bootstrap5-Core-Base'
+	#name : 'SBSCarouselItemTag',
+	#superclass : 'SBSGenericTag',
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
-{ #category : #options }
+{ #category : 'options' }
 SBSCarouselItemTag >> active [
 
 	self class: 'active'
 ]
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSCarouselItemTag >> defaultStyleClass [
 
 	^'carousel-item'

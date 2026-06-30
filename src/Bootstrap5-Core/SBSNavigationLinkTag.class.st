@@ -2,37 +2,39 @@
 A navigation link
 "
 Class {
-	#name : #SBSNavigationLinkTag,
-	#superclass : #SBSAnchorTag,
+	#name : 'SBSNavigationLinkTag',
+	#superclass : 'SBSAnchorTag',
 	#traits : 'SBSTActiveStyled',
 	#classTraits : 'SBSTActiveStyled classTrait',
-	#category : #'Bootstrap5-Core-Base'
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
-{ #category : #options }
+{ #category : 'options' }
 SBSNavigationLinkTag >> beTab [
 
 	self attributeAt: 'role' put: 'tab'
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSNavigationLinkTag >> dataToggle: aString [
 	self attributeAt: 'data-bs-toggle' put: aString
 ]
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSNavigationLinkTag >> defaultStyleClass [
 
 	^'nav-link'
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSNavigationLinkTag >> dropdownToggle [
 
 	self class: 'dropdown-toggle'
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSNavigationLinkTag >> toggle: elementId [
 
 	self dataToggle: elementId.

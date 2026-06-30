@@ -2,101 +2,103 @@
 Abstract superclass for Bootstrap button tags
 "
 Class {
-	#name : #SBSButtonTag,
-	#superclass : #WAButtonTag,
+	#name : 'SBSButtonTag',
+	#superclass : 'WAButtonTag',
 	#traits : 'SBSTContextualStyled + SBSTSizeStyled',
 	#classTraits : 'SBSTContextualStyled classTrait + SBSTSizeStyled classTrait',
-	#category : #'Bootstrap5-Core-Base'
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
-{ #category : #testing }
+{ #category : 'testing' }
 SBSButtonTag class >> isAbstract [
 
 	^self name = #SBSButtonTag
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSButtonTag >> beActive [
 
 	self class: 'active'
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSButtonTag >> beActiveIf: aBoolean [
 
 	aBoolean value ifTrue: [ self beActive ]
 ]
 
-{ #category : #sizes }
+{ #category : 'sizes' }
 SBSButtonTag >> beBlock [
 	"Creates an extra small sized button."
 
 	self beBlockIf: true
 ]
 
-{ #category : #sizes }
+{ #category : 'sizes' }
 SBSButtonTag >> beBlockIf: aBlock [
 	"Creates an block sized button if aBlock is true."
 
 	self class: 'btn-block' if: aBlock
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSButtonTag >> beDisabled [
 
 	self disabled
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSButtonTag >> beDisabledIf: aBoolean [
 
 	aBoolean value ifTrue: [ self beDisabled ]
 ]
 
-{ #category : #callbacks }
+{ #category : 'callbacks' }
 SBSButtonTag >> cancelCallback: aBlock [
 
 	self name: (self storeCallback: (WACancelActionCallback on: aBlock))
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSButtonTag >> dataDismiss: aString [
 
 	self attributeAt: 'data-bs-dismiss' put: aString
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSButtonTag >> dataTarget: aString [
 
 	self attributeAt: 'data-bs-target' put: aString
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSButtonTag >> dataToggle: aString [
 
 	self attributeAt: 'data-bs-toggle' put: aString
 ]
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSButtonTag >> defaultModifier [
 	"Subclasses may override to use a different modifier uses with the class style definitions"
 
 	^''
 ]
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSButtonTag >> defaultStyleClass [
 
 	^'btn'
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSButtonTag >> dropdown [
 
 	self class: 'dropdown-toggle'
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSButtonTag >> dropdownSplitted [
 
 	self
@@ -104,7 +106,7 @@ SBSButtonTag >> dropdownSplitted [
 		class: 'dropdown-toggle-split'
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 SBSButtonTag >> initialize [
 	super initialize.
 	self resetType.
@@ -116,7 +118,7 @@ SBSButtonTag >> initialize [
 	self sizeStyle: self defaultStyleClass
 ]
 
-{ #category : #private }
+{ #category : 'private' }
 SBSButtonTag >> resetType [
 	type := nil
 ]

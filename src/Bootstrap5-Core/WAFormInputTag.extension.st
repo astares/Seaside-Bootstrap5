@@ -1,6 +1,6 @@
-Extension { #name : #WAFormInputTag }
+Extension { #name : 'WAFormInputTag' }
 
-{ #category : #'*Bootstrap5-Core' }
+{ #category : '*Bootstrap5-Core' }
 WAFormInputTag >> formControl [
 
 	self class: 'form-control'

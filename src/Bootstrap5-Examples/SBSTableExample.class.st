@@ -2,18 +2,20 @@
 Table example
 "
 Class {
-	#name : #SBSTableExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSTableExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSTableExample class >> exampleName [
 
 	^'Tables'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSTableExample >> renderExampleOn: html [
 
 	self renderTableOn: html usingStyle: 'table'.
@@ -34,7 +36,7 @@ SBSTableExample >> renderExampleOn: html [
 	self renderTableOn: html usingStyle: 'table table-dark table-hover table-striped'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSTableExample >> renderTableOn: html usingStyle: aStyle [
 
 	html table

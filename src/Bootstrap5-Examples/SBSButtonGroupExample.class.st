@@ -2,18 +2,20 @@
 Example for buttons groups
 "
 Class {
-	#name : #SBSButtonGroupExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSButtonGroupExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSButtonGroupExample class >> exampleName [
 
 	^'Button group'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSButtonGroupExample >> renderExampleOn: html [
 
 	html buttonGroup: [

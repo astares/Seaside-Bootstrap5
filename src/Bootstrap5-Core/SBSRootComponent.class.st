@@ -8,18 +8,20 @@ Anything you have to do is to
 - implement class side initialize to call #register
 "
 Class {
-	#name : #SBSRootComponent,
-	#superclass : #SBSComponent,
-	#category : #'Bootstrap5-Core-Component'
+	#name : 'SBSRootComponent',
+	#superclass : 'SBSComponent',
+	#category : 'Bootstrap5-Core-Component',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Component'
 }
 
-{ #category : #testing }
+{ #category : 'testing' }
 SBSRootComponent class >> canBeRoot [
 
 	^ true
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSRootComponent class >> contextRoot [
 	"Return a string representing the context root name (part of the URL) to access this
 	 component as a standalone application"
@@ -27,7 +29,7 @@ SBSRootComponent class >> contextRoot [
 	^self subclassResponsibility
 ]
 
-{ #category : #registration }
+{ #category : 'registration' }
 SBSRootComponent class >> register [
 
 	|app|

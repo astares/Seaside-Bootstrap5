@@ -2,18 +2,20 @@
 A boostrap form group
 "
 Class {
-	#name : #SBSFormGroupTag,
-	#superclass : #SBSGenericTag,
-	#category : #'Bootstrap5-Core-Base'
+	#name : 'SBSFormGroupTag',
+	#superclass : 'SBSGenericTag',
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSFormGroupTag >> defaultStyleClass [
 
 	^'form-group'
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSFormGroupTag >> formCheck [
 
 	self class: 'form-check'

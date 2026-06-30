@@ -2,18 +2,20 @@
 Color backgrounds examples
 "
 Class {
-	#name : #SBSColorBackgroundExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSColorBackgroundExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSColorBackgroundExample class >> exampleName [
 
 	^'Colors (background)'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSColorBackgroundExample >> renderExampleOn: html [
 	html div whiteText
 		with: [ html div primaryBackground with: 'Primary'.

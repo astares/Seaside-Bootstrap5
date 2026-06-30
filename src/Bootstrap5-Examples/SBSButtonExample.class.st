@@ -2,18 +2,20 @@
 Example to demonstrate buttons
 "
 Class {
-	#name : #SBSButtonExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSButtonExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSButtonExample class >> exampleName [
 
 	^'Buttons'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSButtonExample >> renderExampleOn: html [
 
 	html heading level2 with: 'Examples'.

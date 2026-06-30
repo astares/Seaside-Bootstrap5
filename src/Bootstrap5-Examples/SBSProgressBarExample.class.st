@@ -2,18 +2,20 @@
 Progress example
 "
 Class {
-	#name : #SBSProgressBarExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSProgressBarExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSProgressBarExample class >> exampleName [
 
 	^'Progress'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSProgressBarExample >> renderExampleOn: html [
 	html progress: [ html progressBar valueNow: 90 ].
 	html break.

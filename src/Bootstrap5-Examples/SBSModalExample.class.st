@@ -2,17 +2,19 @@
 Example of a Bootrap Modal
 "
 Class {
-	#name : #SBSModalExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSModalExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSModalExample class >> exampleName [
 	^'Modal'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSModalExample >> renderExampleOn: html [
 	html formButton
 		bePrimary;

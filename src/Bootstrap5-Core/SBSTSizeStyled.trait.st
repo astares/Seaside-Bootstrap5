@@ -2,48 +2,50 @@
 Size styled
 "
 Trait {
-	#name : #SBSTSizeStyled,
+	#name : 'SBSTSizeStyled',
 	#instVars : [
 		'sizeStyle'
 	],
-	#category : #'Bootstrap5-Core-Traits'
+	#category : 'Bootstrap5-Core-Traits',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Traits'
 }
 
-{ #category : #sizes }
+{ #category : 'sizes' }
 SBSTSizeStyled >> beLarge [
 	"Creates an large sized button."
 
 	self beLargeIf: true
 ]
 
-{ #category : #sizes }
+{ #category : 'sizes' }
 SBSTSizeStyled >> beLargeIf: aBlock [
 	"Creates an large sized widget if aBlock is true."
 
 	self class: sizeStyle, '-lg' if: aBlock
 ]
 
-{ #category : #sizes }
+{ #category : 'sizes' }
 SBSTSizeStyled >> beSmall [
 	"Creates an small sized button."
 
 	self beSmallIf: true
 ]
 
-{ #category : #sizes }
+{ #category : 'sizes' }
 SBSTSizeStyled >> beSmallIf: aBlock [
 	"Creates a small sized widget if aBlock' is true."
 
 	self class: sizeStyle, '-sm' if: aBlock
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSTSizeStyled >> sizeStyle [
 
 	^sizeStyle
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSTSizeStyled >> sizeStyle: aString [
 
 	sizeStyle := aString

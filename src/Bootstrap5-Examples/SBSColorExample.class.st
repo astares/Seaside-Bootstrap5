@@ -2,18 +2,20 @@
 A color example
 "
 Class {
-	#name : #SBSColorExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSColorExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSColorExample class >> exampleName [
 
 	^'Colors'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSColorExample >> renderExampleOn: html [
 
 	html paragraph primaryText with: 'Primary'.

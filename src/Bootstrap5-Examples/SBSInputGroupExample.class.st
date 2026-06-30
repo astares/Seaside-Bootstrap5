@@ -2,18 +2,20 @@
 Input group example 
 "
 Class {
-	#name : #SBSInputGroupExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSInputGroupExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSInputGroupExample class >> exampleName [
 
 	^'Input group'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSInputGroupExample >> renderExampleOn: html [
 
 	html inputGroup marginBottom: 3; with: [

@@ -2,18 +2,20 @@
 A progress, parent element of a progress bar
 "
 Class {
-	#name : #SBSProgressTag,
-	#superclass : #SBSGenericTag,
-	#category : #'Bootstrap5-Core-Base'
+	#name : 'SBSProgressTag',
+	#superclass : 'SBSGenericTag',
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSProgressTag >> defaultStyleClass [
 
 	^'progress'
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSProgressTag >> height: anInteger [
 
 	self style: ('height: {1}px;' format: { anInteger })

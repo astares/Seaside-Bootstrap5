@@ -2,24 +2,26 @@
 A common superclass for the bootstrap examples
 "
 Class {
-	#name : #SBSBootstrapExample,
-	#superclass : #WAComponent,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSBootstrapExample',
+	#superclass : 'WAComponent',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSBootstrapExample class >> exampleName [
 
 	^self subclassResponsibility
 ]
 
-{ #category : #testing }
+{ #category : 'testing' }
 SBSBootstrapExample class >> isAbstract [
 
 	^self name = #SBSBootstrapExample
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSBootstrapExample >> renderContentOn: html [
 
 	html containerFluid: [
@@ -33,19 +35,19 @@ SBSBootstrapExample >> renderContentOn: html [
 	SBSDeploymentLibrary addLoadScriptTo: html
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSBootstrapExample >> renderExampleOn: html [
 
 	self subclassResponsibility
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSBootstrapExample >> rendererClass [
 
 	^ SBSHtmlCanvas
 ]
 
-{ #category : #hooks }
+{ #category : 'hooks' }
 SBSBootstrapExample >> style [
 
 	^''

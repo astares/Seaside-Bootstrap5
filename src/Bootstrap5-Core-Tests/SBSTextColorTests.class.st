@@ -2,12 +2,14 @@
 Tests for text color extensions
 "
 Class {
-	#name : #SBSTextColorTests,
-	#superclass : #WAAbstractCanvasBrushTest,
-	#category : #'Bootstrap5-Core-Tests-Other'
+	#name : 'SBSTextColorTests',
+	#superclass : 'WAAbstractCanvasBrushTest',
+	#category : 'Bootstrap5-Core-Tests-Other',
+	#package : 'Bootstrap5-Core-Tests',
+	#tag : 'Other'
 }
 
-{ #category : #'tests - anchors' }
+{ #category : 'tests - anchors' }
 SBSTextColorTests >> testAnchorDangerText [
 
 	self
@@ -15,7 +17,7 @@ SBSTextColorTests >> testAnchorDangerText [
 		gives: '<a class="text-danger"></a>'
 ]
 
-{ #category : #'tests - anchors' }
+{ #category : 'tests - anchors' }
 SBSTextColorTests >> testAnchorDarkText [
 
 	self
@@ -23,7 +25,7 @@ SBSTextColorTests >> testAnchorDarkText [
 		gives: '<a class="text-dark"></a>'
 ]
 
-{ #category : #'tests - anchors' }
+{ #category : 'tests - anchors' }
 SBSTextColorTests >> testAnchorInfoText [
 
 	self
@@ -31,7 +33,7 @@ SBSTextColorTests >> testAnchorInfoText [
 		gives: '<a class="text-info"></a>'
 ]
 
-{ #category : #'tests - anchors' }
+{ #category : 'tests - anchors' }
 SBSTextColorTests >> testAnchorLightText [
 
 	self
@@ -39,7 +41,7 @@ SBSTextColorTests >> testAnchorLightText [
 		gives: '<a class="text-light"></a>'
 ]
 
-{ #category : #'tests - anchors' }
+{ #category : 'tests - anchors' }
 SBSTextColorTests >> testAnchorMutedText [
 
 	self
@@ -47,7 +49,7 @@ SBSTextColorTests >> testAnchorMutedText [
 		gives: '<a class="text-muted"></a>'
 ]
 
-{ #category : #'tests - anchors' }
+{ #category : 'tests - anchors' }
 SBSTextColorTests >> testAnchorPrimaryText [
 
 	self
@@ -55,7 +57,7 @@ SBSTextColorTests >> testAnchorPrimaryText [
 		gives: '<a class="text-primary"></a>'
 ]
 
-{ #category : #'tests - anchors' }
+{ #category : 'tests - anchors' }
 SBSTextColorTests >> testAnchorSecondaryText [
 
 	self
@@ -63,7 +65,7 @@ SBSTextColorTests >> testAnchorSecondaryText [
 		gives: '<a class="text-secondary"></a>'
 ]
 
-{ #category : #'tests - anchors' }
+{ #category : 'tests - anchors' }
 SBSTextColorTests >> testAnchorSuccessText [
 
 	self
@@ -71,7 +73,7 @@ SBSTextColorTests >> testAnchorSuccessText [
 		gives: '<a class="text-success"></a>'
 ]
 
-{ #category : #'tests - anchors' }
+{ #category : 'tests - anchors' }
 SBSTextColorTests >> testAnchorWarningText [
 
 	self
@@ -79,7 +81,7 @@ SBSTextColorTests >> testAnchorWarningText [
 		gives: '<a class="text-warning"></a>'
 ]
 
-{ #category : #'tests - anchors' }
+{ #category : 'tests - anchors' }
 SBSTextColorTests >> testAnchorWhiteText [
 
 	self
@@ -87,7 +89,7 @@ SBSTextColorTests >> testAnchorWhiteText [
 		gives: '<a class="text-white"></a>'
 ]
 
-{ #category : #'tests - headings' }
+{ #category : 'tests - headings' }
 SBSTextColorTests >> testHeadingDangerText [
 
 	self
@@ -95,7 +97,7 @@ SBSTextColorTests >> testHeadingDangerText [
 		gives: '<h1 class="text-danger"></h1>'
 ]
 
-{ #category : #'tests - headings' }
+{ #category : 'tests - headings' }
 SBSTextColorTests >> testHeadingDarkText [
 
 	self
@@ -103,7 +105,7 @@ SBSTextColorTests >> testHeadingDarkText [
 		gives: '<h1 class="text-dark"></h1>'
 ]
 
-{ #category : #'tests - headings' }
+{ #category : 'tests - headings' }
 SBSTextColorTests >> testHeadingInfoText [
 
 	self
@@ -111,7 +113,7 @@ SBSTextColorTests >> testHeadingInfoText [
 		gives: '<h1 class="text-info"></h1>'
 ]
 
-{ #category : #'tests - headings' }
+{ #category : 'tests - headings' }
 SBSTextColorTests >> testHeadingLightText [
 
 	self
@@ -119,7 +121,7 @@ SBSTextColorTests >> testHeadingLightText [
 		gives: '<h1 class="text-light"></h1>'
 ]
 
-{ #category : #'tests - headings' }
+{ #category : 'tests - headings' }
 SBSTextColorTests >> testHeadingMutedText [
 
 	self
@@ -127,7 +129,7 @@ SBSTextColorTests >> testHeadingMutedText [
 		gives: '<h1 class="text-muted"></h1>'
 ]
 
-{ #category : #'tests - headings' }
+{ #category : 'tests - headings' }
 SBSTextColorTests >> testHeadingPrimaryText [
 
 	self
@@ -135,7 +137,7 @@ SBSTextColorTests >> testHeadingPrimaryText [
 		gives: '<h1 class="text-primary"></h1>'
 ]
 
-{ #category : #'tests - headings' }
+{ #category : 'tests - headings' }
 SBSTextColorTests >> testHeadingSecondaryText [
 
 	self
@@ -143,7 +145,7 @@ SBSTextColorTests >> testHeadingSecondaryText [
 		gives: '<h1 class="text-secondary"></h1>'
 ]
 
-{ #category : #'tests - headings' }
+{ #category : 'tests - headings' }
 SBSTextColorTests >> testHeadingSuccessText [
 
 	self
@@ -151,7 +153,7 @@ SBSTextColorTests >> testHeadingSuccessText [
 		gives: '<h1 class="text-success"></h1>'
 ]
 
-{ #category : #'tests - headings' }
+{ #category : 'tests - headings' }
 SBSTextColorTests >> testHeadingWarningText [
 
 	self
@@ -159,7 +161,7 @@ SBSTextColorTests >> testHeadingWarningText [
 		gives: '<h1 class="text-warning"></h1>'
 ]
 
-{ #category : #'tests - anchors' }
+{ #category : 'tests - anchors' }
 SBSTextColorTests >> testHeadingWhiteText [
 
 	self
@@ -167,7 +169,7 @@ SBSTextColorTests >> testHeadingWhiteText [
 		gives: '<h1 class="text-white"></h1>'
 ]
 
-{ #category : #'tests - paragraphs' }
+{ #category : 'tests - paragraphs' }
 SBSTextColorTests >> testParagraphDangerText [
 
 	self
@@ -175,7 +177,7 @@ SBSTextColorTests >> testParagraphDangerText [
 		gives: '<p class="text-danger"></p>'
 ]
 
-{ #category : #'tests - paragraphs' }
+{ #category : 'tests - paragraphs' }
 SBSTextColorTests >> testParagraphDarkText [
 
 	self
@@ -183,7 +185,7 @@ SBSTextColorTests >> testParagraphDarkText [
 		gives: '<p class="text-dark"></p>'
 ]
 
-{ #category : #'tests - paragraphs' }
+{ #category : 'tests - paragraphs' }
 SBSTextColorTests >> testParagraphInfoText [
 
 	self
@@ -191,7 +193,7 @@ SBSTextColorTests >> testParagraphInfoText [
 		gives: '<p class="text-info"></p>'
 ]
 
-{ #category : #'tests - paragraphs' }
+{ #category : 'tests - paragraphs' }
 SBSTextColorTests >> testParagraphLightText [
 
 	self
@@ -199,7 +201,7 @@ SBSTextColorTests >> testParagraphLightText [
 		gives: '<p class="text-light"></p>'
 ]
 
-{ #category : #'tests - paragraphs' }
+{ #category : 'tests - paragraphs' }
 SBSTextColorTests >> testParagraphMutedText [
 
 	self
@@ -207,7 +209,7 @@ SBSTextColorTests >> testParagraphMutedText [
 		gives: '<p class="text-muted"></p>'
 ]
 
-{ #category : #'tests - paragraphs' }
+{ #category : 'tests - paragraphs' }
 SBSTextColorTests >> testParagraphPrimaryText [
 
 	self
@@ -215,7 +217,7 @@ SBSTextColorTests >> testParagraphPrimaryText [
 		gives: '<p class="text-primary"></p>'
 ]
 
-{ #category : #'tests - paragraphs' }
+{ #category : 'tests - paragraphs' }
 SBSTextColorTests >> testParagraphSecondaryText [
 
 	self
@@ -223,7 +225,7 @@ SBSTextColorTests >> testParagraphSecondaryText [
 		gives: '<p class="text-secondary"></p>'
 ]
 
-{ #category : #'tests - paragraphs' }
+{ #category : 'tests - paragraphs' }
 SBSTextColorTests >> testParagraphSuccessText [
 
 	self
@@ -231,7 +233,7 @@ SBSTextColorTests >> testParagraphSuccessText [
 		gives: '<p class="text-success"></p>'
 ]
 
-{ #category : #'tests - paragraphs' }
+{ #category : 'tests - paragraphs' }
 SBSTextColorTests >> testParagraphWarningText [
 
 	self
@@ -239,7 +241,7 @@ SBSTextColorTests >> testParagraphWarningText [
 		gives: '<p class="text-warning"></p>'
 ]
 
-{ #category : #'tests - paragraphs' }
+{ #category : 'tests - paragraphs' }
 SBSTextColorTests >> testParagraphWhiteText [
 
 	self

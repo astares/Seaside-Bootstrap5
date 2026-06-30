@@ -2,24 +2,26 @@
 Common superclass for link based boostrap tags
 "
 Class {
-	#name : #SBSAnchorTag,
-	#superclass : #WAAnchorTag,
-	#category : #'Bootstrap5-Core-Base'
+	#name : 'SBSAnchorTag',
+	#superclass : 'WAAnchorTag',
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
-{ #category : #testing }
+{ #category : 'testing' }
 SBSAnchorTag class >> isAbstract [
 
 	^self name = #SBSAnchorTag
 ]
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSAnchorTag >> defaultStyleClass [
 
 	^self subclassResponsibility
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 SBSAnchorTag >> initialize [
 	super initialize.
 	self class: self defaultStyleClass

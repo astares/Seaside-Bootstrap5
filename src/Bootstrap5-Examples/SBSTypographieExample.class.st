@@ -2,17 +2,19 @@
 Typographie example
 "
 Class {
-	#name : #SBSTypographieExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSTypographieExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSTypographieExample class >> exampleName [
 	^'Typographie'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSTypographieExample >> renderExampleOn: html [
 
 	1 to: 6 do: [:x |

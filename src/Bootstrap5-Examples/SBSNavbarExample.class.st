@@ -2,18 +2,20 @@
 Example for a Bootstrap navigation bar
 "
 Class {
-	#name : #SBSNavbarExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSNavbarExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSNavbarExample class >> exampleName [
 
 	^'Navbar'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSNavbarExample >> renderExampleOn: html [
 
 	| bar id|

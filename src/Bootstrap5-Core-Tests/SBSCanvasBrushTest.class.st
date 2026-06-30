@@ -2,12 +2,14 @@
 Tests for the Bootstrap brushes
 "
 Class {
-	#name : #SBSCanvasBrushTest,
-	#superclass : #SBSAbstractCanvasBrushTest,
-	#category : #'Bootstrap5-Core-Tests-Canvas'
+	#name : 'SBSCanvasBrushTest',
+	#superclass : 'SBSAbstractCanvasBrushTest',
+	#category : 'Bootstrap5-Core-Tests-Canvas',
+	#package : 'Bootstrap5-Core-Tests',
+	#tag : 'Canvas'
 }
 
-{ #category : #'tests - accordion' }
+{ #category : 'tests - accordion' }
 SBSCanvasBrushTest >> testAccordion [
 
 	self
@@ -15,7 +17,7 @@ SBSCanvasBrushTest >> testAccordion [
 		gives: '<div class="accordion"></div>'
 ]
 
-{ #category : #'tests - accordion' }
+{ #category : 'tests - accordion' }
 SBSCanvasBrushTest >> testAccordionBody [
 
 	self
@@ -23,7 +25,7 @@ SBSCanvasBrushTest >> testAccordionBody [
 		gives: '<div class="accordion-body"></div>'
 ]
 
-{ #category : #'tests - accordion' }
+{ #category : 'tests - accordion' }
 SBSCanvasBrushTest >> testAccordionBodyWithContent [
 
 	self
@@ -31,7 +33,7 @@ SBSCanvasBrushTest >> testAccordionBodyWithContent [
 		gives: '<div class="accordion-body">Bootstrap</div>'
 ]
 
-{ #category : #'tests - accordion' }
+{ #category : 'tests - accordion' }
 SBSCanvasBrushTest >> testAccordionButton [
 
 	self
@@ -39,7 +41,7 @@ SBSCanvasBrushTest >> testAccordionButton [
 		gives: '<button class="accordion-button"></button>'
 ]
 
-{ #category : #'tests - accordion' }
+{ #category : 'tests - accordion' }
 SBSCanvasBrushTest >> testAccordionButtonWithContent [
 
 	self
@@ -47,7 +49,7 @@ SBSCanvasBrushTest >> testAccordionButtonWithContent [
 		gives: '<button class="accordion-button">Bootstrap</button>'
 ]
 
-{ #category : #'tests - accordion' }
+{ #category : 'tests - accordion' }
 SBSCanvasBrushTest >> testAccordionCollapse [
 
 	self
@@ -55,7 +57,7 @@ SBSCanvasBrushTest >> testAccordionCollapse [
 		gives: '<div class="accordion-collapse"></div>'
 ]
 
-{ #category : #'tests - accordion' }
+{ #category : 'tests - accordion' }
 SBSCanvasBrushTest >> testAccordionCollapseWithContent [
 
 	self
@@ -63,7 +65,7 @@ SBSCanvasBrushTest >> testAccordionCollapseWithContent [
 		gives: '<div class="accordion-collapse">Bootstrap</div>'
 ]
 
-{ #category : #'tests - accordion' }
+{ #category : 'tests - accordion' }
 SBSCanvasBrushTest >> testAccordionHeading [
 
 	self
@@ -71,7 +73,7 @@ SBSCanvasBrushTest >> testAccordionHeading [
 		gives: '<h1 class="accordion-heading"></h1>'
 ]
 
-{ #category : #'tests - accordion' }
+{ #category : 'tests - accordion' }
 SBSCanvasBrushTest >> testAccordionHeadingWithContent [
 
 	self
@@ -79,7 +81,7 @@ SBSCanvasBrushTest >> testAccordionHeadingWithContent [
 		gives: '<h1 class="accordion-heading">Bootstrap</h1>'
 ]
 
-{ #category : #'tests - accordion' }
+{ #category : 'tests - accordion' }
 SBSCanvasBrushTest >> testAccordionItem [
 
 	self
@@ -87,7 +89,7 @@ SBSCanvasBrushTest >> testAccordionItem [
 		gives: '<div class="accordion-item"></div>'
 ]
 
-{ #category : #'tests - accordion' }
+{ #category : 'tests - accordion' }
 SBSCanvasBrushTest >> testAccordionItemWithContent [
 
 	self
@@ -95,7 +97,7 @@ SBSCanvasBrushTest >> testAccordionItemWithContent [
 		gives: '<div class="accordion-item">Bootstrap</div>'
 ]
 
-{ #category : #'tests - accordion' }
+{ #category : 'tests - accordion' }
 SBSCanvasBrushTest >> testAccordionWithContent [
 
 	self
@@ -103,7 +105,7 @@ SBSCanvasBrushTest >> testAccordionWithContent [
 		gives: '<div class="accordion">Bootstrap</div>'
 ]
 
-{ #category : #'tests - badges' }
+{ #category : 'tests - badges' }
 SBSCanvasBrushTest >> testActionBadge [
 
 	self
@@ -111,7 +113,7 @@ SBSCanvasBrushTest >> testActionBadge [
 		gives: '<a class="badge"></a>'
 ]
 
-{ #category : #'tests - badges - options' }
+{ #category : 'tests - badges - options' }
 SBSCanvasBrushTest >> testActionBadgeDanger [
 
 	self
@@ -119,7 +121,7 @@ SBSCanvasBrushTest >> testActionBadgeDanger [
 		gives: '<a class="badge badge-danger"></a>'
 ]
 
-{ #category : #'tests - badges - options' }
+{ #category : 'tests - badges - options' }
 SBSCanvasBrushTest >> testActionBadgeDark [
 
 	self
@@ -127,7 +129,7 @@ SBSCanvasBrushTest >> testActionBadgeDark [
 		gives: '<a class="badge badge-dark"></a>'
 ]
 
-{ #category : #'tests - badges - options' }
+{ #category : 'tests - badges - options' }
 SBSCanvasBrushTest >> testActionBadgeInfo [
 
 	self
@@ -135,7 +137,7 @@ SBSCanvasBrushTest >> testActionBadgeInfo [
 		gives: '<a class="badge badge-info"></a>'
 ]
 
-{ #category : #'tests - badges - options' }
+{ #category : 'tests - badges - options' }
 SBSCanvasBrushTest >> testActionBadgeLight [
 
 	self
@@ -143,7 +145,7 @@ SBSCanvasBrushTest >> testActionBadgeLight [
 		gives: '<a class="badge badge-light"></a>'
 ]
 
-{ #category : #'tests - badges - options' }
+{ #category : 'tests - badges - options' }
 SBSCanvasBrushTest >> testActionBadgePrimary [
 
 	self
@@ -151,7 +153,7 @@ SBSCanvasBrushTest >> testActionBadgePrimary [
 		gives: '<a class="badge badge-primary"></a>'
 ]
 
-{ #category : #'tests - badges - options' }
+{ #category : 'tests - badges - options' }
 SBSCanvasBrushTest >> testActionBadgeSecondary [
 
 	self
@@ -159,7 +161,7 @@ SBSCanvasBrushTest >> testActionBadgeSecondary [
 		gives: '<a class="badge badge-secondary"></a>'
 ]
 
-{ #category : #'tests - badges - options' }
+{ #category : 'tests - badges - options' }
 SBSCanvasBrushTest >> testActionBadgeSuccess [
 
 	self
@@ -167,7 +169,7 @@ SBSCanvasBrushTest >> testActionBadgeSuccess [
 		gives: '<a class="badge badge-success"></a>'
 ]
 
-{ #category : #'tests - badges - options' }
+{ #category : 'tests - badges - options' }
 SBSCanvasBrushTest >> testActionBadgeWarning [
 
 	self
@@ -175,7 +177,7 @@ SBSCanvasBrushTest >> testActionBadgeWarning [
 		gives: '<a class="badge badge-warning"></a>'
 ]
 
-{ #category : #'tests - badges' }
+{ #category : 'tests - badges' }
 SBSCanvasBrushTest >> testActionBadgeWithContent [
 
 	self
@@ -183,7 +185,7 @@ SBSCanvasBrushTest >> testActionBadgeWithContent [
 		gives: '<a class="badge">Bootstrap</a>'
 ]
 
-{ #category : #'tests - alerts' }
+{ #category : 'tests - alerts' }
 SBSCanvasBrushTest >> testAlert [
 
 	self
@@ -191,7 +193,7 @@ SBSCanvasBrushTest >> testAlert [
 		gives: '<div class="alert"></div>'
 ]
 
-{ #category : #'tests - alerts - options' }
+{ #category : 'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertDanger [
 
 	self
@@ -199,7 +201,7 @@ SBSCanvasBrushTest >> testAlertDanger [
 		gives: '<div class="alert alert-danger"></div>'
 ]
 
-{ #category : #'tests - alerts - options' }
+{ #category : 'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertDark [
 
 	self
@@ -207,7 +209,7 @@ SBSCanvasBrushTest >> testAlertDark [
 		gives: '<div class="alert alert-dark"></div>'
 ]
 
-{ #category : #'tests - alerts - options' }
+{ #category : 'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertDismissible [
 
 	self
@@ -215,7 +217,7 @@ SBSCanvasBrushTest >> testAlertDismissible [
 		gives: '<div class="alert alert-dismissible"></div>'
 ]
 
-{ #category : #'tests - alerts' }
+{ #category : 'tests - alerts' }
 SBSCanvasBrushTest >> testAlertHeading [
 
 	self
@@ -223,7 +225,7 @@ SBSCanvasBrushTest >> testAlertHeading [
 		gives: '<h1 class="alert-heading"></h1>'
 ]
 
-{ #category : #'tests - alerts' }
+{ #category : 'tests - alerts' }
 SBSCanvasBrushTest >> testAlertHeadingWithContent [
 
 	self
@@ -231,7 +233,7 @@ SBSCanvasBrushTest >> testAlertHeadingWithContent [
 		gives: '<h1 class="alert-heading">Bootstrap</h1>'
 ]
 
-{ #category : #'tests - alerts - options' }
+{ #category : 'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertInfo [
 
 	self
@@ -239,7 +241,7 @@ SBSCanvasBrushTest >> testAlertInfo [
 		gives: '<div class="alert alert-info"></div>'
 ]
 
-{ #category : #'tests - alerts - options' }
+{ #category : 'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertLight [
 
 	self
@@ -247,7 +249,7 @@ SBSCanvasBrushTest >> testAlertLight [
 		gives: '<div class="alert alert-light"></div>'
 ]
 
-{ #category : #'tests - alerts' }
+{ #category : 'tests - alerts' }
 SBSCanvasBrushTest >> testAlertLink [
 
 	self
@@ -255,7 +257,7 @@ SBSCanvasBrushTest >> testAlertLink [
 		gives: '<a class="alert-link"></a>'
 ]
 
-{ #category : #'tests - alerts' }
+{ #category : 'tests - alerts' }
 SBSCanvasBrushTest >> testAlertLinkWithContent [
 
 	self
@@ -263,7 +265,7 @@ SBSCanvasBrushTest >> testAlertLinkWithContent [
 		gives: '<a class="alert-link">Bootstrap</a>'
 ]
 
-{ #category : #'tests - alerts - options' }
+{ #category : 'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertPrimary [
 
 	self
@@ -271,7 +273,7 @@ SBSCanvasBrushTest >> testAlertPrimary [
 		gives: '<div class="alert alert-primary"></div>'
 ]
 
-{ #category : #'tests - alerts - options' }
+{ #category : 'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertSecondary [
 
 	self
@@ -279,7 +281,7 @@ SBSCanvasBrushTest >> testAlertSecondary [
 		gives: '<div class="alert alert-secondary"></div>'
 ]
 
-{ #category : #'tests - alerts - options' }
+{ #category : 'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertSuccess [
 
 	self
@@ -287,7 +289,7 @@ SBSCanvasBrushTest >> testAlertSuccess [
 		gives: '<div class="alert alert-success"></div>'
 ]
 
-{ #category : #'tests - alerts - options' }
+{ #category : 'tests - alerts - options' }
 SBSCanvasBrushTest >> testAlertWarning [
 
 	self
@@ -295,7 +297,7 @@ SBSCanvasBrushTest >> testAlertWarning [
 		gives: '<div class="alert alert-warning"></div>'
 ]
 
-{ #category : #'tests - alerts' }
+{ #category : 'tests - alerts' }
 SBSCanvasBrushTest >> testAlertWithContent [
 
 	self
@@ -303,7 +305,7 @@ SBSCanvasBrushTest >> testAlertWithContent [
 		gives: '<div class="alert">Bootstrap</div>'
 ]
 
-{ #category : #'tests - badges' }
+{ #category : 'tests - badges' }
 SBSCanvasBrushTest >> testBadge [
 
 	self
@@ -311,7 +313,7 @@ SBSCanvasBrushTest >> testBadge [
 		gives: '<span class="badge"></span>'
 ]
 
-{ #category : #'tests - badges - options' }
+{ #category : 'tests - badges - options' }
 SBSCanvasBrushTest >> testBadgeDanger [
 
 	self
@@ -319,7 +321,7 @@ SBSCanvasBrushTest >> testBadgeDanger [
 		gives: '<span class="badge bg-danger"></span>'
 ]
 
-{ #category : #'tests - badges - options' }
+{ #category : 'tests - badges - options' }
 SBSCanvasBrushTest >> testBadgeDark [
 
 	self
@@ -327,7 +329,7 @@ SBSCanvasBrushTest >> testBadgeDark [
 		gives: '<span class="badge bg-dark"></span>'
 ]
 
-{ #category : #'tests - badges - options' }
+{ #category : 'tests - badges - options' }
 SBSCanvasBrushTest >> testBadgeInfo [
 
 	self
@@ -335,7 +337,7 @@ SBSCanvasBrushTest >> testBadgeInfo [
 		gives: '<span class="badge bg-info"></span>'
 ]
 
-{ #category : #'tests - badges - options' }
+{ #category : 'tests - badges - options' }
 SBSCanvasBrushTest >> testBadgeLight [
 
 	self
@@ -343,7 +345,7 @@ SBSCanvasBrushTest >> testBadgeLight [
 		gives: '<span class="badge bg-light"></span>'
 ]
 
-{ #category : #'tests - badges - options' }
+{ #category : 'tests - badges - options' }
 SBSCanvasBrushTest >> testBadgePrimary [
 
 	self
@@ -351,7 +353,7 @@ SBSCanvasBrushTest >> testBadgePrimary [
 		gives: '<span class="badge bg-primary"></span>'
 ]
 
-{ #category : #'tests - badges - options' }
+{ #category : 'tests - badges - options' }
 SBSCanvasBrushTest >> testBadgeSecondary [
 
 	self
@@ -359,7 +361,7 @@ SBSCanvasBrushTest >> testBadgeSecondary [
 		gives: '<span class="badge bg-secondary"></span>'
 ]
 
-{ #category : #'tests - badges - options' }
+{ #category : 'tests - badges - options' }
 SBSCanvasBrushTest >> testBadgeSuccess [
 
 	self
@@ -367,7 +369,7 @@ SBSCanvasBrushTest >> testBadgeSuccess [
 		gives: '<span class="badge bg-success"></span>'
 ]
 
-{ #category : #'tests - badges - options' }
+{ #category : 'tests - badges - options' }
 SBSCanvasBrushTest >> testBadgeWarning [
 
 	self
@@ -375,7 +377,7 @@ SBSCanvasBrushTest >> testBadgeWarning [
 		gives: '<span class="badge bg-warning"></span>'
 ]
 
-{ #category : #'tests - badges' }
+{ #category : 'tests - badges' }
 SBSCanvasBrushTest >> testBadgeWithContent [
 
 	self
@@ -383,7 +385,7 @@ SBSCanvasBrushTest >> testBadgeWithContent [
 		gives: '<span class="badge">Bootstrap</span>'
 ]
 
-{ #category : #'tests - breadcrumb' }
+{ #category : 'tests - breadcrumb' }
 SBSCanvasBrushTest >> testBreadcrumb [
 
 	self
@@ -391,7 +393,7 @@ SBSCanvasBrushTest >> testBreadcrumb [
 		gives: '<ol class="breadcrumb"></ol>'
 ]
 
-{ #category : #'tests - breadcrumb' }
+{ #category : 'tests - breadcrumb' }
 SBSCanvasBrushTest >> testBreadcrumbItem [
 
 	self
@@ -399,7 +401,7 @@ SBSCanvasBrushTest >> testBreadcrumbItem [
 		gives: '<li class="breadcrumb-item"></li>'
 ]
 
-{ #category : #'tests - breadcrumb' }
+{ #category : 'tests - breadcrumb' }
 SBSCanvasBrushTest >> testBreadcrumbItemWithContent [
 
 	self
@@ -407,7 +409,7 @@ SBSCanvasBrushTest >> testBreadcrumbItemWithContent [
 		gives: '<li class="breadcrumb-item">Bootstrap</li>'
 ]
 
-{ #category : #'tests - breadcrumb' }
+{ #category : 'tests - breadcrumb' }
 SBSCanvasBrushTest >> testBreadcrumbWithContent [
 
 	self
@@ -415,7 +417,7 @@ SBSCanvasBrushTest >> testBreadcrumbWithContent [
 		gives: '<ol class="breadcrumb">Bootstrap</ol>'
 ]
 
-{ #category : #'tests - buttons' }
+{ #category : 'tests - buttons' }
 SBSCanvasBrushTest >> testButton [
 
 	self
@@ -423,7 +425,7 @@ SBSCanvasBrushTest >> testButton [
 		gives: '<button class="btn"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonActive [
 
 	self
@@ -431,7 +433,7 @@ SBSCanvasBrushTest >> testButtonActive [
 		gives: '<button class="btn active"></button>'
 ]
 
-{ #category : #'tests - buttons - sizes' }
+{ #category : 'tests - buttons - sizes' }
 SBSCanvasBrushTest >> testButtonBlock [
 
 	self
@@ -439,7 +441,7 @@ SBSCanvasBrushTest >> testButtonBlock [
 		gives: '<button class="btn btn-block"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonDanger [
 
 	self
@@ -447,7 +449,7 @@ SBSCanvasBrushTest >> testButtonDanger [
 		gives: '<button class="btn btn-danger"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonDark [
 
 	self
@@ -455,7 +457,7 @@ SBSCanvasBrushTest >> testButtonDark [
 		gives: '<button class="btn btn-dark"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonDataTarget [
 
 	self
@@ -463,7 +465,7 @@ SBSCanvasBrushTest >> testButtonDataTarget [
 		gives: '<button class="btn" data-bs-target="#bootstrap"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonDataToggle [
 
 	self
@@ -471,7 +473,7 @@ SBSCanvasBrushTest >> testButtonDataToggle [
 		gives: '<button class="btn" data-bs-toggle="#bootstrap"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonDisabled [
 
 	self
@@ -479,7 +481,7 @@ SBSCanvasBrushTest >> testButtonDisabled [
 		gives: '<button class="btn" disabled></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonDropdown [
 
 	self
@@ -487,7 +489,7 @@ SBSCanvasBrushTest >> testButtonDropdown [
 		gives: '<button class="btn dropdown-toggle"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonDropdownSplitted [
 
 	self
@@ -495,7 +497,7 @@ SBSCanvasBrushTest >> testButtonDropdownSplitted [
 		gives: '<button class="btn dropdown-toggle dropdown-toggle-split"></button>'
 ]
 
-{ #category : #'tests - buttongroups' }
+{ #category : 'tests - buttongroups' }
 SBSCanvasBrushTest >> testButtonGroup [
 
 	self
@@ -503,7 +505,7 @@ SBSCanvasBrushTest >> testButtonGroup [
 		gives: '<div class="btn-group"></div>'
 ]
 
-{ #category : #'tests - buttongroups - options' }
+{ #category : 'tests - buttongroups - options' }
 SBSCanvasBrushTest >> testButtonGroupAriaLabel [
 
 	self
@@ -511,7 +513,7 @@ SBSCanvasBrushTest >> testButtonGroupAriaLabel [
 		gives: '<div class="btn-group" aria-label="Bootstrap"></div>'
 ]
 
-{ #category : #'tests - buttongroups - options' }
+{ #category : 'tests - buttongroups - options' }
 SBSCanvasBrushTest >> testButtonGroupGroupRole [
 
 	self
@@ -519,7 +521,7 @@ SBSCanvasBrushTest >> testButtonGroupGroupRole [
 		gives: '<div class="btn-group" role="group"></div>'
 ]
 
-{ #category : #'tests - buttongroups - options' }
+{ #category : 'tests - buttongroups - options' }
 SBSCanvasBrushTest >> testButtonGroupLarge [
 
 	self
@@ -527,7 +529,7 @@ SBSCanvasBrushTest >> testButtonGroupLarge [
 		gives: '<div class="btn-group btn-group-lg"></div>'
 ]
 
-{ #category : #'tests - buttongroups - options' }
+{ #category : 'tests - buttongroups - options' }
 SBSCanvasBrushTest >> testButtonGroupSmall [
 
 	self
@@ -535,7 +537,7 @@ SBSCanvasBrushTest >> testButtonGroupSmall [
 		gives: '<div class="btn-group btn-group-sm"></div>'
 ]
 
-{ #category : #'tests - buttongroups - options' }
+{ #category : 'tests - buttongroups - options' }
 SBSCanvasBrushTest >> testButtonGroupToolbarRole [
 
 	self
@@ -543,7 +545,7 @@ SBSCanvasBrushTest >> testButtonGroupToolbarRole [
 		gives: '<div class="btn-group" role="toolbar"></div>'
 ]
 
-{ #category : #'tests - buttongroups' }
+{ #category : 'tests - buttongroups' }
 SBSCanvasBrushTest >> testButtonGroupVertical [
 
 	self
@@ -551,7 +553,7 @@ SBSCanvasBrushTest >> testButtonGroupVertical [
 		gives: '<div class="btn-group-vertical"></div>'
 ]
 
-{ #category : #'tests - buttongroups' }
+{ #category : 'tests - buttongroups' }
 SBSCanvasBrushTest >> testButtonGroupVerticalWithContent [
 
 	self
@@ -559,7 +561,7 @@ SBSCanvasBrushTest >> testButtonGroupVerticalWithContent [
 		gives: '<div class="btn-group-vertical">Bootstrap</div>'
 ]
 
-{ #category : #'tests - buttongroups' }
+{ #category : 'tests - buttongroups' }
 SBSCanvasBrushTest >> testButtonGroupWithContent [
 
 	self
@@ -567,7 +569,7 @@ SBSCanvasBrushTest >> testButtonGroupWithContent [
 		gives: '<div class="btn-group">Bootstrap</div>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonInfo [
 
 	self
@@ -575,7 +577,7 @@ SBSCanvasBrushTest >> testButtonInfo [
 		gives: '<button class="btn btn-info"></button>'
 ]
 
-{ #category : #'tests - buttons - sizes' }
+{ #category : 'tests - buttons - sizes' }
 SBSCanvasBrushTest >> testButtonLarge [
 
 	self
@@ -583,7 +585,7 @@ SBSCanvasBrushTest >> testButtonLarge [
 		gives: '<button class="btn btn-lg"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonLight [
 
 	self
@@ -591,7 +593,7 @@ SBSCanvasBrushTest >> testButtonLight [
 		gives: '<button class="btn btn-light"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonLink [
 
 	self
@@ -599,7 +601,7 @@ SBSCanvasBrushTest >> testButtonLink [
 		gives: '<button class="btn btn-link"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonPrimary [
 
 	self
@@ -607,7 +609,7 @@ SBSCanvasBrushTest >> testButtonPrimary [
 		gives: '<button class="btn btn-primary"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonSecondary [
 
 	self
@@ -615,7 +617,7 @@ SBSCanvasBrushTest >> testButtonSecondary [
 		gives: '<button class="btn btn-secondary"></button>'
 ]
 
-{ #category : #'tests - buttons - sizes' }
+{ #category : 'tests - buttons - sizes' }
 SBSCanvasBrushTest >> testButtonSmall [
 
 	self
@@ -623,7 +625,7 @@ SBSCanvasBrushTest >> testButtonSmall [
 		gives: '<button class="btn btn-sm"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonSuccess [
 
 	self
@@ -631,7 +633,7 @@ SBSCanvasBrushTest >> testButtonSuccess [
 		gives: '<button class="btn btn-success"></button>'
 ]
 
-{ #category : #'tests - buttontoolbar' }
+{ #category : 'tests - buttontoolbar' }
 SBSCanvasBrushTest >> testButtonToolbar [
 
 	self
@@ -639,7 +641,7 @@ SBSCanvasBrushTest >> testButtonToolbar [
 		gives: '<div class="btn-toolbar"></div>'
 ]
 
-{ #category : #'tests - buttontoolbar' }
+{ #category : 'tests - buttontoolbar' }
 SBSCanvasBrushTest >> testButtonToolbarWithContent [
 
 	self
@@ -647,7 +649,7 @@ SBSCanvasBrushTest >> testButtonToolbarWithContent [
 		gives: '<div class="btn-toolbar">Bootstrap</div>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testButtonWarning [
 
 	self
@@ -655,7 +657,7 @@ SBSCanvasBrushTest >> testButtonWarning [
 		gives: '<button class="btn btn-warning"></button>'
 ]
 
-{ #category : #'tests - buttons' }
+{ #category : 'tests - buttons' }
 SBSCanvasBrushTest >> testButtonWithContent [
 
 	self
@@ -663,7 +665,7 @@ SBSCanvasBrushTest >> testButtonWithContent [
 		gives: '<button class="btn">Bootstrap</button>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCard [
 
 	self
@@ -671,7 +673,7 @@ SBSCanvasBrushTest >> testCard [
 		gives: '<div class="card"></div>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardBody [
 
 	self
@@ -679,7 +681,7 @@ SBSCanvasBrushTest >> testCardBody [
 		gives: '<div class="card-body"></div>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardBodyWithContent [
 
 	self
@@ -687,7 +689,7 @@ SBSCanvasBrushTest >> testCardBodyWithContent [
 		gives: '<div class="card-body">Bootstrap</div>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardColumns [
 
 	self
@@ -695,7 +697,7 @@ SBSCanvasBrushTest >> testCardColumns [
 		gives: '<div class="card-columns"></div>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardColumnsWithContent [
 
 	self
@@ -703,7 +705,7 @@ SBSCanvasBrushTest >> testCardColumnsWithContent [
 		gives: '<div class="card-columns">Bootstrap</div>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardDeck [
 
 	self
@@ -711,7 +713,7 @@ SBSCanvasBrushTest >> testCardDeck [
 		gives: '<div class="card-deck"></div>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardDeckWithContent [
 
 	self
@@ -719,7 +721,7 @@ SBSCanvasBrushTest >> testCardDeckWithContent [
 		gives: '<div class="card-deck">Bootstrap</div>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardDirectCardBody [
 
 	self
@@ -727,7 +729,7 @@ SBSCanvasBrushTest >> testCardDirectCardBody [
 		gives: '<div class="card card-body"></div>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardDirectCardBodyWithContent [
 
 	self
@@ -735,7 +737,7 @@ SBSCanvasBrushTest >> testCardDirectCardBodyWithContent [
 		gives: '<div class="card card-body">Bootstrap</div>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardFooter [
 
 	self
@@ -743,7 +745,7 @@ SBSCanvasBrushTest >> testCardFooter [
 		gives: '<div class="card-footer"></div>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardFooterWithContent [
 
 	self
@@ -751,7 +753,7 @@ SBSCanvasBrushTest >> testCardFooterWithContent [
 		gives: '<div class="card-footer">Bootstrap</div>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardGroup [
 
 	self
@@ -759,7 +761,7 @@ SBSCanvasBrushTest >> testCardGroup [
 		gives: '<div class="card-group"></div>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardGroupWithContent [
 
 	self
@@ -767,7 +769,7 @@ SBSCanvasBrushTest >> testCardGroupWithContent [
 		gives: '<div class="card-group">Bootstrap</div>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardHeader [
 
 	self
@@ -775,7 +777,7 @@ SBSCanvasBrushTest >> testCardHeader [
 		gives: '<div class="card-header"></div>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardHeaderWithContent [
 
 	self
@@ -783,7 +785,7 @@ SBSCanvasBrushTest >> testCardHeaderWithContent [
 		gives: '<div class="card-header">Bootstrap</div>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardImage [
 
 	self
@@ -791,7 +793,7 @@ SBSCanvasBrushTest >> testCardImage [
 		gives: '<img alt="" class="card-img-top"/>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardImageBottom [
 
 	self
@@ -799,7 +801,7 @@ SBSCanvasBrushTest >> testCardImageBottom [
 		gives: '<img alt="" class="card-img-bottom"/>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardImageOverlay [
 
 	self
@@ -807,7 +809,7 @@ SBSCanvasBrushTest >> testCardImageOverlay [
 		gives: '<div class="card-img-overlay"></div>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardImageOverlayWithContent [
 
 	self
@@ -815,7 +817,7 @@ SBSCanvasBrushTest >> testCardImageOverlayWithContent [
 		gives: '<div class="card-img-overlay">Bootstrap</div>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardLink [
 
 	self
@@ -823,7 +825,7 @@ SBSCanvasBrushTest >> testCardLink [
 		gives: '<a class="card-link"></a>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardLinkWithContent [
 
 	self
@@ -831,7 +833,7 @@ SBSCanvasBrushTest >> testCardLinkWithContent [
 		gives: '<a class="card-link">Bootstrap</a>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardSubtitle [
 
 	self
@@ -839,7 +841,7 @@ SBSCanvasBrushTest >> testCardSubtitle [
 		gives: '<h1 class="card-subtitle"></h1>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardSubtitleWithContent [
 
 	self
@@ -847,7 +849,7 @@ SBSCanvasBrushTest >> testCardSubtitleWithContent [
 		gives: '<h1 class="card-subtitle">Bootstrap</h1>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardText [
 
 	self
@@ -855,7 +857,7 @@ SBSCanvasBrushTest >> testCardText [
 		gives: '<p class="card-text"></p>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardTextWithContent [
 
 	self
@@ -863,7 +865,7 @@ SBSCanvasBrushTest >> testCardTextWithContent [
 		gives: '<p class="card-text">Bootstrap</p>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardTitle [
 
 	self
@@ -871,7 +873,7 @@ SBSCanvasBrushTest >> testCardTitle [
 		gives: '<h1 class="card-title"></h1>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardTitleWithContent [
 
 	self
@@ -879,7 +881,7 @@ SBSCanvasBrushTest >> testCardTitleWithContent [
 		gives: '<h1 class="card-title">Bootstrap</h1>'
 ]
 
-{ #category : #'tests - cards' }
+{ #category : 'tests - cards' }
 SBSCanvasBrushTest >> testCardWithContent [
 
 	self
@@ -887,7 +889,7 @@ SBSCanvasBrushTest >> testCardWithContent [
 		gives: '<div class="card">Bootstrap</div>'
 ]
 
-{ #category : #'tests - carousel' }
+{ #category : 'tests - carousel' }
 SBSCanvasBrushTest >> testCarousel [
 
 	self
@@ -895,7 +897,7 @@ SBSCanvasBrushTest >> testCarousel [
 		gives: '<div class="carousel"></div>'
 ]
 
-{ #category : #'tests - carousel' }
+{ #category : 'tests - carousel' }
 SBSCanvasBrushTest >> testCarouselAutoplay [
 
 	self
@@ -903,7 +905,7 @@ SBSCanvasBrushTest >> testCarouselAutoplay [
 		gives: '<div class="carousel" data-bs-ride="carousel"></div>'
 ]
 
-{ #category : #'tests - carousel' }
+{ #category : 'tests - carousel' }
 SBSCanvasBrushTest >> testCarouselControlNext [
 
 	self
@@ -911,7 +913,7 @@ SBSCanvasBrushTest >> testCarouselControlNext [
 		gives: '<a class="carousel-control-next"></a>'
 ]
 
-{ #category : #'tests - carousel' }
+{ #category : 'tests - carousel' }
 SBSCanvasBrushTest >> testCarouselControlNextWithContent [
 
 	self
@@ -919,7 +921,7 @@ SBSCanvasBrushTest >> testCarouselControlNextWithContent [
 		gives: '<a class="carousel-control-next">Bootstrap</a>'
 ]
 
-{ #category : #'tests - carousel' }
+{ #category : 'tests - carousel' }
 SBSCanvasBrushTest >> testCarouselControlPrevious [
 
 	self
@@ -927,7 +929,7 @@ SBSCanvasBrushTest >> testCarouselControlPrevious [
 		gives: '<a class="carousel-control-prev"></a>'
 ]
 
-{ #category : #'tests - carousel' }
+{ #category : 'tests - carousel' }
 SBSCanvasBrushTest >> testCarouselControlPreviousWithContent [
 
 	self
@@ -935,7 +937,7 @@ SBSCanvasBrushTest >> testCarouselControlPreviousWithContent [
 		gives: '<a class="carousel-control-prev">Bootstrap</a>'
 ]
 
-{ #category : #'tests - carousel' }
+{ #category : 'tests - carousel' }
 SBSCanvasBrushTest >> testCarouselInner [
 
 	self
@@ -943,7 +945,7 @@ SBSCanvasBrushTest >> testCarouselInner [
 		gives: '<div class="carousel-inner"></div>'
 ]
 
-{ #category : #'tests - carousel' }
+{ #category : 'tests - carousel' }
 SBSCanvasBrushTest >> testCarouselInnerWithContent [
 
 	self
@@ -951,7 +953,7 @@ SBSCanvasBrushTest >> testCarouselInnerWithContent [
 		gives: '<div class="carousel-inner">Bootstrap</div>'
 ]
 
-{ #category : #'tests - carousel' }
+{ #category : 'tests - carousel' }
 SBSCanvasBrushTest >> testCarouselItem [
 
 	self
@@ -959,7 +961,7 @@ SBSCanvasBrushTest >> testCarouselItem [
 		gives: '<div class="carousel-item"></div>'
 ]
 
-{ #category : #'tests - carousel' }
+{ #category : 'tests - carousel' }
 SBSCanvasBrushTest >> testCarouselItemWithContent [
 
 	self
@@ -967,7 +969,7 @@ SBSCanvasBrushTest >> testCarouselItemWithContent [
 		gives: '<div class="carousel-item">Bootstrap</div>'
 ]
 
-{ #category : #'tests - carousel' }
+{ #category : 'tests - carousel' }
 SBSCanvasBrushTest >> testCarouselWithContent [
 
 	self
@@ -975,7 +977,7 @@ SBSCanvasBrushTest >> testCarouselWithContent [
 		gives: '<div class="carousel">Bootstrap</div>'
 ]
 
-{ #category : #'tests - buttons' }
+{ #category : 'tests - buttons' }
 SBSCanvasBrushTest >> testCloseButton [
 
 	self
@@ -983,7 +985,7 @@ SBSCanvasBrushTest >> testCloseButton [
 		gives: '<button class="btn-close"></button>'
 ]
 
-{ #category : #'tests - collapse' }
+{ #category : 'tests - collapse' }
 SBSCanvasBrushTest >> testCloseButtonWithContent [
 
 	self
@@ -991,7 +993,7 @@ SBSCanvasBrushTest >> testCloseButtonWithContent [
 		gives: '<button class="btn-close">Bootstrap</button>'
 ]
 
-{ #category : #'tests - collapse' }
+{ #category : 'tests - collapse' }
 SBSCanvasBrushTest >> testCollapse [
 
 	self
@@ -999,7 +1001,7 @@ SBSCanvasBrushTest >> testCollapse [
 		gives: '<div class="collapse"></div>'
 ]
 
-{ #category : #'tests - collapse - options' }
+{ #category : 'tests - collapse - options' }
 SBSCanvasBrushTest >> testCollapseShow [
 
 	self
@@ -1007,7 +1009,7 @@ SBSCanvasBrushTest >> testCollapseShow [
 		gives: '<div class="collapse show"></div>'
 ]
 
-{ #category : #'tests - collapse' }
+{ #category : 'tests - collapse' }
 SBSCanvasBrushTest >> testCollapseWithContent [
 
 	self
@@ -1015,7 +1017,7 @@ SBSCanvasBrushTest >> testCollapseWithContent [
 		gives: '<div class="collapse">Bootstrap</div>'
 ]
 
-{ #category : #'tests - layout' }
+{ #category : 'tests - layout' }
 SBSCanvasBrushTest >> testColumn [
 
 	self
@@ -1023,7 +1025,7 @@ SBSCanvasBrushTest >> testColumn [
 		gives: '<div></div>'
 ]
 
-{ #category : #'tests - layout - options' }
+{ #category : 'tests - layout - options' }
 SBSCanvasBrushTest >> testColumnExtraLargeSize [
 
 	self
@@ -1031,7 +1033,7 @@ SBSCanvasBrushTest >> testColumnExtraLargeSize [
 		gives: '<div class="col-xl-1"></div>'
 ]
 
-{ #category : #'tests - layout - options' }
+{ #category : 'tests - layout - options' }
 SBSCanvasBrushTest >> testColumnExtraLargeVariableWidth [
 
 	self
@@ -1039,7 +1041,7 @@ SBSCanvasBrushTest >> testColumnExtraLargeVariableWidth [
 		gives: '<div class="col-xl-auto"></div>'
 ]
 
-{ #category : #'tests - layout - options' }
+{ #category : 'tests - layout - options' }
 SBSCanvasBrushTest >> testColumnExtraSmallSize [
 
 	self
@@ -1047,7 +1049,7 @@ SBSCanvasBrushTest >> testColumnExtraSmallSize [
 		gives: '<div class="col-1"></div>'
 ]
 
-{ #category : #'tests - layout - options' }
+{ #category : 'tests - layout - options' }
 SBSCanvasBrushTest >> testColumnLargeSize [
 
 	self
@@ -1055,7 +1057,7 @@ SBSCanvasBrushTest >> testColumnLargeSize [
 		gives: '<div class="col-lg-1"></div>'
 ]
 
-{ #category : #'tests - layout - options' }
+{ #category : 'tests - layout - options' }
 SBSCanvasBrushTest >> testColumnLargeVariableWidth [
 
 	self
@@ -1063,7 +1065,7 @@ SBSCanvasBrushTest >> testColumnLargeVariableWidth [
 		gives: '<div class="col-lg-auto"></div>'
 ]
 
-{ #category : #'tests - layout' }
+{ #category : 'tests - layout' }
 SBSCanvasBrushTest >> testColumnMediumSize [
 
 	self
@@ -1071,7 +1073,7 @@ SBSCanvasBrushTest >> testColumnMediumSize [
 		gives: '<div class="col-md-2">Bootstrap</div>'
 ]
 
-{ #category : #'tests - layout - options' }
+{ #category : 'tests - layout - options' }
 SBSCanvasBrushTest >> testColumnMediumVariableWidth [
 
 	self
@@ -1079,7 +1081,7 @@ SBSCanvasBrushTest >> testColumnMediumVariableWidth [
 		gives: '<div class="col-md-auto"></div>'
 ]
 
-{ #category : #'tests - layout - options' }
+{ #category : 'tests - layout - options' }
 SBSCanvasBrushTest >> testColumnSmallSize [
 
 	self
@@ -1087,7 +1089,7 @@ SBSCanvasBrushTest >> testColumnSmallSize [
 		gives: '<div class="col-sm-1"></div>'
 ]
 
-{ #category : #'tests - layout - options' }
+{ #category : 'tests - layout - options' }
 SBSCanvasBrushTest >> testColumnSmallVariableWidth [
 
 	self
@@ -1095,7 +1097,7 @@ SBSCanvasBrushTest >> testColumnSmallVariableWidth [
 		gives: '<div class="col-sm-auto"></div>'
 ]
 
-{ #category : #'tests - layout - options' }
+{ #category : 'tests - layout - options' }
 SBSCanvasBrushTest >> testColumnVariableWidth [
 
 	self
@@ -1103,7 +1105,7 @@ SBSCanvasBrushTest >> testColumnVariableWidth [
 		gives: '<div class="col"></div>'
 ]
 
-{ #category : #'tests - layout' }
+{ #category : 'tests - layout' }
 SBSCanvasBrushTest >> testColumnWithContent [
 
 	self
@@ -1111,7 +1113,7 @@ SBSCanvasBrushTest >> testColumnWithContent [
 		gives: '<div>Bootstrap</div>'
 ]
 
-{ #category : #'tests - container' }
+{ #category : 'tests - container' }
 SBSCanvasBrushTest >> testContainer [
 
 	self
@@ -1119,7 +1121,7 @@ SBSCanvasBrushTest >> testContainer [
 		gives: '<div class="container"></div>'
 ]
 
-{ #category : #'tests - container' }
+{ #category : 'tests - container' }
 SBSCanvasBrushTest >> testContainerFluid [
 
 	self
@@ -1127,7 +1129,7 @@ SBSCanvasBrushTest >> testContainerFluid [
 		gives: '<div class="container-fluid"></div>'
 ]
 
-{ #category : #'tests - container' }
+{ #category : 'tests - container' }
 SBSCanvasBrushTest >> testContainerFluidWithContent [
 
 	self
@@ -1135,7 +1137,7 @@ SBSCanvasBrushTest >> testContainerFluidWithContent [
 		gives: '<div class="container-fluid">Bootstrap</div>'
 ]
 
-{ #category : #'tests - container' }
+{ #category : 'tests - container' }
 SBSCanvasBrushTest >> testContainerWithContent [
 
 	self
@@ -1143,7 +1145,7 @@ SBSCanvasBrushTest >> testContainerWithContent [
 		gives: '<div class="container">Bootstrap</div>'
 ]
 
-{ #category : #'tests - headings' }
+{ #category : 'tests - headings' }
 SBSCanvasBrushTest >> testDisplayHeading [
 
 	self
@@ -1151,7 +1153,7 @@ SBSCanvasBrushTest >> testDisplayHeading [
 		gives: '<h1 class="display-1"></h1>'
 ]
 
-{ #category : #'tests - dropdown' }
+{ #category : 'tests - dropdown' }
 SBSCanvasBrushTest >> testDropdown [
 
 	self
@@ -1159,7 +1161,7 @@ SBSCanvasBrushTest >> testDropdown [
 		gives: '<div class="dropdown"></div>'
 ]
 
-{ #category : #'tests - dropdown' }
+{ #category : 'tests - dropdown' }
 SBSCanvasBrushTest >> testDropdownDivider [
 
 	self
@@ -1167,7 +1169,7 @@ SBSCanvasBrushTest >> testDropdownDivider [
 		gives: '<div class="dropdown-divider"></div>'
 ]
 
-{ #category : #'tests - dropdown - options' }
+{ #category : 'tests - dropdown - options' }
 SBSCanvasBrushTest >> testDropdownDropLeft [
 
 	self
@@ -1175,7 +1177,7 @@ SBSCanvasBrushTest >> testDropdownDropLeft [
 		gives: '<div class="dropdown dropleft"></div>'
 ]
 
-{ #category : #'tests - dropdown - options' }
+{ #category : 'tests - dropdown - options' }
 SBSCanvasBrushTest >> testDropdownDropRight [
 
 	self
@@ -1183,7 +1185,7 @@ SBSCanvasBrushTest >> testDropdownDropRight [
 		gives: '<div class="dropdown dropright"></div>'
 ]
 
-{ #category : #'tests - dropdown' }
+{ #category : 'tests - dropdown' }
 SBSCanvasBrushTest >> testDropdownHeader [
 
 	self
@@ -1191,7 +1193,7 @@ SBSCanvasBrushTest >> testDropdownHeader [
 		gives: '<h1 class="dropdown-header"></h1>'
 ]
 
-{ #category : #'tests - dropdown' }
+{ #category : 'tests - dropdown' }
 SBSCanvasBrushTest >> testDropdownHeaderWithContent [
 
 	self
@@ -1199,7 +1201,7 @@ SBSCanvasBrushTest >> testDropdownHeaderWithContent [
 		gives: '<h1 class="dropdown-header">Bootstrap</h1>'
 ]
 
-{ #category : #'tests - dropdown' }
+{ #category : 'tests - dropdown' }
 SBSCanvasBrushTest >> testDropdownItem [
 
 	self
@@ -1207,7 +1209,7 @@ SBSCanvasBrushTest >> testDropdownItem [
 		gives: '<a class="dropdown-item"></a>'
 ]
 
-{ #category : #'tests - dropdown - options' }
+{ #category : 'tests - dropdown - options' }
 SBSCanvasBrushTest >> testDropdownItemActive [
 
 	self
@@ -1215,7 +1217,7 @@ SBSCanvasBrushTest >> testDropdownItemActive [
 		gives: '<a class="dropdown-item active"></a>'
 ]
 
-{ #category : #'tests - dropdown - options' }
+{ #category : 'tests - dropdown - options' }
 SBSCanvasBrushTest >> testDropdownItemDisabled [
 
 	self
@@ -1223,7 +1225,7 @@ SBSCanvasBrushTest >> testDropdownItemDisabled [
 		gives: '<a class="dropdown-item disabled"></a>'
 ]
 
-{ #category : #'tests - dropdown' }
+{ #category : 'tests - dropdown' }
 SBSCanvasBrushTest >> testDropdownItemWithContent [
 
 	self
@@ -1231,7 +1233,7 @@ SBSCanvasBrushTest >> testDropdownItemWithContent [
 		gives: '<a class="dropdown-item">Bootstrap</a>'
 ]
 
-{ #category : #'tests - dropdown' }
+{ #category : 'tests - dropdown' }
 SBSCanvasBrushTest >> testDropdownMenu [
 
 	self
@@ -1239,7 +1241,7 @@ SBSCanvasBrushTest >> testDropdownMenu [
 		gives: '<div class="dropdown-menu"></div>'
 ]
 
-{ #category : #'tests - dropdown' }
+{ #category : 'tests - dropdown' }
 SBSCanvasBrushTest >> testDropdownMenuDropRight [
 
 	self
@@ -1247,7 +1249,7 @@ SBSCanvasBrushTest >> testDropdownMenuDropRight [
 		gives: '<div class="dropdown-menu dropdown-menu-right"></div>'
 ]
 
-{ #category : #'tests - dropdown - options' }
+{ #category : 'tests - dropdown - options' }
 SBSCanvasBrushTest >> testDropdownShow [
 
 	self
@@ -1255,7 +1257,7 @@ SBSCanvasBrushTest >> testDropdownShow [
 		gives: '<div class="dropdown show"></div>'
 ]
 
-{ #category : #'tests - dropdown' }
+{ #category : 'tests - dropdown' }
 SBSCanvasBrushTest >> testDropdownWithContent [
 
 	self
@@ -1263,7 +1265,7 @@ SBSCanvasBrushTest >> testDropdownWithContent [
 		gives: '<div class="dropdown">Bootstrap</div>'
 ]
 
-{ #category : #'tests - dropdown' }
+{ #category : 'tests - dropdown' }
 SBSCanvasBrushTest >> testDropup [
 
 	self
@@ -1271,7 +1273,7 @@ SBSCanvasBrushTest >> testDropup [
 		gives: '<div class="dropup"></div>'
 ]
 
-{ #category : #'tests - dropdown' }
+{ #category : 'tests - dropdown' }
 SBSCanvasBrushTest >> testDropupWithContent [
 
 	self
@@ -1279,7 +1281,7 @@ SBSCanvasBrushTest >> testDropupWithContent [
 		gives: '<div class="dropup">Bootstrap</div>'
 ]
 
-{ #category : #'tests - layout' }
+{ #category : 'tests - layout' }
 SBSCanvasBrushTest >> testEqualWidthColumn [
 
 	self
@@ -1287,7 +1289,7 @@ SBSCanvasBrushTest >> testEqualWidthColumn [
 		gives: '<div class="col"></div>'
 ]
 
-{ #category : #'tests - layout' }
+{ #category : 'tests - layout' }
 SBSCanvasBrushTest >> testEqualWidthColumnWithContent [
 
 	self
@@ -1295,7 +1297,7 @@ SBSCanvasBrushTest >> testEqualWidthColumnWithContent [
 		gives: '<div class="col">Bootstrap</div>'
 ]
 
-{ #category : #'tests - layout' }
+{ #category : 'tests - layout' }
 SBSCanvasBrushTest >> testEqualWidthColumnsOnMultipleRows [
 
 	self
@@ -1303,7 +1305,7 @@ SBSCanvasBrushTest >> testEqualWidthColumnsOnMultipleRows [
 		gives: '<div class="w-100"></div>'
 ]
 
-{ #category : #'tests - typography' }
+{ #category : 'tests - typography' }
 SBSCanvasBrushTest >> testFontStylingOfHeading [
 
 	self
@@ -1311,7 +1313,7 @@ SBSCanvasBrushTest >> testFontStylingOfHeading [
 		gives: '<p class="h3"></p>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormCheckLabel [
 
 	self
@@ -1319,7 +1321,7 @@ SBSCanvasBrushTest >> testFormCheckLabel [
 		gives: '<label class="form-check-label"></label>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormCheckLabelWithContent [
 
 	self
@@ -1327,7 +1329,7 @@ SBSCanvasBrushTest >> testFormCheckLabelWithContent [
 		gives: '<label class="form-check-label">Bootstrap</label>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormCheckbox [
 
 	self
@@ -1335,7 +1337,7 @@ SBSCanvasBrushTest >> testFormCheckbox [
 		gives: '<input class="form-check-input" type="checkbox"/>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormCheckboxInline [
 
 	self
@@ -1343,7 +1345,7 @@ SBSCanvasBrushTest >> testFormCheckboxInline [
 		gives: '<div class="form-check-inline"></div>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormCheckboxInlineWithContent [
 
 	self
@@ -1351,7 +1353,7 @@ SBSCanvasBrushTest >> testFormCheckboxInlineWithContent [
 		gives: '<div class="form-check-inline">Bootstrap</div>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormCheckboxWithContent [
 
 	self
@@ -1359,7 +1361,7 @@ SBSCanvasBrushTest >> testFormCheckboxWithContent [
 		gives: '<input class="form-check-input" type="checkbox"/>Bootstrap'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormControl [
 
 	self
@@ -1367,7 +1369,7 @@ SBSCanvasBrushTest >> testFormControl [
 		gives: '<input class="form-control" type="text"/>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormControlOnSelect [
 
 	self
@@ -1375,7 +1377,7 @@ SBSCanvasBrushTest >> testFormControlOnSelect [
 		gives: '<select class="form-control"></select>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormControlOnTextArea [
 
 	self
@@ -1383,7 +1385,7 @@ SBSCanvasBrushTest >> testFormControlOnTextArea [
 		gives: '<textarea rows="auto" cols="auto" class="form-control"></textarea>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormFileUpload [
 
 	self
@@ -1391,7 +1393,7 @@ SBSCanvasBrushTest >> testFormFileUpload [
 		gives: '<input class="form-control-file" type="file"/>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormGroup [
 
 	self
@@ -1399,7 +1401,7 @@ SBSCanvasBrushTest >> testFormGroup [
 		gives: '<div class="form-group"></div>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormGroupCheck [
 
 	self
@@ -1407,7 +1409,7 @@ SBSCanvasBrushTest >> testFormGroupCheck [
 		gives: '<div class="form-group form-check"></div>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormGroupWithContent [
 
 	self
@@ -1415,7 +1417,7 @@ SBSCanvasBrushTest >> testFormGroupWithContent [
 		gives: '<div class="form-group">Bootstrap</div>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormInline [
 
 	self
@@ -1423,7 +1425,7 @@ SBSCanvasBrushTest >> testFormInline [
 		gives: '<form accept-charset="utf-8" method="post" action="/" class="form-inline"></form>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormMultiSelect [
 
 	self
@@ -1431,7 +1433,7 @@ SBSCanvasBrushTest >> testFormMultiSelect [
 		gives: '<select class="form-control" multiple></select>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormMultiSelectWithContent [
 
 	self
@@ -1439,7 +1441,7 @@ SBSCanvasBrushTest >> testFormMultiSelectWithContent [
 		gives: '<select class="form-control" multiple>Bootstrap</select>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormPasswordInput [
 
 	self
@@ -1447,7 +1449,7 @@ SBSCanvasBrushTest >> testFormPasswordInput [
 		gives: '<input class="form-control" type="password"/>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormPasswordInputWithContent [
 
 	self
@@ -1455,7 +1457,7 @@ SBSCanvasBrushTest >> testFormPasswordInputWithContent [
 		gives: '<input class="form-control" value="Bootstrap" type="password"/>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormPlainTextInput [
 
 	self
@@ -1463,7 +1465,7 @@ SBSCanvasBrushTest >> testFormPlainTextInput [
 		gives: '<input class="form-control-plaintext" type="text"/>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormRadiobutton [
 
 	self
@@ -1471,7 +1473,7 @@ SBSCanvasBrushTest >> testFormRadiobutton [
 		gives: '<input class="form-check-input" type="radio"/>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormRangeInput [
 
 	self
@@ -1479,7 +1481,7 @@ SBSCanvasBrushTest >> testFormRangeInput [
 		gives: '<input class="form-control-range" type="range"/>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormSelect [
 
 	self
@@ -1487,7 +1489,7 @@ SBSCanvasBrushTest >> testFormSelect [
 		gives: '<select class="form-select"></select>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormSelectWithContent [
 
 	self
@@ -1495,7 +1497,7 @@ SBSCanvasBrushTest >> testFormSelectWithContent [
 		gives: '<select class="form-select">Bootstrap</select>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormTextArea [
 
 	self
@@ -1503,7 +1505,7 @@ SBSCanvasBrushTest >> testFormTextArea [
 		gives: '<textarea rows="auto" cols="auto" class="form-control"></textarea>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormTextAreaWithContent [
 
 	self
@@ -1511,7 +1513,7 @@ SBSCanvasBrushTest >> testFormTextAreaWithContent [
 		gives: '<textarea rows="auto" cols="auto" class="form-control">Bootstrap</textarea>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormTextInput [
 
 	self
@@ -1519,7 +1521,7 @@ SBSCanvasBrushTest >> testFormTextInput [
 		gives: '<input class="form-control" type="text"/>'
 ]
 
-{ #category : #'tests - forms' }
+{ #category : 'tests - forms' }
 SBSCanvasBrushTest >> testFormTextInputWithContent [
 
 	self
@@ -1527,7 +1529,7 @@ SBSCanvasBrushTest >> testFormTextInputWithContent [
 		gives: '<input class="form-control" value="Bootstrap" type="text"/>'
 ]
 
-{ #category : #'tests - image - options' }
+{ #category : 'tests - image - options' }
 SBSCanvasBrushTest >> testImageCentered [
 
 	self
@@ -1535,7 +1537,7 @@ SBSCanvasBrushTest >> testImageCentered [
 		gives: '<img alt="" class="mx-auto d-block"/>'
 ]
 
-{ #category : #'tests - image - options' }
+{ #category : 'tests - image - options' }
 SBSCanvasBrushTest >> testImageCircle [
 
 	self
@@ -1543,7 +1545,7 @@ SBSCanvasBrushTest >> testImageCircle [
 		gives: '<img alt="" class="rounded-circle"/>'
 ]
 
-{ #category : #'tests - image - options' }
+{ #category : 'tests - image - options' }
 SBSCanvasBrushTest >> testImageFloatLeft [
 
 	self
@@ -1551,7 +1553,7 @@ SBSCanvasBrushTest >> testImageFloatLeft [
 		gives: '<img alt="" class="float-left"/>'
 ]
 
-{ #category : #'tests - image - options' }
+{ #category : 'tests - image - options' }
 SBSCanvasBrushTest >> testImageFloatRight [
 
 	self
@@ -1559,7 +1561,7 @@ SBSCanvasBrushTest >> testImageFloatRight [
 		gives: '<img alt="" class="float-right"/>'
 ]
 
-{ #category : #'tests - image' }
+{ #category : 'tests - image' }
 SBSCanvasBrushTest >> testImageFluid [
 
 	self
@@ -1567,7 +1569,7 @@ SBSCanvasBrushTest >> testImageFluid [
 		gives: '<img alt="" class="image-fluid"/>'
 ]
 
-{ #category : #'tests - image - options' }
+{ #category : 'tests - image - options' }
 SBSCanvasBrushTest >> testImageRounded [
 
 	self
@@ -1575,7 +1577,7 @@ SBSCanvasBrushTest >> testImageRounded [
 		gives: '<img alt="" class="rounded"/>'
 ]
 
-{ #category : #'tests - image - options' }
+{ #category : 'tests - image - options' }
 SBSCanvasBrushTest >> testImageThumbnail [
 
 	self
@@ -1583,7 +1585,7 @@ SBSCanvasBrushTest >> testImageThumbnail [
 		gives: '<img alt="" class="img-thumbnail"/>'
 ]
 
-{ #category : #'tests - inputgroup' }
+{ #category : 'tests - inputgroup' }
 SBSCanvasBrushTest >> testInputGroup [
 
 	self
@@ -1591,7 +1593,7 @@ SBSCanvasBrushTest >> testInputGroup [
 		gives: '<div class="input-group"></div>'
 ]
 
-{ #category : #'tests - inputgroup' }
+{ #category : 'tests - inputgroup' }
 SBSCanvasBrushTest >> testInputGroupAppend [
 
 	self
@@ -1599,7 +1601,7 @@ SBSCanvasBrushTest >> testInputGroupAppend [
 		gives: '<div class="input-group-append"></div>'
 ]
 
-{ #category : #'tests - inputgroup' }
+{ #category : 'tests - inputgroup' }
 SBSCanvasBrushTest >> testInputGroupAppendWithContent [
 
 	self
@@ -1607,7 +1609,7 @@ SBSCanvasBrushTest >> testInputGroupAppendWithContent [
 		gives: '<div class="input-group-append">Bootstrap</div>'
 ]
 
-{ #category : #'tests - inputgroup - options' }
+{ #category : 'tests - inputgroup - options' }
 SBSCanvasBrushTest >> testInputGroupLarge [
 
 	self
@@ -1615,7 +1617,7 @@ SBSCanvasBrushTest >> testInputGroupLarge [
 		gives: '<div class="input-group input-group-lg"></div>'
 ]
 
-{ #category : #'tests - inputgroup' }
+{ #category : 'tests - inputgroup' }
 SBSCanvasBrushTest >> testInputGroupPrepend [
 
 	self
@@ -1623,7 +1625,7 @@ SBSCanvasBrushTest >> testInputGroupPrepend [
 		gives: '<div class="input-group-prepend"></div>'
 ]
 
-{ #category : #'tests - inputgroup' }
+{ #category : 'tests - inputgroup' }
 SBSCanvasBrushTest >> testInputGroupPrependWithContent [
 
 	self
@@ -1631,7 +1633,7 @@ SBSCanvasBrushTest >> testInputGroupPrependWithContent [
 		gives: '<div class="input-group-prepend">Bootstrap</div>'
 ]
 
-{ #category : #'tests - inputgroup - options' }
+{ #category : 'tests - inputgroup - options' }
 SBSCanvasBrushTest >> testInputGroupSmall [
 
 	self
@@ -1639,7 +1641,7 @@ SBSCanvasBrushTest >> testInputGroupSmall [
 		gives: '<div class="input-group input-group-sm"></div>'
 ]
 
-{ #category : #'tests - inputgroup' }
+{ #category : 'tests - inputgroup' }
 SBSCanvasBrushTest >> testInputGroupText [
 
 	self
@@ -1647,7 +1649,7 @@ SBSCanvasBrushTest >> testInputGroupText [
 		gives: '<span class="input-group-text"></span>'
 ]
 
-{ #category : #'tests - inputgroup' }
+{ #category : 'tests - inputgroup' }
 SBSCanvasBrushTest >> testInputGroupTextWithContent [
 
 	self
@@ -1655,7 +1657,7 @@ SBSCanvasBrushTest >> testInputGroupTextWithContent [
 		gives: '<span class="input-group-text">Bootstrap</span>'
 ]
 
-{ #category : #'tests - inputgroup' }
+{ #category : 'tests - inputgroup' }
 SBSCanvasBrushTest >> testInputGroupWithContent [
 
 	self
@@ -1663,7 +1665,7 @@ SBSCanvasBrushTest >> testInputGroupWithContent [
 		gives: '<div class="input-group">Bootstrap</div>'
 ]
 
-{ #category : #'tests - jumbotron' }
+{ #category : 'tests - jumbotron' }
 SBSCanvasBrushTest >> testJumbotron [
 
 	self
@@ -1671,7 +1673,7 @@ SBSCanvasBrushTest >> testJumbotron [
 		gives: '<div class="jumbotron"></div>'
 ]
 
-{ #category : #'tests - jumbotron' }
+{ #category : 'tests - jumbotron' }
 SBSCanvasBrushTest >> testJumbotronWithContent [
 
 	self
@@ -1679,7 +1681,7 @@ SBSCanvasBrushTest >> testJumbotronWithContent [
 		gives: '<div class="jumbotron">Bootstrap</div>'
 ]
 
-{ #category : #'tests - listgroups' }
+{ #category : 'tests - listgroups' }
 SBSCanvasBrushTest >> testListGroup [
 
 	self
@@ -1687,7 +1689,7 @@ SBSCanvasBrushTest >> testListGroup [
 		gives: '<ul class="list-group"></ul>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupFlush [
 
 	self
@@ -1695,7 +1697,7 @@ SBSCanvasBrushTest >> testListGroupFlush [
 		gives: '<ul class="list-group list-group-flush"></ul>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupHorizontal [
 
 	self
@@ -1703,7 +1705,7 @@ SBSCanvasBrushTest >> testListGroupHorizontal [
 		gives: '<ul class="list-group list-group-horizontal"></ul>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupHorizontalLarge [
 
 	self
@@ -1711,7 +1713,7 @@ SBSCanvasBrushTest >> testListGroupHorizontalLarge [
 		gives: '<ul class="list-group list-group-horizontal-lg"></ul>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupHorizontalMedium [
 
 	self
@@ -1719,7 +1721,7 @@ SBSCanvasBrushTest >> testListGroupHorizontalMedium [
 		gives: '<ul class="list-group list-group-horizontal-md"></ul>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupHorizontalSmall [
 
 	self
@@ -1727,7 +1729,7 @@ SBSCanvasBrushTest >> testListGroupHorizontalSmall [
 		gives: '<ul class="list-group list-group-horizontal-sm"></ul>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupHorizontalVeryLarge [
 
 	self
@@ -1735,7 +1737,7 @@ SBSCanvasBrushTest >> testListGroupHorizontalVeryLarge [
 		gives: '<ul class="list-group list-group-horizontal-xl"></ul>'
 ]
 
-{ #category : #'tests - listgroups' }
+{ #category : 'tests - listgroups' }
 SBSCanvasBrushTest >> testListGroupItem [
 
 	self
@@ -1743,7 +1745,7 @@ SBSCanvasBrushTest >> testListGroupItem [
 		gives: '<li class="list-group-item"></li>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupItemActive [
 
 	self
@@ -1751,7 +1753,7 @@ SBSCanvasBrushTest >> testListGroupItemActive [
 		gives: '<li class="list-group-item active"></li>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupItemDanger [
 
 	self
@@ -1759,7 +1761,7 @@ SBSCanvasBrushTest >> testListGroupItemDanger [
 		gives: '<li class="list-group-item list-group-item-danger"></li>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupItemDark [
 
 	self
@@ -1767,7 +1769,7 @@ SBSCanvasBrushTest >> testListGroupItemDark [
 		gives: '<li class="list-group-item list-group-item-dark"></li>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupItemDisabled [
 
 	self
@@ -1775,7 +1777,7 @@ SBSCanvasBrushTest >> testListGroupItemDisabled [
 		gives: '<li class="list-group-item disabled"></li>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupItemFlexFill [
 
 	self
@@ -1783,7 +1785,7 @@ SBSCanvasBrushTest >> testListGroupItemFlexFill [
 		gives: '<li class="list-group-item flex-fill"></li>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupItemInfo [
 
 	self
@@ -1791,7 +1793,7 @@ SBSCanvasBrushTest >> testListGroupItemInfo [
 		gives: '<li class="list-group-item list-group-item-info"></li>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupItemLight [
 
 	self
@@ -1799,7 +1801,7 @@ SBSCanvasBrushTest >> testListGroupItemLight [
 		gives: '<li class="list-group-item list-group-item-light"></li>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupItemPrimary [
 
 	self
@@ -1807,7 +1809,7 @@ SBSCanvasBrushTest >> testListGroupItemPrimary [
 		gives: '<li class="list-group-item list-group-item-primary"></li>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupItemSecondary [
 
 	self
@@ -1815,7 +1817,7 @@ SBSCanvasBrushTest >> testListGroupItemSecondary [
 		gives: '<li class="list-group-item list-group-item-secondary"></li>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupItemSuccess [
 
 	self
@@ -1823,7 +1825,7 @@ SBSCanvasBrushTest >> testListGroupItemSuccess [
 		gives: '<li class="list-group-item list-group-item-success"></li>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupItemWarning [
 
 	self
@@ -1831,7 +1833,7 @@ SBSCanvasBrushTest >> testListGroupItemWarning [
 		gives: '<li class="list-group-item list-group-item-warning"></li>'
 ]
 
-{ #category : #'tests - listgroups' }
+{ #category : 'tests - listgroups' }
 SBSCanvasBrushTest >> testListGroupItemWithContent [
 
 	self
@@ -1839,7 +1841,7 @@ SBSCanvasBrushTest >> testListGroupItemWithContent [
 		gives: '<li class="list-group-item">Bootstrap</li>'
 ]
 
-{ #category : #'tests - listgroups' }
+{ #category : 'tests - listgroups' }
 SBSCanvasBrushTest >> testListGroupLinkedItem [
 
 	self
@@ -1847,7 +1849,7 @@ SBSCanvasBrushTest >> testListGroupLinkedItem [
 		gives: '<a class="list-group-item list-group-item-action"></a>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupLinkedItemActive [
 
 	self
@@ -1855,7 +1857,7 @@ SBSCanvasBrushTest >> testListGroupLinkedItemActive [
 		gives: '<a class="list-group-item list-group-item-action active"></a>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupLinkedItemDanger [
 
 	self
@@ -1863,7 +1865,7 @@ SBSCanvasBrushTest >> testListGroupLinkedItemDanger [
 		gives: '<a class="list-group-item list-group-item-action list-group-item-danger"></a>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupLinkedItemDark [
 
 	self
@@ -1871,7 +1873,7 @@ SBSCanvasBrushTest >> testListGroupLinkedItemDark [
 		gives: '<a class="list-group-item list-group-item-action list-group-item-dark"></a>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupLinkedItemDisabled [
 
 	self
@@ -1879,7 +1881,7 @@ SBSCanvasBrushTest >> testListGroupLinkedItemDisabled [
 		gives: '<a class="list-group-item list-group-item-action disabled"></a>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupLinkedItemInfo [
 
 	self
@@ -1887,7 +1889,7 @@ SBSCanvasBrushTest >> testListGroupLinkedItemInfo [
 		gives: '<a class="list-group-item list-group-item-action list-group-item-info"></a>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupLinkedItemLight [
 
 	self
@@ -1895,7 +1897,7 @@ SBSCanvasBrushTest >> testListGroupLinkedItemLight [
 		gives: '<a class="list-group-item list-group-item-action list-group-item-light"></a>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupLinkedItemPrimary [
 
 	self
@@ -1903,7 +1905,7 @@ SBSCanvasBrushTest >> testListGroupLinkedItemPrimary [
 		gives: '<a class="list-group-item list-group-item-action list-group-item-primary"></a>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupLinkedItemSecondary [
 
 	self
@@ -1911,7 +1913,7 @@ SBSCanvasBrushTest >> testListGroupLinkedItemSecondary [
 		gives: '<a class="list-group-item list-group-item-action list-group-item-secondary"></a>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupLinkedItemSuccess [
 
 	self
@@ -1919,7 +1921,7 @@ SBSCanvasBrushTest >> testListGroupLinkedItemSuccess [
 		gives: '<a class="list-group-item list-group-item-action list-group-item-success"></a>'
 ]
 
-{ #category : #'tests - listgroups - options' }
+{ #category : 'tests - listgroups - options' }
 SBSCanvasBrushTest >> testListGroupLinkedItemWarning [
 
 	self
@@ -1927,7 +1929,7 @@ SBSCanvasBrushTest >> testListGroupLinkedItemWarning [
 		gives: '<a class="list-group-item list-group-item-action list-group-item-warning"></a>'
 ]
 
-{ #category : #'tests - listgroups' }
+{ #category : 'tests - listgroups' }
 SBSCanvasBrushTest >> testListGroupLinkedItemWithContent [
 
 	self
@@ -1935,7 +1937,7 @@ SBSCanvasBrushTest >> testListGroupLinkedItemWithContent [
 		gives: '<a class="list-group-item list-group-item-action">Bootstrap</a>'
 ]
 
-{ #category : #'tests - listgroups' }
+{ #category : 'tests - listgroups' }
 SBSCanvasBrushTest >> testListGroupRemoveBorders [
 
 	self
@@ -1943,7 +1945,7 @@ SBSCanvasBrushTest >> testListGroupRemoveBorders [
 		gives: '<ul class="list-group list-group-flush"></ul>'
 ]
 
-{ #category : #'tests - listgroups' }
+{ #category : 'tests - listgroups' }
 SBSCanvasBrushTest >> testListGroupWithContent [
 
 	self
@@ -1951,7 +1953,7 @@ SBSCanvasBrushTest >> testListGroupWithContent [
 		gives: '<ul class="list-group">Bootstrap</ul>'
 ]
 
-{ #category : #'tests - spacing' }
+{ #category : 'tests - spacing' }
 SBSCanvasBrushTest >> testMarginBottom [
 
 	self
@@ -1959,7 +1961,7 @@ SBSCanvasBrushTest >> testMarginBottom [
 		gives: '<div class="mb-3"></div>'
 ]
 
-{ #category : #'tests - spacing' }
+{ #category : 'tests - spacing' }
 SBSCanvasBrushTest >> testMarginLeft [
 
 	self
@@ -1967,7 +1969,7 @@ SBSCanvasBrushTest >> testMarginLeft [
 		gives: '<div class="ml-3"></div>'
 ]
 
-{ #category : #'tests - spacing' }
+{ #category : 'tests - spacing' }
 SBSCanvasBrushTest >> testMarginLeftAndRight [
 
 	self
@@ -1975,7 +1977,7 @@ SBSCanvasBrushTest >> testMarginLeftAndRight [
 		gives: '<div class="mx-3"></div>'
 ]
 
-{ #category : #'tests - spacing' }
+{ #category : 'tests - spacing' }
 SBSCanvasBrushTest >> testMarginRight [
 
 	self
@@ -1983,7 +1985,7 @@ SBSCanvasBrushTest >> testMarginRight [
 		gives: '<div class="mr-3"></div>'
 ]
 
-{ #category : #'tests - spacing' }
+{ #category : 'tests - spacing' }
 SBSCanvasBrushTest >> testMarginTop [
 
 	self
@@ -1991,7 +1993,7 @@ SBSCanvasBrushTest >> testMarginTop [
 		gives: '<div class="mt-3"></div>'
 ]
 
-{ #category : #'tests - spacing' }
+{ #category : 'tests - spacing' }
 SBSCanvasBrushTest >> testMarginTopAndBottom [
 
 	self
@@ -1999,7 +2001,7 @@ SBSCanvasBrushTest >> testMarginTopAndBottom [
 		gives: '<div class="my-3"></div>'
 ]
 
-{ #category : #'tests - modal' }
+{ #category : 'tests - modal' }
 SBSCanvasBrushTest >> testModal [
 
 	self
@@ -2007,7 +2009,7 @@ SBSCanvasBrushTest >> testModal [
 		gives: '<div class="modal" tabindex="-1" role="dialog"></div>'
 ]
 
-{ #category : #'tests - modal' }
+{ #category : 'tests - modal' }
 SBSCanvasBrushTest >> testModalBody [
 
 	self
@@ -2015,7 +2017,7 @@ SBSCanvasBrushTest >> testModalBody [
 		gives: '<div class="modal-body"></div>'
 ]
 
-{ #category : #'tests - modal' }
+{ #category : 'tests - modal' }
 SBSCanvasBrushTest >> testModalBodyWithContent [
 
 	self
@@ -2023,7 +2025,7 @@ SBSCanvasBrushTest >> testModalBodyWithContent [
 		gives: '<div class="modal-body">Bootstrap</div>'
 ]
 
-{ #category : #'tests - modal' }
+{ #category : 'tests - modal' }
 SBSCanvasBrushTest >> testModalCloseButton [
 
 	self
@@ -2031,7 +2033,7 @@ SBSCanvasBrushTest >> testModalCloseButton [
 		gives: '<button class="btn-close" data-bs-dismiss="modal">&times;</button>'
 ]
 
-{ #category : #'tests - modal' }
+{ #category : 'tests - modal' }
 SBSCanvasBrushTest >> testModalContent [
 
 	self
@@ -2039,7 +2041,7 @@ SBSCanvasBrushTest >> testModalContent [
 		gives: '<div class="modal-content"></div>'
 ]
 
-{ #category : #'tests - modal' }
+{ #category : 'tests - modal' }
 SBSCanvasBrushTest >> testModalContentWithContent [
 
 	self
@@ -2047,7 +2049,7 @@ SBSCanvasBrushTest >> testModalContentWithContent [
 		gives: '<div class="modal-content">Bootstrap</div>'
 ]
 
-{ #category : #'tests - modal' }
+{ #category : 'tests - modal' }
 SBSCanvasBrushTest >> testModalDialog [
 
 	self
@@ -2055,14 +2057,14 @@ SBSCanvasBrushTest >> testModalDialog [
 		gives: '<div class="modal-dialog" role="document"></div>'
 ]
 
-{ #category : #'tests - modal - options' }
+{ #category : 'tests - modal - options' }
 SBSCanvasBrushTest >> testModalDialogCentered [
 	self
 		assert: [ :html | html modalDialog beCentered ]
 		gives: '<div class="modal-dialog modal-dialog-centered" role="document"></div>'
 ]
 
-{ #category : #'tests - modal' }
+{ #category : 'tests - modal' }
 SBSCanvasBrushTest >> testModalDialogWithContent [
 
 	self
@@ -2070,7 +2072,7 @@ SBSCanvasBrushTest >> testModalDialogWithContent [
 		gives: '<div class="modal-dialog" role="document">Bootstrap</div>'
 ]
 
-{ #category : #'tests - modal - options' }
+{ #category : 'tests - modal - options' }
 SBSCanvasBrushTest >> testModalFade [
 
 	self
@@ -2078,7 +2080,7 @@ SBSCanvasBrushTest >> testModalFade [
 		gives: '<div class="modal fade" tabindex="-1" role="dialog"></div>'
 ]
 
-{ #category : #'tests - modal' }
+{ #category : 'tests - modal' }
 SBSCanvasBrushTest >> testModalFooter [
 
 	self
@@ -2086,7 +2088,7 @@ SBSCanvasBrushTest >> testModalFooter [
 		gives: '<div class="modal-footer"></div>'
 ]
 
-{ #category : #'tests - modal' }
+{ #category : 'tests - modal' }
 SBSCanvasBrushTest >> testModalFooterWithContent [
 
 	self
@@ -2094,7 +2096,7 @@ SBSCanvasBrushTest >> testModalFooterWithContent [
 		gives: '<div class="modal-footer">Bootstrap</div>'
 ]
 
-{ #category : #'tests - modal' }
+{ #category : 'tests - modal' }
 SBSCanvasBrushTest >> testModalHeader [
 
 	self
@@ -2102,7 +2104,7 @@ SBSCanvasBrushTest >> testModalHeader [
 		gives: '<div class="modal-header"></div>'
 ]
 
-{ #category : #'tests - modal' }
+{ #category : 'tests - modal' }
 SBSCanvasBrushTest >> testModalHeaderWithContent [
 
 	self
@@ -2110,7 +2112,7 @@ SBSCanvasBrushTest >> testModalHeaderWithContent [
 		gives: '<div class="modal-header">Bootstrap</div>'
 ]
 
-{ #category : #'tests - modal' }
+{ #category : 'tests - modal' }
 SBSCanvasBrushTest >> testModalTitle [
 
 	self
@@ -2118,7 +2120,7 @@ SBSCanvasBrushTest >> testModalTitle [
 		gives: '<h1 class="modal-title"></h1>'
 ]
 
-{ #category : #'tests - modal' }
+{ #category : 'tests - modal' }
 SBSCanvasBrushTest >> testModalTitleWithContent [
 
 	self
@@ -2126,7 +2128,7 @@ SBSCanvasBrushTest >> testModalTitleWithContent [
 		gives: '<h1 class="modal-title">Bootstrap</h1>'
 ]
 
-{ #category : #'tests - modal' }
+{ #category : 'tests - modal' }
 SBSCanvasBrushTest >> testModalWithContent [
 
 	self
@@ -2134,7 +2136,7 @@ SBSCanvasBrushTest >> testModalWithContent [
 		gives: '<div class="modal" tabindex="-1" role="dialog">Bootstrap</div>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : 'tests - navigation' }
 SBSCanvasBrushTest >> testNav [
 
 	self
@@ -2142,7 +2144,7 @@ SBSCanvasBrushTest >> testNav [
 		gives: '<nav></nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : 'tests - navigation' }
 SBSCanvasBrushTest >> testNavWithContent [
 
 	self
@@ -2150,7 +2152,7 @@ SBSCanvasBrushTest >> testNavWithContent [
 		gives: '<nav>Bootstrap</nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : 'tests - navigation' }
 SBSCanvasBrushTest >> testNavigation [
 
 	self
@@ -2158,7 +2160,7 @@ SBSCanvasBrushTest >> testNavigation [
 		gives: '<nav class="nav"></nav>'
 ]
 
-{ #category : #'tests - navigation bar' }
+{ #category : 'tests - navigation bar' }
 SBSCanvasBrushTest >> testNavigationBar [
 
 	self
@@ -2166,7 +2168,7 @@ SBSCanvasBrushTest >> testNavigationBar [
 		gives: '<nav class="navbar"></nav>'
 ]
 
-{ #category : #'tests - navigation bar - backgrounds' }
+{ #category : 'tests - navigation bar - backgrounds' }
 SBSCanvasBrushTest >> testNavigationBarBackgroundColor [
 
 	self
@@ -2174,7 +2176,7 @@ SBSCanvasBrushTest >> testNavigationBarBackgroundColor [
 		gives: '<nav class="navbar" style="background-color: #ffffff"></nav>'
 ]
 
-{ #category : #'tests - navigation bar - backgrounds' }
+{ #category : 'tests - navigation bar - backgrounds' }
 SBSCanvasBrushTest >> testNavigationBarBackgroundColorString [
 
 	self
@@ -2182,7 +2184,7 @@ SBSCanvasBrushTest >> testNavigationBarBackgroundColorString [
 		gives: '<nav class="navbar" style="background-color: #ffffce"></nav>'
 ]
 
-{ #category : #'tests - navigation bar - backgrounds' }
+{ #category : 'tests - navigation bar - backgrounds' }
 SBSCanvasBrushTest >> testNavigationBarBackgroundDanger [
 
 	self
@@ -2190,7 +2192,7 @@ SBSCanvasBrushTest >> testNavigationBarBackgroundDanger [
 		gives: '<nav class="navbar bg-danger"></nav>'
 ]
 
-{ #category : #'tests - navigation bar - backgrounds' }
+{ #category : 'tests - navigation bar - backgrounds' }
 SBSCanvasBrushTest >> testNavigationBarBackgroundDark [
 
 	self
@@ -2198,7 +2200,7 @@ SBSCanvasBrushTest >> testNavigationBarBackgroundDark [
 		gives: '<nav class="navbar bg-dark"></nav>'
 ]
 
-{ #category : #'tests - navigation bar - backgrounds' }
+{ #category : 'tests - navigation bar - backgrounds' }
 SBSCanvasBrushTest >> testNavigationBarBackgroundInfo [
 
 	self
@@ -2206,7 +2208,7 @@ SBSCanvasBrushTest >> testNavigationBarBackgroundInfo [
 		gives: '<nav class="navbar bg-info"></nav>'
 ]
 
-{ #category : #'tests - navigation bar - backgrounds' }
+{ #category : 'tests - navigation bar - backgrounds' }
 SBSCanvasBrushTest >> testNavigationBarBackgroundLight [
 
 	self
@@ -2214,7 +2216,7 @@ SBSCanvasBrushTest >> testNavigationBarBackgroundLight [
 		gives: '<nav class="navbar bg-light"></nav>'
 ]
 
-{ #category : #'tests - navigation bar - backgrounds' }
+{ #category : 'tests - navigation bar - backgrounds' }
 SBSCanvasBrushTest >> testNavigationBarBackgroundPrimary [
 
 	self
@@ -2222,7 +2224,7 @@ SBSCanvasBrushTest >> testNavigationBarBackgroundPrimary [
 		gives: '<nav class="navbar bg-primary"></nav>'
 ]
 
-{ #category : #'tests - navigation bar - backgrounds' }
+{ #category : 'tests - navigation bar - backgrounds' }
 SBSCanvasBrushTest >> testNavigationBarBackgroundSuccess [
 
 	self
@@ -2230,7 +2232,7 @@ SBSCanvasBrushTest >> testNavigationBarBackgroundSuccess [
 		gives: '<nav class="navbar bg-success"></nav>'
 ]
 
-{ #category : #'tests - navigation bar - backgrounds' }
+{ #category : 'tests - navigation bar - backgrounds' }
 SBSCanvasBrushTest >> testNavigationBarBackgroundWarning [
 
 	self
@@ -2238,7 +2240,7 @@ SBSCanvasBrushTest >> testNavigationBarBackgroundWarning [
 		gives: '<nav class="navbar bg-warning"></nav>'
 ]
 
-{ #category : #'tests - navigation bar' }
+{ #category : 'tests - navigation bar' }
 SBSCanvasBrushTest >> testNavigationBarCollapse [
 
 	self
@@ -2246,7 +2248,7 @@ SBSCanvasBrushTest >> testNavigationBarCollapse [
 		gives: '<div class="navbar-collapse"></div>'
 ]
 
-{ #category : #'tests - navigation bar' }
+{ #category : 'tests - navigation bar' }
 SBSCanvasBrushTest >> testNavigationBarCollapseWithContent [
 
 	self
@@ -2254,7 +2256,7 @@ SBSCanvasBrushTest >> testNavigationBarCollapseWithContent [
 		gives: '<div class="navbar-collapse">Bootstrap</div>'
 ]
 
-{ #category : #'tests - navigation bar - options' }
+{ #category : 'tests - navigation bar - options' }
 SBSCanvasBrushTest >> testNavigationBarDark [
 
 	self
@@ -2262,7 +2264,7 @@ SBSCanvasBrushTest >> testNavigationBarDark [
 		gives: '<nav class="navbar navbar-dark"></nav>'
 ]
 
-{ #category : #'tests - navigation bar - options' }
+{ #category : 'tests - navigation bar - options' }
 SBSCanvasBrushTest >> testNavigationBarExpandExtraLarge [
 
 	self
@@ -2270,7 +2272,7 @@ SBSCanvasBrushTest >> testNavigationBarExpandExtraLarge [
 		gives: '<nav class="navbar navbar-expand-xl"></nav>'
 ]
 
-{ #category : #'tests - navigation bar - options' }
+{ #category : 'tests - navigation bar - options' }
 SBSCanvasBrushTest >> testNavigationBarExpandLarge [
 
 	self
@@ -2278,7 +2280,7 @@ SBSCanvasBrushTest >> testNavigationBarExpandLarge [
 		gives: '<nav class="navbar navbar-expand-lg"></nav>'
 ]
 
-{ #category : #'tests - navigation bar - options' }
+{ #category : 'tests - navigation bar - options' }
 SBSCanvasBrushTest >> testNavigationBarExpandMiddle [
 
 	self
@@ -2286,7 +2288,7 @@ SBSCanvasBrushTest >> testNavigationBarExpandMiddle [
 		gives: '<nav class="navbar navbar-expand-md"></nav>'
 ]
 
-{ #category : #'tests - navigation bar - options' }
+{ #category : 'tests - navigation bar - options' }
 SBSCanvasBrushTest >> testNavigationBarExpandSmall [
 
 	self
@@ -2294,7 +2296,7 @@ SBSCanvasBrushTest >> testNavigationBarExpandSmall [
 		gives: '<nav class="navbar navbar-expand-sm"></nav>'
 ]
 
-{ #category : #'tests - navigation bar - options' }
+{ #category : 'tests - navigation bar - options' }
 SBSCanvasBrushTest >> testNavigationBarLight [
 
 	self
@@ -2302,7 +2304,7 @@ SBSCanvasBrushTest >> testNavigationBarLight [
 		gives: '<nav class="navbar navbar-light"></nav>'
 ]
 
-{ #category : #'tests - navigation bar' }
+{ #category : 'tests - navigation bar' }
 SBSCanvasBrushTest >> testNavigationBarNavigation [
 
 	self
@@ -2310,7 +2312,7 @@ SBSCanvasBrushTest >> testNavigationBarNavigation [
 		gives: '<ul class="navbar-nav"></ul>'
 ]
 
-{ #category : #'tests - navigation bar' }
+{ #category : 'tests - navigation bar' }
 SBSCanvasBrushTest >> testNavigationBarNavigationWithContent [
 
 	self
@@ -2318,7 +2320,7 @@ SBSCanvasBrushTest >> testNavigationBarNavigationWithContent [
 		gives: '<ul class="navbar-nav">Bootstrap</ul>'
 ]
 
-{ #category : #'tests - navigation bar' }
+{ #category : 'tests - navigation bar' }
 SBSCanvasBrushTest >> testNavigationBarToggler [
 
 	self
@@ -2326,7 +2328,7 @@ SBSCanvasBrushTest >> testNavigationBarToggler [
 		gives: '<button class="navbar-toggler"></button>'
 ]
 
-{ #category : #'tests - navigation bar' }
+{ #category : 'tests - navigation bar' }
 SBSCanvasBrushTest >> testNavigationBarTogglerButtonType [
 
 	self
@@ -2334,7 +2336,7 @@ SBSCanvasBrushTest >> testNavigationBarTogglerButtonType [
 		gives: '<button class="navbar-toggler" type="button"></button>'
 ]
 
-{ #category : #'tests - navigation bar' }
+{ #category : 'tests - navigation bar' }
 SBSCanvasBrushTest >> testNavigationBarTogglerCollapse [
 
 	self
@@ -2342,7 +2344,7 @@ SBSCanvasBrushTest >> testNavigationBarTogglerCollapse [
 		gives: '<button class="navbar-toggler" data-bs-toggle="collapse"></button>'
 ]
 
-{ #category : #'tests - navigation bar' }
+{ #category : 'tests - navigation bar' }
 SBSCanvasBrushTest >> testNavigationBarTogglerDataTarget [
 
 	self
@@ -2350,7 +2352,7 @@ SBSCanvasBrushTest >> testNavigationBarTogglerDataTarget [
 		gives: '<button class="navbar-toggler" data-bs-target="#id_1"></button>'
 ]
 
-{ #category : #'tests - navigation bar' }
+{ #category : 'tests - navigation bar' }
 SBSCanvasBrushTest >> testNavigationBarTogglerIcon [
 
 	self
@@ -2358,7 +2360,7 @@ SBSCanvasBrushTest >> testNavigationBarTogglerIcon [
 		gives: '<span class="navbar-toggler-icon"></span>'
 ]
 
-{ #category : #'tests - navigation bar' }
+{ #category : 'tests - navigation bar' }
 SBSCanvasBrushTest >> testNavigationBarTogglerWithContent [
 
 	self
@@ -2366,7 +2368,7 @@ SBSCanvasBrushTest >> testNavigationBarTogglerWithContent [
 		gives: '<button class="navbar-toggler">Bootstrap</button>'
 ]
 
-{ #category : #'tests - navigation bar' }
+{ #category : 'tests - navigation bar' }
 SBSCanvasBrushTest >> testNavigationBarWithContent [
 
 	self
@@ -2374,7 +2376,7 @@ SBSCanvasBrushTest >> testNavigationBarWithContent [
 		gives: '<nav class="navbar">Bootstrap</nav>'
 ]
 
-{ #category : #'tests - breadcrumb' }
+{ #category : 'tests - breadcrumb' }
 SBSCanvasBrushTest >> testNavigationBreadcrumb [
 
 	self
@@ -2382,7 +2384,7 @@ SBSCanvasBrushTest >> testNavigationBreadcrumb [
 		gives: '<nav aria-label="breadcrumb"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlex [
 
 	self
@@ -2390,7 +2392,7 @@ SBSCanvasBrushTest >> testNavigationFlex [
 		gives: '<nav class="nav d-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexColumn [
 
 	self
@@ -2398,7 +2400,7 @@ SBSCanvasBrushTest >> testNavigationFlexColumn [
 		gives: '<nav class="nav flex-column"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexColumnLarge [
 
 	self
@@ -2406,7 +2408,7 @@ SBSCanvasBrushTest >> testNavigationFlexColumnLarge [
 		gives: '<nav class="nav flex-lg-column"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexColumnLargeReverse [
 
 	self
@@ -2414,7 +2416,7 @@ SBSCanvasBrushTest >> testNavigationFlexColumnLargeReverse [
 		gives: '<nav class="nav flex-lg-column-reverse"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexColumnMedium [
 
 	self
@@ -2422,7 +2424,7 @@ SBSCanvasBrushTest >> testNavigationFlexColumnMedium [
 		gives: '<nav class="nav flex-md-column"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexColumnMediumReverse [
 
 	self
@@ -2430,7 +2432,7 @@ SBSCanvasBrushTest >> testNavigationFlexColumnMediumReverse [
 		gives: '<nav class="nav flex-md-column-reverse"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexColumnReverse [
 
 	self
@@ -2438,7 +2440,7 @@ SBSCanvasBrushTest >> testNavigationFlexColumnReverse [
 		gives: '<nav class="nav flex-column-reverse"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexColumnSmall [
 
 	self
@@ -2446,7 +2448,7 @@ SBSCanvasBrushTest >> testNavigationFlexColumnSmall [
 		gives: '<nav class="nav flex-sm-column"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexColumnSmallReverse [
 
 	self
@@ -2454,7 +2456,7 @@ SBSCanvasBrushTest >> testNavigationFlexColumnSmallReverse [
 		gives: '<nav class="nav flex-sm-column-reverse"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexColumnVeryLarge [
 
 	self
@@ -2462,7 +2464,7 @@ SBSCanvasBrushTest >> testNavigationFlexColumnVeryLarge [
 		gives: '<nav class="nav flex-xl-column"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexColumnVeryLargeReverse [
 
 	self
@@ -2470,7 +2472,7 @@ SBSCanvasBrushTest >> testNavigationFlexColumnVeryLargeReverse [
 		gives: '<nav class="nav flex-xl-column-reverse"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexInline [
 
 	self
@@ -2478,7 +2480,7 @@ SBSCanvasBrushTest >> testNavigationFlexInline [
 		gives: '<nav class="nav d-inline-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexLarge [
 
 	self
@@ -2486,7 +2488,7 @@ SBSCanvasBrushTest >> testNavigationFlexLarge [
 		gives: '<nav class="nav d-lg-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexLargeInline [
 
 	self
@@ -2494,7 +2496,7 @@ SBSCanvasBrushTest >> testNavigationFlexLargeInline [
 		gives: '<nav class="nav d-lg-inline-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexMedium [
 
 	self
@@ -2502,7 +2504,7 @@ SBSCanvasBrushTest >> testNavigationFlexMedium [
 		gives: '<nav class="nav d-md-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexMediumInline [
 
 	self
@@ -2510,7 +2512,7 @@ SBSCanvasBrushTest >> testNavigationFlexMediumInline [
 		gives: '<nav class="nav d-md-inline-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexRow [
 
 	self
@@ -2518,7 +2520,7 @@ SBSCanvasBrushTest >> testNavigationFlexRow [
 		gives: '<nav class="nav flex-row"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexRowLarge [
 
 	self
@@ -2526,7 +2528,7 @@ SBSCanvasBrushTest >> testNavigationFlexRowLarge [
 		gives: '<nav class="nav flex-lg-row"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexRowLargeReverse [
 
 	self
@@ -2534,7 +2536,7 @@ SBSCanvasBrushTest >> testNavigationFlexRowLargeReverse [
 		gives: '<nav class="nav flex-lg-row-reverse"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexRowMedium [
 
 	self
@@ -2542,7 +2544,7 @@ SBSCanvasBrushTest >> testNavigationFlexRowMedium [
 		gives: '<nav class="nav flex-md-row"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexRowMediumReverse [
 
 	self
@@ -2550,7 +2552,7 @@ SBSCanvasBrushTest >> testNavigationFlexRowMediumReverse [
 		gives: '<nav class="nav flex-md-row-reverse"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexRowReverse [
 
 	self
@@ -2558,7 +2560,7 @@ SBSCanvasBrushTest >> testNavigationFlexRowReverse [
 		gives: '<nav class="nav flex-row-reverse"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexRowSmall [
 
 	self
@@ -2566,7 +2568,7 @@ SBSCanvasBrushTest >> testNavigationFlexRowSmall [
 		gives: '<nav class="nav flex-sm-row"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexRowSmallReverse [
 
 	self
@@ -2574,7 +2576,7 @@ SBSCanvasBrushTest >> testNavigationFlexRowSmallReverse [
 		gives: '<nav class="nav flex-sm-row-reverse"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexRowVeryLarge [
 
 	self
@@ -2582,7 +2584,7 @@ SBSCanvasBrushTest >> testNavigationFlexRowVeryLarge [
 		gives: '<nav class="nav flex-xl-row"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexRowVeryLargeReverse [
 
 	self
@@ -2590,7 +2592,7 @@ SBSCanvasBrushTest >> testNavigationFlexRowVeryLargeReverse [
 		gives: '<nav class="nav flex-xl-row-reverse"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexSmall [
 
 	self
@@ -2598,7 +2600,7 @@ SBSCanvasBrushTest >> testNavigationFlexSmall [
 		gives: '<nav class="nav d-sm-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexSmallInline [
 
 	self
@@ -2606,7 +2608,7 @@ SBSCanvasBrushTest >> testNavigationFlexSmallInline [
 		gives: '<nav class="nav d-sm-inline-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexVeryLarge [
 
 	self
@@ -2614,7 +2616,7 @@ SBSCanvasBrushTest >> testNavigationFlexVeryLarge [
 		gives: '<nav class="nav d-xl-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation - flexbox' }
+{ #category : 'tests - navigation - flexbox' }
 SBSCanvasBrushTest >> testNavigationFlexVeryLargeInline [
 
 	self
@@ -2622,7 +2624,7 @@ SBSCanvasBrushTest >> testNavigationFlexVeryLargeInline [
 		gives: '<nav class="nav d-xl-inline-flex"></nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : 'tests - navigation' }
 SBSCanvasBrushTest >> testNavigationItem [
 
 	self
@@ -2630,7 +2632,7 @@ SBSCanvasBrushTest >> testNavigationItem [
 		gives: '<li class="nav-item"></li>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : 'tests - navigation' }
 SBSCanvasBrushTest >> testNavigationItemActive [
 
 	self
@@ -2638,7 +2640,7 @@ SBSCanvasBrushTest >> testNavigationItemActive [
 		gives: '<li class="nav-item active"></li>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : 'tests - navigation' }
 SBSCanvasBrushTest >> testNavigationItemDropdown [
 
 	self
@@ -2646,7 +2648,7 @@ SBSCanvasBrushTest >> testNavigationItemDropdown [
 		gives: '<li class="nav-item dropdown"></li>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : 'tests - navigation' }
 SBSCanvasBrushTest >> testNavigationItemWithContent [
 
 	self
@@ -2654,7 +2656,7 @@ SBSCanvasBrushTest >> testNavigationItemWithContent [
 		gives: '<li class="nav-item">Bootstrap</li>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentAround [
 
 	self
@@ -2662,7 +2664,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentAround [
 		gives: '<nav class="nav justify-content-around"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentAroundLarge [
 
 	self
@@ -2670,7 +2672,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentAroundLarge [
 		gives: '<nav class="nav justify-content-lg-around"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentAroundMedium [
 
 	self
@@ -2678,7 +2680,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentAroundMedium [
 		gives: '<nav class="nav justify-content-md-around"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentAroundSmall [
 
 	self
@@ -2686,7 +2688,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentAroundSmall [
 		gives: '<nav class="nav justify-content-sm-around"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentAroundVeryLarge [
 
 	self
@@ -2694,7 +2696,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentAroundVeryLarge [
 		gives: '<nav class="nav justify-content-xl-around"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentBetween [
 
 	self
@@ -2702,7 +2704,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentBetween [
 		gives: '<nav class="nav justify-content-between"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentBetweenLarge [
 
 	self
@@ -2710,7 +2712,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentBetweenLarge [
 		gives: '<nav class="nav justify-content-lg-between"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentBetweenMedium [
 
 	self
@@ -2718,7 +2720,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentBetweenMedium [
 		gives: '<nav class="nav justify-content-md-between"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentBetweenSmall [
 
 	self
@@ -2726,7 +2728,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentBetweenSmall [
 		gives: '<nav class="nav justify-content-sm-between"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentBetweenVeryLarge [
 
 	self
@@ -2734,7 +2736,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentBetweenVeryLarge [
 		gives: '<nav class="nav justify-content-xl-between"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentCenter [
 
 	self
@@ -2742,7 +2744,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentCenter [
 		gives: '<nav class="nav justify-content-center"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentCenterLarge [
 
 	self
@@ -2750,7 +2752,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentCenterLarge [
 		gives: '<nav class="nav justify-content-lg-center"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentCenterMedium [
 
 	self
@@ -2758,7 +2760,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentCenterMedium [
 		gives: '<nav class="nav justify-content-md-center"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentCenterSmall [
 
 	self
@@ -2766,7 +2768,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentCenterSmall [
 		gives: '<nav class="nav justify-content-sm-center"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentCenterVeryLarge [
 
 	self
@@ -2774,7 +2776,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentCenterVeryLarge [
 		gives: '<nav class="nav justify-content-xl-center"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentEnd [
 
 	self
@@ -2782,7 +2784,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentEnd [
 		gives: '<nav class="nav justify-content-end"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentEndLarge [
 
 	self
@@ -2790,7 +2792,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentEndLarge [
 		gives: '<nav class="nav justify-content-lg-end"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentEndMedium [
 
 	self
@@ -2798,7 +2800,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentEndMedium [
 		gives: '<nav class="nav justify-content-md-end"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentEndSmall [
 
 	self
@@ -2806,7 +2808,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentEndSmall [
 		gives: '<nav class="nav justify-content-sm-end"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentEndVeryLarge [
 
 	self
@@ -2814,7 +2816,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentEndVeryLarge [
 		gives: '<nav class="nav justify-content-xl-end"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentStart [
 
 	self
@@ -2822,7 +2824,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentStart [
 		gives: '<nav class="nav justify-content-start"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentStartLarge [
 
 	self
@@ -2830,7 +2832,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentStartLarge [
 		gives: '<nav class="nav justify-content-lg-start"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentStartMedium [
 
 	self
@@ -2838,7 +2840,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentStartMedium [
 		gives: '<nav class="nav justify-content-md-start"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentStartSmall [
 
 	self
@@ -2846,7 +2848,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentStartSmall [
 		gives: '<nav class="nav justify-content-sm-start"></nav>'
 ]
 
-{ #category : #'tests - navigation - justification' }
+{ #category : 'tests - navigation - justification' }
 SBSCanvasBrushTest >> testNavigationJustifyContentStartVeryLarge [
 
 	self
@@ -2854,7 +2856,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentStartVeryLarge [
 		gives: '<nav class="nav justify-content-xl-start"></nav>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : 'tests - navigation' }
 SBSCanvasBrushTest >> testNavigationLink [
 
 	self
@@ -2862,7 +2864,7 @@ SBSCanvasBrushTest >> testNavigationLink [
 		gives: '<a class="nav-link"></a>'
 ]
 
-{ #category : #'tests - navigation - options' }
+{ #category : 'tests - navigation - options' }
 SBSCanvasBrushTest >> testNavigationLinkActive [
 
 	self
@@ -2870,7 +2872,7 @@ SBSCanvasBrushTest >> testNavigationLinkActive [
 		gives: '<a class="nav-link active"></a>'
 ]
 
-{ #category : #'tests - navigation - options' }
+{ #category : 'tests - navigation - options' }
 SBSCanvasBrushTest >> testNavigationLinkDisabled [
 
 	self
@@ -2878,7 +2880,7 @@ SBSCanvasBrushTest >> testNavigationLinkDisabled [
 		gives: '<a class="nav-link disabled"></a>'
 ]
 
-{ #category : #'tests - navigation - options' }
+{ #category : 'tests - navigation - options' }
 SBSCanvasBrushTest >> testNavigationLinkDropdownToggle [
 
 	self
@@ -2886,7 +2888,7 @@ SBSCanvasBrushTest >> testNavigationLinkDropdownToggle [
 		gives: '<a class="nav-link dropdown-toggle"></a>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : 'tests - navigation' }
 SBSCanvasBrushTest >> testNavigationLinkWithContent [
 
 	self
@@ -2894,7 +2896,7 @@ SBSCanvasBrushTest >> testNavigationLinkWithContent [
 		gives: '<a class="nav-link">Bootstrap</a>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : 'tests - navigation' }
 SBSCanvasBrushTest >> testNavigationList [
 
 	self
@@ -2902,7 +2904,7 @@ SBSCanvasBrushTest >> testNavigationList [
 		gives: '<ul class="nav"></ul>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : 'tests - navigation' }
 SBSCanvasBrushTest >> testNavigationListWithContent [
 
 	self
@@ -2910,7 +2912,7 @@ SBSCanvasBrushTest >> testNavigationListWithContent [
 		gives: '<ul class="nav">Bootstrap</ul>'
 ]
 
-{ #category : #'tests - navigation' }
+{ #category : 'tests - navigation' }
 SBSCanvasBrushTest >> testNavigationWithContent [
 
 	self
@@ -2918,7 +2920,7 @@ SBSCanvasBrushTest >> testNavigationWithContent [
 		gives: '<nav class="nav">Bootstrap</nav>'
 ]
 
-{ #category : #'tests - buttons' }
+{ #category : 'tests - buttons' }
 SBSCanvasBrushTest >> testOutlineButton [
 
 	self
@@ -2926,7 +2928,7 @@ SBSCanvasBrushTest >> testOutlineButton [
 		gives: '<button class="btn"></button>'
 ]
 
-{ #category : #'tests - buttons - sizes' }
+{ #category : 'tests - buttons - sizes' }
 SBSCanvasBrushTest >> testOutlineButtonBlock [
 
 	self
@@ -2934,7 +2936,7 @@ SBSCanvasBrushTest >> testOutlineButtonBlock [
 		gives: '<button class="btn btn-block"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testOutlineButtonDanger [
 
 	self
@@ -2942,7 +2944,7 @@ SBSCanvasBrushTest >> testOutlineButtonDanger [
 		gives: '<button class="btn btn-outline-danger"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testOutlineButtonDark [
 
 	self
@@ -2950,7 +2952,7 @@ SBSCanvasBrushTest >> testOutlineButtonDark [
 		gives: '<button class="btn btn-outline-dark"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testOutlineButtonInfo [
 
 	self
@@ -2958,7 +2960,7 @@ SBSCanvasBrushTest >> testOutlineButtonInfo [
 		gives: '<button class="btn btn-outline-info"></button>'
 ]
 
-{ #category : #'tests - buttons - sizes' }
+{ #category : 'tests - buttons - sizes' }
 SBSCanvasBrushTest >> testOutlineButtonLarge [
 
 	self
@@ -2966,7 +2968,7 @@ SBSCanvasBrushTest >> testOutlineButtonLarge [
 		gives: '<button class="btn btn-lg"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testOutlineButtonLight [
 
 	self
@@ -2974,7 +2976,7 @@ SBSCanvasBrushTest >> testOutlineButtonLight [
 		gives: '<button class="btn btn-outline-light"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testOutlineButtonPrimary [
 
 	self
@@ -2982,7 +2984,7 @@ SBSCanvasBrushTest >> testOutlineButtonPrimary [
 		gives: '<button class="btn btn-outline-primary"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testOutlineButtonSecondary [
 
 	self
@@ -2990,7 +2992,7 @@ SBSCanvasBrushTest >> testOutlineButtonSecondary [
 		gives: '<button class="btn btn-outline-secondary"></button>'
 ]
 
-{ #category : #'tests - buttons - sizes' }
+{ #category : 'tests - buttons - sizes' }
 SBSCanvasBrushTest >> testOutlineButtonSmall [
 
 	self
@@ -2998,7 +3000,7 @@ SBSCanvasBrushTest >> testOutlineButtonSmall [
 		gives: '<button class="btn btn-sm"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testOutlineButtonSuccess [
 
 	self
@@ -3006,7 +3008,7 @@ SBSCanvasBrushTest >> testOutlineButtonSuccess [
 		gives: '<button class="btn btn-outline-success"></button>'
 ]
 
-{ #category : #'tests - buttons - options' }
+{ #category : 'tests - buttons - options' }
 SBSCanvasBrushTest >> testOutlineButtonWarning [
 
 	self
@@ -3014,7 +3016,7 @@ SBSCanvasBrushTest >> testOutlineButtonWarning [
 		gives: '<button class="btn btn-outline-warning"></button>'
 ]
 
-{ #category : #'tests - buttons' }
+{ #category : 'tests - buttons' }
 SBSCanvasBrushTest >> testOutlineButtonWithContent [
 
 	self
@@ -3022,7 +3024,7 @@ SBSCanvasBrushTest >> testOutlineButtonWithContent [
 		gives: '<button class="btn">Bootstrap</button>'
 ]
 
-{ #category : #'tests - spacing' }
+{ #category : 'tests - spacing' }
 SBSCanvasBrushTest >> testPaddingBottom [
 
 	self
@@ -3030,7 +3032,7 @@ SBSCanvasBrushTest >> testPaddingBottom [
 		gives: '<div class="pb-3"></div>'
 ]
 
-{ #category : #'tests - spacing' }
+{ #category : 'tests - spacing' }
 SBSCanvasBrushTest >> testPaddingLeft [
 
 	self
@@ -3038,7 +3040,7 @@ SBSCanvasBrushTest >> testPaddingLeft [
 		gives: '<div class="pl-3"></div>'
 ]
 
-{ #category : #'tests - spacing' }
+{ #category : 'tests - spacing' }
 SBSCanvasBrushTest >> testPaddingLeftAndRight [
 
 	self
@@ -3046,7 +3048,7 @@ SBSCanvasBrushTest >> testPaddingLeftAndRight [
 		gives: '<div class="px-3"></div>'
 ]
 
-{ #category : #'tests - spacing' }
+{ #category : 'tests - spacing' }
 SBSCanvasBrushTest >> testPaddingRight [
 
 	self
@@ -3054,7 +3056,7 @@ SBSCanvasBrushTest >> testPaddingRight [
 		gives: '<div class="pr-3"></div>'
 ]
 
-{ #category : #'tests - spacing' }
+{ #category : 'tests - spacing' }
 SBSCanvasBrushTest >> testPaddingTop [
 
 	self
@@ -3062,7 +3064,7 @@ SBSCanvasBrushTest >> testPaddingTop [
 		gives: '<div class="pt-3"></div>'
 ]
 
-{ #category : #'tests - spacing' }
+{ #category : 'tests - spacing' }
 SBSCanvasBrushTest >> testPaddingTopAndBottom [
 
 	self
@@ -3070,7 +3072,7 @@ SBSCanvasBrushTest >> testPaddingTopAndBottom [
 		gives: '<div class="py-3"></div>'
 ]
 
-{ #category : #'tests - pagination' }
+{ #category : 'tests - pagination' }
 SBSCanvasBrushTest >> testPageItem [
 
 	self
@@ -3078,7 +3080,7 @@ SBSCanvasBrushTest >> testPageItem [
 		gives: '<li class="page-item"></li>'
 ]
 
-{ #category : #'tests - pagination - options' }
+{ #category : 'tests - pagination - options' }
 SBSCanvasBrushTest >> testPageItemActive [
 
 	self
@@ -3086,7 +3088,7 @@ SBSCanvasBrushTest >> testPageItemActive [
 		gives: '<li class="page-item active"></li>'
 ]
 
-{ #category : #'tests - pagination - options' }
+{ #category : 'tests - pagination - options' }
 SBSCanvasBrushTest >> testPageItemDisabled [
 
 	self
@@ -3094,7 +3096,7 @@ SBSCanvasBrushTest >> testPageItemDisabled [
 		gives: '<li class="page-item disabled"></li>'
 ]
 
-{ #category : #'tests - pagination' }
+{ #category : 'tests - pagination' }
 SBSCanvasBrushTest >> testPageItemWithContent [
 
 	self
@@ -3102,7 +3104,7 @@ SBSCanvasBrushTest >> testPageItemWithContent [
 		gives: '<li class="page-item">Bootstrap</li>'
 ]
 
-{ #category : #'tests - pagination' }
+{ #category : 'tests - pagination' }
 SBSCanvasBrushTest >> testPageLink [
 
 	self
@@ -3110,7 +3112,7 @@ SBSCanvasBrushTest >> testPageLink [
 		gives: '<a class="page-link"></a>'
 ]
 
-{ #category : #'tests - pagination' }
+{ #category : 'tests - pagination' }
 SBSCanvasBrushTest >> testPageLinkWithContent [
 
 	self
@@ -3118,7 +3120,7 @@ SBSCanvasBrushTest >> testPageLinkWithContent [
 		gives: '<a class="page-link">Bootstrap</a>'
 ]
 
-{ #category : #'tests - pagination' }
+{ #category : 'tests - pagination' }
 SBSCanvasBrushTest >> testPagination [
 
 	self
@@ -3126,7 +3128,7 @@ SBSCanvasBrushTest >> testPagination [
 		gives: '<ul class="pagination"></ul>'
 ]
 
-{ #category : #'tests - pagination - options' }
+{ #category : 'tests - pagination - options' }
 SBSCanvasBrushTest >> testPaginationLarge [
 
 	self
@@ -3134,7 +3136,7 @@ SBSCanvasBrushTest >> testPaginationLarge [
 		gives: '<ul class="pagination pagination-lg"></ul>'
 ]
 
-{ #category : #'tests - pagination - options' }
+{ #category : 'tests - pagination - options' }
 SBSCanvasBrushTest >> testPaginationSmall [
 
 	self
@@ -3142,7 +3144,7 @@ SBSCanvasBrushTest >> testPaginationSmall [
 		gives: '<ul class="pagination pagination-sm"></ul>'
 ]
 
-{ #category : #'tests - pagination' }
+{ #category : 'tests - pagination' }
 SBSCanvasBrushTest >> testPaginationWithContent [
 
 	self
@@ -3150,7 +3152,7 @@ SBSCanvasBrushTest >> testPaginationWithContent [
 		gives: '<ul class="pagination">Bootstrap</ul>'
 ]
 
-{ #category : #'tests - progressbar' }
+{ #category : 'tests - progressbar' }
 SBSCanvasBrushTest >> testProgress [
 
 	self
@@ -3158,7 +3160,7 @@ SBSCanvasBrushTest >> testProgress [
 		gives: '<div class="progress"></div>'
 ]
 
-{ #category : #'tests - progressbar' }
+{ #category : 'tests - progressbar' }
 SBSCanvasBrushTest >> testProgressBar [
 
 	self
@@ -3166,7 +3168,7 @@ SBSCanvasBrushTest >> testProgressBar [
 		gives: '<div class="progress-bar"></div>'
 ]
 
-{ #category : #'tests - progressbar' }
+{ #category : 'tests - progressbar' }
 SBSCanvasBrushTest >> testProgressBarStriped [
 
 	self
@@ -3174,7 +3176,7 @@ SBSCanvasBrushTest >> testProgressBarStriped [
 		gives: '<div class="progress-bar progress-bar-striped"></div>'
 ]
 
-{ #category : #'tests - progressbar' }
+{ #category : 'tests - progressbar' }
 SBSCanvasBrushTest >> testProgressBarValueNow [
 
 	self
@@ -3182,7 +3184,7 @@ SBSCanvasBrushTest >> testProgressBarValueNow [
 		gives: '<div class="progress-bar" style="width: 75%"></div>'
 ]
 
-{ #category : #'tests - progressbar' }
+{ #category : 'tests - progressbar' }
 SBSCanvasBrushTest >> testProgressBarWithContent [
 
 	self
@@ -3190,7 +3192,7 @@ SBSCanvasBrushTest >> testProgressBarWithContent [
 		gives: '<div class="progress-bar">Bootstrap</div>'
 ]
 
-{ #category : #'tests - progressbar' }
+{ #category : 'tests - progressbar' }
 SBSCanvasBrushTest >> testProgressWithContent [
 
 	self
@@ -3198,7 +3200,7 @@ SBSCanvasBrushTest >> testProgressWithContent [
 		gives: '<div class="progress">Bootstrap</div>'
 ]
 
-{ #category : #'tests - layout' }
+{ #category : 'tests - layout' }
 SBSCanvasBrushTest >> testRow [
 
 	self
@@ -3206,7 +3208,7 @@ SBSCanvasBrushTest >> testRow [
 		gives: '<div class="row"></div>'
 ]
 
-{ #category : #'tests - layout - options' }
+{ #category : 'tests - layout - options' }
 SBSCanvasBrushTest >> testRowNoGutters [
 
 	self
@@ -3214,7 +3216,7 @@ SBSCanvasBrushTest >> testRowNoGutters [
 		gives: '<div class="row no-gutters"></div>'
 ]
 
-{ #category : #'tests - layout' }
+{ #category : 'tests - layout' }
 SBSCanvasBrushTest >> testRowWithContent [
 
 	self
@@ -3222,7 +3224,7 @@ SBSCanvasBrushTest >> testRowWithContent [
 		gives: '<div class="row">Bootstrap</div>'
 ]
 
-{ #category : #'tests - tabs' }
+{ #category : 'tests - tabs' }
 SBSCanvasBrushTest >> testTabContent [
 
 	self
@@ -3230,7 +3232,7 @@ SBSCanvasBrushTest >> testTabContent [
 		gives: '<div class="tab-content"></div>'
 ]
 
-{ #category : #'tests - tabs' }
+{ #category : 'tests - tabs' }
 SBSCanvasBrushTest >> testTabContentWithContent [
 
 	self
@@ -3238,7 +3240,7 @@ SBSCanvasBrushTest >> testTabContentWithContent [
 		gives: '<div class="tab-content">Bootstrap</div>'
 ]
 
-{ #category : #'tests - typography' }
+{ #category : 'tests - typography' }
 SBSCanvasBrushTest >> testTextMuted [
 
 	self

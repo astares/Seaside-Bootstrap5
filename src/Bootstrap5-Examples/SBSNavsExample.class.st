@@ -2,18 +2,20 @@
 Example for a Bootstrap navs
 "
 Class {
-	#name : #SBSNavsExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSNavsExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSNavsExample class >> exampleName [
 
 	^'Navs'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSNavsExample >> renderExampleOn: html [
 	| aBlock |
 	aBlock := [

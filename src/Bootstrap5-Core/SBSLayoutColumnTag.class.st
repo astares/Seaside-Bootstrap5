@@ -2,87 +2,89 @@
 A boostrap layout column
 "
 Class {
-	#name : #SBSLayoutColumnTag,
-	#superclass : #SBSLayoutTag,
+	#name : 'SBSLayoutColumnTag',
+	#superclass : 'SBSLayoutTag',
 	#traits : 'SBSTVisualOrder + SBSTOffsetting + SBSTColumnSelfAlignment',
 	#classTraits : 'SBSTVisualOrder classTrait + SBSTOffsetting classTrait + SBSTColumnSelfAlignment classTrait',
-	#category : #'Bootstrap5-Core-Base'
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSLayoutColumnTag >> defaultStyleClass [
 
 	^''
 ]
 
-{ #category : #sizes }
+{ #category : 'sizes' }
 SBSLayoutColumnTag >> extraLargeSize: anInteger [
 	"Use the given number of columns on screen width equal to or greater than 1200px"
 
 	self class: 'col-xl-', anInteger greaseString
 ]
 
-{ #category : #'sizes - variable' }
+{ #category : 'sizes - variable' }
 SBSLayoutColumnTag >> extraLargeVariableWidth [
 	self class: 'col-xl-auto'
 ]
 
-{ #category : #sizes }
+{ #category : 'sizes' }
 SBSLayoutColumnTag >> extraSmallSize: anInteger [
 	"Use the given number of columns on screen width less than 576px"
 
 	self class: 'col-', anInteger greaseString
 ]
 
-{ #category : #'private - initialization' }
+{ #category : 'private - initialization' }
 SBSLayoutColumnTag >> initStyleClass [
 	"do nothing"
 ]
 
-{ #category : #sizes }
+{ #category : 'sizes' }
 SBSLayoutColumnTag >> largeSize: anInteger [
 	"Use the given number of columns on screen width equal to or greater than 992px"
 
 	self class: 'col-lg-', anInteger greaseString
 ]
 
-{ #category : #'sizes - variable' }
+{ #category : 'sizes - variable' }
 SBSLayoutColumnTag >> largeVariableWidth [
 	self class: 'col-lg-auto'
 ]
 
-{ #category : #sizes }
+{ #category : 'sizes' }
 SBSLayoutColumnTag >> mediumSize: anInteger [
 	"Use the given number of columns on screen width equal to or greater than 768px"
 
 	self class: 'col-md-', anInteger greaseString
 ]
 
-{ #category : #'sizes - variable' }
+{ #category : 'sizes - variable' }
 SBSLayoutColumnTag >> mediumVariableWidth [
 
 	self class: 'col-md-auto'
 ]
 
-{ #category : #sizes }
+{ #category : 'sizes' }
 SBSLayoutColumnTag >> small [
 
 	self class: 'col-sm'
 ]
 
-{ #category : #sizes }
+{ #category : 'sizes' }
 SBSLayoutColumnTag >> smallSize: anInteger [
 	"Use the given number of columns on screen width equal to or greater than 576px"
 
 	self class: 'col-sm-', anInteger greaseString
 ]
 
-{ #category : #'sizes - variable' }
+{ #category : 'sizes - variable' }
 SBSLayoutColumnTag >> smallVariableWidth [
 	self class: 'col-sm-auto'
 ]
 
-{ #category : #'sizes - variable' }
+{ #category : 'sizes - variable' }
 SBSLayoutColumnTag >> variableWidth [
 	self class: 'col'
 ]

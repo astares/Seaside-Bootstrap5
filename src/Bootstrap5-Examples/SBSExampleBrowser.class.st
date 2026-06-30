@@ -2,28 +2,30 @@
 The examples browser
 "
 Class {
-	#name : #SBSExampleBrowser,
-	#superclass : #WAComponent,
+	#name : 'SBSExampleBrowser',
+	#superclass : 'WAComponent',
 	#instVars : [
 		'currentExample'
 	],
-	#category : #'Bootstrap5-Examples-Browser'
+	#category : 'Bootstrap5-Examples-Browser',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Browser'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSExampleBrowser >> allExamples [
 	^(SBSBootstrapExample allSubclasses
 		select: [:ea| ea isAbstract not ])
 			sort: [:a :b | a name <= b name ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSExampleBrowser >> children [
 
 	^Array with: currentExample
 ]
 
-{ #category : #hooks }
+{ #category : 'hooks' }
 SBSExampleBrowser >> initialRequest: request [
 	| exampleName |
 	super initialRequest: request.
@@ -35,19 +37,19 @@ SBSExampleBrowser >> initialRequest: request [
 			ifNone: [ self allExamples first ]) new
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 SBSExampleBrowser >> initialize [
 	super initialize.
 	currentExample := self allExamples first new
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSExampleBrowser >> navigateToExample: example [
 
 	currentExample := example
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSExampleBrowser >> renderContentOn: html [
 
 	html row
@@ -57,7 +59,7 @@ SBSExampleBrowser >> renderContentOn: html [
 	]
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSExampleBrowser >> renderExampleOn: html [
 
 	currentExample ifNotNil: [
@@ -68,7 +70,7 @@ SBSExampleBrowser >> renderExampleOn: html [
 	]
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSExampleBrowser >> renderNavigationOn: html [
 
 	|examples item|
@@ -82,19 +84,19 @@ SBSExampleBrowser >> renderNavigationOn: html [
 				  with: ex exampleName ]] ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSExampleBrowser >> rendererClass [
 
 	^ SBSHtmlCanvas
 ]
 
-{ #category : #hooks }
+{ #category : 'hooks' }
 SBSExampleBrowser >> style [
 
 	^currentExample style
 ]
 
-{ #category : #updating }
+{ #category : 'updating' }
 SBSExampleBrowser >> updateUrl: url [
 	super updateUrl: url.
 	url addToPath: '/browser'; addToPath: currentExample class exampleName

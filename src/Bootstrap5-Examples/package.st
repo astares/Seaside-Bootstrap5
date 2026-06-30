@@ -1,1 +1,1 @@
-Package { #name : #'Bootstrap5-Examples' }
+Package { #name : 'Bootstrap5-Examples' }

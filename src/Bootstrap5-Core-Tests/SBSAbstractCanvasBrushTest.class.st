@@ -2,18 +2,20 @@
 Common superclass for Bootstrap4 canvas based tests
 "
 Class {
-	#name : #SBSAbstractCanvasBrushTest,
-	#superclass : #WAAbstractCanvasBrushTest,
-	#category : #'Bootstrap5-Core-Tests-Traits'
+	#name : 'SBSAbstractCanvasBrushTest',
+	#superclass : 'WAAbstractCanvasBrushTest',
+	#category : 'Bootstrap5-Core-Tests-Traits',
+	#package : 'Bootstrap5-Core-Tests',
+	#tag : 'Traits'
 }
 
-{ #category : #testing }
+{ #category : 'testing' }
 SBSAbstractCanvasBrushTest class >> isAbstract [
 
 	^self name = #SBSAbstractCanvasBrushTest
 ]
 
-{ #category : #'private - accessing' }
+{ #category : 'private - accessing' }
 SBSAbstractCanvasBrushTest >> builder [
 	^ SBSHtmlCanvas builder
 ]

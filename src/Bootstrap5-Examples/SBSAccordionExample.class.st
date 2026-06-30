@@ -2,18 +2,20 @@
 Accordion example
 "
 Class {
-	#name : #SBSAccordionExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSAccordionExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSAccordionExample class >> exampleName [
 
 	^'Accordion'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSAccordionExample >> renderExampleOn: html [
 
 	html accordion: [

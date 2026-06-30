@@ -2,18 +2,20 @@
 Collapse example
 "
 Class {
-	#name : #SBSCollapseExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSCollapseExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSCollapseExample class >> exampleName [
 
 	^'Collapse'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSCollapseExample >> renderExampleOn: html [
 	html paragraph: [
 		html formButton bePrimary

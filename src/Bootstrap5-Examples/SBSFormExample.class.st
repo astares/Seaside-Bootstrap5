@@ -2,18 +2,20 @@
 Bootstrap forms example
 "
 Class {
-	#name : #SBSFormExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSFormExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSFormExample class >> exampleName [
 
 	^'Forms'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSFormExample >> renderExampleOn: html [
 
 	html form: [

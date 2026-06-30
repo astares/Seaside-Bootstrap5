@@ -2,24 +2,26 @@
 Common superclass for unordered list based boostrap parts
 "
 Class {
-	#name : #SBSUnorderedListTag,
-	#superclass : #WAUnorderedListTag,
-	#category : #'Bootstrap5-Core-Base'
+	#name : 'SBSUnorderedListTag',
+	#superclass : 'WAUnorderedListTag',
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
-{ #category : #testing }
+{ #category : 'testing' }
 SBSUnorderedListTag class >> isAbstract [
 
 	^self name = #SBSUnorderdListTag
 ]
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSUnorderedListTag >> defaultStyleClass [
 
 	^self subclassResponsibility
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 SBSUnorderedListTag >> initialize [
 	super initialize.
 	self class: self defaultStyleClass

@@ -4,12 +4,14 @@ additional style options like bePrimary, or beSecondary, ... the button will
 have an outlined look.
 "
 Class {
-	#name : #SBSOutlineButtonTag,
-	#superclass : #SBSButtonTag,
-	#category : #'Bootstrap5-Core-Base'
+	#name : 'SBSOutlineButtonTag',
+	#superclass : 'SBSButtonTag',
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSOutlineButtonTag >> defaultModifier [
 
 	^'outline'

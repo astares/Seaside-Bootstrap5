@@ -2,12 +2,14 @@
 SUnit tests for SBSTRowItemAlignment
 "
 Class {
-	#name : #SBSTRowItemAlignmentTest,
-	#superclass : #SBSAbstractCanvasBrushTest,
-	#category : #'Bootstrap5-Core-Tests-Traits'
+	#name : 'SBSTRowItemAlignmentTest',
+	#superclass : 'SBSAbstractCanvasBrushTest',
+	#category : 'Bootstrap5-Core-Tests-Traits',
+	#package : 'Bootstrap5-Core-Tests',
+	#tag : 'Traits'
 }
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsBaseline [
 
 	self
@@ -15,7 +17,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsBaseline [
 		gives: '<div class="row align-items-baseline"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsBaselineLarge [
 
 	self
@@ -23,7 +25,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsBaselineLarge [
 		gives: '<div class="row align-items-lg-baseline"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsBaselineMedium [
 
 	self
@@ -31,7 +33,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsBaselineMedium [
 		gives: '<div class="row align-items-md-baseline"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsBaselineSmall [
 
 	self
@@ -39,7 +41,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsBaselineSmall [
 		gives: '<div class="row align-items-sm-baseline"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsBaselineVeryLarge [
 
 	self
@@ -47,7 +49,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsBaselineVeryLarge [
 		gives: '<div class="row align-items-xl-baseline"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsCenter [
 
 	self
@@ -55,7 +57,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsCenter [
 		gives: '<div class="row align-items-center"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsCenterLarge [
 
 	self
@@ -63,7 +65,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsCenterLarge [
 		gives: '<div class="row align-items-lg-center"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsCenterMedium [
 
 	self
@@ -71,7 +73,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsCenterMedium [
 		gives: '<div class="row align-items-md-center"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsCenterSmall [
 
 	self
@@ -79,7 +81,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsCenterSmall [
 		gives: '<div class="row align-items-sm-center"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsCenterVeryLarge [
 
 	self
@@ -87,7 +89,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsCenterVeryLarge [
 		gives: '<div class="row align-items-xl-center"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsEnd [
 
 	self
@@ -95,7 +97,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsEnd [
 		gives: '<div class="row align-items-end"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsEndLarge [
 
 	self
@@ -103,7 +105,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsEndLarge [
 		gives: '<div class="row align-items-lg-end"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsEndMedium [
 
 	self
@@ -111,7 +113,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsEndMedium [
 		gives: '<div class="row align-items-md-end"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsEndSmall [
 
 	self
@@ -119,7 +121,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsEndSmall [
 		gives: '<div class="row align-items-sm-end"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsEndVeryLarge [
 
 	self
@@ -127,7 +129,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsEndVeryLarge [
 		gives: '<div class="row align-items-xl-end"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsStart [
 
 	self
@@ -135,7 +137,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsStart [
 		gives: '<div class="row align-items-start"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsStartLarge [
 
 	self
@@ -143,7 +145,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsStartLarge [
 		gives: '<div class="row align-items-lg-start"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsStartMedium [
 
 	self
@@ -151,7 +153,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsStartMedium [
 		gives: '<div class="row align-items-md-start"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsStartSmall [
 
 	self
@@ -159,7 +161,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsStartSmall [
 		gives: '<div class="row align-items-sm-start"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsStartVeryLarge [
 
 	self
@@ -167,7 +169,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsStartVeryLarge [
 		gives: '<div class="row align-items-xl-start"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsStretch [
 
 	self
@@ -175,7 +177,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsStretch [
 		gives: '<div class="row align-items-stretch"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsStretchLarge [
 
 	self
@@ -183,7 +185,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsStretchLarge [
 		gives: '<div class="row align-items-lg-stretch"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsStretchMedium [
 
 	self
@@ -191,7 +193,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsStretchMedium [
 		gives: '<div class="row align-items-md-stretch"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsStretchSmall [
 
 	self
@@ -199,7 +201,7 @@ SBSTRowItemAlignmentTest >> testRowAlignItemsStretchSmall [
 		gives: '<div class="row align-items-sm-stretch"></div>'
 ]
 
-{ #category : #'tests - layout - alignment vertical' }
+{ #category : 'tests - layout - alignment vertical' }
 SBSTRowItemAlignmentTest >> testRowAlignItemsStretchVeryLarge [
 
 	self

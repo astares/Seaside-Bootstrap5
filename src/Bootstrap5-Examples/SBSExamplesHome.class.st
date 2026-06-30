@@ -2,34 +2,36 @@
 Main entry component for the examples
 "
 Class {
-	#name : #SBSExamplesHome,
-	#superclass : #SBSRootComponent,
+	#name : 'SBSExamplesHome',
+	#superclass : 'SBSRootComponent',
 	#instVars : [
 		'browser',
 		'displayIntro'
 	],
-	#category : #'Bootstrap5-Examples-Home'
+	#category : 'Bootstrap5-Examples-Home',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Home'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSExamplesHome class >> contextRoot [
 
 	^'bootstrap5'
 ]
 
-{ #category : #'class initialization' }
+{ #category : 'class initialization' }
 SBSExamplesHome class >> initialize [
 
 	self register
 ]
 
-{ #category : #utilities }
+{ #category : 'utilities' }
 SBSExamplesHome class >> openBrowser [
 	<script>
 	WebBrowser openOn: 'http://localhost:8080/', self contextRoot
 ]
 
-{ #category : #registration }
+{ #category : 'registration' }
 SBSExamplesHome class >> register [
 
 	|app|
@@ -38,31 +40,31 @@ SBSExamplesHome class >> register [
 		addLibrary: SBSExamplesLibrary
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 SBSExamplesHome >> browseExamples [
 	displayIntro := false
 ]
 
-{ #category : #hooks }
+{ #category : 'hooks' }
 SBSExamplesHome >> children [
 
 	^Array with: browser
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 SBSExamplesHome >> initialize [
 	super initialize.
 	displayIntro := true.
 	browser := SBSExampleBrowser new
 ]
 
-{ #category : #testing }
+{ #category : 'testing' }
 SBSExamplesHome >> isDisplayingIntro [
 
 	^displayIntro
 ]
 
-{ #category : #'rendering components' }
+{ #category : 'rendering components' }
 SBSExamplesHome >> renderBrandOn: html [
 
  html navigationBarBrand
@@ -74,7 +76,7 @@ SBSExamplesHome >> renderBrandOn: html [
  ]
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSExamplesHome >> renderContentOn: html [
 
 	self renderNavigationbarOn: html.
@@ -83,7 +85,7 @@ SBSExamplesHome >> renderContentOn: html [
 			ifFalse: [ browser renderOn: html ]
 ]
 
-{ #category : #'rendering components' }
+{ #category : 'rendering components' }
 SBSExamplesHome >> renderHomeButtonOn: html [
 
 	html form: [
@@ -93,7 +95,7 @@ SBSExamplesHome >> renderHomeButtonOn: html [
 			with: 'Home'  ]
 ]
 
-{ #category : #'rendering components' }
+{ #category : 'rendering components' }
 SBSExamplesHome >> renderIntroOn: html [
 	html container: [
 		html break.
@@ -122,7 +124,7 @@ SBSExamplesHome >> renderIntroOn: html [
 	]]
 ]
 
-{ #category : #'rendering components' }
+{ #category : 'rendering components' }
 SBSExamplesHome >> renderNavigationLinkOn: html [
 
 	 html navigationLink
@@ -130,7 +132,7 @@ SBSExamplesHome >> renderNavigationLinkOn: html [
 						with: 'Bootstrap5 for Seaside'
 ]
 
-{ #category : #'rendering components' }
+{ #category : 'rendering components' }
 SBSExamplesHome >> renderNavigationbarOn: html [
 
 	 html navigationBar
@@ -142,13 +144,13 @@ SBSExamplesHome >> renderNavigationbarOn: html [
 						renderHomeButtonOn: html ]
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 SBSExamplesHome >> returnToIntro [
 
 	displayIntro := true
 ]
 
-{ #category : #updating }
+{ #category : 'updating' }
 SBSExamplesHome >> updateRoot: htmlRoot [
 	super updateRoot: htmlRoot.
 	htmlRoot title: 'Bootstrap5 for Seaside' translated

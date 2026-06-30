@@ -2,20 +2,22 @@
 Input group for Bootstrap
 "
 Class {
-	#name : #SBSInputGroupTag,
-	#superclass : #SBSGenericTag,
+	#name : 'SBSInputGroupTag',
+	#superclass : 'SBSGenericTag',
 	#traits : 'SBSTSizeStyled',
 	#classTraits : 'SBSTSizeStyled classTrait',
-	#category : #'Bootstrap5-Core-Base'
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSInputGroupTag >> defaultStyleClass [
 
 	^'input-group'
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 SBSInputGroupTag >> initialize [
 	super initialize.
 	self sizeStyle: self defaultStyleClass

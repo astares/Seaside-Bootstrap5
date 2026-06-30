@@ -2,12 +2,14 @@
 A card title
 "
 Class {
-	#name : #SBSCardTitleTag,
-	#superclass : #SBSHeadingTag,
-	#category : #'Bootstrap5-Core-Base'
+	#name : 'SBSCardTitleTag',
+	#superclass : 'SBSHeadingTag',
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSCardTitleTag >> defaultStyleClass [
 
 	^'card-title'

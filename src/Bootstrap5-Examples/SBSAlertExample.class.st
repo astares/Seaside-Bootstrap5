@@ -2,18 +2,20 @@
 Alert example
 "
 Class {
-	#name : #SBSAlertExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSAlertExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSAlertExample class >> exampleName [
 
 	^'Alerts'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSAlertExample >> renderExampleOn: html [
 	html heading level2 with: 'Examples'.
 	html alert bePrimary with: 'A simple primary alert—check it out!'.

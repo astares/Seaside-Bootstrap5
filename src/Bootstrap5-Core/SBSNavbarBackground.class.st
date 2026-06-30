@@ -4,17 +4,19 @@ See
    https://getbootstrap.com/docs/4.3/components/navbar/#color-schemes
 "
 Class {
-	#name : #SBSNavbarBackground,
-	#superclass : #Object,
+	#name : 'SBSNavbarBackground',
+	#superclass : 'Object',
 	#traits : 'SBSTContextualStyled',
 	#classTraits : 'SBSTContextualStyled classTrait',
 	#instVars : [
 		'navigationBarTag'
 	],
-	#category : #'Bootstrap5-Core-Utilities'
+	#category : 'Bootstrap5-Core-Utilities',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Utilities'
 }
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 SBSNavbarBackground class >> on: aNavigationBarTag [
 
 	^(self new)
@@ -22,50 +24,50 @@ SBSNavbarBackground class >> on: aNavigationBarTag [
 		yourself
 ]
 
-{ #category : #dispatching }
+{ #category : 'dispatching' }
 SBSNavbarBackground >> class: aStyleClass [
 
 	self navigationBarTag class: aStyleClass
 ]
 
-{ #category : #dispatching }
+{ #category : 'dispatching' }
 SBSNavbarBackground >> class: aString if: aBoolean [
 
 	navigationBarTag class: aString if: aBoolean
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSNavbarBackground >> color: aColor [
 
 	self colorString: '#', aColor asHexString asLowercase
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSNavbarBackground >> colorString: anHTMLColorString [
 
 	navigationBarTag style: 'background-color: ', anHTMLColorString
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSNavbarBackground >> defaultStyleClass [
 
 	^'bg'
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 SBSNavbarBackground >> initialize [
 	super initialize.
 	self contextStyle: self defaultStyleClass.
 	self modifier: ''
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSNavbarBackground >> navigationBarTag [
 
 	^navigationBarTag
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSNavbarBackground >> navigationBarTag: aNavigationBarTag [
 
 	navigationBarTag := aNavigationBarTag

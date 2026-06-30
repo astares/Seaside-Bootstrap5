@@ -2,23 +2,25 @@
 Bootstrap carousel
 "
 Class {
-	#name : #SBSCarouselTag,
-	#superclass : #SBSGenericTag,
-	#category : #'Bootstrap5-Core-Base'
+	#name : 'SBSCarouselTag',
+	#superclass : 'SBSGenericTag',
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
-{ #category : #operations }
+{ #category : 'operations' }
 SBSCarouselTag >> autoplay [
 	self attributeAt: 'data-bs-ride' put: 'carousel'
 ]
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSCarouselTag >> defaultStyleClass [
 
 	^'carousel'
 ]
 
-{ #category : #options }
+{ #category : 'options' }
 SBSCarouselTag >> slide [
 	self class: 'slide'
 ]

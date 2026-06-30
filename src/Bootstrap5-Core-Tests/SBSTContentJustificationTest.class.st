@@ -2,12 +2,14 @@
 SUnit tests for SBSTHorizontalAlignable trait
 "
 Class {
-	#name : #SBSTContentJustificationTest,
-	#superclass : #SBSAbstractCanvasBrushTest,
-	#category : #'Bootstrap5-Core-Tests-Traits'
+	#name : 'SBSTContentJustificationTest',
+	#superclass : 'SBSAbstractCanvasBrushTest',
+	#category : 'Bootstrap5-Core-Tests-Traits',
+	#package : 'Bootstrap5-Core-Tests',
+	#tag : 'Traits'
 }
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentAround [
 
 	self
@@ -15,7 +17,7 @@ SBSTContentJustificationTest >> testRowJustifyContentAround [
 		gives: '<div class="row justify-content-around"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentAroundLarge [
 
 	self
@@ -23,7 +25,7 @@ SBSTContentJustificationTest >> testRowJustifyContentAroundLarge [
 		gives: '<div class="row justify-content-lg-around"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentAroundMedium [
 
 	self
@@ -31,7 +33,7 @@ SBSTContentJustificationTest >> testRowJustifyContentAroundMedium [
 		gives: '<div class="row justify-content-md-around"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentAroundSmall [
 
 	self
@@ -39,7 +41,7 @@ SBSTContentJustificationTest >> testRowJustifyContentAroundSmall [
 		gives: '<div class="row justify-content-sm-around"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentAroundVeryLarge [
 
 	self
@@ -47,7 +49,7 @@ SBSTContentJustificationTest >> testRowJustifyContentAroundVeryLarge [
 		gives: '<div class="row justify-content-xl-around"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentBetween [
 
 	self
@@ -55,7 +57,7 @@ SBSTContentJustificationTest >> testRowJustifyContentBetween [
 		gives: '<div class="row justify-content-between"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentBetweenLarge [
 
 	self
@@ -63,7 +65,7 @@ SBSTContentJustificationTest >> testRowJustifyContentBetweenLarge [
 		gives: '<div class="row justify-content-lg-between"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentBetweenMedium [
 
 	self
@@ -71,7 +73,7 @@ SBSTContentJustificationTest >> testRowJustifyContentBetweenMedium [
 		gives: '<div class="row justify-content-md-between"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentBetweenSmall [
 
 	self
@@ -79,7 +81,7 @@ SBSTContentJustificationTest >> testRowJustifyContentBetweenSmall [
 		gives: '<div class="row justify-content-sm-between"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentBetweenVeryLarge [
 
 	self
@@ -87,7 +89,7 @@ SBSTContentJustificationTest >> testRowJustifyContentBetweenVeryLarge [
 		gives: '<div class="row justify-content-xl-between"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentCenter [
 
 	self
@@ -95,7 +97,7 @@ SBSTContentJustificationTest >> testRowJustifyContentCenter [
 		gives: '<div class="row justify-content-center"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentCenterLarge [
 
 	self
@@ -103,7 +105,7 @@ SBSTContentJustificationTest >> testRowJustifyContentCenterLarge [
 		gives: '<div class="row justify-content-lg-center"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentCenterMedium [
 
 	self
@@ -111,7 +113,7 @@ SBSTContentJustificationTest >> testRowJustifyContentCenterMedium [
 		gives: '<div class="row justify-content-md-center"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentCenterSmall [
 
 	self
@@ -119,7 +121,7 @@ SBSTContentJustificationTest >> testRowJustifyContentCenterSmall [
 		gives: '<div class="row justify-content-sm-center"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentCenterVeryLarge [
 
 	self
@@ -127,7 +129,7 @@ SBSTContentJustificationTest >> testRowJustifyContentCenterVeryLarge [
 		gives: '<div class="row justify-content-xl-center"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentEnd [
 
 	self
@@ -135,7 +137,7 @@ SBSTContentJustificationTest >> testRowJustifyContentEnd [
 		gives: '<div class="row justify-content-end"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentEndLarge [
 
 	self
@@ -143,7 +145,7 @@ SBSTContentJustificationTest >> testRowJustifyContentEndLarge [
 		gives: '<div class="row justify-content-lg-end"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentEndMedium [
 
 	self
@@ -151,7 +153,7 @@ SBSTContentJustificationTest >> testRowJustifyContentEndMedium [
 		gives: '<div class="row justify-content-md-end"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentEndSmall [
 
 	self
@@ -159,7 +161,7 @@ SBSTContentJustificationTest >> testRowJustifyContentEndSmall [
 		gives: '<div class="row justify-content-sm-end"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentEndVeryLarge [
 
 	self
@@ -167,7 +169,7 @@ SBSTContentJustificationTest >> testRowJustifyContentEndVeryLarge [
 		gives: '<div class="row justify-content-xl-end"></div>'
 ]
 
-{ #category : #'tests - layout - positioning' }
+{ #category : 'tests - layout - positioning' }
 SBSTContentJustificationTest >> testRowJustifyContentStart [
 
 	self

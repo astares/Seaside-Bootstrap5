@@ -2,12 +2,14 @@
 SUnit tests for SBSTOffsetting
 "
 Class {
-	#name : #SBSTOffsettingTest,
-	#superclass : #SBSAbstractCanvasBrushTest,
-	#category : #'Bootstrap5-Core-Tests-Traits'
+	#name : 'SBSTOffsettingTest',
+	#superclass : 'SBSAbstractCanvasBrushTest',
+	#category : 'Bootstrap5-Core-Tests-Traits',
+	#package : 'Bootstrap5-Core-Tests',
+	#tag : 'Traits'
 }
 
-{ #category : #'tests - layout - offsetting' }
+{ #category : 'tests - layout - offsetting' }
 SBSTOffsettingTest >> testEqualWidthColumnExtraLargeOffset [
 
 	self
@@ -15,7 +17,7 @@ SBSTOffsettingTest >> testEqualWidthColumnExtraLargeOffset [
 		gives: '<div class="col offset-xl-1"></div>'
 ]
 
-{ #category : #'tests - layout - offsetting' }
+{ #category : 'tests - layout - offsetting' }
 SBSTOffsettingTest >> testEqualWidthColumnExtraSmallOffset [
 
 	self
@@ -23,7 +25,7 @@ SBSTOffsettingTest >> testEqualWidthColumnExtraSmallOffset [
 		gives: '<div class="col offset-1"></div>'
 ]
 
-{ #category : #'tests - layout - offsetting' }
+{ #category : 'tests - layout - offsetting' }
 SBSTOffsettingTest >> testEqualWidthColumnLargeOffset [
 
 	self
@@ -31,7 +33,7 @@ SBSTOffsettingTest >> testEqualWidthColumnLargeOffset [
 		gives: '<div class="col offset-lg-1"></div>'
 ]
 
-{ #category : #'tests - layout - offsetting' }
+{ #category : 'tests - layout - offsetting' }
 SBSTOffsettingTest >> testEqualWidthColumnMediumOffset [
 
 	self
@@ -39,7 +41,7 @@ SBSTOffsettingTest >> testEqualWidthColumnMediumOffset [
 		gives: '<div class="col offset-md-1"></div>'
 ]
 
-{ #category : #'tests - layout - offsetting' }
+{ #category : 'tests - layout - offsetting' }
 SBSTOffsettingTest >> testEqualWidthColumnOffset [
 
 	self
@@ -47,7 +49,7 @@ SBSTOffsettingTest >> testEqualWidthColumnOffset [
 		gives: '<div class="col offset-1"></div>'
 ]
 
-{ #category : #'tests - layout - offsetting' }
+{ #category : 'tests - layout - offsetting' }
 SBSTOffsettingTest >> testEqualWidthColumnSmallOffset [
 
 	self

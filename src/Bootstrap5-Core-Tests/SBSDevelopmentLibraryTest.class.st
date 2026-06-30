@@ -2,12 +2,14 @@
 SUnit test for SBSDevelopmentLibrary
 "
 Class {
-	#name : #SBSDevelopmentLibraryTest,
-	#superclass : #TestCase,
-	#category : #'Bootstrap5-Core-Tests-Libraries'
+	#name : 'SBSDevelopmentLibraryTest',
+	#superclass : 'TestCase',
+	#category : 'Bootstrap5-Core-Tests-Libraries',
+	#package : 'Bootstrap5-Core-Tests',
+	#tag : 'Libraries'
 }
 
-{ #category : #tests }
+{ #category : 'tests' }
 SBSDevelopmentLibraryTest >> testIncludeBootstrapCSSByDefault [
 
 	self assert: (SBSDevelopmentLibrary new selectorsToInclude includes: #cssbootstrapCss)

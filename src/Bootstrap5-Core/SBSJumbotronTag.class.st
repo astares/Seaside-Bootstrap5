@@ -2,12 +2,14 @@
 Bootstrap jumbotron
 "
 Class {
-	#name : #SBSJumbotronTag,
-	#superclass : #SBSGenericTag,
-	#category : #'Bootstrap5-Core-Base'
+	#name : 'SBSJumbotronTag',
+	#superclass : 'SBSGenericTag',
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
-{ #category : #defaults }
+{ #category : 'defaults' }
 SBSJumbotronTag >> defaultStyleClass [
 
 	^'jumbotron'

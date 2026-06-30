@@ -2,19 +2,21 @@
 Bootstrap button
 "
 Class {
-	#name : #SBSFormButtonTag,
-	#superclass : #SBSButtonTag,
-	#category : #'Bootstrap5-Core-Base'
+	#name : 'SBSFormButtonTag',
+	#superclass : 'SBSButtonTag',
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
-{ #category : #'options - styles' }
+{ #category : 'options - styles' }
 SBSFormButtonTag >> beLink [
 	"Creates a link type button."
 
 	self beLinkIf: true
 ]
 
-{ #category : #'options - styles' }
+{ #category : 'options - styles' }
 SBSFormButtonTag >> beLinkIf: aBlock [
 	"Creates a link type button if aBlock is true."
 

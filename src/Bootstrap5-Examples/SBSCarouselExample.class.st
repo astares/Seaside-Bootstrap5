@@ -2,18 +2,20 @@
 Example for a Bootstrap Carousel
 "
 Class {
-	#name : #SBSCarouselExample,
-	#superclass : #SBSBootstrapExample,
-	#category : #'Bootstrap5-Examples-Examples'
+	#name : 'SBSCarouselExample',
+	#superclass : 'SBSBootstrapExample',
+	#category : 'Bootstrap5-Examples-Examples',
+	#package : 'Bootstrap5-Examples',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 SBSCarouselExample class >> exampleName [
 
 	^'Carousel'
 ]
 
-{ #category : #rendering }
+{ #category : 'rendering' }
 SBSCarouselExample >> renderExampleOn: html [
 
 	html carousel

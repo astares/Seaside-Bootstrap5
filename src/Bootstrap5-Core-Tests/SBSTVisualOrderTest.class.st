@@ -2,12 +2,14 @@
 SUnit tests for SBSTVisualOrder
 "
 Class {
-	#name : #SBSTVisualOrderTest,
-	#superclass : #SBSAbstractCanvasBrushTest,
-	#category : #'Bootstrap5-Core-Tests-Traits'
+	#name : 'SBSTVisualOrderTest',
+	#superclass : 'SBSAbstractCanvasBrushTest',
+	#category : 'Bootstrap5-Core-Tests-Traits',
+	#package : 'Bootstrap5-Core-Tests',
+	#tag : 'Traits'
 }
 
-{ #category : #'tests - layout - ordering' }
+{ #category : 'tests - layout - ordering' }
 SBSTVisualOrderTest >> testEqualWidthColumnExtraLargeOrdered [
 
 	self
@@ -15,7 +17,7 @@ SBSTVisualOrderTest >> testEqualWidthColumnExtraLargeOrdered [
 		gives: '<div class="col order-xl-1"></div>'
 ]
 
-{ #category : #'tests - layout - ordering' }
+{ #category : 'tests - layout - ordering' }
 SBSTVisualOrderTest >> testEqualWidthColumnExtraSmallOrdered [
 
 	self
@@ -23,7 +25,7 @@ SBSTVisualOrderTest >> testEqualWidthColumnExtraSmallOrdered [
 		gives: '<div class="col order-1"></div>'
 ]
 
-{ #category : #'tests - layout - ordering' }
+{ #category : 'tests - layout - ordering' }
 SBSTVisualOrderTest >> testEqualWidthColumnLargeOrdered [
 
 	self
@@ -31,7 +33,7 @@ SBSTVisualOrderTest >> testEqualWidthColumnLargeOrdered [
 		gives: '<div class="col order-lg-1"></div>'
 ]
 
-{ #category : #'tests - layout - ordering' }
+{ #category : 'tests - layout - ordering' }
 SBSTVisualOrderTest >> testEqualWidthColumnMediumOrdered [
 
 	self
@@ -39,7 +41,7 @@ SBSTVisualOrderTest >> testEqualWidthColumnMediumOrdered [
 		gives: '<div class="col order-md-1"></div>'
 ]
 
-{ #category : #'tests - layout - ordering' }
+{ #category : 'tests - layout - ordering' }
 SBSTVisualOrderTest >> testEqualWidthColumnOrdered [
 
 	self
@@ -47,7 +49,7 @@ SBSTVisualOrderTest >> testEqualWidthColumnOrdered [
 		gives: '<div class="col order-1"></div>'
 ]
 
-{ #category : #'tests - layout - ordering' }
+{ #category : 'tests - layout - ordering' }
 SBSTVisualOrderTest >> testEqualWidthColumnOrderedFirst [
 
 	self
@@ -55,7 +57,7 @@ SBSTVisualOrderTest >> testEqualWidthColumnOrderedFirst [
 		gives: '<div class="col order-first"></div>'
 ]
 
-{ #category : #'tests - layout - ordering' }
+{ #category : 'tests - layout - ordering' }
 SBSTVisualOrderTest >> testEqualWidthColumnOrderedLast [
 
 	self
@@ -63,7 +65,7 @@ SBSTVisualOrderTest >> testEqualWidthColumnOrderedLast [
 		gives: '<div class="col order-last"></div>'
 ]
 
-{ #category : #'tests - layout - ordering' }
+{ #category : 'tests - layout - ordering' }
 SBSTVisualOrderTest >> testEqualWidthColumnSmallOrdered [
 
 	self
