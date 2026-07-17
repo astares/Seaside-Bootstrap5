@@ -38,7 +38,8 @@ SBSCloseButtonTag >> beOffCanvasClose: targetId [
 
 	self
 		beOffCanvasClose;
-		dataAttributeAt: 'bs-target' put: targetId
+		dataTarget: targetId; 
+		type:'button'
 ]
 
 { #category : 'defaults' }

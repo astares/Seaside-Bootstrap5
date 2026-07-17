@@ -8,3 +8,8 @@ Class {
 	#package : 'Bootstrap5-Core',
 	#tag : 'Base'
 }
+
+{ #category : 'defaults' }
+SBSOffCanvasHeaderTag >> defaultStyleClass [ 
+	^'offcanvas-header'
+]

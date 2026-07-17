@@ -13,6 +13,12 @@ WATagBrush >> ariaLabel: aString [
 ]
 
 { #category : '*Bootstrap5-Core' }
+WATagBrush >> ariaLabelledBy: aString [
+
+	self attributeAt: 'aria-labelledby' put: aString
+]
+
+{ #category : '*Bootstrap5-Core' }
 WATagBrush >> aspectRatio16x9 [
 	self aspectRatio: '16x9'
 ]
@@ -217,6 +223,12 @@ WATagBrush >> primaryBackground [
 WATagBrush >> primaryText [
 
 	self class: 'text-primary'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> role: aRole [
+
+	self attributeAt: 'role' put: aRole
 ]
 
 { #category : '*Bootstrap5-Core' }

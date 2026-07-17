@@ -20,3 +20,8 @@ SBSFormGroupTag >> formCheck [
 
 	self class: 'form-check'
 ]
+
+{ #category : 'attributes' }
+SBSFormGroupTag >> reverse [
+	self class:'form-check-reverse'
+]

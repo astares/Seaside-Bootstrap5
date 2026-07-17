@@ -10,6 +10,11 @@ Class {
 }
 
 { #category : 'defaults' }
+SBSGenericTag >> beGrid [
+	self class:'grid'
+]
+
+{ #category : 'defaults' }
 SBSGenericTag >> defaultStyleClass [
 
 	^ self subclassResponsibility
@@ -26,12 +31,6 @@ SBSGenericTag >> initialize [
 
 	super initialize.
 	self initStyleClass
-]
-
-{ #category : 'defaults' }
-SBSGenericTag >> role: aRole [
-
-	self attributeAt: 'role' put: 'progressbar'
 ]
 
 { #category : 'accessing' }

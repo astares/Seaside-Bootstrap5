@@ -42,7 +42,3 @@ SBSProgressTag >> initialize [
 	super initialize.
 	self role: 'progressbar' 
 ]
-
-{ #category : 'defaults' }
-SBSProgressTag >> role: obj [
-]

@@ -11,12 +11,6 @@ Class {
 	#tag : 'Base'
 }
 
-{ #category : 'screen reader support' }
-SBSButtonGroupTag >> ariaLabel: aString [
-
-	self attributeAt: 'aria-label' put: aString
-]
-
 { #category : 'defaults' }
 SBSButtonGroupTag >> defaultStyleClass [
 

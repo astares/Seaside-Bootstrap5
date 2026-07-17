@@ -1,1 +1,1 @@
-Package { #name : #BaselineOfBootstrap5 }
+Package { #name : 'BaselineOfBootstrap5' }

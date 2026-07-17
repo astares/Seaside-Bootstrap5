@@ -1,3 +1,8 @@
+"
+https://getbootstrap.com/docs/5.3/components/offcanvas/
+
+Build hidden sidebars into your project for navigation, shopping carts, and more with a few classes and our JavaScript plugin.
+"
 Class {
 	#name : 'SBSOffCanvasTag',
 	#superclass : 'SBSGenericTag',
@@ -5,6 +10,11 @@ Class {
 	#package : 'Bootstrap5-Core',
 	#tag : 'Base'
 }
+
+{ #category : 'as yet unclassified' }
+SBSOffCanvasTag >> defaultStyleClass [ 
+	^'offcanvas'
+]
 
 { #category : 'as yet unclassified' }
 SBSOffCanvasTag >> fromBottom [

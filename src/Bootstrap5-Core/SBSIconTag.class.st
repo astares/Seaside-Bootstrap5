@@ -12,16 +12,14 @@ Class {
 }
 
 { #category : 'accessing' }
-SBSIconTag >> icon: boostrapIconCSSClass [
-
-	self class: boostrapIconCSSClass
+SBSIconTag >> defaultStyleClass [
+	^ 'bi'
 ]
 
 { #category : 'accessing' }
-SBSIconTag >> initialize [
+SBSIconTag >> icon: boostrapIconCSSClass [
 
-	super initialize.
-	self class: 'bi'
+	self class: 'bi-',boostrapIconCSSClass
 ]
 
 { #category : 'accessing' }

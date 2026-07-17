@@ -659,8 +659,7 @@ SBSHtmlCanvas >> dropdown: aBlock [
 SBSHtmlCanvas >> dropdownDivider [
 	"Provide a bootstrap dropdown divider."
 
-	^ self div
-		class: 'dropdown-divider'
+	^ self listItem: [ self horizontalRule class: 'dropdown-divider' ]
 ]
 
 { #category : 'dropdown' }
@@ -682,7 +681,7 @@ SBSHtmlCanvas >> dropdownHeader: aBlock [
 SBSHtmlCanvas >> dropdownItem [
 	"Provide a bootstrap dropdown item."
 
-	^ self brush: SBSDropdownItemTag new
+	^self brush: SBSDropdownItemTag new
 ]
 
 { #category : 'dropdown' }
@@ -691,6 +690,16 @@ SBSHtmlCanvas >> dropdownItem: aBlock [
 
 	 ^ self dropdownItem
 		with: aBlock
+]
+
+{ #category : 'navigation' }
+SBSHtmlCanvas >> dropdownLink [
+	^self brush: SBSDropdownLinkTag new
+]
+
+{ #category : 'navigation' }
+SBSHtmlCanvas >> dropdownLink: anObj [ 
+	^self dropdownLink with: anObj
 ]
 
 { #category : 'dropdown' }
@@ -937,6 +946,32 @@ SBSHtmlCanvas >> formTextInput: aBlock [
 		with: aBlock
 ]
 
+{ #category : 'layout - positioning' }
+SBSHtmlCanvas >> grid [
+	"Provide a Bootstrap layout grid block. can also just add the 'grid' class to an element "
+
+	^ self brush: SBSGridLayoutTag new
+]
+
+{ #category : 'layout - positioning' }
+SBSHtmlCanvas >> grid: anObj [ 
+	"Provide a Bootstrap layout grid block. can also just add the 'grid' class to an element "
+
+	^ self grid with: anObj
+]
+
+{ #category : 'layout' }
+SBSHtmlCanvas >> gridItem [ 
+
+	^ self brush: SBSGridLayoutItemTag new
+]
+
+{ #category : 'layout' }
+SBSHtmlCanvas >> gridItem: anObject [
+
+	^ self gridItem with: anObject
+]
+
 { #category : 'icons' }
 SBSHtmlCanvas >> icon [
 	^self brush: SBSIconTag new
@@ -1061,6 +1096,20 @@ SBSHtmlCanvas >> linkButton: aBlock [
 
 	 ^ self linkButton
 		with: aBlock
+]
+
+{ #category : 'links' }
+SBSHtmlCanvas >> linkOutlineButton [
+	"Defines a Bootstrap button."
+
+	^self brush: SBSLinkOutlineButtonTag new
+]
+
+{ #category : 'links' }
+SBSHtmlCanvas >> linkOutlineButton: anObj [ 
+	"Defines a Bootstrap button."
+
+	^self linkOutlineButton with: anObj
 ]
 
 { #category : 'listgroups' }
@@ -1358,14 +1407,14 @@ SBSHtmlCanvas >> navigationList: aBlock [
 		with: aBlock
 ]
 
-{ #category : 'pagination' }
+{ #category : 'tabs' }
 SBSHtmlCanvas >> navigationTabs [
 	"Provide a Bootstrap navigation tabs container."
 
 	^ self brush: SBSNavigationTabTag new
 ]
 
-{ #category : 'pagination' }
+{ #category : 'tabs' }
 SBSHtmlCanvas >> navigationTabs: aRenderable [
 	"Provide a Bootstrap navigation tabs container."
 
@@ -1523,6 +1572,20 @@ SBSHtmlCanvas >> row: aBlock [
 		with: aBlock
 ]
 
+{ #category : 'buttons' }
+SBSHtmlCanvas >> solidButton [
+	"Defines a Bootstrap outline button."
+
+	^self brush: SBSSolidButtonTag new
+]
+
+{ #category : 'buttons' }
+SBSHtmlCanvas >> solidButton: anObject [
+	"Defines a Bootstrap outline button."
+
+	^self solidButton with: anObject
+]
+
 { #category : 'progress' }
 SBSHtmlCanvas >> stackedProgress [
 	"Provide a bootstrap progress bar."
@@ -1539,28 +1602,42 @@ SBSHtmlCanvas >> stackedProgress: anObject [
 		  yourself
 ]
 
-{ #category : 'listgroups' }
+{ #category : 'tabs' }
 SBSHtmlCanvas >> tabContent [
 	"Provide a Bootstrap tab content container."
 
 	^ self brush: SBSTabContentTag new
 ]
 
-{ #category : 'listgroups' }
+{ #category : 'tabs' }
 SBSHtmlCanvas >> tabContent: aRenderable [
 	"Provide a Bootstrap tab content container with aRenderable as its content."
 
 	^ self tabContent with: aRenderable
 ]
 
-{ #category : 'pagination' }
+{ #category : 'tabs' }
+SBSHtmlCanvas >> tabLink [
+	"Provide a Bootstrap tab content container."
+
+	^ self brush: SBSTabButtonTag new
+]
+
+{ #category : 'tabs' }
+SBSHtmlCanvas >> tabLink: anObject [ 
+	"Provide a Bootstrap tab content container."
+
+	^ self tabLink with: anObject 
+]
+
+{ #category : 'tabs' }
 SBSHtmlCanvas >> tabPane [
 	"Provide a Bootstrap tab pane."
 
 	^ self brush: SBSTabPaneTag new
 ]
 
-{ #category : 'pagination' }
+{ #category : 'tabs' }
 SBSHtmlCanvas >> tabPane: aRenderable [
 	"Provide a Bootstrap tab pane with aRenderable within."
 
