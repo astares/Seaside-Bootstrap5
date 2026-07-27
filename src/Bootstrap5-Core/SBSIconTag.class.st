@@ -22,6 +22,11 @@ SBSIconTag >> icon: boostrapIconCSSClass [
 	self class: 'bi-',boostrapIconCSSClass
 ]
 
+{ #category : 'options' }
+SBSIconTag >> listItemIcon [
+	^self 
+]
+
 { #category : 'accessing' }
 SBSIconTag >> tag [
 	^'i'

@@ -108,7 +108,9 @@ SBSButtonTag >> defaultStyleClass [
 { #category : 'options' }
 SBSButtonTag >> dropdown [
 
-	self class: 'dropdown-toggle'
+	self
+		class: 'dropdown-toggle';
+		attributeAt: 'data-bs-toggle' put: 'dropdown'
 ]
 
 { #category : 'options' }

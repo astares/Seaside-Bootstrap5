@@ -1,24 +1,6 @@
 Extension { #name : 'WATagBrush' }
 
 { #category : '*Bootstrap5-Core' }
-WATagBrush >> ariaControls: aString [
-
-	self attributeAt: 'aria-controls' put: aString
-]
-
-{ #category : '*Bootstrap5-Core' }
-WATagBrush >> ariaLabel: aString [
-
-	self attributeAt: 'aria-label' put: aString
-]
-
-{ #category : '*Bootstrap5-Core' }
-WATagBrush >> ariaLabelledBy: aString [
-
-	self attributeAt: 'aria-labelledby' put: aString
-]
-
-{ #category : '*Bootstrap5-Core' }
 WATagBrush >> aspectRatio16x9 [
 	self aspectRatio: '16x9'
 ]
@@ -317,13 +299,20 @@ WATagBrush >> tooltip: aRenderable placed: aDirection [
 { #category : '*Bootstrap5-Core' }
 WATagBrush >> tooltip: aRenderable placed: aDirection withHTML: usingHTML [
 
+	| tipContent |
 	self
-		dataAttributeAt: 'bs-toggle' put: 'tooltip';
-		dataAttributeAt: 'bs-title' put:  aRenderable.
+		ensureId;
+		dataAttributeAt: 'bs-toggle' put: 'tooltip'.
+
 	aDirection ifNotNil: [ "top,bottom,left,right"
 		self dataAttributeAt: 'bs-placement' put: aDirection ].
+	tipContent := aRenderable.
 	usingHTML ifTrue: [ self dataAttributeAt: 'bs-html' put: 'true' ].
-	self ensureId.
+	tipContent isBlock ifTrue: [
+			self dataAttributeAt: 'bs-html' put: 'true'.
+			tipContent := WAHtmlCanvas builder render: aRenderable ].
+
+	self dataAttributeAt: 'bs-title' put: tipContent.
 	self script: (JSStream on:
 			 'bootstrap.Tooltip.getOrCreateInstance(document.getElementById("'
 			 , self id , '"));')
