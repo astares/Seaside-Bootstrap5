@@ -659,8 +659,7 @@ SBSHtmlCanvas >> dropdown: aBlock [
 SBSHtmlCanvas >> dropdownDivider [
 	"Provide a bootstrap dropdown divider."
 
-	^ self div
-		class: 'dropdown-divider'
+	^ self listItem: [ self horizontalRule class: 'dropdown-divider' ]
 ]
 
 { #category : 'dropdown' }
@@ -682,7 +681,7 @@ SBSHtmlCanvas >> dropdownHeader: aBlock [
 SBSHtmlCanvas >> dropdownItem [
 	"Provide a bootstrap dropdown item."
 
-	^ self brush: SBSDropdownItemTag new
+	^self brush: SBSDropdownItemTag new
 ]
 
 { #category : 'dropdown' }
@@ -691,6 +690,16 @@ SBSHtmlCanvas >> dropdownItem: aBlock [
 
 	 ^ self dropdownItem
 		with: aBlock
+]
+
+{ #category : 'navigation' }
+SBSHtmlCanvas >> dropdownLink [
+	^self brush: SBSDropdownLinkTag new
+]
+
+{ #category : 'navigation' }
+SBSHtmlCanvas >> dropdownLink: anObj [ 
+	^self dropdownLink with: anObj
 ]
 
 { #category : 'dropdown' }
@@ -937,6 +946,57 @@ SBSHtmlCanvas >> formTextInput: aBlock [
 		with: aBlock
 ]
 
+{ #category : 'layout - positioning' }
+SBSHtmlCanvas >> grid [
+	"Provide a Bootstrap layout grid block. can also just add the 'grid' class to an element "
+
+	^ self brush: SBSGridLayoutTag new
+]
+
+{ #category : 'layout - positioning' }
+SBSHtmlCanvas >> grid: anObj [ 
+	"Provide a Bootstrap layout grid block. can also just add the 'grid' class to an element "
+
+	^ self grid with: anObj
+]
+
+{ #category : 'layout' }
+SBSHtmlCanvas >> gridItem [ 
+
+	^ self brush: SBSGridLayoutItemTag new
+]
+
+{ #category : 'layout' }
+SBSHtmlCanvas >> gridItem: anObject [
+
+	^ self gridItem with: anObject
+]
+
+{ #category : 'icons' }
+SBSHtmlCanvas >> icon [
+	^self brush: SBSIconTag new
+]
+
+{ #category : 'icons' }
+SBSHtmlCanvas >> icon: bootstrapIconCSSClass [
+
+	^ self icon icon: bootstrapIconCSSClass
+]
+
+{ #category : 'links' }
+SBSHtmlCanvas >> iconLink [
+	"Defines a Bootstrap button."
+
+	^self brush: SBSIconLinkTag new
+]
+
+{ #category : 'links' }
+SBSHtmlCanvas >> iconLink: aRenderable [
+	"Defines a Bootstrap button."
+
+	^self iconLink with: aRenderable
+]
+
 { #category : 'image' }
 SBSHtmlCanvas >> imageFluid [
 	"Defines an image."
@@ -1023,19 +1083,33 @@ SBSHtmlCanvas >> jumbotron: aBlock [
 		with: aBlock
 ]
 
-{ #category : 'as yet unclassified' }
+{ #category : 'links' }
 SBSHtmlCanvas >> linkButton [
 	"Defines a Bootstrap button."
 
 	^self brush: SBSLinkButtonTag new
 ]
 
-{ #category : 'as yet unclassified' }
+{ #category : 'links' }
 SBSHtmlCanvas >> linkButton: aBlock [
 	"Provides a Bootstrap button that is a link."
 
 	 ^ self linkButton
 		with: aBlock
+]
+
+{ #category : 'links' }
+SBSHtmlCanvas >> linkOutlineButton [
+	"Defines a Bootstrap button."
+
+	^self brush: SBSLinkOutlineButtonTag new
+]
+
+{ #category : 'links' }
+SBSHtmlCanvas >> linkOutlineButton: anObj [ 
+	"Defines a Bootstrap button."
+
+	^self linkOutlineButton with: anObj
 ]
 
 { #category : 'listgroups' }
@@ -1333,18 +1407,64 @@ SBSHtmlCanvas >> navigationList: aBlock [
 		with: aBlock
 ]
 
-{ #category : 'pagination' }
+{ #category : 'tabs' }
 SBSHtmlCanvas >> navigationTabs [
 	"Provide a Bootstrap navigation tabs container."
 
 	^ self brush: SBSNavigationTabTag new
 ]
 
-{ #category : 'pagination' }
+{ #category : 'tabs' }
 SBSHtmlCanvas >> navigationTabs: aRenderable [
 	"Provide a Bootstrap navigation tabs container."
 
 	^ self navigationTabs with: aRenderable
+]
+
+{ #category : 'offcanvas' }
+SBSHtmlCanvas >> offCanvas [
+
+	^ self brush: SBSOffCanvasTag new
+]
+
+{ #category : 'offcanvas' }
+SBSHtmlCanvas >> offCanvas: aRenderable [ 
+
+	^ self offCanvas with: aRenderable 
+]
+
+{ #category : 'offcanvas' }
+SBSHtmlCanvas >> offCanvasBody [
+
+	^ self brush: SBSOffCanvasBodyTag new
+]
+
+{ #category : 'offcanvas' }
+SBSHtmlCanvas >> offCanvasBody: aRenderable [ 
+
+	^ self offCanvasBody with: aRenderable 
+]
+
+{ #category : 'offcanvas' }
+SBSHtmlCanvas >> offCanvasHeader [ 
+
+	^ self brush: SBSOffCanvasHeaderTag new
+]
+
+{ #category : 'offcanvas' }
+SBSHtmlCanvas >> offCanvasHeader: aRenderable [ 
+
+	^ self offCanvasHeader with: aRenderable 
+]
+
+{ #category : 'offcanvas' }
+SBSHtmlCanvas >> offCanvasTitle [
+	^self brush: SBSOffCanvasTitleTag new
+]
+
+{ #category : 'offcanvas' }
+SBSHtmlCanvas >> offCanvasTitle: aRenderable [
+	^self offCanvasTitle with: aRenderable
 ]
 
 { #category : 'buttons' }
@@ -1452,30 +1572,115 @@ SBSHtmlCanvas >> row: aBlock [
 		with: aBlock
 ]
 
-{ #category : 'listgroups' }
+{ #category : 'buttons' }
+SBSHtmlCanvas >> solidButton [
+	"Defines a Bootstrap outline button."
+
+	^self brush: SBSSolidButtonTag new
+]
+
+{ #category : 'buttons' }
+SBSHtmlCanvas >> solidButton: anObject [
+	"Defines a Bootstrap outline button."
+
+	^self solidButton with: anObject
+]
+
+{ #category : 'progress' }
+SBSHtmlCanvas >> stackedProgress [
+	"Provide a bootstrap progress bar."
+
+	^ self brush: SBSStackedProgressTag new
+]
+
+{ #category : 'progress' }
+SBSHtmlCanvas >> stackedProgress: anObject [
+	"Provide a bootstrap progress bar."
+
+	^ self stackedProgress
+		  with: anObject;
+		  yourself
+]
+
+{ #category : 'tabs' }
 SBSHtmlCanvas >> tabContent [
 	"Provide a Bootstrap tab content container."
 
 	^ self brush: SBSTabContentTag new
 ]
 
-{ #category : 'listgroups' }
+{ #category : 'tabs' }
 SBSHtmlCanvas >> tabContent: aRenderable [
 	"Provide a Bootstrap tab content container with aRenderable as its content."
 
 	^ self tabContent with: aRenderable
 ]
 
-{ #category : 'pagination' }
+{ #category : 'tabs' }
+SBSHtmlCanvas >> tabLink [
+	"Provide a Bootstrap tab content container."
+
+	^ self brush: SBSTabButtonTag new
+]
+
+{ #category : 'tabs' }
+SBSHtmlCanvas >> tabLink: anObject [ 
+	"Provide a Bootstrap tab content container."
+
+	^ self tabLink with: anObject 
+]
+
+{ #category : 'tabs' }
 SBSHtmlCanvas >> tabPane [
 	"Provide a Bootstrap tab pane."
 
 	^ self brush: SBSTabPaneTag new
 ]
 
-{ #category : 'pagination' }
+{ #category : 'tabs' }
 SBSHtmlCanvas >> tabPane: aRenderable [
 	"Provide a Bootstrap tab pane with aRenderable within."
 
 	^ self tabPane with: aRenderable
+]
+
+{ #category : 'toasts' }
+SBSHtmlCanvas >> toast [
+	^self brush: SBSToastTag new
+]
+
+{ #category : 'toasts' }
+SBSHtmlCanvas >> toast: aRenderable [
+	^self toast with: aRenderable 
+]
+
+{ #category : 'toasts' }
+SBSHtmlCanvas >> toastBody [
+	^self brush: SBSToastBodyTag new
+]
+
+{ #category : 'toasts' }
+SBSHtmlCanvas >> toastBody: aRenderable [
+	^self toastBody with: aRenderable 
+]
+
+{ #category : 'toasts' }
+SBSHtmlCanvas >> toastContainer [ 
+	^self brush: SBSToastContainerTag new
+]
+
+{ #category : 'toasts' }
+SBSHtmlCanvas >> toastContainer: aRenderable [
+"use with multiple toasts at once"
+	^self toastContainer with: aRenderable 
+]
+
+{ #category : 'toasts' }
+SBSHtmlCanvas >> toastHeader [
+	^self brush: SBSToastHeaderTag new
+]
+
+{ #category : 'toasts' }
+SBSHtmlCanvas >> toastHeader: aRenderable [
+	^self toastHeader with: aRenderable 
 ]

@@ -10,6 +10,12 @@ Class {
 }
 
 { #category : 'defaults' }
+SBSAccordionTag >> beFlush [
+
+	self class:'accordion-flush'
+]
+
+{ #category : 'defaults' }
 SBSAccordionTag >> defaultStyleClass [
 
 	^ 'accordion'

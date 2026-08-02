@@ -17,8 +17,19 @@ SBSTabPaneTag >> defaultStyleClass [
 	^'tab-pane'
 ]
 
+{ #category : 'configuration' }
+SBSTabPaneTag >> fade [
+	"self class:'fade'"
+]
+
 { #category : 'defaults' }
 SBSTabPaneTag >> initialize [
 	super initialize.
-	self attributeAt: 'role' put: 'tabpanel'
+	self attributeAt: 'role' put: 'tabpanel'.
+	self tabIndex: 0.
+]
+
+{ #category : 'configuration' }
+SBSTabPaneTag >> show [
+	self class:'show active'
 ]

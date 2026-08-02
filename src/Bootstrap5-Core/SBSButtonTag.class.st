@@ -44,6 +44,12 @@ SBSButtonTag >> beBlockIf: aBlock [
 ]
 
 { #category : 'options' }
+SBSButtonTag >> beButtonType [
+
+	self bePush
+]
+
+{ #category : 'options' }
 SBSButtonTag >> beDisabled [
 
 	self disabled
@@ -62,6 +68,12 @@ SBSButtonTag >> cancelCallback: aBlock [
 ]
 
 { #category : 'options' }
+SBSButtonTag >> collapse [
+
+	self dataToggle: 'collapse'
+]
+
+{ #category : 'options' }
 SBSButtonTag >> dataDismiss: aString [
 
 	self attributeAt: 'data-bs-dismiss' put: aString
@@ -70,7 +82,8 @@ SBSButtonTag >> dataDismiss: aString [
 { #category : 'options' }
 SBSButtonTag >> dataTarget: aString [
 
-	self attributeAt: 'data-bs-target' put: aString
+	self attributeAt: 'data-bs-target' put: aString.
+	self ariaControls: aString
 ]
 
 { #category : 'options' }
@@ -95,7 +108,9 @@ SBSButtonTag >> defaultStyleClass [
 { #category : 'options' }
 SBSButtonTag >> dropdown [
 
-	self class: 'dropdown-toggle'
+	self
+		class: 'dropdown-toggle';
+		attributeAt: 'data-bs-toggle' put: 'dropdown'
 ]
 
 { #category : 'options' }
@@ -108,14 +123,30 @@ SBSButtonTag >> dropdownSplitted [
 
 { #category : 'initialization' }
 SBSButtonTag >> initialize [
+
 	super initialize.
-	self resetType.
+	self bePush.
 	self class: self defaultStyleClass.
 
 	self contextStyle: self defaultStyleClass.
 	self modifier: self defaultModifier.
 
 	self sizeStyle: self defaultStyleClass
+]
+
+{ #category : 'options' }
+SBSButtonTag >> offCanvasTarget: aString [
+
+	self
+		toggleOffCanvas;
+		dataAttributeAt: 'bs-target' put: aString;
+		ariaControls: aString
+]
+
+{ #category : 'options' }
+SBSButtonTag >> offCanvasToggle [
+
+	self dataToggle: 'offcanvas'
 ]
 
 { #category : 'private' }

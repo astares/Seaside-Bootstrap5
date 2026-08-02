@@ -37,7 +37,8 @@ SBSNavigationLinkTag >> dropdownToggle [
 { #category : 'options' }
 SBSNavigationLinkTag >> toggle: elementId [
 
-	self dataToggle: elementId.
-	self url: '#', elementId.
-	self attributeAt: 'aria-controls' put: elementId
+	self
+		dataToggle: elementId;
+		url: '#' , elementId;
+		ariaControls: elementId
 ]

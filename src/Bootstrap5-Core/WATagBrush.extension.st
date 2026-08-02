@@ -1,6 +1,49 @@
 Extension { #name : 'WATagBrush' }
 
 { #category : '*Bootstrap5-Core' }
+WATagBrush >> aspectRatio16x9 [
+	self aspectRatio: '16x9'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> aspectRatio1x1 [
+	self aspectRatio: '1x1'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> aspectRatio21x9 [
+	self aspectRatio: '21x9'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> aspectRatio4x3 [
+	self aspectRatio: '4x3'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> aspectRatio: aRatio [	
+	self class:'ratio ratio-',aRatio
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> beDark [
+
+	self dataAttributeAt: 'bs-theme' put: 'dark'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> bePlaceholder [
+
+	self class: 'placeholder'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> clearfix [
+
+	self class: 'clearfix'
+]
+
+{ #category : '*Bootstrap5-Core' }
 WATagBrush >> dangerBackground [
 
 	self class: 'bg-danger'
@@ -28,6 +71,12 @@ WATagBrush >> darkText [
 WATagBrush >> displayFlex [
 
 	self class: 'd-flex'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> focusRing [
+
+	self class: 'focus-ring'
 ]
 
 { #category : '*Bootstrap5-Core' }
@@ -107,7 +156,7 @@ WATagBrush >> marginTopAndBottom: aNumber [
 { #category : '*Bootstrap5-Core' }
 WATagBrush >> mutedText [
 
-	self class: 'text-muted'
+	self class: 'text-body-secondary'
 ]
 
 { #category : '*Bootstrap5-Core' }
@@ -159,6 +208,25 @@ WATagBrush >> primaryText [
 ]
 
 { #category : '*Bootstrap5-Core' }
+WATagBrush >> role: aRole [
+
+	self attributeAt: 'role' put: aRole
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> scrollSpy [
+	self dataAttributeAt: 'bs-spy' put:'scroll' 
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> scrollSpy: targetCSSSelector [
+
+	self
+		dataAttributeAt: 'bs-spy' put: 'scroll';
+		dataAttributeAt: 'bs-target' put: targetCSSSelector
+]
+
+{ #category : '*Bootstrap5-Core' }
 WATagBrush >> secondaryBackground [
 
 	self class: 'bg-secondary'
@@ -168,6 +236,30 @@ WATagBrush >> secondaryBackground [
 WATagBrush >> secondaryText [
 
 	self class: 'text-secondary'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> stackHorizontal [
+
+	self class: 'hstack'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> stackHorizontal: gapWidth [
+
+	self class: 'hstack gap-', gapWidth asString
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> stackVertical [
+
+	self class: 'vstack'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> stackVertical: gapWidth [ 
+
+	self class: 'vstack gap-', gapWidth asString
 ]
 
 { #category : '*Bootstrap5-Core' }
@@ -185,7 +277,76 @@ WATagBrush >> successText [
 { #category : '*Bootstrap5-Core' }
 WATagBrush >> textMuted [
 
-	self class: 'text-muted'
+	self class: 'text-body-secondary'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> toggleOffCanvas [
+	self dataAttributeAt: 'bs-toggle' put:'offcanvas' 
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> tooltip:aRenderable [
+	self tooltip: aRenderable placed: nil withHTML: false
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> tooltip: aRenderable placed: aDirection [
+
+	self tooltip: aRenderable placed: aDirection withHTML: false
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> tooltip: aRenderable placed: aDirection withHTML: usingHTML [
+
+	| tipContent |
+	self
+		ensureId;
+		dataAttributeAt: 'bs-toggle' put: 'tooltip'.
+
+	aDirection ifNotNil: [ "top,bottom,left,right"
+		self dataAttributeAt: 'bs-placement' put: aDirection ].
+	tipContent := aRenderable.
+	usingHTML ifTrue: [ self dataAttributeAt: 'bs-html' put: 'true' ].
+	tipContent isBlock ifTrue: [
+			self dataAttributeAt: 'bs-html' put: 'true'.
+			tipContent := WAHtmlCanvas builder render: aRenderable ].
+
+	self dataAttributeAt: 'bs-title' put: tipContent.
+	self script: (JSStream on:
+			 'bootstrap.Tooltip.getOrCreateInstance(document.getElementById("'
+			 , self id , '"));')
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> tooltipOnBottom:aRenderable [
+	self tooltip: aRenderable placed: 'bottom'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> tooltipOnLeft:aRenderable [
+	self tooltip: aRenderable placed: 'left'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> tooltipOnRight:aRenderable [
+	self tooltip: aRenderable placed: 'right'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> tooltipOnTop:aRenderable [
+	self tooltip: aRenderable placed: 'top'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> tooltipWithHTML: aRenderable [
+	self tooltip: aRenderable placed: nil withHTML: true
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> verticalRule [ 
+
+	self class: 'vr'
 ]
 
 { #category : '*Bootstrap5-Core' }

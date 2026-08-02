@@ -1,9 +1,6 @@
-"
-A dropdown item for Bootstrap
-"
 Class {
-	#name : 'SBSDropdownItemTag',
-	#superclass : 'SBSListItemTag',
+	#name : 'SBSDropdownLinkTag',
+	#superclass : 'SBSAnchorTag',
 	#traits : 'SBSTActiveStyled',
 	#classTraits : 'SBSTActiveStyled classTrait',
 	#category : 'Bootstrap5-Core-Base',
@@ -12,7 +9,6 @@ Class {
 }
 
 { #category : 'defaults' }
-SBSDropdownItemTag >> defaultStyleClass [
-
+SBSDropdownLinkTag >> defaultStyleClass [ 
 	^'dropdown-item'
 ]
