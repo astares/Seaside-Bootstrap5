@@ -21,7 +21,7 @@ SBSCDNDeploymentLibrary class >> addLoadScriptTo: html [
 { #category : 'accessing - defaults' }
 SBSCDNDeploymentLibrary class >> cdnCSSLocation [
 
-	^'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css'
+	^'https://cdn.jsdelivr.net/npm/bootstrap@',self versionString ,'/dist/css/bootstrap.min.css'
 ]
 
 { #category : 'accessing - defaults' }
@@ -34,7 +34,7 @@ SBSCDNDeploymentLibrary class >> cdnCSSLocationIntegrity [
 { #category : 'accessing - defaults' }
 SBSCDNDeploymentLibrary class >> cdnJSLocation [
 
-	^ 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'
+	^ 'https://cdn.jsdelivr.net/npm/bootstrap@',self versionString ,'/dist/js/bootstrap.bundle.min.js'
 ]
 
 { #category : 'accessing - defaults' }

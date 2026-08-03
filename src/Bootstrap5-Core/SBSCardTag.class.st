@@ -23,5 +23,7 @@ SBSCardTag >> cardBody: aBlockOrString [
 { #category : 'defaults' }
 SBSCardTag >> defaultStyleClass [
 
+
+
 	^'card'
 ]

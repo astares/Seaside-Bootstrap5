@@ -52,8 +52,7 @@ SBSExampleBrowser >> navigateToExample: example [
 { #category : 'rendering' }
 SBSExampleBrowser >> renderContentOn: html [
 
-	html row
-		with: [
+	html row: [
 		html column: [ self renderNavigationOn: html ] mediumSize: 2.
 		html column: [ self renderExampleOn: html ] mediumSize: 10
 	]

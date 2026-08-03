@@ -14,3 +14,24 @@ SBSAccordionButtonTag >> defaultStyleClass [
 
 	^'accordion-button'
 ]
+
+{ #category : 'initialization' }
+SBSAccordionButtonTag >> initialize [ 
+	super initialize .
+	self dataToggle: 'collapse'.
+	self startCollapsed 
+]
+
+{ #category : 'initialization' }
+SBSAccordionButtonTag >> startCollapsed [
+
+	self attributeAt: 'aria-expanded' put: false.
+	self class: 'collapsed'
+]
+
+{ #category : 'initialization' }
+SBSAccordionButtonTag >> startOpen: aBoolean [
+
+	self attributeAt: 'aria-expanded' put: aBoolean.
+	aBoolean ifTrue: [ self attributes removeClass: 'collapsed' ]
+]

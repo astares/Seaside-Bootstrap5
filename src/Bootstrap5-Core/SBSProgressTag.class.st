@@ -10,6 +10,21 @@ Class {
 }
 
 { #category : 'defaults' }
+SBSProgressTag >> ariaValueMax: aNumber [
+ self attributeAt: 'aria-valuemax' put:  aNumber
+]
+
+{ #category : 'defaults' }
+SBSProgressTag >> ariaValueMin: aNumber [
+ self attributeAt: 'aria-valuemin' put:  aNumber
+]
+
+{ #category : 'defaults' }
+SBSProgressTag >> ariaValueNow: aNumber [
+ self attributeAt: 'aria-valuenow' put:  aNumber
+]
+
+{ #category : 'defaults' }
 SBSProgressTag >> defaultStyleClass [
 
 	^'progress'
@@ -19,4 +34,11 @@ SBSProgressTag >> defaultStyleClass [
 SBSProgressTag >> height: anInteger [
 
 	self style: ('height: {1}px;' format: { anInteger })
+]
+
+{ #category : 'defaults' }
+SBSProgressTag >> initialize [
+
+	super initialize.
+	self role: 'progressbar' 
 ]
