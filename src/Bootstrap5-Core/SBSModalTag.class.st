@@ -9,6 +9,12 @@ Class {
 	#tag : 'Base'
 }
 
+{ #category : 'as yet unclassified' }
+SBSModalTag >> dataBackdrop: aString [
+
+	self attributeAt: 'data-bs-backdrop' put: aString
+]
+
 { #category : 'defaults' }
 SBSModalTag >> defaultStyleClass [
 
