@@ -17,6 +17,18 @@ Class {
 	#package : 'Bootstrap5-Core'
 }
 
+{ #category : 'options' }
+SBSLinkButtonTag >> dataTarget: aString [
+
+	self attributeAt: 'data-bs-target' put: aString
+]
+
+{ #category : 'options' }
+SBSLinkButtonTag >> dataToggle: aString [
+
+	self attributeAt: 'data-bs-toggle' put: aString
+]
+
 { #category : 'defaults' }
 SBSLinkButtonTag >> defaultModifier [
 	"Subclasses may override to use a different modifier uses with the class style definitions"

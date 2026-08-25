@@ -19,19 +19,19 @@ SBSInputGroupExample class >> exampleName [
 SBSInputGroupExample >> renderExampleOn: html [
 
 	html inputGroup marginBottom: 3; with: [
-		html inputGroupPrepend: [ html inputGroupText: '@' ].
+		html inputGroupText: '@'.
 		html textInput formControl placeholder: 'Username' ].
 
 	html inputGroup marginBottom: 3; with: [
 		html textInput formControl placeholder: 'Username'.
-		html inputGroupAppend: [ html inputGroupText: '@example.com' ]].
+		html inputGroupText: '@example.com' ].
 
 	html inputGroup marginBottom: 3; with: [
-		html inputGroupPrepend: [ html inputGroupText: '$' ].
+		html inputGroupText: '$'.
 		html textInput formControl placeholder: 'Username'.
-		html inputGroupAppend: [ html inputGroupText: '.00' ]].
+		html inputGroupText: '.00' ].
 
 	html inputGroup marginBottom: 3; with: [
-		html inputGroupPrepend: [ html inputGroupText: 'With textarea' ].
+		html inputGroupText: 'With textarea'.
 		html textArea formControl ]
 ]
