@@ -7,8 +7,9 @@
 [![Pharo 10](https://img.shields.io/badge/Pharo-10-%23aac9ff.svg)](https://pharo.org/download)
 [![Pharo 11](https://img.shields.io/badge/Pharo-11-%23aac9ff.svg)](https://pharo.org/download)
 [![Pharo 12](https://img.shields.io/badge/Pharo-11-%23aac9ff.svg)](https://pharo.org/download)
+[![Pharo 13](https://img.shields.io/badge/Pharo-11-%23aac9ff.svg)](https://pharo.org/download)
 
-Bootstrap 5 wrapper for Seaside for Pharo 9, Pharo 10, Pharo 11, Pharo 12
+Bootstrap 5 wrapper for Seaside for Pharo 9, Pharo 10, Pharo 11, Pharo 12, Pharo 13
 
 based on 5.0 from [https://getbootstrap.com/](https://getbootstrap.com/)
 
