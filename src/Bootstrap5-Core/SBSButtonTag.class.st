@@ -4,8 +4,8 @@ Abstract superclass for Bootstrap button tags
 Class {
 	#name : 'SBSButtonTag',
 	#superclass : 'WAButtonTag',
-	#traits : 'SBSTContextualStyled + SBSTSizeStyled',
-	#classTraits : 'SBSTContextualStyled classTrait + SBSTSizeStyled classTrait',
+	#traits : 'SBSTContextualStyled + SBSTSizeStyled + SBSTToggle',
+	#classTraits : 'SBSTContextualStyled classTrait + SBSTSizeStyled classTrait + SBSTToggle classTrait',
 	#category : 'Bootstrap5-Core-Base',
 	#package : 'Bootstrap5-Core',
 	#tag : 'Base'
@@ -71,12 +71,6 @@ SBSButtonTag >> dataDismiss: aString [
 SBSButtonTag >> dataTarget: aString [
 
 	self attributeAt: 'data-bs-target' put: aString
-]
-
-{ #category : 'options' }
-SBSButtonTag >> dataToggle: aString [
-
-	self attributeAt: 'data-bs-toggle' put: aString
 ]
 
 { #category : 'defaults' }

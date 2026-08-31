@@ -8,25 +8,17 @@ onclick() should perform expected functionality however callback: is used should
 Class {
 	#name : 'SBSLinkButtonTag',
 	#superclass : 'SBSAnchorTag',
-	#traits : 'SBSTContextualStyled + SBSTSizeStyled',
-	#classTraits : 'SBSTContextualStyled classTrait + SBSTSizeStyled classTrait',
-	#instVars : [
-		'type'
-	],
-	#category : 'Bootstrap5-Core',
-	#package : 'Bootstrap5-Core'
+	#traits : 'SBSTContextualStyled + SBSTSizeStyled + SBSTActiveStyled + SBSTToggle',
+	#classTraits : 'SBSTContextualStyled classTrait + SBSTSizeStyled classTrait + SBSTActiveStyled classTrait + SBSTToggle classTrait',
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
 { #category : 'options' }
 SBSLinkButtonTag >> dataTarget: aString [
 
 	self attributeAt: 'data-bs-target' put: aString
-]
-
-{ #category : 'options' }
-SBSLinkButtonTag >> dataToggle: aString [
-
-	self attributeAt: 'data-bs-toggle' put: aString
 ]
 
 { #category : 'defaults' }
@@ -42,11 +34,11 @@ SBSLinkButtonTag >> defaultStyleClass [
 	^'btn'
 ]
 
-{ #category : 'as yet unclassified' }
+{ #category : 'initialization' }
 SBSLinkButtonTag >> initialize [
 
 	super initialize.
-	type := 'button'.
+ 
 	self class: self defaultStyleClass.
 
 	self contextStyle: self defaultStyleClass.

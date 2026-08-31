@@ -3,9 +3,6 @@ Active or disabled
 "
 Trait {
 	#name : 'SBSTActiveStyled',
-	#instVars : [
-		'activeStyle'
-	],
 	#category : 'Bootstrap5-Core-Traits',
 	#package : 'Bootstrap5-Core',
 	#tag : 'Traits'

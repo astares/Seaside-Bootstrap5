@@ -1681,6 +1681,38 @@ SBSCanvasBrushTest >> testJumbotronWithContent [
 		gives: '<div class="jumbotron">Bootstrap</div>'
 ]
 
+{ #category : 'tests - link button' }
+SBSCanvasBrushTest >> testLinkButton [
+
+	self
+		assert: [ :html | html linkButton ]
+		gives: '<a class="btn" role="button"></a>'
+]
+
+{ #category : 'tests - link button' }
+SBSCanvasBrushTest >> testLinkButtonActive [
+
+	self
+		assert: [ :html | html linkButton beActive ]
+		gives: '<a class="btn active" role="button"></a>'
+]
+
+{ #category : 'tests - link button' }
+SBSCanvasBrushTest >> testLinkButtonDataToggle [
+
+	self
+		assert: [ :html | html linkButton dataToggle: '#bootstrap'  ]
+		gives: '<a class="btn" role="button" data-bs-toggle="#bootstrap"></a>'
+]
+
+{ #category : 'tests - link button' }
+SBSCanvasBrushTest >> testLinkButtonDisabled [
+
+	self
+		assert: [ :html | html linkButton beDisabled ]
+		gives: '<a class="btn disabled" role="button"></a>'
+]
+
 { #category : 'tests - listgroups' }
 SBSCanvasBrushTest >> testListGroup [
 
@@ -2856,7 +2888,7 @@ SBSCanvasBrushTest >> testNavigationJustifyContentStartVeryLarge [
 		gives: '<nav class="nav justify-content-xl-start"></nav>'
 ]
 
-{ #category : 'tests - navigation' }
+{ #category : 'tests - navigation link' }
 SBSCanvasBrushTest >> testNavigationLink [
 
 	self
@@ -2870,6 +2902,22 @@ SBSCanvasBrushTest >> testNavigationLinkActive [
 	self
 		assert: [ :html | html navigationLink beActive ]
 		gives: '<a class="nav-link active"></a>'
+]
+
+{ #category : 'tests - navigation link' }
+SBSCanvasBrushTest >> testNavigationLinkBeActive [
+
+	self
+		assert: [ :html | html navigationLink beActive ]
+		gives: '<a class="nav-link active"></a>'
+]
+
+{ #category : 'tests - navigation link' }
+SBSCanvasBrushTest >> testNavigationLinkBeDisabled [
+
+	self
+		assert: [ :html | html navigationLink beDisabled ]
+		gives: '<a class="nav-link disabled"></a>'
 ]
 
 { #category : 'tests - navigation - options' }

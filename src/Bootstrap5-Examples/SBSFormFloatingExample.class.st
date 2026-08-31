@@ -1,3 +1,6 @@
+"
+Form example with floating labels
+"
 Class {
 	#name : 'SBSFormFloatingExample',
 	#superclass : 'SBSBootstrapExample',
