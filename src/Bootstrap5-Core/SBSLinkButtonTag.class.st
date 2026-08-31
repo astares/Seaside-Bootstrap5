@@ -8,18 +8,12 @@ onclick() should perform expected functionality however callback: is used should
 Class {
 	#name : 'SBSLinkButtonTag',
 	#superclass : 'SBSAnchorTag',
-	#traits : 'SBSTContextualStyled + SBSTSizeStyled + SBSTActiveStyled + SBSTToggle',
-	#classTraits : 'SBSTContextualStyled classTrait + SBSTSizeStyled classTrait + SBSTActiveStyled classTrait + SBSTToggle classTrait',
+	#traits : 'SBSTContextualStyled + SBSTSizeStyled + SBSTActiveStyled + SBSTToggle + SBSTDataTarget',
+	#classTraits : 'SBSTContextualStyled classTrait + SBSTSizeStyled classTrait + SBSTActiveStyled classTrait + SBSTToggle classTrait + SBSTDataTarget classTrait',
 	#category : 'Bootstrap5-Core-Base',
 	#package : 'Bootstrap5-Core',
 	#tag : 'Base'
 }
-
-{ #category : 'options' }
-SBSLinkButtonTag >> dataTarget: aString [
-
-	self attributeAt: 'data-bs-target' put: aString
-]
 
 { #category : 'defaults' }
 SBSLinkButtonTag >> defaultModifier [

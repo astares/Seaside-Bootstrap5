@@ -1698,6 +1698,14 @@ SBSCanvasBrushTest >> testLinkButtonActive [
 ]
 
 { #category : 'tests - link button' }
+SBSCanvasBrushTest >> testLinkButtonDataTarget [
+
+	self
+		assert: [ :html | html linkButton dataTarget: '#bootstrap'  ]
+		gives: '<a class="btn" role="button" data-bs-target="#bootstrap"></a>'
+]
+
+{ #category : 'tests - link button' }
 SBSCanvasBrushTest >> testLinkButtonDataToggle [
 
 	self
@@ -2918,6 +2926,22 @@ SBSCanvasBrushTest >> testNavigationLinkBeDisabled [
 	self
 		assert: [ :html | html navigationLink beDisabled ]
 		gives: '<a class="nav-link disabled"></a>'
+]
+
+{ #category : 'tests - navigation link' }
+SBSCanvasBrushTest >> testNavigationLinkDataTarget [
+
+	self
+		assert: [ :html | html navigationLink dataTarget: '#bootstrap' ]
+		gives: '<a class="nav-link" data-bs-target="#bootstrap"></a>'
+]
+
+{ #category : 'tests - navigation link' }
+SBSCanvasBrushTest >> testNavigationLinkDataToggle [
+
+	self
+		assert: [ :html | html navigationLink dataToggle: '#bootstrap' ]
+		gives: '<a class="nav-link" data-bs-toggle="#bootstrap"></a>'
 ]
 
 { #category : 'tests - navigation - options' }
