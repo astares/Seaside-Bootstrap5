@@ -4,9 +4,9 @@ Default development library
 Class {
 	#name : 'SBSDevelopmentLibrary',
 	#superclass : 'SBSFileLibrary',
-	#category : 'Bootstrap5-Core-Libraries',
-	#package : 'Bootstrap5-Core',
-	#tag : 'Libraries'
+	#category : 'Bootstrap5-Core-Libraries-Development-Base',
+	#package : 'Bootstrap5-Core-Libraries-Development',
+	#tag : 'Base'
 }
 
 { #category : 'updating' }

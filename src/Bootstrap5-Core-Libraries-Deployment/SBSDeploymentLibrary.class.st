@@ -4,9 +4,9 @@ Default deployment library
 Class {
 	#name : 'SBSDeploymentLibrary',
 	#superclass : 'SBSFileLibrary',
-	#category : 'Bootstrap5-Core-Libraries',
-	#package : 'Bootstrap5-Core',
-	#tag : 'Libraries'
+	#category : 'Bootstrap5-Core-Libraries-Deployment-Base',
+	#package : 'Bootstrap5-Core-Libraries-Deployment',
+	#tag : 'Base'
 }
 
 { #category : 'updating' }

@@ -4,9 +4,9 @@ Development library with right-to-left (RTL) support
 Class {
 	#name : 'SBSDevelopmentLibraryRTL',
 	#superclass : 'SBSDevelopmentLibrary',
-	#category : 'Bootstrap5-Core-Libraries',
-	#package : 'Bootstrap5-Core',
-	#tag : 'Libraries'
+	#category : 'Bootstrap5-Core-Libraries-Development-Base',
+	#package : 'Bootstrap5-Core-Libraries-Development',
+	#tag : 'Base'
 }
 
 { #category : 'uploaded metadata' }

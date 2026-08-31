@@ -19,14 +19,17 @@ BaselineOfBootstrap5 >> baseline: spec [
 
 		spec
 			package: 'Bootstrap5-Core' with: [ spec requires: #('Seaside3-Core') ];
-		 	package: 'Bootstrap5-Core-Tests' with: [ spec requires: #('Bootstrap5-Core') ];
+			package: 'Bootstrap5-Core-Libraries-Deployment' with: [ spec requires: #('Bootstrap5-Core') ];
+			package: 'Bootstrap5-Core-Libraries-Development' with: [ spec requires: #('Bootstrap5-Core') ];			
+		 	package: 'Bootstrap5-Core-Tests' with: [ spec requires: #('Bootstrap5-Core' 'Bootstrap5-Core-Libraries-Deployment' 'Bootstrap5-Core-Libraries-Development') ];
 			package: 'Bootstrap5-Examples' with: [ spec requires: #('Bootstrap5-Core') ].
 
 		spec
 			group: 'Core' with: #('Bootstrap5-Core');
+			group: 'Libraries' with: #('Bootstrap5-Core-Libraries-Deployment' 'Bootstrap5-Core-Libraries-Development');
 			group: 'Tests' with: #('Bootstrap5-Core-Tests' 'Seaside3-default');
 			group: 'Examples' with: #('Bootstrap5-Examples' 'Seaside3-default');
-			group: 'all' with: #('Tests' 'Examples' 'Seaside3-default');
+			group: 'all' with: #('Tests' 'Libraries' 'Examples' 'Seaside3-default');
 			group: 'default' with: #('all').
 	]
 ]

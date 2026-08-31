@@ -4,9 +4,9 @@ Deployment library with right-to-left (RTL) support
 Class {
 	#name : 'SBSDeploymentLibraryRTL',
 	#superclass : 'SBSDeploymentLibrary',
-	#category : 'Bootstrap5-Core-Libraries',
-	#package : 'Bootstrap5-Core',
-	#tag : 'Libraries'
+	#category : 'Bootstrap5-Core-Libraries-Deployment-Base',
+	#package : 'Bootstrap5-Core-Libraries-Deployment',
+	#tag : 'Base'
 }
 
 { #category : 'uploaded metadata' }
