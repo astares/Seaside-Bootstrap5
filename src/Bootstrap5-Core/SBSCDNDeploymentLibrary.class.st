@@ -4,6 +4,9 @@ Content delivery network (CDN) based deployment library
 Class {
 	#name : 'SBSCDNDeploymentLibrary',
 	#superclass : 'SBSFileLibrary',
+	#classVars : [
+		'LocationIntegrity'
+	],
 	#category : 'Bootstrap5-Core-Libraries',
 	#package : 'Bootstrap5-Core',
 	#tag : 'Libraries'
@@ -12,46 +15,78 @@ Class {
 { #category : 'updating' }
 SBSCDNDeploymentLibrary class >> addLoadScriptTo: html [
 
+	| jsUrl |
+	jsUrl := self cdnJSLocation.
 	html script
-			url: self cdnJSLocation;
-			attributeAt: 'integrity' put: self cdnJSLocationIntegrity;
-			attributeAt: 'crossorigin' put: 'anonymous'
+		url: jsUrl;
+		attributeAt: 'integrity' put: (self locationIntegrityFor: jsUrl);
+		attributeAt: 'crossorigin' put: 'anonymous'
+]
+
+{ #category : 'integrity' }
+SBSCDNDeploymentLibrary class >> calculateLocationIntegrity [
+"
+self calculateLocationIntegrity
+
+"
+	LocationIntegrity := Dictionary new.
+	{
+		self cdnCSSLocation.
+		self cdnJSLocation.
+		SBSCDNDeploymentLibraryRTL cdnCSSLocation } do: [ :url |
+			LocationIntegrity
+				at: url
+				put: (self calculateLocationIntegrityFor: url) ]
+]
+
+{ #category : 'integrity' }
+SBSCDNDeploymentLibrary class >> calculateLocationIntegrityFor: aUrl [
+	"
+from https://srihash.org
+openssl dgst -sha384 -binary FILENAME.js | openssl base64 -A
+
+"
+
+	| sha384 |
+	sha384 := LibC resultOfCommand: 'curl ' , aUrl
+		          , ' | openssl dgst -sha384 -binary  | openssl base64 -A'.
+	self assert: sha384 size = 64.
+	^ 'sha384-' , sha384
 ]
 
 { #category : 'accessing - defaults' }
 SBSCDNDeploymentLibrary class >> cdnCSSLocation [
 
-	^'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css'
-]
-
-{ #category : 'accessing - defaults' }
-SBSCDNDeploymentLibrary class >> cdnCSSLocationIntegrity [
-	"Calculated via https://www.srihash.org"
-
-	^ 'sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB'
+	^self bootstrapSourceBaseUrl , 'css/bootstrap.min.css'
 ]
 
 { #category : 'accessing - defaults' }
 SBSCDNDeploymentLibrary class >> cdnJSLocation [
 
-	^ 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js'
+	^ self bootstrapSourceBaseUrl , 'js/bootstrap.bundle.min.js'
 ]
 
-{ #category : 'accessing - defaults' }
-SBSCDNDeploymentLibrary class >> cdnJSLocationIntegrity [
-	"Calculated via https://www.srihash.org"
+{ #category : 'integrity' }
+SBSCDNDeploymentLibrary class >> locationIntegrityFor: aUrl [
 
-	^ 'sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI'
+	LocationIntegrity isEmptyOrNil ifTrue: [
+		self calculateLocationIntegrity ].
+	^ LocationIntegrity
+		  at: aUrl
+		  ifAbsentPut: [ self calculateLocationIntegrityFor: aUrl ]
 ]
 
 { #category : 'updating' }
 SBSCDNDeploymentLibrary >> updateRoot: anHTMLRoot [
 	"We only add the CSS - the JS part should go at the end of rendering as load script, see #addLoadScriptTo: on class side"
-	| style |
+
+	| style stylesheetUrl |
 	super updateRoot: anHTMLRoot.
+	stylesheetUrl := self class cdnCSSLocation.
 	style := anHTMLRoot stylesheet.
-	style url: self class cdnCSSLocation.
+	style url: stylesheetUrl.
 	style attributes
-		at: 'integrity' append: self class cdnCSSLocationIntegrity;
+		at: 'integrity'
+		append: (self class locationIntegrityFor: stylesheetUrl);
 		at: 'crossorigin' append: 'anonymous'
 ]

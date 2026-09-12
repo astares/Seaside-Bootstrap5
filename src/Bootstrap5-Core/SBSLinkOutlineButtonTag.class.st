@@ -3,8 +3,9 @@ Class {
 	#superclass : 'SBSLinkButtonTag',
 	#traits : 'SBSTContextualStyled + SBSTSizeStyled',
 	#classTraits : 'SBSTContextualStyled classTrait + SBSTSizeStyled classTrait',
-	#category : 'Bootstrap5-Core',
-	#package : 'Bootstrap5-Core'
+	#category : 'Bootstrap5-Core-Base',
+	#package : 'Bootstrap5-Core',
+	#tag : 'Base'
 }
 
 { #category : 'defaults' }
