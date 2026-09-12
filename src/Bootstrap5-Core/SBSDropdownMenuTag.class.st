@@ -3,7 +3,7 @@ Dropdown menu for Bootstrap
 "
 Class {
 	#name : 'SBSDropdownMenuTag',
-	#superclass : 'SBSGenericTag',
+	#superclass : 'SBSUnorderedListTag',
 	#category : 'Bootstrap5-Core-Base',
 	#package : 'Bootstrap5-Core',
 	#tag : 'Base'

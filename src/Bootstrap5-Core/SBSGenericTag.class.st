@@ -10,6 +10,11 @@ Class {
 }
 
 { #category : 'defaults' }
+SBSGenericTag >> beGrid [
+	self class:'grid'
+]
+
+{ #category : 'defaults' }
 SBSGenericTag >> defaultStyleClass [
 
 	^ self subclassResponsibility

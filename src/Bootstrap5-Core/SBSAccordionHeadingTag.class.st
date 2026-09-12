@@ -12,5 +12,5 @@ Class {
 { #category : 'defaults' }
 SBSAccordionHeadingTag >> defaultStyleClass [
 
-	^ 'accordion-heading'
+	^ 'accordion-header'
 ]

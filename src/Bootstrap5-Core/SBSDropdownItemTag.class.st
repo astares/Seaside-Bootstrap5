@@ -3,7 +3,7 @@ A dropdown item for Bootstrap
 "
 Class {
 	#name : 'SBSDropdownItemTag',
-	#superclass : 'SBSAnchorTag',
+	#superclass : 'SBSListItemTag',
 	#traits : 'SBSTActiveStyled',
 	#classTraits : 'SBSTActiveStyled classTrait',
 	#category : 'Bootstrap5-Core-Base',

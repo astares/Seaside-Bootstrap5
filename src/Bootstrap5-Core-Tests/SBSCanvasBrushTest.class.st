@@ -2992,6 +2992,14 @@ SBSCanvasBrushTest >> testNavigationWithContent [
 		gives: '<nav class="nav">Bootstrap</nav>'
 ]
 
+{ #category : 'tests - offcanvas' }
+SBSCanvasBrushTest >> testOffCanvas [
+
+	self
+		assert: [ :html | html offCanvas ]
+		gives: '<div class="offcanvas"></div>'
+]
+
 { #category : 'tests - buttons' }
 SBSCanvasBrushTest >> testOutlineButton [
 

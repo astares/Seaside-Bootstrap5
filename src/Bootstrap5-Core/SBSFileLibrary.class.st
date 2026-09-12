@@ -9,15 +9,61 @@ Class {
 	#tag : 'Libraries'
 }
 
-{ #category : 'updating' }
+{ #category : 'as yet unclassified' }
 SBSFileLibrary class >> addLoadScriptTo: html [
 	"Subclasses should override to add their load scripts to the given html canvas"
 
 	self subclassResponsibility
 ]
 
-{ #category : 'testing' }
+{ #category : 'loading' }
+SBSFileLibrary class >> bootstrapSourceBaseUrl [
+	^'https://cdn.jsdelivr.net/npm/bootstrap@',self versionString ,'/dist/'
+]
+
+{ #category : 'loading' }
+SBSFileLibrary class >> deleteLargeSourceStrings [
+" use this in production cause you don't want to have the few MBs of source strings in your image.  You can reload them with #copySourceFromFilesIntoImage. "
+	self allSubclassesDo:  [ :cls |
+			(cls methodsInProtocol: 'uploaded') do: [ :method | cls removeSelector: method selector]]
+]
+
+{ #category : 'loading' }
+SBSFileLibrary class >> downloadBootstrapSourcesIntoImage [ 
+	"
+self downloadBootstrapSourcesIntoImage. 
+"
+
+	self allSubclassesDo:  [ :cls |
+			| sourceClass |
+			sourceClass := cls new.
+			(cls methodsInProtocol: 'uploaded metadata') do: [ :method |
+					| fileLibaryObj methodSource sourceSelectorName remoteUrl  remoteFileContents |
+					fileLibaryObj := sourceClass perform: method selector.
+					remoteUrl := self bootstrapSourceBaseUrl
+					                  , fileLibaryObj filepath.
+					remoteFileContents :=(ZnEasy  get: remoteUrl) contents.  
+					sourceSelectorName := fileLibaryObj contents selectorName.
+					methodSource := String streamContents: [ :s |
+							                s
+								                nextPutAll: sourceSelectorName asString;
+								                cr;
+								                nextPut: $^;
+								                nextPut: $'.
+							                remoteFileContents readStream
+								                putEscapedCSSAndJSAllOn: s.
+							                s nextPut: $' ].
+					
+					cls compile: methodSource classified: 'uploaded' ] ]
+]
+
+{ #category : 'as yet unclassified' }
 SBSFileLibrary class >> isAbstract [
 
 	^ self == SBSFileLibrary
+]
+
+{ #category : 'as yet unclassified' }
+SBSFileLibrary class >> versionString [ 
+	^'5.3.8'
 ]
