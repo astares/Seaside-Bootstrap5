@@ -195,6 +195,76 @@ WATagBrush >> textMuted [
 ]
 
 { #category : '*Bootstrap5-Core' }
+WATagBrush >> tooltip: aRenderable [
+
+	self tooltip: aRenderable placed: nil withHTML: false
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> tooltip: aRenderable placed: aDirection [
+
+	self tooltip: aRenderable placed: aDirection withHTML: false
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> tooltip: aRenderable placed: aDirection withHTML: usingHTML [
+
+	| tipContent |
+	self
+		ensureId;
+		dataAttributeAt: 'bs-toggle' put: 'tooltip'.
+
+	aDirection ifNotNil: [ "top,bottom,left,right"
+		self dataAttributeAt: 'bs-placement' put: aDirection ].
+	tipContent := aRenderable.
+	usingHTML ifTrue: [ self dataAttributeAt: 'bs-html' put: 'true' ].
+	tipContent isBlock ifTrue: [
+			self dataAttributeAt: 'bs-html' put: 'true'.
+			tipContent := WAHtmlCanvas builder render: aRenderable ].
+
+	self dataAttributeAt: 'bs-title' put: tipContent.
+	self script: (JSStream on:
+			 'bootstrap.Tooltip.getOrCreateInstance(document.getElementById("'
+			 , self id , '"));')
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> tooltipOnBottom: aRenderable [
+
+	self tooltip: aRenderable placed: 'bottom'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> tooltipOnLeft: aRenderable [
+
+	self tooltip: aRenderable placed: 'left'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> tooltipOnRight: aRenderable [
+
+	self tooltip: aRenderable placed: 'right'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> tooltipOnTop: aRenderable [
+
+	self tooltip: aRenderable placed: 'top'
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> tooltipWithHTML: aRenderable [
+
+	self tooltip: aRenderable placed: nil withHTML: true
+]
+
+{ #category : '*Bootstrap5-Core' }
+WATagBrush >> tooltipWithHTML: aRenderable
+
+	tooltipWithHTML: aRenderable [
+]
+
+{ #category : '*Bootstrap5-Core' }
 WATagBrush >> warningBackground [
 
 	self class: 'bg-warning'

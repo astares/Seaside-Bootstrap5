@@ -3367,3 +3367,44 @@ SBSCanvasBrushTest >> testTextMuted [
 		assert: [:html | html small textMuted ]
 		gives: '<small class="text-body-secondary"></small>'
 ]
+
+{ #category : 'tests - tooltips' }
+SBSCanvasBrushTest >> testTooltipBottom [
+
+	self
+		assert: [ :html | html linkButton tooltipOnBottom: '#bootstrap' ]
+		gives: '<a class="btn" role="button" id="id1" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="#bootstrap"></a><script type="text/javascript">bootstrap.Tooltip.getOrCreateInstance(document.getElementById("id1"));;</script>'
+]
+
+{ #category : 'tests - tooltips' }
+SBSCanvasBrushTest >> testTooltipLeft [
+
+	self
+		assert: [ :html | html linkButton tooltipOnLeft: '#bootstrap' ]
+		gives: '<a class="btn" role="button" id="id1" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="#bootstrap"></a><script type="text/javascript">bootstrap.Tooltip.getOrCreateInstance(document.getElementById("id1"));;</script>'
+]
+
+{ #category : 'tests - tooltips' }
+SBSCanvasBrushTest >> testTooltipRight [
+
+	self
+		assert: [ :html | html linkButton tooltipOnRight: '#bootstrap' ]
+		gives: '<a class="btn" role="button" id="id1" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="#bootstrap"></a><script type="text/javascript">bootstrap.Tooltip.getOrCreateInstance(document.getElementById("id1"));;</script>'
+]
+
+{ #category : 'tests - tooltips' }
+SBSCanvasBrushTest >> testTooltipTop [
+
+	self
+		assert: [ :html | html linkButton tooltipOnTop: '#bootstrap' ]
+		gives: '<a class="btn" role="button" id="id1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="#bootstrap"></a><script type="text/javascript">bootstrap.Tooltip.getOrCreateInstance(document.getElementById("id1"));;</script>'
+]
+
+{ #category : 'tests - tooltips' }
+SBSCanvasBrushTest >> testTooltipWithHTML [
+
+	self
+		assert: [ :html | html linkButton tooltip: '<strong>Bootstrap</strong>' placed: 'top' withHTML: true
+ ]
+		gives: '<a class="btn" role="button" id="id1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title="&lt;strong&gt;Bootstrap&lt;/strong&gt;"></a><script type="text/javascript">bootstrap.Tooltip.getOrCreateInstance(document.getElementById("id1"));;</script>'
+]
