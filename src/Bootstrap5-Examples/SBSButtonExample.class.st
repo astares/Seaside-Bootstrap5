@@ -46,6 +46,9 @@ SBSButtonExample >> renderExampleOn: html [
 	html formButton beDisabled; bePrimary; with: 'Disabled button'. html space.
 	html formButton beDisabled; beSecondary; with: 'Disabled button'.
 	html break; break.
+	html heading level2 with: 'Modal close button'.
+	html modalCloseButton.
+	html break; break.
 	html heading level2 with: 'Checkbox and radio buttons'.
 	html buttonGroup: [
 		html formButton bePrimary; beActive; with: 'Active button'.

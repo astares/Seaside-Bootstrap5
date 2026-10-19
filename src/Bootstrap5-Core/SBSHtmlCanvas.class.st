@@ -1114,9 +1114,10 @@ SBSHtmlCanvas >> modalBody: aBlock [
 { #category : 'modal' }
 SBSHtmlCanvas >> modalCloseButton [
 
-	^self closeButton
-		dataDismiss: 'modal';
-		with: [ self html: '&times;' ]
+	^ self closeButton
+			dataDismiss: 'modal';
+			attributeAt: 'aria-label' put: 'Close';
+			yourself
 ]
 
 { #category : 'modal' }

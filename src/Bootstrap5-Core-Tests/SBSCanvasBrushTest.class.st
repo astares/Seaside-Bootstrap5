@@ -2086,7 +2086,7 @@ SBSCanvasBrushTest >> testModalCloseButton [
 
 	self
 		assert: [ :html | html modalCloseButton ]
-		gives: '<button class="btn-close" data-bs-dismiss="modal">&times;</button>'
+		gives: '<button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>'
 ]
 
 { #category : 'tests - modal' }
