@@ -1201,7 +1201,7 @@ SBSCanvasBrushTest >> testDropdownHeaderWithContent [
 		gives: '<h1 class="dropdown-header">Bootstrap</h1>'
 ]
 
-{ #category : 'tests - dropdown' }
+{ #category : 'tests - dropdownitem' }
 SBSCanvasBrushTest >> testDropdownItem [
 
 	self
@@ -1209,7 +1209,7 @@ SBSCanvasBrushTest >> testDropdownItem [
 		gives: '<a class="dropdown-item"></a>'
 ]
 
-{ #category : 'tests - dropdown - options' }
+{ #category : 'tests - dropdownitem - options' }
 SBSCanvasBrushTest >> testDropdownItemActive [
 
 	self
@@ -1217,7 +1217,23 @@ SBSCanvasBrushTest >> testDropdownItemActive [
 		gives: '<a class="dropdown-item active"></a>'
 ]
 
-{ #category : 'tests - dropdown - options' }
+{ #category : 'tests - dropdownitem - options' }
+SBSCanvasBrushTest >> testDropdownItemDataTarget [
+
+	self
+		assert: [ :html | html dropdownItem dataTarget: '#bootstrap' ]
+		gives: '<a class="dropdown-item" data-bs-target="#bootstrap"></a>'
+]
+
+{ #category : 'tests - dropdownitem - options' }
+SBSCanvasBrushTest >> testDropdownItemDataToggle [
+
+	self
+		assert: [ :html | html dropdownItem dataToggle: '#bootstrap' ]
+		gives: '<a class="dropdown-item" data-bs-toggle="#bootstrap"></a>'
+]
+
+{ #category : 'tests - dropdownitem - options' }
 SBSCanvasBrushTest >> testDropdownItemDisabled [
 
 	self
@@ -1225,7 +1241,7 @@ SBSCanvasBrushTest >> testDropdownItemDisabled [
 		gives: '<a class="dropdown-item disabled"></a>'
 ]
 
-{ #category : 'tests - dropdown' }
+{ #category : 'tests - dropdownitem' }
 SBSCanvasBrushTest >> testDropdownItemWithContent [
 
 	self
