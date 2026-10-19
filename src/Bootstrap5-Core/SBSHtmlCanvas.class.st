@@ -68,17 +68,39 @@ SBSHtmlCanvas >> accordionCollapse: aBlock [
 ]
 
 { #category : 'accordion' }
-SBSHtmlCanvas >> accordionHeading [
-	"Defines a Bootstrap accordion heading."
+SBSHtmlCanvas >> accordionHeader [
+	"Defines a Bootstrap accordion header."
 
-	^self brush: SBSAccordionHeadingTag new
+	^self brush: SBSAccordionHeaderTag new
 ]
 
 { #category : 'accordion' }
-SBSHtmlCanvas >> accordionHeading: aBlock [
-	"Provides a Bootstrap accordion heading."
+SBSHtmlCanvas >> accordionHeader: aBlock [
+	"Provides a Bootstrap accordion header."
 
-	^ self accordionHeading with: aBlock
+	^ self accordionHeader with: aBlock
+]
+
+{ #category : 'deprecated' }
+SBSHtmlCanvas >> accordionHeading [
+	"Deprecated - use #accordionHeader now"
+	
+	self 
+		deprecated: 'Use #accordionHeader instead' 
+		transformWith: '`@receiver accordionHeading' -> '`@receiver accordionHeader'.
+
+	^self accordionHeader 
+]
+
+{ #category : 'deprecated' }
+SBSHtmlCanvas >> accordionHeading: aBlock [
+	"Deprecated - use #accordionHeader: instead"
+	
+	self 
+		deprecated: 'Use #accordionHeader: instead' 
+		transformWith: '`@receiver accordionHeading: `@arg' -> '`@receiver accordionHeader: `@arg'.
+		
+	^ self accordionHeader: aBlock
 ]
 
 { #category : 'accordion' }

@@ -2,7 +2,7 @@
 Bootstrap accordion heading
 "
 Class {
-	#name : 'SBSAccordionHeadingTag',
+	#name : 'SBSAccordionHeaderTag',
 	#superclass : 'SBSHeadingTag',
 	#category : 'Bootstrap5-Core-Base',
 	#package : 'Bootstrap5-Core',
@@ -10,7 +10,7 @@ Class {
 }
 
 { #category : 'defaults' }
-SBSAccordionHeadingTag >> defaultStyleClass [
+SBSAccordionHeaderTag >> defaultStyleClass [
 
-	^ 'accordion-heading'
+	^ 'accordion-header'
 ]

@@ -38,7 +38,15 @@ SBSCanvasBrushTest >> testAccordionButton [
 
 	self
 		assert: [ :html | html accordionButton ]
-		gives: '<button class="accordion-button"></button>'
+		gives: '<button class="accordion-button collapsed" data-bs-toggle="collapse"></button>'
+]
+
+{ #category : 'tests - accordion' }
+SBSCanvasBrushTest >> testAccordionButtonStartOpen [
+
+	self
+		assert: [ :html | html accordionButton startOpen: true ]
+		gives: '<button class="accordion-button" data-bs-toggle="collapse" aria-expanded></button>'
 ]
 
 { #category : 'tests - accordion' }
@@ -46,7 +54,7 @@ SBSCanvasBrushTest >> testAccordionButtonWithContent [
 
 	self
 		assert: [ :html | html accordionButton: 'Bootstrap' ]
-		gives: '<button class="accordion-button">Bootstrap</button>'
+		gives: '<button class="accordion-button collapsed" data-bs-toggle="collapse">Bootstrap</button>'
 ]
 
 { #category : 'tests - accordion' }
@@ -54,7 +62,23 @@ SBSCanvasBrushTest >> testAccordionCollapse [
 
 	self
 		assert: [ :html | html accordionCollapse ]
-		gives: '<div class="accordion-collapse"></div>'
+		gives: '<div class="accordion-collapse collapse"></div>'
+]
+
+{ #category : 'tests - accordion' }
+SBSCanvasBrushTest >> testAccordionCollapseSetParent [
+
+	self
+		assert: [ :html | html accordionCollapse parent: #'bootstrap' ]
+		gives: '<div class="accordion-collapse collapse" data-bs-parent="bootstrap"></div>'
+]
+
+{ #category : 'tests - accordion' }
+SBSCanvasBrushTest >> testAccordionCollapseStartOpen [
+
+	self
+		assert: [ :html | html accordionCollapse startOpen: true ]
+		gives: '<div class="accordion-collapse collapse show"></div>'
 ]
 
 { #category : 'tests - accordion' }
@@ -62,23 +86,23 @@ SBSCanvasBrushTest >> testAccordionCollapseWithContent [
 
 	self
 		assert: [ :html | html accordionCollapse: 'Bootstrap' ]
-		gives: '<div class="accordion-collapse">Bootstrap</div>'
+		gives: '<div class="accordion-collapse collapse">Bootstrap</div>'
 ]
 
 { #category : 'tests - accordion' }
-SBSCanvasBrushTest >> testAccordionHeading [
+SBSCanvasBrushTest >> testAccordionHeader [
 
 	self
-		assert: [ :html | html accordionHeading ]
-		gives: '<h1 class="accordion-heading"></h1>'
+		assert: [ :html | html accordionHeader ]
+		gives: '<h1 class="accordion-header"></h1>'
 ]
 
 { #category : 'tests - accordion' }
-SBSCanvasBrushTest >> testAccordionHeadingWithContent [
+SBSCanvasBrushTest >> testAccordionHeaderWithContent [
 
 	self
-		assert: [ :html | html accordionHeading: 'Bootstrap' ]
-		gives: '<h1 class="accordion-heading">Bootstrap</h1>'
+		assert: [ :html | html accordionHeader: 'Bootstrap' ]
+		gives: '<h1 class="accordion-header">Bootstrap</h1>'
 ]
 
 { #category : 'tests - accordion' }
