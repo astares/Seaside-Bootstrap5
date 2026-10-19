@@ -44,6 +44,13 @@ SBSButtonTag >> beBlockIf: aBlock [
 ]
 
 { #category : 'options' }
+SBSButtonTag >> beButtonType [
+	"Sets the type to button"
+	
+	self bePush
+]
+
+{ #category : 'options' }
 SBSButtonTag >> beDisabled [
 
 	self disabled
@@ -87,9 +94,11 @@ SBSButtonTag >> defaultStyleClass [
 ]
 
 { #category : 'options' }
-SBSButtonTag >> dropdown [
+SBSButtonTag >> dropdown [ 
 
-	self class: 'dropdown-toggle'
+	self
+		class: 'dropdown-toggle';
+		dataToggle: 'dropdown'
 ]
 
 { #category : 'options' }
@@ -103,7 +112,7 @@ SBSButtonTag >> dropdownSplitted [
 { #category : 'initialization' }
 SBSButtonTag >> initialize [
 	super initialize.
-	self resetType.
+	self beButtonType.
 	self class: self defaultStyleClass.
 
 	self contextStyle: self defaultStyleClass.

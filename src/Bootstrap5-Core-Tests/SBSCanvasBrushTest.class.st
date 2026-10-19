@@ -46,7 +46,7 @@ SBSCanvasBrushTest >> testAccordionButton [
 
 	self
 		assert: [ :html | html accordionButton ]
-		gives: '<button class="accordion-button collapsed" data-bs-toggle="collapse"></button>'
+		gives: '<button class="accordion-button collapsed" data-bs-toggle="collapse" type="button"></button>'
 ]
 
 { #category : 'tests - accordion' }
@@ -54,7 +54,7 @@ SBSCanvasBrushTest >> testAccordionButtonStartOpen [
 
 	self
 		assert: [ :html | html accordionButton startOpen: true ]
-		gives: '<button class="accordion-button" data-bs-toggle="collapse" aria-expanded></button>'
+		gives: '<button class="accordion-button" data-bs-toggle="collapse" aria-expanded type="button"></button>'
 ]
 
 { #category : 'tests - accordion' }
@@ -62,7 +62,7 @@ SBSCanvasBrushTest >> testAccordionButtonWithContent [
 
 	self
 		assert: [ :html | html accordionButton: 'Bootstrap' ]
-		gives: '<button class="accordion-button collapsed" data-bs-toggle="collapse">Bootstrap</button>'
+		gives: '<button class="accordion-button collapsed" data-bs-toggle="collapse" type="button">Bootstrap</button>'
 ]
 
 { #category : 'tests - accordion' }
@@ -454,7 +454,7 @@ SBSCanvasBrushTest >> testButton [
 
 	self
 		assert: [ :html | html formButton ]
-		gives: '<button class="btn"></button>'
+		gives: '<button class="btn" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -462,7 +462,7 @@ SBSCanvasBrushTest >> testButtonActive [
 
 	self
 		assert: [ :html | html formButton beActive ]
-		gives: '<button class="btn active"></button>'
+		gives: '<button class="btn active" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - sizes' }
@@ -470,7 +470,7 @@ SBSCanvasBrushTest >> testButtonBlock [
 
 	self
 		assert: [ :html | html formButton beBlock ]
-		gives: '<button class="btn btn-block"></button>'
+		gives: '<button class="btn btn-block" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -478,7 +478,7 @@ SBSCanvasBrushTest >> testButtonDanger [
 
 	self
 		assert: [ :html | html formButton beDanger ]
-		gives: '<button class="btn btn-danger"></button>'
+		gives: '<button class="btn btn-danger" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -486,7 +486,7 @@ SBSCanvasBrushTest >> testButtonDark [
 
 	self
 		assert: [ :html | html formButton beDark ]
-		gives: '<button class="btn btn-dark"></button>'
+		gives: '<button class="btn btn-dark" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -494,7 +494,7 @@ SBSCanvasBrushTest >> testButtonDataTarget [
 
 	self
 		assert: [ :html | html formButton dataTarget: '#bootstrap' ]
-		gives: '<button class="btn" data-bs-target="#bootstrap"></button>'
+		gives: '<button class="btn" data-bs-target="#bootstrap" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -502,7 +502,7 @@ SBSCanvasBrushTest >> testButtonDataToggle [
 
 	self
 		assert: [ :html | html formButton dataToggle: '#bootstrap' ]
-		gives: '<button class="btn" data-bs-toggle="#bootstrap"></button>'
+		gives: '<button class="btn" data-bs-toggle="#bootstrap" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -510,7 +510,7 @@ SBSCanvasBrushTest >> testButtonDisabled [
 
 	self
 		assert: [ :html | html formButton beDisabled ]
-		gives: '<button class="btn" disabled></button>'
+		gives: '<button class="btn" disabled type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -518,7 +518,7 @@ SBSCanvasBrushTest >> testButtonDropdown [
 
 	self
 		assert: [ :html | html formButton dropdown ]
-		gives: '<button class="btn dropdown-toggle"></button>'
+		gives: '<button class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -526,7 +526,7 @@ SBSCanvasBrushTest >> testButtonDropdownSplitted [
 
 	self
 		assert: [ :html | html formButton dropdownSplitted ]
-		gives: '<button class="btn dropdown-toggle dropdown-toggle-split"></button>'
+		gives: '<button class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" type="button"></button>'
 ]
 
 { #category : 'tests - buttongroups' }
@@ -606,7 +606,7 @@ SBSCanvasBrushTest >> testButtonInfo [
 
 	self
 		assert: [ :html | html formButton beInfo ]
-		gives: '<button class="btn btn-info"></button>'
+		gives: '<button class="btn btn-info" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - sizes' }
@@ -614,7 +614,7 @@ SBSCanvasBrushTest >> testButtonLarge [
 
 	self
 		assert: [ :html | html formButton beLarge ]
-		gives: '<button class="btn btn-lg"></button>'
+		gives: '<button class="btn btn-lg" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -622,7 +622,7 @@ SBSCanvasBrushTest >> testButtonLight [
 
 	self
 		assert: [ :html | html formButton beLight ]
-		gives: '<button class="btn btn-light"></button>'
+		gives: '<button class="btn btn-light" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -630,7 +630,7 @@ SBSCanvasBrushTest >> testButtonLink [
 
 	self
 		assert: [ :html | html formButton beLink ]
-		gives: '<button class="btn btn-link"></button>'
+		gives: '<button class="btn btn-link" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -638,7 +638,7 @@ SBSCanvasBrushTest >> testButtonPrimary [
 
 	self
 		assert: [ :html | html formButton bePrimary ]
-		gives: '<button class="btn btn-primary"></button>'
+		gives: '<button class="btn btn-primary" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -646,7 +646,7 @@ SBSCanvasBrushTest >> testButtonSecondary [
 
 	self
 		assert: [ :html | html formButton beSecondary ]
-		gives: '<button class="btn btn-secondary"></button>'
+		gives: '<button class="btn btn-secondary" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - sizes' }
@@ -654,7 +654,7 @@ SBSCanvasBrushTest >> testButtonSmall [
 
 	self
 		assert: [ :html | html formButton beSmall ]
-		gives: '<button class="btn btn-sm"></button>'
+		gives: '<button class="btn btn-sm" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -662,7 +662,7 @@ SBSCanvasBrushTest >> testButtonSuccess [
 
 	self
 		assert: [ :html | html formButton beSuccess ]
-		gives: '<button class="btn btn-success"></button>'
+		gives: '<button class="btn btn-success" type="button"></button>'
 ]
 
 { #category : 'tests - buttontoolbar' }
@@ -686,7 +686,7 @@ SBSCanvasBrushTest >> testButtonWarning [
 
 	self
 		assert: [ :html | html formButton beWarning ]
-		gives: '<button class="btn btn-warning"></button>'
+		gives: '<button class="btn btn-warning" type="button"></button>'
 ]
 
 { #category : 'tests - buttons' }
@@ -694,7 +694,7 @@ SBSCanvasBrushTest >> testButtonWithContent [
 
 	self
 		assert: [ :html | html formButton: 'Bootstrap' ]
-		gives: '<button class="btn">Bootstrap</button>'
+		gives: '<button class="btn" type="button">Bootstrap</button>'
 ]
 
 { #category : 'tests - cards' }
@@ -1014,7 +1014,7 @@ SBSCanvasBrushTest >> testCloseButton [
 
 	self
 		assert: [ :html | html closeButton ]
-		gives: '<button class="btn-close"></button>'
+		gives: '<button class="btn-close" type="button"></button>'
 ]
 
 { #category : 'tests - collapse' }
@@ -1022,7 +1022,7 @@ SBSCanvasBrushTest >> testCloseButtonWithContent [
 
 	self
 		assert: [ :html | html closeButton: 'Bootstrap' ]
-		gives: '<button class="btn-close">Bootstrap</button>'
+		gives: '<button class="btn-close" type="button">Bootstrap</button>'
 ]
 
 { #category : 'tests - collapse' }
@@ -2118,7 +2118,7 @@ SBSCanvasBrushTest >> testModalCloseButton [
 
 	self
 		assert: [ :html | html modalCloseButton ]
-		gives: '<button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>'
+		gives: '<button class="btn-close" data-bs-dismiss="modal" aria-label="Close" type="button"></button>'
 ]
 
 { #category : 'tests - modal' }
@@ -2413,7 +2413,7 @@ SBSCanvasBrushTest >> testNavigationBarToggler [
 
 	self
 		assert: [ :html | html navigationBarToggler ]
-		gives: '<button class="navbar-toggler"></button>'
+		gives: '<button type="button" class="navbar-toggler"></button>'
 ]
 
 { #category : 'tests - navigation bar' }
@@ -2421,7 +2421,7 @@ SBSCanvasBrushTest >> testNavigationBarTogglerButtonType [
 
 	self
 		assert: [ :html | html navigationBarToggler beButtonType ]
-		gives: '<button class="navbar-toggler" type="button"></button>'
+		gives: '<button type="button" class="navbar-toggler"></button>'
 ]
 
 { #category : 'tests - navigation bar' }
@@ -2429,15 +2429,15 @@ SBSCanvasBrushTest >> testNavigationBarTogglerCollapse [
 
 	self
 		assert: [ :html | html navigationBarToggler collapse ]
-		gives: '<button class="navbar-toggler" data-bs-toggle="collapse"></button>'
+		gives: '<button type="button" class="navbar-toggler" data-bs-toggle="collapse"></button>'
 ]
 
 { #category : 'tests - navigation bar' }
 SBSCanvasBrushTest >> testNavigationBarTogglerDataTarget [
 
 	self
-		assert: [ :html | html navigationBarToggler dataTarget: '#id_1' ]
-		gives: '<button class="navbar-toggler" data-bs-target="#id_1"></button>'
+		assert: [ :html | html navigationBarToggler dataTarget: '#bootstrap' ]
+		gives: '<button type="button" class="navbar-toggler" data-bs-target="#bootstrap"></button>'
 ]
 
 { #category : 'tests - navigation bar' }
@@ -2453,7 +2453,7 @@ SBSCanvasBrushTest >> testNavigationBarTogglerWithContent [
 
 	self
 		assert: [ :html | html navigationBarToggler: 'Bootstrap' ]
-		gives: '<button class="navbar-toggler">Bootstrap</button>'
+		gives: '<button type="button" class="navbar-toggler">Bootstrap</button>'
 ]
 
 { #category : 'tests - navigation bar' }
@@ -3045,7 +3045,7 @@ SBSCanvasBrushTest >> testOutlineButton [
 
 	self
 		assert: [ :html | html outlineButton ]
-		gives: '<button class="btn"></button>'
+		gives: '<button class="btn" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - sizes' }
@@ -3053,7 +3053,7 @@ SBSCanvasBrushTest >> testOutlineButtonBlock [
 
 	self
 		assert: [ :html | html outlineButton beBlock ]
-		gives: '<button class="btn btn-block"></button>'
+		gives: '<button class="btn btn-block" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -3061,7 +3061,7 @@ SBSCanvasBrushTest >> testOutlineButtonDanger [
 
 	self
 		assert: [ :html | html outlineButton beDanger ]
-		gives: '<button class="btn btn-outline-danger"></button>'
+		gives: '<button class="btn btn-outline-danger" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -3069,7 +3069,7 @@ SBSCanvasBrushTest >> testOutlineButtonDark [
 
 	self
 		assert: [ :html | html outlineButton beDark ]
-		gives: '<button class="btn btn-outline-dark"></button>'
+		gives: '<button class="btn btn-outline-dark" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -3077,7 +3077,7 @@ SBSCanvasBrushTest >> testOutlineButtonInfo [
 
 	self
 		assert: [ :html | html outlineButton beInfo ]
-		gives: '<button class="btn btn-outline-info"></button>'
+		gives: '<button class="btn btn-outline-info" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - sizes' }
@@ -3085,7 +3085,7 @@ SBSCanvasBrushTest >> testOutlineButtonLarge [
 
 	self
 		assert: [ :html | html outlineButton beLarge ]
-		gives: '<button class="btn btn-lg"></button>'
+		gives: '<button class="btn btn-lg" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -3093,7 +3093,7 @@ SBSCanvasBrushTest >> testOutlineButtonLight [
 
 	self
 		assert: [ :html | html outlineButton beLight ]
-		gives: '<button class="btn btn-outline-light"></button>'
+		gives: '<button class="btn btn-outline-light" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -3101,7 +3101,7 @@ SBSCanvasBrushTest >> testOutlineButtonPrimary [
 
 	self
 		assert: [ :html | html outlineButton bePrimary ]
-		gives: '<button class="btn btn-outline-primary"></button>'
+		gives: '<button class="btn btn-outline-primary" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -3109,7 +3109,7 @@ SBSCanvasBrushTest >> testOutlineButtonSecondary [
 
 	self
 		assert: [ :html | html outlineButton beSecondary ]
-		gives: '<button class="btn btn-outline-secondary"></button>'
+		gives: '<button class="btn btn-outline-secondary" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - sizes' }
@@ -3117,7 +3117,7 @@ SBSCanvasBrushTest >> testOutlineButtonSmall [
 
 	self
 		assert: [ :html | html outlineButton beSmall ]
-		gives: '<button class="btn btn-sm"></button>'
+		gives: '<button class="btn btn-sm" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -3125,7 +3125,7 @@ SBSCanvasBrushTest >> testOutlineButtonSuccess [
 
 	self
 		assert: [ :html | html outlineButton beSuccess ]
-		gives: '<button class="btn btn-outline-success"></button>'
+		gives: '<button class="btn btn-outline-success" type="button"></button>'
 ]
 
 { #category : 'tests - buttons - options' }
@@ -3133,7 +3133,7 @@ SBSCanvasBrushTest >> testOutlineButtonWarning [
 
 	self
 		assert: [ :html | html outlineButton beWarning ]
-		gives: '<button class="btn btn-outline-warning"></button>'
+		gives: '<button class="btn btn-outline-warning" type="button"></button>'
 ]
 
 { #category : 'tests - buttons' }
@@ -3141,7 +3141,7 @@ SBSCanvasBrushTest >> testOutlineButtonWithContent [
 
 	self
 		assert: [ :html | html outlineButton: 'Bootstrap' ]
-		gives: '<button class="btn">Bootstrap</button>'
+		gives: '<button class="btn" type="button">Bootstrap</button>'
 ]
 
 { #category : 'tests - spacing' }
