@@ -20,3 +20,10 @@ SBSProgressTag >> height: anInteger [
 
 	self style: ('height: {1}px;' format: { anInteger })
 ]
+
+{ #category : 'initialization' }
+SBSProgressTag >> initialize [
+
+	super initialize.
+	self role: 'progressbar'
+]

@@ -159,6 +159,12 @@ WATagBrush >> primaryText [
 ]
 
 { #category : '*Bootstrap5-Core' }
+WATagBrush >> role: aRole [
+
+	self attributeAt: 'role' put: aRole
+]
+
+{ #category : '*Bootstrap5-Core' }
 WATagBrush >> secondaryBackground [
 
 	self class: 'bg-secondary'
@@ -185,7 +191,7 @@ WATagBrush >> successText [
 { #category : '*Bootstrap5-Core' }
 WATagBrush >> textMuted [
 
-	self class: 'text-muted'
+	self class: 'text-body-secondary'
 ]
 
 { #category : '*Bootstrap5-Core' }

@@ -45,10 +45,10 @@ SBSNavbarExample >> renderExampleOn: html [
 					html dropdownMenu
 						attributeAt: 'aria-labelledby' put: 'navbarDropdown';
 						with: [
-						html dropdownItem: 'Actions'.
-						html dropdownItem: 'Another action'.
+						html dropdownItem: [ html anchor: 'Actions'].
+						html dropdownItem: [ html anchor: 'Another action'].
 						html dropdownDivider.
-						html dropdownItem: 'Something else here'.
+						html dropdownItem: [ html anchor: 'Something else here'].
 					 ]
 				].
 				html navigationItem: [ html navigationLink beDisabled with: 'Disabled' ].

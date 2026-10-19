@@ -22,3 +22,10 @@ SBSFormButtonTag >> beLinkIf: aBlock [
 
 	self class: 'btn-',modifier,'link' if: aBlock value
 ]
+
+{ #category : 'initialization' }
+SBSFormButtonTag >> initialize [ 
+
+	super initialize.
+	self resetType
+]

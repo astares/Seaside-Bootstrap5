@@ -9,12 +9,6 @@ Class {
 	#tag : 'Base'
 }
 
-{ #category : 'options' }
-SBSNavbarTogglerTag >> beButtonType [
-
-	self attributeAt: 'type' put: 'button'
-]
-
 { #category : 'defaults' }
 SBSNavbarTogglerTag >> defaultStyleClass [
 

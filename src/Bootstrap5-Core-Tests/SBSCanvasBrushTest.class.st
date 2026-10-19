@@ -2413,7 +2413,7 @@ SBSCanvasBrushTest >> testNavigationBarToggler [
 
 	self
 		assert: [ :html | html navigationBarToggler ]
-		gives: '<button type="button" class="navbar-toggler"></button>'
+		gives: '<button class="navbar-toggler" type="button"></button>'
 ]
 
 { #category : 'tests - navigation bar' }
@@ -2421,7 +2421,7 @@ SBSCanvasBrushTest >> testNavigationBarTogglerButtonType [
 
 	self
 		assert: [ :html | html navigationBarToggler beButtonType ]
-		gives: '<button type="button" class="navbar-toggler"></button>'
+		gives: '<button class="navbar-toggler" type="button"></button>'
 ]
 
 { #category : 'tests - navigation bar' }
@@ -2429,7 +2429,7 @@ SBSCanvasBrushTest >> testNavigationBarTogglerCollapse [
 
 	self
 		assert: [ :html | html navigationBarToggler collapse ]
-		gives: '<button type="button" class="navbar-toggler" data-bs-toggle="collapse"></button>'
+		gives: '<button class="navbar-toggler" data-bs-toggle="collapse" type="button"></button>'
 ]
 
 { #category : 'tests - navigation bar' }
@@ -2437,7 +2437,7 @@ SBSCanvasBrushTest >> testNavigationBarTogglerDataTarget [
 
 	self
 		assert: [ :html | html navigationBarToggler dataTarget: '#bootstrap' ]
-		gives: '<button type="button" class="navbar-toggler" data-bs-target="#bootstrap"></button>'
+		gives: '<button class="navbar-toggler" data-bs-target="#bootstrap" type="button"></button>'
 ]
 
 { #category : 'tests - navigation bar' }
@@ -2453,7 +2453,7 @@ SBSCanvasBrushTest >> testNavigationBarTogglerWithContent [
 
 	self
 		assert: [ :html | html navigationBarToggler: 'Bootstrap' ]
-		gives: '<button type="button" class="navbar-toggler">Bootstrap</button>'
+		gives: '<button class="navbar-toggler" type="button">Bootstrap</button>'
 ]
 
 { #category : 'tests - navigation bar' }
@@ -3272,12 +3272,12 @@ SBSCanvasBrushTest >> testPaginationWithContent [
 		gives: '<ul class="pagination">Bootstrap</ul>'
 ]
 
-{ #category : 'tests - progressbar' }
+{ #category : 'tests - progress' }
 SBSCanvasBrushTest >> testProgress [
 
 	self
 		assert: [ :html | html progress ]
-		gives: '<div class="progress"></div>'
+		gives: '<div class="progress" role="progressbar"></div>'
 ]
 
 { #category : 'tests - progressbar' }
@@ -3312,12 +3312,12 @@ SBSCanvasBrushTest >> testProgressBarWithContent [
 		gives: '<div class="progress-bar">Bootstrap</div>'
 ]
 
-{ #category : 'tests - progressbar' }
+{ #category : 'tests - progress' }
 SBSCanvasBrushTest >> testProgressWithContent [
 
 	self
 		assert: [ :html | html progress: 'Bootstrap' ]
-		gives: '<div class="progress">Bootstrap</div>'
+		gives: '<div class="progress" role="progressbar">Bootstrap</div>'
 ]
 
 { #category : 'tests - layout' }
@@ -3365,5 +3365,5 @@ SBSCanvasBrushTest >> testTextMuted [
 
 	self
 		assert: [:html | html small textMuted ]
-		gives: '<small class="text-muted"></small>'
+		gives: '<small class="text-body-secondary"></small>'
 ]
