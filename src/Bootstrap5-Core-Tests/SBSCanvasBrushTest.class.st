@@ -18,6 +18,14 @@ SBSCanvasBrushTest >> testAccordion [
 ]
 
 { #category : 'tests - accordion' }
+SBSCanvasBrushTest >> testAccordionBeFlush [
+
+	self
+		assert: [ :html | html accordion beFlush ]
+		gives: '<div class="accordion accordion-flush"></div>'
+]
+
+{ #category : 'tests - accordion' }
 SBSCanvasBrushTest >> testAccordionBody [
 
 	self

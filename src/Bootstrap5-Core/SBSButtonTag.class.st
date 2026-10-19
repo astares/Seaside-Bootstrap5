@@ -62,6 +62,12 @@ SBSButtonTag >> cancelCallback: aBlock [
 ]
 
 { #category : 'options' }
+SBSButtonTag >> collapse [
+
+	self dataToggle: 'collapse'
+]
+
+{ #category : 'options' }
 SBSButtonTag >> dataDismiss: aString [
 
 	self attributeAt: 'data-bs-dismiss' put: aString

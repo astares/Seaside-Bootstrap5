@@ -19,8 +19,9 @@ SBSAccordionButtonTag >> defaultStyleClass [
 SBSAccordionButtonTag >> initialize [
 
 	super initialize.
-	self dataToggle: 'collapse'.
-	self startCollapsed 
+	self 
+		collapse;
+		startCollapsed 
 ]
 
 { #category : 'initialization' }

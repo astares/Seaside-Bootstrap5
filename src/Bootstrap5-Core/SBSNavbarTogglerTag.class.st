@@ -15,12 +15,6 @@ SBSNavbarTogglerTag >> beButtonType [
 	self attributeAt: 'type' put: 'button'
 ]
 
-{ #category : 'options' }
-SBSNavbarTogglerTag >> collapse [
-
-	self dataToggle: 'collapse'
-]
-
 { #category : 'defaults' }
 SBSNavbarTogglerTag >> defaultStyleClass [
 

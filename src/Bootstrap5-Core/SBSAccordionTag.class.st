@@ -9,6 +9,13 @@ Class {
 	#tag : 'Base'
 }
 
+{ #category : 'options' }
+SBSAccordionTag >> beFlush [
+	"Remove the default background-color, some borders, and some rounded corners to render accordions edge-to-edge with their parent container"
+
+	self class: 'accordion-flush'
+]
+
 { #category : 'defaults' }
 SBSAccordionTag >> defaultStyleClass [
 
